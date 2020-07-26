@@ -1,6 +1,2 @@
 @import './variables';
-nav{
-    a{
-        color: $primaryColor !important;
-    }
-}
+@import '../containers/Navbar/style.scss'
