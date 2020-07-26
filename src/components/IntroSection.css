@@ -3,6 +3,17 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.introSection {
+  position: relative;
+  margin-bottom: 100px;
+}
+.penIntro {
+  position: absolute;
+  z-index: -1;
+  top: -20%;
+  left: 00%;
+}
+
 h1 {
   color: #026fc2;
   font-size: 36px;
