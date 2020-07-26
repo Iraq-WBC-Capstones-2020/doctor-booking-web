@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from './containers/Navbar';
+import Nav from './containers/Navbar';
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <Nav />
       <h1>Doctor Booking</h1>
     </div>
   );
