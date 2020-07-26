@@ -2,8 +2,14 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 function nav() {
   return (
-    <Container>
-      <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
+    <Navbar
+      className="shadow-sm"
+      collapseOnSelect
+      expand="lg"
+      bg="white"
+      variant="light"
+    >
+      <Container>
         <Navbar.Brand>Doctor Booking</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -15,8 +21,8 @@ function nav() {
             <Nav.Link>Sign in</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
-    </Container>
+      </Container>
+    </Navbar>
   );
 }
 
