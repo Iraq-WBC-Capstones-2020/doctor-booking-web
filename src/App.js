@@ -1,9 +1,14 @@
 import React from 'react';
+import IntroSection from './components/IntroSection';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
     <div>
-      <h1>Doctor Booking</h1>
+      <Container>
+        <IntroSection />
+      </Container>
     </div>
   );
 }
