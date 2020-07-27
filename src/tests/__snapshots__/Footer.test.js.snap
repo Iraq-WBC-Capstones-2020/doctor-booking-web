@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`footer renders correctly 1`] = `
+<footer
+  className="text-white"
+>
+  <div
+    className="h-100 container"
+  >
+    <div
+      className="h-100 align-content-center  row"
+    >
+      <div
+        className="mb-3 first-col col-md-3"
+      >
+        <h5>
+          Doctor Booking
+        </h5>
+        <p>
+          A website to book doctor appointment and save you the time
+        </p>
+      </div>
+      <div
+        className="mb-3 offset-md-2 col-md-3"
+      >
+        <h5>
+          Links
+        </h5>
+        <ul
+          className="list-unstyled"
+        >
+          <li>
+            <a
+              href="#!"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#!"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#!"
+            >
+              FAQ
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="mb-3 offset-md-1 col-md-3"
+      >
+        <h5>
+          Services
+        </h5>
+        <ul
+          className="list-unstyled"
+        >
+          <li>
+            <a
+              href="#!"
+            >
+              Book an appointment
+            </a>
+          </li>
+          <li>
+            <a
+              href="#!"
+            >
+              Clinic registration
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+`;
