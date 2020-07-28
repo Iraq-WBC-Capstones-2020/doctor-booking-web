@@ -1,9 +1,15 @@
 import React from 'react';
+import OurServices from './Containers/OurServices/OurServices'
+import { Container, Row } from 'react-bootstrap';
+
 
 function App() {
   return (
-    <div>
-      <h1>Doctor Booking</h1>
+    <div className="services-section">
+      
+        <OurServices></OurServices>
+        
+        
     </div>
   );
 }
