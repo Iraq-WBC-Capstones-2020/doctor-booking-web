@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AECA,AACI,GADD,CACC,CAAC,CAAA;EACG,KAAK,EDHG,OAAO,CCGM,UAAU;CAClC",
+    "sources": [
+        "style.scss",
+        "_variables.scss",
+        "../containers/Navbar/style.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
