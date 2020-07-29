@@ -13,8 +13,7 @@ function GetInTouch() {
           <Col lg="6" className="">
             <img
               src={findeDoctor}
-              className="img-fluid"
-              className="IntroSection__image"
+              className="img-fluid IntroSection__image"
               alt=""
             />
           </Col>
@@ -59,8 +58,7 @@ function GetInTouch() {
           <Col lg="6" className=" ">
             <img
               src={doctorRegister}
-              className="img-fluid"
-              className="IntroSection__image"
+              className="img-fluid IntroSection__image"
               alt=""
             />
           </Col>

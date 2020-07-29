@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Container, Accordion, Card } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import QuestionItem from './QuestionItem';
 
 // const decoratedOnClick = useAccordionToggle(eventKey, onClick);
 
 function Qustion() {
-  const [questions, setQuestions] = useState([
+  const [questions] = useState([
     { question: 'how are u', anaswer: 'a im fine', id: 1 },
     { question: 'how are u', anaswer: 'a im fine', id: 2 },
     { question: 'how are u', anaswer: 'a im fine', id: 3 },
@@ -20,7 +20,7 @@ function Qustion() {
         ))} */}
 
         {questions.map((question) => (
-          <QuestionItem question={question} />
+          <QuestionItem key={question.id} question={question} />
         ))}
       </Container>
     </div>

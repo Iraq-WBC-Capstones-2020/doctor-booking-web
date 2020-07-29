@@ -33,12 +33,7 @@ function IntroSection() {
             </div>
           </Col>
           <Col lg="6" className="">
-            <img
-              src={intro}
-              className="img-fluid"
-              className="IntroSection__image"
-              alt=""
-            />
+            <img src={intro} className="img-fluid IntroSection__image" alt="" />
           </Col>
         </Row>
       </Container>
