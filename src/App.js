@@ -1,10 +1,12 @@
 import React from 'react';
-import About from './containers/AboutPage/About';
-import './styles/styles.css';
+import Nav from './containers/Navbar/Navbar';
+import Footer from './containers/Footer/Footer';
+
 function App() {
   return (
     <div>
-      <About />
+      <Nav />
+      <Footer />
     </div>
   );
 }
