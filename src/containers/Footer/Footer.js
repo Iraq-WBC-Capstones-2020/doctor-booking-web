@@ -3,8 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 function Footer() {
   return (
     <footer className="text-white">
-      <Container className="h-100">
-        <Row className="h-100 align-content-center ">
+      <Container className="h-100 footer-container">
+        <Row className="h-100 align-content-center row-container">
           <Col className="mb-3 first-col" md="3">
             <h5>Doctor Booking</h5>
             <p>A website to book doctor appointment and save you the time</p>
