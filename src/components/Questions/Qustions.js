@@ -6,9 +6,9 @@ import QuestionItem from './QuestionItem';
 
 function Qustion() {
   const [questions] = useState([
-    { question: 'how are u', anaswer: 'a im fine', id: 1 },
-    { question: 'how are u', anaswer: 'a im fine', id: 2 },
-    { question: 'how are u', anaswer: 'a im fine', id: 3 },
+    { text: 'how are u', answer: 'a im fine', id: 1 },
+    { text: 'how are u', answer: 'a im fine', id: 2 },
+    { text: 'how are u', answer: 'a im fine', id: 3 },
   ]);
 
   return (
