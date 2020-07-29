@@ -14,7 +14,7 @@ function FaqIntro() {
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perspiciatis officiis recusandae voluptatibus! Natus voluptatum
-              esse temporibus saepe quo omnis alias!
+              esse temporibus saepe quo omnis
             </p>
           </div>
         </Col>
