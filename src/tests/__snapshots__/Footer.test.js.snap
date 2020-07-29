@@ -5,10 +5,10 @@ exports[`footer renders correctly 1`] = `
   className="text-white"
 >
   <div
-    className="h-100 container"
+    className="h-100 footer-container container"
   >
     <div
-      className="h-100 align-content-center  row"
+      className="h-100 align-content-center row-container row"
     >
       <div
         className="mb-3 first-col col-md-3"
