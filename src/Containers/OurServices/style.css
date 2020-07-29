@@ -1,18 +1,18 @@
 .services-section {
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   text-align: center;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   height: 1073px;
-  background: #FAFBFD no-repeat url(./images/bg.png);
+  background: #fafbfd no-repeat url(./images/bg.png);
   background-position: 0 -25px;
 }
 
 .row {
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .gray-line {
@@ -28,7 +28,7 @@
 }
 
 .head h1 {
-  color: #026FC2;
+  color: #026fc2;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -39,7 +39,7 @@
 .head p {
   margin-top: 47.26px;
   font-size: 18px;
-  color: #7D7987;
+  color: #7d7987;
   font-weight: normal;
 }
 
@@ -51,11 +51,11 @@
 .card {
   text-align: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 20px !important;
   -webkit-box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-          box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
 }
 
 .card img {
@@ -76,6 +76,6 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
-  color: #7D7987;
+  color: #7d7987;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="head"
+    >
+      <h1>
+        Our services
+      </h1>
+      <hr
+        className="gray-line"
+      />
+      <p>
+        We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health
+      </p>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="card-group"
+    >
+      <div
+        className="border-0 m-4 card"
+      >
+        <img
+          className="card-img-top"
+          src="Frame.png"
+        />
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-title h5"
+          >
+            Search doctor
+          </div>
+          <p
+            className="card-text"
+          >
+            Choose your doctor from thousands of specialist, general, and trusted hospitals
+          </p>
+        </div>
+      </div>
+      <div
+        className="border-0 m-4 card"
+      >
+        <img
+          className="card-img-top"
+          src="Frame-1.png"
+        />
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-title h5"
+          >
+            Details info
+          </div>
+          <p
+            className="card-text"
+          >
+            Free consultation with our trusted doctors and get the best recomendations
+          </p>
+        </div>
+      </div>
+      <div
+        className="border-0 m-4 card"
+      >
+        <img
+          className="card-img-top"
+          src="undraw_map_1r69 1.png"
+        />
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-title h5"
+          >
+            Clinic loation
+          </div>
+          <p
+            className="card-text"
+          >
+            Ship of the imagination star stuff harvesting star light descended from astronomers finite but
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
