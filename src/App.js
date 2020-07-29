@@ -1,11 +1,12 @@
 import React from 'react';
 import Nav from './containers/Navbar/Navbar';
+import OurGoals from './components/OurGoals/OurGoals';
 
 function App() {
   return (
     <div>
       <Nav />
-      <h1>Doctor Booking</h1>
+      <OurGoals />
     </div>
   );
 }
