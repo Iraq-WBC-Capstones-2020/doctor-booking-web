@@ -9,7 +9,7 @@ function IntroSection() {
     <div className="introSection">
       <img src={penIntro} className="penIntro" alt="" />
       <Container>
-        <Row className="border my-5">
+        <Row className=" my-5">
           <Col lg="6" className=" d-flex align-items-center">
             <div>
               <h1 className="my-3">
