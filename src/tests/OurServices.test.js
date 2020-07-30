@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import OurServices from '../components/OurServices/OurServices
+import OurServices from '../components/OurServices/OurServices'
 import renderer from 'react-test-renderer';
 test('OurServices is rendering ', () => {
   render(<OurServices />);
