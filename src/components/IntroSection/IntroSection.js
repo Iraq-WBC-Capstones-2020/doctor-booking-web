@@ -7,7 +7,6 @@ import './IntroSection.css';
 function IntroSection() {
   return (
     <div className="introSection">
-      {/* <div className="penIntro"></div> */}
       <img src={penIntro} className="penIntro" alt="" />
       <Container>
         <Row className="border my-5">
@@ -33,12 +32,7 @@ function IntroSection() {
             </div>
           </Col>
           <Col lg="6" className="">
-            <img
-              src={intro}
-              className="img-fluid"
-              className="IntroSection__image"
-              alt=""
-            />
+            <img src={intro} className="img-fluid IntroSection__image" alt="" />
           </Col>
         </Row>
       </Container>
