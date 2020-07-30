@@ -6,9 +6,9 @@ import Footer from './containers/Footer/Footer';
 
 function App() {
   return (
-    <div>
-      <HomePage />
+    <div>  
       <Nav />
+      <HomePage />
       <Footer />
     </div>
   );
