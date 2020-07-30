@@ -1,12 +1,14 @@
-@import '../../style/variables';
-
-.services-section {
-  justify-content: space-evenly;
-  text-align: center;
-  font-family: 'Roboto';
-  height: 1073px;
-  background: #fafbfd no-repeat url(./images/bg.png);
+@import './variables';
+body{
+  background: #7b7d81 no-repeat url(./images/bg.png);
   background-position: 0 -25px;
+  font-family: 'Roboto';
+
+}
+.services-section {
+  text-align: center;
+  height: 1073px;
+
 }
 .row {
   justify-content: space-evenly;
@@ -23,11 +25,9 @@
   width: 738px;
   h1 {
     color: $hColor;
-    font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 56px;
-    mix-blend-mode: normal;
   }
   p {
     margin-top: 47.26px;
@@ -38,7 +38,6 @@
 }
 .card-group {
   margin: 50px 0 0 0;
-  width: 898.42px;
 }
 .card {
   text-align: center;

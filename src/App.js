@@ -1,11 +1,10 @@
 import React from 'react';
-import OurServices from './Containers/OurServices/OurServices';
-import { Container, Row } from 'react-bootstrap';
+fiximport HomePage from './Containers//HomePage';
 
 function App() {
   return (
-    <div className="services-section">
-      <OurServices></OurServices>
+    <div>
+      <HomePage />
     </div>
   );
 }
