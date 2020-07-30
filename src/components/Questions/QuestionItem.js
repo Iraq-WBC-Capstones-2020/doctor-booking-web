@@ -3,9 +3,17 @@ import { Card, Accordion } from 'react-bootstrap';
 import './Questions.css';
 import open from './open.svg';
 import close from './close.svg';
+import PropTypes from 'prop-types';
 
 function QuestionItem(props) {
   const [isOpen, setIsOpen] = useState(false);
+
+  QuestionItem.propTypes = {
+    text: PropTypes.string.isRequired,
+    question: PropTypes.object.isRequired,
+    id: PropTypes.number.isRequired,
+    answer: PropTypes.string.isRequired,
+  };
 
   return (
     <Accordion>
