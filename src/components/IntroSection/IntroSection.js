@@ -7,7 +7,6 @@ import './IntroSection.css';
 function IntroSection() {
   return (
     <div className="introSection">
-      {/* <div className="penIntro"></div> */}
       <img src={penIntro} className="penIntro" alt="" />
       <Container>
         <Row className="border my-5">
