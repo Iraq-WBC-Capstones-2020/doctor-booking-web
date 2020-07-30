@@ -1,0 +1,62 @@
+body{
+    background-color: #F5F9FD;
+}
+.ApplicationSection{
+    margin-top: 99px;
+    margin-bottom: 99px;
+
+    align-items: center;
+    text-align: center;
+}
+
+.myRow{
+    justify-content: space-between !important;
+}
+
+.Application-Image{
+    margin-top: 48px;
+    width: 610px;
+    height: 346px;
+}
+
+.text{
+    height: 381px;
+    width: 320.21px;
+    h2{
+        color: #026FC2;
+        text-align: left;
+        font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 48px;
+    }
+    p{
+        width: 313px;
+        height: 155px;
+        text-align: left;
+        font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+
+
+color: #7D7987;
+    }
+}
+
+
+
+.download-buttons{
+
+    display: flex;
+    float: left;
+    a{
+        margin-right: 23px;
+    }
+    img{
+    width: 117px;
+    height: 35px;
+    }
+}
