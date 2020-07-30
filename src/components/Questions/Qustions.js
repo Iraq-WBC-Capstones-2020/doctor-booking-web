@@ -14,11 +14,6 @@ function Qustion() {
   return (
     <div>
       <Container className="my-5">
-        {/* <h1>the q gose here </h1>
-        {questions.map((ques) => (
-          <QuestionItem question={ques} />
-        ))} */}
-
         {questions.map((question) => (
           <QuestionItem key={question.id} question={question} />
         ))}
