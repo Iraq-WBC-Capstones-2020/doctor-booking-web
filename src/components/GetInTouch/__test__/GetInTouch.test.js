@@ -1,5 +1,4 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 import GetInTouch from '../GetInTouch';
 import renderer from 'react-test-renderer';
 
