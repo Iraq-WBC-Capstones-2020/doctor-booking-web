@@ -14,17 +14,17 @@ function TeamMember() {
         <div className="social-media mt-2">
           <ul className="list-unstyled d-flex justify-content-between">
             <li className="d-inline-block">
-              <a href="#">
+              <a href="#!">
                 <img src={github} alt="github icon" />
               </a>
             </li>
             <li className="d-inline-block">
-              <a href="#">
+              <a href="#!">
                 <img src={facebook} alt="facebook icon" />
               </a>
             </li>
             <li className="d-inline-block">
-              <a href="#">
+              <a href="#!">
                 <img src={instagram} alt="instagram icon" />
               </a>
             </li>
