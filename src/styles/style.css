@@ -28,4 +28,26 @@ footer a {
 footer a:hover {
   color: white;
 }
+
+.member-name {
+  color: #026fc2;
+}
+
+.section-title {
+  color: #026fc2;
+  font-weight: bold;
+}
+
+.social-media {
+  margin: 0 auto;
+}
+
+.social-media img {
+  width: 25px;
+  fill: #026fc2;
+}
+
+.social-media ul {
+  width: 120px;
+}
 /*# sourceMappingURL=style.css.map */

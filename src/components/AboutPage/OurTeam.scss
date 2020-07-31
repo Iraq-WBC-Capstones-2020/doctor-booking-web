@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+.member-name{
+  color:$primaryColor;
+}
+.section-title{
+  color: $primaryColor;
+  font-weight: bold;
+}
+.social-media {
+  margin: 0 auto;
+  img {
+    width: 25px;
+    fill:$primaryColor;
+  }
+  ul {
+    width: 120px;
+  }
+}
