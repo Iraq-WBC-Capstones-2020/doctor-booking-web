@@ -3,24 +3,33 @@ import { Card, Accordion } from 'react-bootstrap';
 import './Questions.css';
 import open from './open.svg';
 import close from './close.svg';
+import PropTypes from 'prop-types';
 
-function QuestionItem({ question }) {
+function QuestionItem(props) {
   const [isOpen, setIsOpen] = useState(false);
+
+  QuestionItem.propTypes = {
+    question: PropTypes.object.isRequired,
+    text: PropTypes.string.isRequired,
+    answer: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  };
+
   return (
     <Accordion>
       <Card className="qustion__card my-4">
         <Card.Header>
-          <p className={isOpen && 'open-question'}>{question.question}</p>
+          <p className={isOpen && 'open-question'}>{props.question.question}</p>
           <Accordion.Toggle
-            eventKey={question.id}
-            onClick={(e) => setIsOpen(!isOpen)}
+            eventKey={props.question.id}
+            onClick={() => setIsOpen(!isOpen)}
           >
             {' '}
             <img src={isOpen ? close : open} alt="" />
           </Accordion.Toggle>
         </Card.Header>
-        <Accordion.Collapse eventKey={question.id}>
-          <Card.Body>{question.anaswer}</Card.Body>
+        <Accordion.Collapse eventKey={props.question.id}>
+          <Card.Body>{props.question.answer}</Card.Body>
         </Accordion.Collapse>
       </Card>
     </Accordion>

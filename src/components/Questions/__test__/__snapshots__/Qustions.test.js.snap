@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Qustions (array component)  of faq page render correctly 1`] = `
+<div>
+  <div
+    className="my-5 container"
+  >
+    <div
+      className="accordion"
+    >
+      <div
+        className="qustion__card my-4 card"
+      >
+        <div
+          className="card-header"
+        >
+          <p
+            className={false}
+          >
+            how are u
+          </p>
+          <button
+            onClick={[Function]}
+            type="button"
+          >
+             
+            <img
+              alt=""
+              src="open.svg"
+            />
+          </button>
+        </div>
+        <div
+          aria-expanded={null}
+          className="collapse"
+        >
+          <div
+            className="card-body"
+          >
+            a im fine
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="accordion"
+    >
+      <div
+        className="qustion__card my-4 card"
+      >
+        <div
+          className="card-header"
+        >
+          <p
+            className={false}
+          >
+            how are u
+          </p>
+          <button
+            onClick={[Function]}
+            type="button"
+          >
+             
+            <img
+              alt=""
+              src="open.svg"
+            />
+          </button>
+        </div>
+        <div
+          aria-expanded={null}
+          className="collapse"
+        >
+          <div
+            className="card-body"
+          >
+            a im fine
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="accordion"
+    >
+      <div
+        className="qustion__card my-4 card"
+      >
+        <div
+          className="card-header"
+        >
+          <p
+            className={false}
+          >
+            how are u
+          </p>
+          <button
+            onClick={[Function]}
+            type="button"
+          >
+             
+            <img
+              alt=""
+              src="open.svg"
+            />
+          </button>
+        </div>
+        <div
+          aria-expanded={null}
+          className="collapse"
+        >
+          <div
+            className="card-body"
+          >
+            a im fine
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

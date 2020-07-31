@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Button, Container } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import intro from './intro.svg';
 
 function FaqIntro() {
@@ -19,12 +19,7 @@ function FaqIntro() {
           </div>
         </Col>
         <Col lg="6" className="">
-          <img
-            src={intro}
-            className="img-fluid"
-            className="IntroSection__image"
-            alt=""
-          />
+          <img src={intro} className="img-fluid IntroSection__image" alt="" />
         </Col>
       </Row>
     </Container>
