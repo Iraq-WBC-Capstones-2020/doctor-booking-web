@@ -7,7 +7,6 @@ function HomePage() {
     <div>
       <IntroSection />
       <OurServices />
-
     </div>
   );
 }

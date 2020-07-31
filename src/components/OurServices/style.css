@@ -63,8 +63,9 @@ body {
 
 .card .h5 {
   margin-bottom: 7px;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 24px;
+  color: black;
 }
 
 .card p {
