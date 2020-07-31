@@ -1,8 +1,8 @@
 @import '../../styles/variables';
-.member-name{
-  color:$primaryColor;
+.member-name {
+  color: $primaryColor;
 }
-.section-title{
+.section-title {
   color: $primaryColor;
   font-weight: bold;
 }
@@ -10,7 +10,7 @@
   margin: 0 auto;
   img {
     width: 25px;
-    fill:$primaryColor;
+    fill: $primaryColor;
   }
   ul {
     width: 120px;
