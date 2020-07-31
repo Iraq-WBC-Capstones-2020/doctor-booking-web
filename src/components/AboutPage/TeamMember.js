@@ -9,23 +9,23 @@ function TeamMember() {
     <Row>
       <Col xs="6" className="d-flex align-items-center flex-column">
         <div>
-          <img className="img-fluid" src={avatar} />
+          <img className="img-fluid" src={avatar} alt="team member" />
         </div>
         <div className="social-media mt-2">
           <ul className="list-unstyled d-flex justify-content-between">
             <li className="d-inline-block">
               <a href="#">
-                <img src={github} />
+                <img src={github} alt="github icon" />
               </a>
             </li>
             <li className="d-inline-block">
               <a href="#">
-                <img src={facebook} />
+                <img src={facebook} alt="facebook icon" />
               </a>
             </li>
             <li className="d-inline-block">
               <a href="#">
-                <img src={instagram} />
+                <img src={instagram} alt="instagram icon" />
               </a>
             </li>
           </ul>
