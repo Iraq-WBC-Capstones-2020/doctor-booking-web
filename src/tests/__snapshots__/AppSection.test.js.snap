@@ -24,10 +24,12 @@ exports[`renders correctly 1`] = `
         className="download-buttons"
       >
         <input
+          alt="On App store"
           src="App Store - eng.png"
           type="image"
         />
         <input
+          alt="On Google play"
           src="Google Play - eng.png"
           type="image"
         />
