@@ -19,8 +19,8 @@ function AppSection() {
             </p>
           </div>
           <div className="download-buttons">
-            <input type="image" src={appStore} />
-            <input type="image" src={googlePlay} />
+            <input alt="On App store" type="image" src={appStore} />
+            <input alt="On Google play" type="image" src={googlePlay} />
 
           </div>
         </div>
