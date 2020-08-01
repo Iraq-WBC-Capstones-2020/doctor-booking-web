@@ -23,18 +23,14 @@ exports[`renders correctly 1`] = `
       <div
         className="download-buttons"
       >
-        <a>
-          <img
-            alt="App store"
-            src="App Store - eng.png"
-          />
-        </a>
-        <a>
-          <img
-            alt="Google Play"
-            src="Google Play - eng.png"
-          />
-        </a>
+        <input
+          src="App Store - eng.png"
+          type="image"
+        />
+        <input
+          src="Google Play - eng.png"
+          type="image"
+        />
       </div>
     </div>
     <div

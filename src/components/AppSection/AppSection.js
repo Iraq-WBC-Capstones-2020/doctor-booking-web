@@ -19,12 +19,9 @@ function AppSection() {
             </p>
           </div>
           <div className="download-buttons">
-            <a href="#">
-              <img alt="App store" src={appStore} />
-            </a>
-            <a href="#">
-              <img alt="Google Play" src={googlePlay} />
-            </a>
+            <input type="image" src={appStore} />
+            <input type="image" src={googlePlay} />
+
           </div>
         </div>
         <div className="col-xs-6">
