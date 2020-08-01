@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row,  Container } from 'react-bootstrap';
+import { Row, Container } from 'react-bootstrap';
 import appImg from './images/undraw_posting_photo_v65l.png';
 import appStore from './images/App Store - eng.png';
 import googlePlay from './images/Google Play - eng.png';
