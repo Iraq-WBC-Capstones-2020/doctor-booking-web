@@ -1,7 +1,7 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row} from 'react-bootstrap'
 import videoFrame from './images/Video.png'
-import style from './style.css'
+import './style.css'
 
 function VideoSection() {
 
@@ -20,7 +20,7 @@ function VideoSection() {
            
                 <div className="col-lg-6">
                     <div className="videoFrame">
-                    <img  src={videoFrame}/>
+                    <img alt="Watch this video" src={videoFrame}/>
                     </div>
                 </div>
                 
