@@ -1,7 +1,3 @@
-nav a {
-  color: #026fc2 !important;
-}
-
 .card-image {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
@@ -37,30 +33,4 @@ nav a {
   color: #026fc2;
   font-weight: 600;
 }
-footer {
-  background-color: #014d87;
-  min-height: 250px;
-}
-
-footer .footer-container {
-  min-height: 250px;
-}
-
-footer .footer-container .row-container {
-  min-height: 250px;
-}
-
-@media only screen and (max-width: 767px) {
-  footer .first-col {
-    margin-top: 1rem;
-  }
-}
-
-footer a {
-  color: white;
-}
-
-footer a:hover {
-  color: white;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=About.css.map */
