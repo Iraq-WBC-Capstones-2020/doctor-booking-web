@@ -19,10 +19,10 @@ function AppSection() {
             </p>
           </div>
           <div className="download-buttons">
-            <a>
+            <a href="#">
               <img alt="App store" src={appStore} />
             </a>
-            <a>
+            <a href="#">
               <img alt="Google Play" src={googlePlay} />
             </a>
           </div>
