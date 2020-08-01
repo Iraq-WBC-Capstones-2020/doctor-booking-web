@@ -1,13 +1,15 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import HomePage from './containers/HomePage/HomePage';
 import Nav from './containers/Navbar/Navbar';
 import Footer from './containers/Footer/Footer';
 import OurTeam from './components/AboutPage/OurTeam';
 
+
 function App() {
   return (
-    <div>
+    <div>  
       <Nav />
-      <OurTeam />
       <Footer />
     </div>
   );
