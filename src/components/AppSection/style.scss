@@ -1,6 +1,7 @@
 body{
     background-color: #F5F9FD;
 }
+
 .ApplicationSection{
     margin-top: 99px;
     margin-bottom: 99px;
@@ -22,24 +23,26 @@ body{
 .text{
     height: 381px;
     width: 320.21px;
+    
     h2{
         color: #026FC2;
         text-align: left;
         font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 36px;
-line-height: 48px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 48px;
     }
+
     p{
         width: 313px;
         height: 155px;
         text-align: left;
         font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 30px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
 
 
 color: #7D7987;
@@ -52,9 +55,11 @@ color: #7D7987;
 
     display: flex;
     float: left;
+
     a{
         margin-right: 23px;
     }
+
     img{
     width: 117px;
     height: 35px;
