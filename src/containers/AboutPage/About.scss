@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+
 .section-container {
   h2 {
     color: $primaryColor;
@@ -16,5 +17,30 @@
 
 .section-header {
   margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card-image {
+  max-width: max-content;
+  align-self: center;
+}
+.goal-card {
+  max-width: 18rem;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
+  }
+}
+.card-title {
+  font-size: 28px;
+  color: $primaryColor;
+  font-weight: 600;
+}
+.section-title {
+  font-size: 32px;
+  color: $primaryColor;
   font-weight: 600;
 }
