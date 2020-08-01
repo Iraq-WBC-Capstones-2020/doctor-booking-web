@@ -57,11 +57,8 @@ body {
   float: left;
 }
 
-.download-buttons a {
+.download-buttons input {
   margin-right: 23px;
-}
-
-.download-buttons img {
   width: 117px;
   height: 35px;
 }
