@@ -5,7 +5,16 @@
 }
 
 .inputFiled {
-  height: 48px;
+  height: 48px !important;
   width: 264px !important;
+}
+
+.NewsLetter {
+  height: 277px;
+  background-color: #D8D8D8;
+}
+
+.InputGroup {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
