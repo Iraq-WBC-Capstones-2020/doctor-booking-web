@@ -16,7 +16,7 @@ function NewsLetter() {
             </div>
             <div className="Email">
             <Row className="align-items-center justify-content-center">
-                <Col sm={6}>
+                <Col sm={4}>
             <InputGroup className="mb-3">
     <FormControl className="inputFiled"
       placeholder="Recipient's username"
