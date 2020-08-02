@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  Container,
-  Col,
-  Row,
-  Form,
-  InputGroup,
-  Button,
-  FormControl,
-} from 'react-bootstrap';
+import { Container, Col, Row, InputGroup, FormControl } from 'react-bootstrap';
 import ButtonImg from './images/Slice 1.png';
 import './style.css';
 function NewsLetter() {
