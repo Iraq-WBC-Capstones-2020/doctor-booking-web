@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="NewsLetter container"
+>
+  <div
+    className="theHead"
+  >
+    <div
+      className="align-items-center justify-content-center row"
+    >
+      <h1>
+        Never miss an update
+      </h1>
+    </div>
+    <div
+      className="align-items-center justify-content-center row"
+    >
+      <p>
+        Signup to get any update and serves we add 
+      </p>
+    </div>
+  </div>
+  <div
+    className="Email"
+  >
+    <div
+      className="align-items-center justify-content-center row"
+    >
+      <div
+        className="col-sm-4"
+      >
+        <div
+          className="mb-3 input-group"
+        >
+          <input
+            aria-describedby="basic-addon2"
+            aria-label="Recipient's username"
+            className="inputFiled form-control"
+            placeholder="Recipient's username"
+          />
+          <div
+            className="input-group-append"
+          >
+            <input
+              alt="Submit"
+              height="48"
+              src="Slice 1.png"
+              type="image"
+              width="48"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
