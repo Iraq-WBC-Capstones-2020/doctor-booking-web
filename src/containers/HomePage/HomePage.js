@@ -5,6 +5,7 @@ function HomePage() {
   return (
     <div>
       <IntroSection />
+      <NewsLetter />
     </div>
   );
 }
