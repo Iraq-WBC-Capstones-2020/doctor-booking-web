@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Col, Row, Form, InputGroup, Button,FormControl } from 'react-bootstrap'
 import ButtonImg from './images/Slice 1.png'
-function NewaLetter() {
+function NewsLetter() {
 
     return(
         <Container className="NewsLetter">
@@ -34,4 +34,4 @@ function NewaLetter() {
     
 }
 
-export default NewaLetter
+export default NewsLetter
