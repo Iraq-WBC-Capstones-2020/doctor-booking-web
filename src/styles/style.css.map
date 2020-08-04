@@ -7,6 +7,7 @@
         "../containers/Navbar/style.scss",
         "_variables.scss",
         "../containers/AboutPage/About.scss",
+        "_variables.scss",
         "../containers/Footer/Footer.scss",
         "_variables.scss"
     ],
