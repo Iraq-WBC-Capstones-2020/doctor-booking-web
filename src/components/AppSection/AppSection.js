@@ -21,7 +21,6 @@ function AppSection() {
           <div className="downloadButtons">
             <input alt="On App store" type="image" src={appStore} />
             <input alt="On Google play" type="image" src={googlePlay} />
-
           </div>
         </div>
         <div className="col-xs-6">
