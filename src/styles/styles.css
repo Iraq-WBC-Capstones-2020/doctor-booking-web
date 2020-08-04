@@ -1,0 +1,21 @@
+.section-container h2 {
+  color: #026fc2;
+}
+
+.section-container p {
+  color: #5d646a;
+}
+
+.row-container {
+  margin-top: 6rem;
+}
+
+.row-container img {
+  margin-top: 1rem;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=styles.css.map */
