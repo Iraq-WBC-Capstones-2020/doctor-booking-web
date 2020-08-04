@@ -20,7 +20,7 @@ function SignInSection() {
           WELCOME <br /> BACK
         </h1>
       </div>
-      <div className="signin-rectangle">
+      <div className="signIn-rectangle">
         <Row>
           <Col className="justify-content-center d-flex text-white" sm="12">
             <h3>SIGN IN</h3>
