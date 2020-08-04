@@ -17,7 +17,7 @@ exports[`sign in page renders correctly 1`] = `
       </h1>
     </div>
     <div
-      className="signin-rectangle"
+      className="signIn-rectangle"
     >
       <div
         className="row"
