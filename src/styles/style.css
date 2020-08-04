@@ -65,6 +65,10 @@ footer a:hover {
   color: white;
 }
 
+.page-container {
+  height: 80vh;
+}
+
 .welcome-rectangle {
   height: 350px;
   width: 275px;
