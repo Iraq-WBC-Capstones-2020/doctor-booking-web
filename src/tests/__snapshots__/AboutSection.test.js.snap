@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About section renders correctly 1`] = `
+<div
+  className="section-container container"
+>
+  <div
+    className="align-items-center justify-content-center row-container row"
+  >
+    <div
+      className="text-center text-md-left col-md-4"
+    >
+      <h2
+        className="section-header"
+      >
+        About us
+      </h2>
+      <p>
+        We are a team worked on this website to solve multiple problems the people face when they need to go to a doctor
+         
+      </p>
+    </div>
+    <div
+      className="offset-md-1 d-flex justify-content-center col-md-6"
+    >
+      <img
+        alt="town"
+        className="img-fluid"
+        src="undraw_quite_town_mg2q1.svg"
+      />
+    </div>
+  </div>
+  <div
+    className="align-items-center justify-content-center row-container row"
+  >
+    <div
+      className="offset-md-1 order-md-12 text-center text-md-left col-md-6"
+    >
+      <h2
+        className="section-header"
+      >
+        Save your time
+      </h2>
+      <p>
+        Save the time you always waste at clinics waiting rooms you just need to book the time that suits your schedule by one click
+      </p>
+    </div>
+    <div
+      className="order-md-1 d-flex justify-content-center col-md-5"
+    >
+      <img
+        alt="clock"
+        className="img-fluid"
+        src="clockImg.svg"
+      />
+    </div>
+  </div>
+  <div
+    className="align-items-center justify-content-center row-container row"
+  >
+    <div
+      className="text-center text-md-left col-md-4"
+    >
+      <h2
+        className="section-header "
+      >
+        Find your doctor
+      </h2>
+      <p>
+        Search for a doctor by speciality or by name or just explore the doctors and find the one that suites your need
+      </p>
+    </div>
+    <div
+      className="offset-md-1 d-flex justify-content-center col-md-6"
+    >
+      <img
+        alt="search"
+        className="img-fluid"
+        src="searchImg.svg"
+      />
+    </div>
+  </div>
+</div>
+`;
