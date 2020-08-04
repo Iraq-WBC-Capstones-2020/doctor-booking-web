@@ -1,17 +1,14 @@
 @import './variables';
 
-
-body{
+body {
   background: no-repeat url(./images/bg.png);
   background-position: 0 -25px;
   font-family: 'Roboto';
-
 }
 
 .services-section {
   text-align: center;
   height: 1073px;
-
 }
 
 .row {
@@ -29,7 +26,6 @@ body{
   margin-top: 43px;
   width: 738px;
 
-  
   h1 {
     color: $hColor;
     font-weight: 500;
@@ -37,15 +33,12 @@ body{
     line-height: 56px;
   }
 
-  
   p {
     margin-top: 47.26px;
     font-size: 18px;
     color: $pColor;
     font-weight: normal;
   }
-
-  
 }
 
 .card-group {
@@ -62,7 +55,6 @@ body{
     margin-top: 29px;
     width: 55.81px;
     height: 54px;
-    
   }
 
   .h5 {
@@ -80,5 +72,4 @@ body{
     line-height: 28px;
     color: $pColor;
   }
-
 }

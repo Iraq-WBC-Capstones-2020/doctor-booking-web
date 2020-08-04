@@ -9,6 +9,8 @@
         "../containers/AboutPage/About.scss",
         "_variables.scss",
         "../containers/Footer/Footer.scss",
+        "_variables.scss",
+        "../components/AboutPage/OurTeam.scss",
         "_variables.scss"
     ],
     "names": [],
