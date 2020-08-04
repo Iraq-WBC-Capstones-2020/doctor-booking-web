@@ -7,8 +7,8 @@ nav a {
   max-width: -moz-max-content;
   max-width: max-content;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .goal-card {
@@ -16,14 +16,14 @@ nav a {
   border: 0;
   border-radius: 12px;
   -webkit-box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
-          box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
+  box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .goal-card:hover {
   -webkit-box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
-          box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
+  box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
 }
 
 .card-title {
@@ -127,4 +127,28 @@ footer a:hover {
   background-color: #014d87;
   color: white;
 }
+/*# sourceMappingURL=style.css.map */
+
+.member-name {
+  color: #026fc2;
+}
+
+.section-title {
+  color: #026fc2;
+  font-weight: bold;
+}
+
+.social-media {
+  margin: 0 auto;
+}
+
+.social-media img {
+  width: 25px;
+  fill: #026fc2;
+}
+
+.social-media ul {
+  width: 120px;
+}
+
 /*# sourceMappingURL=style.css.map */

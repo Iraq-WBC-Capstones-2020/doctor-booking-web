@@ -11,6 +11,8 @@
         "../containers/Footer/Footer.scss",
         "_variables.scss",
         "../containers/SignInPage/SignIn.scss",
+        "_variables.scss",
+        "../components/AboutPage/OurTeam.scss",
         "_variables.scss"
     ],
     "names": [],

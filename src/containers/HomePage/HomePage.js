@@ -1,12 +1,14 @@
 import React from 'react';
 import OurServices from '../../components/OurServices/OurServices';
+import IntroSection from '../../components/IntroSection/IntroSection';
 import GetInTouch from '../../components/GetInTouch/GetInTouch';
 
 function HomePage() {
   return (
     <div>
-      <OurServices />
+      <IntroSection />
       <GetInTouch />
+      <OurServices />
     </div>
   );
 }

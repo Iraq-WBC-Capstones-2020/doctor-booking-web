@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,YAAY,CAAA;EACV,KAAK,ECFQ,OAAO;CDGrB;;AACD,AAAA,cAAc,CAAA;EACZ,KAAK,ECLQ,OAAO;EDMpB,WAAW,EAAE,IAAI;CAClB;;AACD,AAAA,aAAa,CAAC;EACZ,MAAM,EAAE,MAAM;CAQf;;AATD,AAEE,aAFW,CAEX,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;EACX,IAAI,ECZO,OAAO;CDanB;;AALH,AAME,aANW,CAMX,EAAE,CAAC;EACD,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "OurTeam.scss",
+        "../../styles/_variables.scss"
+    ],
+    "names": [],
+    "file": "OurTeam.css"
+}
