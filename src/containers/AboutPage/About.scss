@@ -1,4 +1,25 @@
 @import '../../styles/variables';
+
+.section-container {
+  h2 {
+    color: $primaryColor;
+  }
+  p {
+    color: $textColor;
+  }
+}
+.row-container {
+  margin-top: 6rem;
+  img {
+    margin-top: 1rem;
+  }
+}
+
+.section-header {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
 .card-image {
   max-width: max-content;
   align-self: center;
