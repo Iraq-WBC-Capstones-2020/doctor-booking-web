@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="ApplicationSection container"
+  className="applicationSection container"
 >
   <div
     className="myRow row"
@@ -21,16 +21,16 @@ exports[`renders correctly 1`] = `
         </p>
       </div>
       <div
-        className="download-buttons"
+        className="downloadButtons"
       >
         <input
           alt="On App store"
-          src="App Store - eng.png"
+          src="AppStoreEng.png"
           type="image"
         />
         <input
           alt="On Google play"
-          src="Google Play - eng.png"
+          src="GooglePlayEng.png"
           type="image"
         />
       </div>
@@ -39,7 +39,7 @@ exports[`renders correctly 1`] = `
       className="col-xs-6"
     >
       <div
-        className="Application-Image"
+        className="applicationImage"
       >
         <img
           alt="our app"
