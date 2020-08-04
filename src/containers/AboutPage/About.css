@@ -1,7 +1,24 @@
-nav a {
-  color: #026fc2 !important;
+.section-container h2 {
+  color: #026fc2;
 }
 
+.section-container p {
+  color: #5d646a;
+}
+
+.row-container {
+  margin-top: 6rem;
+}
+
+.row-container img {
+  margin-top: 1rem;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=About.css.map */
 .card-image {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
@@ -37,53 +54,4 @@ nav a {
   color: #026fc2;
   font-weight: 600;
 }
-
-footer {
-  background-color: #014d87;
-  min-height: 250px;
-}
-
-footer .footer-container {
-  min-height: 250px;
-}
-
-footer .footer-container .row-container {
-  min-height: 250px;
-}
-
-@media only screen and (max-width: 767px) {
-  footer .first-col {
-    margin-top: 1rem;
-  }
-}
-
-footer a {
-  color: white;
-}
-
-footer a:hover {
-  color: white;
-}
-
-.member-name {
-  color: #026fc2;
-}
-
-.section-title {
-  color: #026fc2;
-  font-weight: bold;
-}
-
-.social-media {
-  margin: 0 auto;
-}
-
-.social-media img {
-  width: 25px;
-  fill: #026fc2;
-}
-
-.social-media ul {
-  width: 120px;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=About.css.map */
