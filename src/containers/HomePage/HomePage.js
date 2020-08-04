@@ -7,8 +7,8 @@ function HomePage() {
   return (
     <div>
       <IntroSection />
-      <OurServices />
       <GetInTouch />
+      <OurServices />
     </div>
   );
 }
