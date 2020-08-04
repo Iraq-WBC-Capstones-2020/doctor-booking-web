@@ -2,7 +2,7 @@ body {
   background-color: #F5F9FD;
 }
 
-.ApplicationSection {
+.applicationSection {
   margin-top: 99px;
   margin-bottom: 99px;
   -webkit-box-align: center;
@@ -17,7 +17,7 @@ body {
           justify-content: space-between !important;
 }
 
-.Application-Image {
+.applicationImage {
   margin-top: 48px;
   width: 610px;
   height: 346px;
@@ -31,7 +31,7 @@ body {
 .text h2 {
   color: #026FC2;
   text-align: left;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -50,14 +50,14 @@ body {
   color: #7D7987;
 }
 
-.download-buttons {
+.downloadButtons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   float: left;
 }
 
-.download-buttons input {
+.downloadButtons input {
   margin-right: 23px;
   width: 117px;
   height: 35px;
