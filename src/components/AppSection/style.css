@@ -1,0 +1,65 @@
+body {
+  background-color: #F5F9FD;
+}
+
+.applicationSection {
+  margin-top: 99px;
+  margin-bottom: 99px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.myRow {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.applicationImage {
+  margin-top: 48px;
+  width: 610px;
+  height: 346px;
+}
+
+.text {
+  height: 381px;
+  width: 320.21px;
+}
+
+.text h2 {
+  color: #026FC2;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.text p {
+  width: 313px;
+  height: 155px;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7D7987;
+}
+
+.downloadButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+}
+
+.downloadButtons input {
+  margin-right: 23px;
+  width: 117px;
+  height: 35px;
+}
+/*# sourceMappingURL=style.css.map */

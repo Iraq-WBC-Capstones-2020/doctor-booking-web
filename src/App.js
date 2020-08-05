@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Nav />
-      <BookingPage />
+      <HomePage />
       <Footer />
     </div>
   );

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="videoSection container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-lg-6"
+    >
+      <h1>
+        To get more familiar 
+        <br />
+        with the website
+        <br />
+        watch this video
+        <br />
+      </h1>
+    </div>
+    <div
+      className="col-lg-6"
+    >
+      <div
+        className="videoFrame"
+      >
+        <img
+          alt="Watch this video"
+          src="Video.png"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
