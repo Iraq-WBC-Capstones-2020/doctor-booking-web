@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Col, Row, InputGroup, FormControl } from 'react-bootstrap';
-import ButtonImg from './images/Slice 1.png';
+import ButtonImg from './images/Slice1.png';
 import './style.css';
 function NewsLetter() {
   return (
-    <Container className="NewsLetter">
+    <Container className="newsLetter">
       <div className="theHead">
         <Row className="align-items-center justify-content-center">
           <h1>Never miss an update</h1>
@@ -13,7 +13,7 @@ function NewsLetter() {
           <p>Signup to get any update and serves we add </p>
         </Row>
       </div>
-      <div className="Email">
+      <div className="email">
         <Row className="align-items-center justify-content-center">
           <Col sm={4}>
             <InputGroup className="mb-3">

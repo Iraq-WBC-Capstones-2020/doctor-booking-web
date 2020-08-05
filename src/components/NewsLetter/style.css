@@ -6,7 +6,7 @@ body {
   height: 48px !important;
 }
 
-.NewsLetter {
+.newsLetter {
   height: 277px;
   background-color: #D8D8D8;
   padding-top: 57px;
@@ -16,13 +16,13 @@ body {
   margin-bottom: 48px;
 }
 
-.NewsLetter h1 {
+.newsLetter h1 {
   line-height: 48px;
   letter-spacing: -0.4px;
   color: #3F3B3B;
 }
 
-.NewsLetter p {
+.newsLetter p {
   font-size: 18px;
   line-height: 24px;
   color: #3F3B3B;
