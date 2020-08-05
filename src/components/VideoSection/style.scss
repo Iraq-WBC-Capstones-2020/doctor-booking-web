@@ -3,21 +3,6 @@
 margin-top: 99px;
 margin-bottom: 99px;
 
-}
-
-body{
-    background-color: #FAFBFD;
-    font-family: Roboto;
-
-}
-
-.videoFrame{
-    img{
-        width: 450.43px;
-    height:313px ;
-    }
-}
-
 h1{
     margin-top: 109px;
     width: 350px;
@@ -25,7 +10,20 @@ h1{
     font-weight: 500;
     font-size: $hFontSize;
     line-height: 46px;
-
-
-color:$pColor;
+    color:$pColor;
+    }
 }
+
+body{
+    background-color: #FAFBFD;
+    font-family: Roboto;
+}
+
+.videoFrame{
+    
+    img{
+        width: 450.43px;
+        height:313px ;
+    }
+}
+

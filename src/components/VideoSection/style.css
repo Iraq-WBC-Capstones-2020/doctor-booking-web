@@ -3,6 +3,16 @@
   margin-bottom: 99px;
 }
 
+.videoSection h1 {
+  margin-top: 109px;
+  width: 350px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 46px;
+  color: #026FC2;
+}
+
 body {
   background-color: #FAFBFD;
   font-family: Roboto;
@@ -11,15 +21,5 @@ body {
 .videoFrame img {
   width: 450.43px;
   height: 313px;
-}
-
-h1 {
-  margin-top: 109px;
-  width: 350px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 46px;
-  color: #026FC2;
 }
 /*# sourceMappingURL=style.css.map */
