@@ -1,0 +1,63 @@
+.page-container {
+  height: 80vh;
+}
+
+.welcome-rectangle {
+  height: 350px;
+  width: 275px;
+  background: #014d87;
+  -webkit-box-shadow: 0px 11px 14px rgba(1, 77, 135, 0.3);
+          box-shadow: 0px 11px 14px rgba(1, 77, 135, 0.3);
+  border-radius: 10px 0 0 10px;
+}
+
+.welcome-rectangle h1 {
+  color: white;
+}
+
+.signin-rectangle {
+  max-width: 350px;
+  min-height: 480px;
+  background: #026fc2;
+  -webkit-box-shadow: 0px 15px 17px rgba(2, 111, 194, 0.3);
+          box-shadow: 0px 15px 17px rgba(2, 111, 194, 0.3);
+  border-radius: 10px;
+}
+
+.signin-rectangle input {
+  font-size: 14px;
+  width: 250px;
+  height: 45px;
+}
+
+.signin-rectangle p {
+  color: white;
+  margin: 0 auto;
+}
+
+.signin-rectangle a {
+  color: white;
+}
+
+.signin-rectangle a:hover {
+  color: white;
+}
+
+.signin-rectangle h3 {
+  margin-top: 4rem;
+}
+
+.signin-btn {
+  background-color: white;
+  color: #026fc2;
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.signin-btn:hover {
+  background-color: #014d87;
+  color: white;
+}
+/*# sourceMappingURL=SignIn.css.map */
