@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sign in page renders correctly 1`] = `
+<div
+  className="d-flex justify-content-center page-container container"
+>
+  <div
+    className="d-flex align-items-center"
+  >
+    <div
+      className="welcome-rectangle d-none d-md-flex align-items-center justify-content-center"
+    >
+      <h1>
+        WELCOME 
+        <br />
+         BACK
+      </h1>
+    </div>
+    <div
+      className="signIn-rectangle"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="justify-content-center d-flex text-white col-sm-12"
+        >
+          <h3>
+            SIGN IN
+          </h3>
+        </div>
+        <div
+          className="justify-content-center d-flex mt-5 text-white col-sm-12"
+        >
+          <form
+            className="justify-content-center d-flex flex-column"
+          >
+            <div
+              className="form-group"
+              onChange={[Function]}
+            >
+              <input
+                className="form-control form-control-lg"
+                id="email"
+                placeholder="E-mail"
+                type="email"
+              />
+            </div>
+            <div
+              className="mt-2 form-group"
+              onChange={[Function]}
+            >
+              <input
+                className="form-control form-control-lg"
+                id="password"
+                placeholder="Password"
+                type="password"
+              />
+            </div>
+            <button
+              className="signin-btn btn-lg mt-3 btn btn-primary"
+              disabled={false}
+              type="submit"
+            >
+              Sign In
+            </button>
+            <p
+              className="mt-3"
+            >
+              Don
+              '
+              t have an account? 
+              <a
+                href="#!"
+              >
+                Sign Up
+              </a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

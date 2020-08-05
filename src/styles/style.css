@@ -2,13 +2,34 @@ nav a {
   color: #026fc2 !important;
 }
 
+.section-container h2 {
+  color: #026fc2;
+}
+
+.section-container p {
+  color: #5d646a;
+}
+
+.row-container {
+  margin-top: 6rem;
+}
+
+.row-container img {
+  margin-top: 1rem;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
 .card-image {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .goal-card {
@@ -16,14 +37,14 @@ nav a {
   border: 0;
   border-radius: 12px;
   -webkit-box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
-  box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
+          box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .goal-card:hover {
   -webkit-box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
-  box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
+          box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
 }
 
 .card-title {
@@ -65,6 +86,70 @@ footer a:hover {
   color: white;
 }
 
+.page-container {
+  height: 80vh;
+}
+
+.welcome-rectangle {
+  height: 350px;
+  width: 275px;
+  background: #014d87;
+  -webkit-box-shadow: 0px 11px 14px rgba(1, 77, 135, 0.3);
+          box-shadow: 0px 11px 14px rgba(1, 77, 135, 0.3);
+  border-radius: 10px 0 0 10px;
+}
+
+.welcome-rectangle h1 {
+  color: white;
+}
+
+.signin-rectangle {
+  max-width: 350px;
+  min-height: 480px;
+  background: #026fc2;
+  -webkit-box-shadow: 0px 15px 17px rgba(2, 111, 194, 0.3);
+          box-shadow: 0px 15px 17px rgba(2, 111, 194, 0.3);
+  border-radius: 10px;
+}
+
+.signin-rectangle input {
+  font-size: 14px;
+  width: 250px;
+  height: 45px;
+}
+
+.signin-rectangle p {
+  color: white;
+  margin: 0 auto;
+}
+
+.signin-rectangle a {
+  color: white;
+}
+
+.signin-rectangle a:hover {
+  color: white;
+}
+
+.signin-rectangle h3 {
+  margin-top: 4rem;
+}
+
+.signin-btn {
+  background-color: white;
+  color: #026fc2;
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.signin-btn:hover {
+  background-color: #014d87;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
+
 .member-name {
   color: #026fc2;
 }
@@ -86,5 +171,4 @@ footer a:hover {
 .social-media ul {
   width: 120px;
 }
-
 /*# sourceMappingURL=style.css.map */
