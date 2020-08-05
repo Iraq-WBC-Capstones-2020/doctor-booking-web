@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
-import videoFrame from './images/Video.png';
+import VideoFrame from './images/Video.png';
 import './style.css';
 
 function VideoSection() {
   return (
-    <Container className="VideoSection">
+    <Container className="videoSection">
       <Row>
         <div className="col-lg-6">
           <h1>
@@ -19,7 +19,7 @@ function VideoSection() {
 
         <div className="col-lg-6">
           <div className="videoFrame">
-            <img alt="Watch this video" src={videoFrame} />
+            <img alt="Watch this video" src={VideoFrame} />
           </div>
         </div>
       </Row>
