@@ -2,13 +2,34 @@ nav a {
   color: #026fc2 !important;
 }
 
+.section-container h2 {
+  color: #026fc2;
+}
+
+.section-container p {
+  color: #5d646a;
+}
+
+.row-container {
+  margin-top: 6rem;
+}
+
+.row-container img {
+  margin-top: 1rem;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
 .card-image {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .goal-card {
@@ -16,14 +37,14 @@ nav a {
   border: 0;
   border-radius: 12px;
   -webkit-box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
-  box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
+          box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .goal-card:hover {
   -webkit-box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
-  box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
+          box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
 }
 
 .card-title {
@@ -86,5 +107,4 @@ footer a:hover {
 .social-media ul {
   width: 120px;
 }
-
 /*# sourceMappingURL=style.css.map */
