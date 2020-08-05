@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Intro  section run well  1`] = `
+<div
+  className="introSection"
+>
+  <img
+    alt=""
+    className="penIntro"
+    src="penIntro.svg"
+  />
+  <div
+    className="container"
+  >
+    <div
+      className=" my-5 row"
+    >
+      <div
+        className=" d-flex align-items-center col-lg-6"
+      >
+        <div>
+          <h1
+            className="my-3"
+          >
+            Your health is important
+             
+            <span
+              className="d-block"
+            >
+              for us.
+            </span>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis recusandae voluptatibus! Natus voluptatum esse temporibus saepe quo omnis alias!
+          </p>
+          <div
+            className="my-4"
+          >
+            <button
+              className="btn-lg btn btn-primary"
+              disabled={false}
+              type="button"
+            >
+              Get Started
+            </button>
+            <button
+              className="btn-lg ml-4 btn btn-outline-primary"
+              disabled={false}
+              type="button"
+            >
+              Intro Video
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-lg-6"
+      >
+        <img
+          alt=""
+          className="img-fluid IntroSection__image"
+          src="intro.svg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

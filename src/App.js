@@ -1,13 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import FaqPage from './containers/FaqPage/FaqPage';
 import Nav from './containers/Navbar/Navbar';
+import HomePage from './containers/HomePage/HomePage';
+import Footer from './containers/Footer/Footer';
 
 function App() {
   return (
     <div>
       <Nav />
-      <FaqPage />
+       <HomePage />
+      <Footer />
     </div>
   );
 }
