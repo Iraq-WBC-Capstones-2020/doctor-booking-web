@@ -19,7 +19,7 @@ function FaqIntro() {
           </div>
         </Col>
         <Col lg="6" className="">
-          <img src={intro} className="img-fluid IntroSection__image" alt="" />
+          <img src={intro} className="img-fluid introSectionImage" alt="" />
         </Col>
       </Row>
     </Container>

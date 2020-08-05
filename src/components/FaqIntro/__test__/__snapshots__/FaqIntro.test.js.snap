@@ -31,7 +31,7 @@ exports[`intro section of faq page render correctly 1`] = `
     >
       <img
         alt=""
-        className="img-fluid IntroSection__image"
+        className="img-fluid introSectionImage"
         src="intro.svg"
       />
     </div>

@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-.qustion__card {
+.qustionCard {
   border-radius: 12px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 }
@@ -22,14 +22,11 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
-  /* identical to box height */
-
   letter-spacing: -0.5px;
-
   color: rgba(0, 0, 0, 0.62);
 }
 
-.open-question {
+.openQuestion {
   color: rgba(242, 1, 82, 0.7) !important;
 }
 

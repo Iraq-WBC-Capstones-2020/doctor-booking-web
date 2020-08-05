@@ -17,9 +17,9 @@ function QuestionItem(props) {
 
   return (
     <Accordion>
-      <Card className="qustion__card my-4">
+      <Card className="qustionCard my-4">
         <Card.Header>
-          <p className={isOpen && 'open-question'}>{props.question.question}</p>
+          <p className={isOpen && 'openQuestion'}>{props.question.question}</p>
           <Accordion.Toggle
             eventKey={props.question.id}
             onClick={() => setIsOpen(!isOpen)}

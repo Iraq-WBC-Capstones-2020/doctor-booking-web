@@ -9,7 +9,7 @@ exports[`Qustions (array component)  of faq page render correctly 1`] = `
       className="accordion"
     >
       <div
-        className="qustion__card my-4 card"
+        className="qustionCard my-4 card"
       >
         <div
           className="card-header"
@@ -46,7 +46,7 @@ exports[`Qustions (array component)  of faq page render correctly 1`] = `
       className="accordion"
     >
       <div
-        className="qustion__card my-4 card"
+        className="qustionCard my-4 card"
       >
         <div
           className="card-header"
@@ -83,7 +83,7 @@ exports[`Qustions (array component)  of faq page render correctly 1`] = `
       className="accordion"
     >
       <div
-        className="qustion__card my-4 card"
+        className="qustionCard my-4 card"
       >
         <div
           className="card-header"
