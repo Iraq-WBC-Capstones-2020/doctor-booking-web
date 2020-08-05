@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="NewsLetter container"
+  className="newsLetter container"
 >
   <div
     className="theHead"
@@ -23,7 +23,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="Email"
+    className="email"
   >
     <div
       className="align-items-center justify-content-center row"
@@ -46,7 +46,7 @@ exports[`renders correctly 1`] = `
             <input
               alt="Submit"
               height="48"
-              src="Slice 1.png"
+              src="Slice1.png"
               type="image"
               width="48"
             />
