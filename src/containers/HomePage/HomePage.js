@@ -11,7 +11,6 @@ function HomePage() {
       <GetInTouch />
       <OurServices />
       <VideoSection />
-
     </div>
   );
 }
