@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import IntroSection from '../IntroSection';
+import IntroSection from '../components/IntroSection/IntroSection';
 
 test('Intro section  is rendering  ', () => {
   render(<IntroSection />);

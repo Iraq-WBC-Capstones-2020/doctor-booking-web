@@ -1,3 +1,24 @@
+.section-container h2 {
+  color: #026fc2;
+}
+
+.section-container p {
+  color: #5d646a;
+}
+
+.row-container {
+  margin-top: 6rem;
+}
+
+.row-container img {
+  margin-top: 1rem;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=About.css.map */
 .card-image {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;

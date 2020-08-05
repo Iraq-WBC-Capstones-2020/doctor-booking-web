@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AACE,UADQ,CACR,EAAE,CAAC;EACD,KAAK,ECHO,OAAO;CDIpB;;AAHH,AAIE,UAJQ,CAIR,CAAC,CAAC;EACA,KAAK,ECLG,OAAO;CDMhB",
+    "sources": [
+        "AboutSection.scss",
+        "../../styles/_variables.scss"
+    ],
+    "names": [],
+    "file": "AboutSection.css"
+}
