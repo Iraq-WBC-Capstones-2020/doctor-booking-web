@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import QuestionItem from './QuestionItem';
 
-// const decoratedOnClick = useAccordionToggle(eventKey, onClick);
-
 function Qustions() {
   const [questions] = useState([
     { question: 'how are u', answer: 'a im fine', id: 1 },

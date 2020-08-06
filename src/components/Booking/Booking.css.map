@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,gFAAI;AAEZ,AAAA,QAAQ,CAAC;EACP,WAAW,EAAE,+BAA+B;CAW7C;;AAZD,AAGE,QAHM,CAGN,EAAE,CAAC;EACD,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;CACjB;;AAPH,AASE,QATM,CASN,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;CACZ",
-    "sources": [
-        "Booking.scss"
-    ],
-    "names": [],
-    "file": "Booking.css"
-}

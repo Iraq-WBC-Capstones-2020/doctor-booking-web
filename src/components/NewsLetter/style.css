@@ -8,24 +8,24 @@ body {
 
 .newsLetter {
   height: 277px;
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
   padding-top: 57px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 48px;
 }
 
 .newsLetter h1 {
   line-height: 48px;
   letter-spacing: -0.4px;
-  color: #3F3B3B;
+  color: #3f3b3b;
 }
 
 .newsLetter p {
   font-size: 18px;
   line-height: 24px;
-  color: #3F3B3B;
+  color: #3f3b3b;
 }
 
 .InputGroup {

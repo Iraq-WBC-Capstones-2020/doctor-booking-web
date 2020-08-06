@@ -1,20 +1,20 @@
 body {
-  background-color: #F5F9FD;
+  background-color: #f5f9fd;
 }
 
 .applicationSection {
   margin-top: 99px;
   margin-bottom: 99px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
 .myRow {
   -webkit-box-pack: justify !important;
-      -ms-flex-pack: justify !important;
-          justify-content: space-between !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
 }
 
 .applicationImage {
@@ -29,7 +29,7 @@ body {
 }
 
 .text h2 {
-  color: #026FC2;
+  color: #026fc2;
   text-align: left;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -47,7 +47,7 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  color: #7D7987;
+  color: #7d7987;
 }
 
 .downloadButtons {
