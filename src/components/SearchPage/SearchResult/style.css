@@ -5,10 +5,12 @@
   font-size: 18px;
   line-height: 24px;
   text-align: left;
+  margin-bottom: 0px;
   color: #000000;
 }
 
 .SearchResult hr {
+  margin-top: 0px;
   width: 100%;
 }
 
