@@ -1,0 +1,25 @@
+.SearchResult h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+
+.SearchResult hr {
+  width: 100%;
+}
+
+.card-img-top {
+  position: absolute;
+  width: 72px;
+  height: 64px;
+  left: calc(50% - 72px/2 + 4.5px);
+  top: -33px;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
+}
+/*# sourceMappingURL=style.css.map */
