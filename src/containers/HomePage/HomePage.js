@@ -5,7 +5,7 @@ import VideoSection from '../../components/VideoSection/VideoSection';
 import GetInTouch from '../../components/GetInTouch/GetInTouch';
 import AppSection from '../../components/AppSection/AppSection';
 import NewsLetter from '../../components/NewsLetter/NewsLetter';
-
+import SearchForm from '../../components/SearchPage/SearchForm/SearchForm'
 function HomePage() {
   return (
     <div>
@@ -15,6 +15,7 @@ function HomePage() {
       <AppSection />
       <VideoSection />
       <NewsLetter />
+      <SearchForm/>
     </div>
   );
 }

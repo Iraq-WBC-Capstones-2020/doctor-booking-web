@@ -1,0 +1,52 @@
+$searchIcon : url('./images/SearchButton.png');
+.searchForm{
+    margin-bottom: 148px;
+}
+.searchHead{
+    margin-bottom: 79.56px;
+    h1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 75px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+    }
+    
+
+    img{
+        margin-left: 30px;
+    };
+
+}
+
+.form-row{
+    input{
+        height: 51px;
+    }
+
+    button{
+        color: white;
+        background-color: #026FC2;
+    }
+}
+
+.myButton{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    height: 51px;
+    width: 179px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: #026FC2;
+    
+    svg{
+        margin-left: 5px;
+    }
+}
