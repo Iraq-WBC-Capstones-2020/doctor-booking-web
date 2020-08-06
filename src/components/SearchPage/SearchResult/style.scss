@@ -14,15 +14,79 @@ color: #000000;
         width: 100%;
     }
 }
-
+.doctorCards{
+    margin-top: 103px;
+    background: #FFFFFF;
+box-shadow: 0px 8px 24px rgba(40, 41, 61, 0.08);
+border-radius: 12px;
+border: none;
+}
 .card-img-top{
     
     position: absolute;
 width: 72px;
 height: 64px;
 left: calc(50% - 72px/2 + 4.5px);
-top: -33px;
+top: -58px;
 border-radius: 50%;
 filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
 
+
+}
+.theButtons{
+    display: flex;
+    justify-content: space-between;
+    button{
+        height: 35px ;
+        width:91px ;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        /* identical to box height */
+
+    }
+    .theWhite{
+      
+
+        text-align: center;
+
+        color: #026FC2;
+        background-color: white;
+    }
+
+    .theBlue{
+        color: #FFFFFF;
+    }
+}
+
+.specilty{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 29px;
+    margin-top: 18px;
+
+    color: #5D646A;
+
+}
+
+.card-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #5D646A;
 }

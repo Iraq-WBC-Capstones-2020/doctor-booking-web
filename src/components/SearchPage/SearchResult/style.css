@@ -12,14 +12,85 @@
   width: 100%;
 }
 
+.doctorCards {
+  margin-top: 103px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 24px rgba(40, 41, 61, 0.08);
+          box-shadow: 0px 8px 24px rgba(40, 41, 61, 0.08);
+  border-radius: 12px;
+  border: none;
+}
+
 .card-img-top {
   position: absolute;
   width: 72px;
   height: 64px;
   left: calc(50% - 72px/2 + 4.5px);
-  top: -33px;
+  top: -58px;
   border-radius: 50%;
   -webkit-filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
+}
+
+.theButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.theButtons button {
+  height: 35px;
+  width: 91px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+}
+
+.theButtons .theWhite {
+  text-align: center;
+  color: #026FC2;
+  background-color: white;
+}
+
+.theButtons .theBlue {
+  color: #FFFFFF;
+}
+
+.specilty {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 29px;
+  margin-top: 18px;
+  color: #5D646A;
+}
+
+.card-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #5D646A;
 }
 /*# sourceMappingURL=style.css.map */
