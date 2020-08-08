@@ -19,7 +19,7 @@ function SearchResult() {
                 <Row>
                     <Col md={4}>
                     <Card className="doctorCards" style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={Avatar} />
+                    <Card.Img className="myImgCard" variant="top" src={Avatar} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <div className="specilty">
@@ -40,7 +40,7 @@ function SearchResult() {
                     </Col>
                     <Col md={4}>
                     <Card className="doctorCards" style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={Avatar} />
+                    <Card.Img className="myImgCard" variant="top" src={Avatar} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <div className="specilty">
@@ -61,7 +61,7 @@ function SearchResult() {
                     </Col>
                     <Col md={4}>
                     <Card className="doctorCards" style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={Avatar} />
+                    <Card.Img className="myImgCard" variant="top" src={Avatar} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <div className="specilty">
@@ -82,7 +82,7 @@ function SearchResult() {
                     </Col>
                     <Col md={4}>
                     <Card className="doctorCards" style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={Avatar} />
+                    <Card.Img className="myImgCard" variant="top" src={Avatar} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <div className="specilty">
@@ -103,7 +103,7 @@ function SearchResult() {
                     </Col>
                     <Col md={4}>
                     <Card className="doctorCards" style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={Avatar} />
+                    <Card.Img className="myImgCard" variant="top" src={Avatar} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <div className="specilty">
@@ -124,7 +124,7 @@ function SearchResult() {
                     </Col>
                     <Col md={4}>
                     <Card className="doctorCards" style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={Avatar} />
+                    <Card.Img className="myImgCard" variant="top" src={Avatar} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <div className="specilty">
