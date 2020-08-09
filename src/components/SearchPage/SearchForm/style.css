@@ -7,17 +7,12 @@
 }
 
 .searchHead h1 {
-  font-style: normal;
   font-weight: normal;
   font-size: 64px;
   line-height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
   color: #000000;
 }
 
@@ -35,10 +30,7 @@
 }
 
 .myButton {
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
   height: 51px;
   width: 179px;
   color: white;
