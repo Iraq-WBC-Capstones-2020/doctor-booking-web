@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Map, { Marker } from 'react-map-gl';
 import { Row, Col, Form } from 'react-bootstrap';
-
+import TimeTable from './TimeTable';
 const API =
   'pk.eyJ1IjoiaHVzc2VpbnRhbGFsIiwiYSI6ImNrY3M4dWxwbzFtZDIycnM2OHQ4dXM4cnIifQ.ofCZrIlVF_r4YpQDzSi13g';
 const provinces = [
@@ -27,7 +27,6 @@ const provinces = [
 ];
 function StepThree() {
   const [viewport, setViewport] = useState({
-    mapStyle:'mapbox://styles/mapbox/streets-v11',
     latitude: 36.1901,
     longitude: 43.993,
     height: '50vh',
@@ -35,18 +34,16 @@ function StepThree() {
     zoom: 10,
   });
   const [marker, setMarker] = useState([0, 0]);
-  function handleClick(e) {
-    console.log(e.lngLat);
+  function placeMarker(e) {
     setMarker(e.lngLat);
-    console.log(marker);
   }
   return (
-    <Row>
+    <Row className="mt-5">
       <Col md="6">
         <Form.Group controlId="exampleForm.ControlSelect1">
           <Form.Label>Province</Form.Label>
           <Form.Control as="select">
-            <option selected disabled>
+            <option defaultValue disabled>
               Select a province
             </option>
             {provinces.map((province) => {
@@ -73,16 +70,21 @@ function StepThree() {
           <Form.Control type="text" placeholder="e.g. next to eye center" />
         </Form.Group>
       </Col>
-      <Col xs="12">
+      <Col className="mt-5" xs="12">
+        <p>Zoom in and click on the location of your clinic</p>
         <Map
           {...viewport}
           mapboxApiAccessToken={API}
           onViewportChange={(viewport) => setViewport(viewport)}
-          onClick={handleClick}
+          onClick={placeMarker}
           mapStyle={'mapbox://styles/mapbox/streets-v11'}
         >
           <Marker longitude={marker[0]} latitude={marker[1]}></Marker>
         </Map>
+      </Col>
+      <Col xs={12} className="time-table">
+        <p>Switch on the working days and choose the working times</p>
+        <TimeTable className="w-100" />
       </Col>
     </Row>
   );
