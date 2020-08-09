@@ -15,7 +15,6 @@ function HomePage() {
       <AppSection />
       <VideoSection />
       <NewsLetter />
-      <SearchPage />
     </div>
   );
 }
