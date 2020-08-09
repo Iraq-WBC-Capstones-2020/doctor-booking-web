@@ -1,45 +1,43 @@
 @import '../variable';
-.searchForm{
-    margin-bottom: 148px;
+.searchForm {
+  margin-bottom: 148px;
 }
-.searchHead{
-    margin-bottom: 79.56px;
-    h1{
+.searchHead {
+  margin-bottom: 79.56px;
+  h1 {
     font-weight: normal;
     font-size: 64px;
     line-height: 75px;
     display: flex;
     color: #000000;
-    }
-    
+  }
 
-    img{
-        margin-left: 30px;
-    };
-
+  img {
+    margin-left: 30px;
+  }
 }
 
-.form-row{
-    input{
-        height: 51px;
-    }
-
-    button{
-        color: white;
-        background-color: $theBlue;
-    }
-}
-
-.myButton{
-    font-size: $pFont;
+.form-row {
+  input {
     height: 51px;
-    width: 179px;
+  }
+
+  button {
     color: white;
-    border: none;
-    border-radius: 5px;
-    background:$theBlue;
-    
-    svg{
-        margin-left: 5px;
-    }
+    background-color: $theBlue;
+  }
+}
+
+.myButton {
+  font-size: $pFont;
+  height: 51px;
+  width: 179px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background: $theBlue;
+
+  svg {
+    margin-left: 5px;
+  }
 }

@@ -1,72 +1,69 @@
-body{
-    font-family: Roboto, sans-serif;
+body {
+  font-family: Roboto, sans-serif;
 }
 
-.SearchResult{
-
-    h3{
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 0px;
-        color: #000000;
-    }
-
-    hr{
-        margin-top: 0px;
-        width: 100%;
-    }
-}
-.doctorCards{
-    margin-top: 103px;
-    width: 252px;
-    background: #FFFFFF;
-    box-shadow: 0px 8px 24px rgba(40, 41, 61, 0.08);
-    border-radius: 12px;
-    border: none;
-
-.card-title{
-    margin-top: 50px;
-        }
-}
-
-.myImgCard{
-    position: absolute;
-    width: 72px !important;
-    height: 64px !important;
-    left: calc(50% - 72px/2 + 4.5px);
-    top: -58px;
-    border-radius: 50%;
-    filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
-}
-
-.theButtons{
-    display: flex;
-    justify-content: space-between;
-
-    button{
-            height: 35px ;
-            width:91px ;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16px;
-        }
-
-    .theWhite{
-        color: #026FC2;
-        background-color: white;
-    }
-    
-    .theBlue{
-        color: #FFFFFF;
-    }
-}
-
-.specilty{
+.SearchResult {
+  h3 {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 29px;
-    margin-top: 18px;
-    color: #5D646A;
+    margin-bottom: 0px;
+    color: #000000;
+  }
 
+  hr {
+    margin-top: 0px;
+    width: 100%;
+  }
+}
+.doctorCards {
+  margin-top: 103px;
+  width: 252px;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(40, 41, 61, 0.08);
+  border-radius: 12px;
+  border: none;
+
+  .card-title {
+    margin-top: 50px;
+  }
 }
 
+.myImgCard {
+  position: absolute;
+  width: 72px !important;
+  height: 64px !important;
+  left: calc(50% - 72px / 2 + 4.5px);
+  top: -58px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
+}
+
+.theButtons {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    height: 35px;
+    width: 91px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .theWhite {
+    color: #026fc2;
+    background-color: white;
+  }
+
+  .theBlue {
+    color: #ffffff;
+  }
+}
+
+.specilty {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 29px;
+  margin-top: 18px;
+  color: #5d646a;
+}
