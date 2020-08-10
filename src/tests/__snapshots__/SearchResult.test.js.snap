@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="SearchResult"
+  className="searchResult"
 >
   <div
     className="container"
@@ -45,12 +45,12 @@ exports[`renders correctly 1`] = `
             <div
               className="card-title h5"
             >
-              Card Title
+              Salah Mohammed
             </div>
             <div
               className="specilty"
             >
-              specilty
+              Emergency medicine
             </div>
             <p
               className="card-text"
@@ -99,12 +99,12 @@ exports[`renders correctly 1`] = `
             <div
               className="card-title h5"
             >
-              Card Title
+              Salah Mohammed
             </div>
             <div
               className="specilty"
             >
-              specilty
+              child Doc
             </div>
             <p
               className="card-text"
@@ -153,12 +153,12 @@ exports[`renders correctly 1`] = `
             <div
               className="card-title h5"
             >
-              Card Title
+              Sabah Mohammed
             </div>
             <div
               className="specilty"
             >
-              specilty
+              Family medicine
             </div>
             <p
               className="card-text"
@@ -207,12 +207,12 @@ exports[`renders correctly 1`] = `
             <div
               className="card-title h5"
             >
-              Card Title
+              Salah Ahmed
             </div>
             <div
               className="specilty"
             >
-              specilty
+              child Doc
             </div>
             <p
               className="card-text"
@@ -261,12 +261,12 @@ exports[`renders correctly 1`] = `
             <div
               className="card-title h5"
             >
-              Card Title
+              Salih Mohammed
             </div>
             <div
               className="specilty"
             >
-              specilty
+              Medical genetics
             </div>
             <p
               className="card-text"
@@ -315,12 +315,12 @@ exports[`renders correctly 1`] = `
             <div
               className="card-title h5"
             >
-              Card Title
+              Salah Naji
             </div>
             <div
               className="specilty"
             >
-              specilty
+              child Doc
             </div>
             <p
               className="card-text"
