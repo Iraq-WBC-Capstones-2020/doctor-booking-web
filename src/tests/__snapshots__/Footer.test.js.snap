@@ -39,7 +39,7 @@ exports[`footer renders correctly 1`] = `
           </li>
           <li>
             <a
-              href="/AboutPage"
+              href="/about"
               onClick={[Function]}
             >
               About
@@ -47,7 +47,7 @@ exports[`footer renders correctly 1`] = `
           </li>
           <li>
             <a
-              href="/FAQPage"
+              href="/faq"
               onClick={[Function]}
             >
               FAQ
@@ -66,7 +66,7 @@ exports[`footer renders correctly 1`] = `
         >
           <li>
             <a
-              href="/SearchPage"
+              href="/search"
               onClick={[Function]}
             >
               Book an appointment
@@ -74,7 +74,7 @@ exports[`footer renders correctly 1`] = `
           </li>
           <li>
             <a
-              href="/DoctorRegisterPage"
+              href="/register"
               onClick={[Function]}
             >
               Clinic registration

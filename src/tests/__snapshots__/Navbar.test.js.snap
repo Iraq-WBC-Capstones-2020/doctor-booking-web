@@ -41,28 +41,28 @@ exports[`navbar renders correctly 1`] = `
         </a>
         <a
           className="nav-link"
-          href="/SearchPage"
+          href="/search"
           onClick={[Function]}
         >
           Search
         </a>
         <a
           className="nav-link"
-          href="/AboutPage"
+          href="/about"
           onClick={[Function]}
         >
           About
         </a>
         <a
           className="nav-link"
-          href="/FAQPage"
+          href="/faq"
           onClick={[Function]}
         >
           FAQ
         </a>
         <a
           className="nav-link"
-          href="/SignInPage"
+          href="/signin"
           onClick={[Function]}
         >
           Sign in
