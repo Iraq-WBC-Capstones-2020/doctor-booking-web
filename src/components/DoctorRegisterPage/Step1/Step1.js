@@ -8,8 +8,8 @@ function Step1() {
         <Container>
 
         <Form className="personal">
-            <Row>
-                <Col lg={6}>
+            <Row className="mt-5">
+                <Col  lg={6}>
                 <Form.Group>
                 <Form.Label name="Full name">
                     Full name
@@ -28,6 +28,7 @@ function Step1() {
         
         <div className="myCheck mt-2">
         <Form.Check
+            
           type="radio"
           label="female"
           name="formHorizontalRadios"
@@ -45,8 +46,8 @@ function Step1() {
 
   </fieldset>
   </Col>
-  </Row>    
-  <Row>
+  </Row >    
+  <Row className="mt-5">
                 <Col lg={6}>
                 <Form.Label name="E-mail">
                     Email
@@ -61,7 +62,7 @@ function Step1() {
                 </Col>
                 </Row>
 
-            <Row>       
+            <Row className="mt-5">       
                 <Col lg={6}>
                     <Form.Label>Password
                         <Form.Control type="password" placeholder="Enter your password" />
@@ -74,7 +75,7 @@ function Step1() {
                 </Col>
             </Row> 
             
-                <Row>
+                <Row className="mt-5">
                 <Col lg={12}>
                         <Form.File
                         className="position-relative"
