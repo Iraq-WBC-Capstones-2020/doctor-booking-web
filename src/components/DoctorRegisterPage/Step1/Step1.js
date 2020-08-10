@@ -8,7 +8,7 @@ function Step1() {
         <Container>
 
         <Form className="personal">
-            <Row className="mt-5">
+            <Row className="formRow">
                 <Col  lg={6}>
                 <Form.Group>
                 <Form.Label name="Full name">
@@ -47,22 +47,22 @@ function Step1() {
   </fieldset>
   </Col>
   </Row >    
-  <Row className="mt-5">
+  <Row className="formRow">
                 <Col lg={6}>
                 <Form.Label name="E-mail">
                     Email
-                    <Form.Control placeholder="Enter  your E-mail" />
+                    <Form.Control type="email" placeholder="Enter  your E-mail" />
                 </Form.Label>
                 </Col>
                 <Col lg={6}>
                 <Form.Label name="number">
                     Phone number
-                    <Form.Control placeholder="Enter your phone number" />
+                    <Form.Control type="tel" placeholder="ex: 0770-145-6788" />
                 </Form.Label>
                 </Col>
                 </Row>
 
-            <Row className="mt-5">       
+            <Row className="formRow">       
                 <Col lg={6}>
                     <Form.Label>Password
                         <Form.Control type="password" placeholder="Enter your password" />
@@ -75,7 +75,7 @@ function Step1() {
                 </Col>
             </Row> 
             
-                <Row className="mt-5">
+                <Row className="formRow">
                 <Col lg={12}>
                     <label name="photoUplod">personal photo</label>
                 <Button id="photoUplod" as="input" type="button" value="Input" />{' '}
