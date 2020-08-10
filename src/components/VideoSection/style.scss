@@ -1,0 +1,27 @@
+@import './__variables.scss';
+.videoSection {
+  margin-top: 99px;
+  margin-bottom: 99px;
+
+  h1 {
+    margin-top: 109px;
+    width: 350px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $hFontSize;
+    line-height: 46px;
+    color: $pColor;
+  }
+}
+
+body {
+  background-color: #fafbfd;
+  font-family: Roboto;
+}
+
+.videoFrame {
+  img {
+    width: 450.43px;
+    height: 313px;
+  }
+}

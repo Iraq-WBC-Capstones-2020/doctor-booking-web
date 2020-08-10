@@ -1,15 +1,15 @@
 import React from 'react';
 import { Row, Col, Button, Container } from 'react-bootstrap';
-import intro from './intro.svg';
-import penIntro from './penIntro.svg';
-import './IntroSection.css';
+import penIntro from './img/penIntro.svg';
+import intro from './img/intro.svg';
+import './IntroSection.scss';
 
 function IntroSection() {
   return (
     <div className="introSection">
       <img src={penIntro} className="penIntro" alt="" />
       <Container>
-        <Row className="border my-5">
+        <Row className=" my-5">
           <Col lg="6" className=" d-flex align-items-center">
             <div>
               <h1 className="my-3">
