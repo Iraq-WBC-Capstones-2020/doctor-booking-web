@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Step 1 renders correctly 1`] = `
+<div
+  className="container"
+>
+  <form
+    className="personal"
+  >
+    <div
+      className="formRow row"
+    >
+      <div
+        className="col-lg-6"
+      >
+        <div
+          className="form-group"
+        >
+          <label
+            className="form-label"
+            name="Full name"
+          >
+            Full name
+            <input
+              className="form-control"
+              placeholder="Full name"
+            />
+          </label>
+        </div>
+      </div>
+      <div
+        className="col-lg-6"
+      >
+        <fieldset>
+          <div
+            className="form-group"
+          >
+            <label
+              className="form-label"
+              name="formHorizontalRadios"
+            >
+              Gender
+              <div
+                className="myCheck mt-2"
+              >
+                <div
+                  className="form-check"
+                >
+                  <input
+                    className="form-check-input"
+                    disabled={false}
+                    id="formHorizontalRadios1"
+                    name="formHorizontalRadios"
+                    type="radio"
+                  />
+                  <label
+                    className="form-check-label"
+                    htmlFor="formHorizontalRadios1"
+                    title=""
+                  >
+                    female
+                  </label>
+                </div>
+                <div
+                  className="form-check"
+                >
+                  <input
+                    className="form-check-input"
+                    disabled={false}
+                    id="formHorizontalRadios2"
+                    name="formHorizontalRadios"
+                    type="radio"
+                  />
+                  <label
+                    className="form-check-label"
+                    htmlFor="formHorizontalRadios2"
+                    title=""
+                  >
+                    male
+                  </label>
+                </div>
+              </div>
+            </label>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    <div
+      className="formRow row"
+    >
+      <div
+        className="col-lg-6"
+      >
+        <label
+          className="form-label"
+          name="E-mail"
+        >
+          Email
+          <input
+            className="form-control"
+            placeholder="Enter  your E-mail"
+            type="email"
+          />
+        </label>
+      </div>
+      <div
+        className="col-lg-6"
+      >
+        <label
+          className="form-label"
+          name="number"
+        >
+          Phone number
+          <input
+            className="form-control"
+            placeholder="ex: 0770-145-6788"
+            type="tel"
+          />
+        </label>
+      </div>
+    </div>
+    <div
+      className="formRow row"
+    >
+      <div
+        className="col-lg-6"
+      >
+        <label
+          className="form-label"
+        >
+          Password
+          <input
+            className="form-control"
+            placeholder="Enter your password"
+            type="password"
+          />
+        </label>
+      </div>
+      <div
+        className="col-lg-6"
+      >
+        <label
+          className="form-label"
+        >
+          Confirm password
+          <input
+            className="form-control"
+            placeholder="Enter your password again"
+            type="password"
+          />
+        </label>
+      </div>
+    </div>
+    <div
+      className="formRow row"
+    >
+      <div
+        className="col-lg-12"
+      >
+        <label
+          name="photoUplod"
+        >
+          personal photo
+        </label>
+        <input
+          className="btn btn-primary"
+          disabled={false}
+          id="photoUplod"
+          src={true}
+          type="button"
+          value="uplode"
+        />
+         
+      </div>
+    </div>
+  </form>
+</div>
+`;
