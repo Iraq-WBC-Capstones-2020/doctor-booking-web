@@ -1,0 +1,25 @@
+.side-nav-container {
+  background-color: #ebebeb;
+  color: black;
+  width: 15%;
+  height: 100vh;
+}
+
+.main-content {
+  width: 60%;
+  background-color: white;
+  height: 100vh;
+}
+
+.calendar {
+  width: 25%;
+  background-color: #026fc2;
+  height: 100vh;
+}
+
+#line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/*# sourceMappingURL=Dashboard.css.map */
