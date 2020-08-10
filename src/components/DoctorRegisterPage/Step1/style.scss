@@ -1,0 +1,47 @@
+
+.formRow{
+    margin-bottom: 50px !important;
+}
+.personal{
+
+    label{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #000000;
+    }
+
+    .form-control{
+        margin-top: 5px;
+        height: 48px;
+        width: 425px;
+        border: 2px solid #EAEAEA;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+
+    .myCheck{
+
+        .form-check{
+            display: inline-flex !important;
+            margin-right: 20px;
+
+            label{
+                margin-top: 27px !important;
+                display: contents;
+                font-size: 14px !important;
+                font-weight: normal;
+            }
+        }   
+    }  
+}
+
+
+#photoUplod{
+    margin-left: 35px;
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
