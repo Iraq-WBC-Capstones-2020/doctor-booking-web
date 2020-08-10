@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.css'
+
 import { Form, Row, Col, Button, Container } from 'react-bootstrap';
 
 function Step1() {
@@ -78,7 +79,7 @@ function Step1() {
                 <Row className="formRow">
                 <Col lg={12}>
                     <label name="photoUplod">personal photo</label>
-                <Button id="photoUplod" as="input" type="button" value="Input" />{' '}
+                <Button src  id="photoUplod"  as="input" type="button" value="uplode" />{' '}
 
                     </Col>
                     </Row>
