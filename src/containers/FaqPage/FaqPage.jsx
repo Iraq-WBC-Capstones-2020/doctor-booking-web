@@ -1,12 +1,12 @@
 import React from 'react';
 import FaqIntro from '../../components/FaqIntro/FaqIntro';
-import Qustion from '../../components/Questions/Qustions';
+import Questions from '../../components/Questions/Questions';
 
 function FaqPage() {
   return (
     <div>
       <FaqIntro />
-      <Qustion />
+      <Questions />
     </div>
   );
 }
