@@ -77,15 +77,9 @@ function Step1() {
             
                 <Row className="mt-5">
                 <Col lg={12}>
-                        <Form.File
-                        className="position-relative"
-                        required
-                        name="file"
-                        label="Personal photo"
-                        
-                        id="validationFormik107"
-                        feedbackTooltip
-                        />
+                    <label name="photoUplod">personal photo</label>
+                <Button id="photoUplod" as="input" type="button" value="Input" />{' '}
+
                     </Col>
                     </Row>
                
