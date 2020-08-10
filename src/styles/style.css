@@ -170,4 +170,22 @@ footer a:hover {
 .social-media ul {
   width: 120px;
 }
+
+.time-input {
+  border: 1px solid #c3c3c3;
+  height: 36px;
+  line-height: 36px;
+  width: 50%;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.time-table {
+  margin-top: 7rem;
+}
+
+.day-name p {
+  color: black;
+  font-size: large;
+}
 /*# sourceMappingURL=style.css.map */
