@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+
 function Footer() {
   return (
     <footer className="text-white">
@@ -18,10 +19,10 @@ function Footer() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/AboutPage">About</Link>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/FAQPage">FAQ</Link>
+                <Link to="/faq">FAQ</Link>
               </li>
             </ul>
           </Col>
@@ -31,10 +32,10 @@ function Footer() {
 
             <ul className="list-unstyled">
               <li>
-                <Link to="/SearchPage">Book an appointment</Link>
+                <Link to="/search">Book an appointment</Link>
               </li>
               <li>
-                <Link to="/DoctorRegisterPage">Clinic registration</Link>
+                <Link to="/register">Clinic registration</Link>
               </li>
             </ul>
           </Col>

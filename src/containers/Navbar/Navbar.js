@@ -18,16 +18,16 @@ function nav() {
             <Link className="nav-link" to="/">
               Home
             </Link>
-            <Link className="nav-link" to="/SearchPage">
+            <Link className="nav-link" to="/search">
               Search
             </Link>
-            <Link className="nav-link" to="/AboutPage">
+            <Link className="nav-link" to="/about">
               About
             </Link>
-            <Link className="nav-link" to="/FAQPage">
+            <Link className="nav-link" to="/faq">
               FAQ
             </Link>
-            <Link className="nav-link" to="/SignInPage">
+            <Link className="nav-link" to="/signin">
               Sign in
             </Link>
           </Nav>
