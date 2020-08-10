@@ -166,7 +166,6 @@ exports[`Step 1 renders correctly 1`] = `
           className="btn btn-primary"
           disabled={false}
           id="photoUplod"
-          src={true}
           type="button"
           value="uplode"
         />

@@ -77,7 +77,6 @@ function Step1() {
           <Col lg={12}>
             <label name="photoUplod">personal photo</label>
             <Button
-              src
               id="photoUplod"
               as="input"
               type="button"
