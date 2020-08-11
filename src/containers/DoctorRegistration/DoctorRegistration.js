@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Stepper, Step } from 'react-form-stepper';
 import { Container, Button } from 'react-bootstrap';
 import StepThree from '../../components/DoctorRegisterPage/StepThree/StepThree';
-import StepOne from '../../components/DoctorRegisterPage/Step1/StepOne';
+import StepOne from '../../components/DoctorRegisterPage/StepOne/StepOne';
 
 function DoctorRegistration() {
   const [activeStep, setActiveStep] = useState(0);
