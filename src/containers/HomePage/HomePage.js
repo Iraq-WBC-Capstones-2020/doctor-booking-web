@@ -5,7 +5,6 @@ import VideoSection from '../../components/VideoSection/VideoSection';
 import GetInTouch from '../../components/GetInTouch/GetInTouch';
 import AppSection from '../../components/AppSection/AppSection';
 import NewsLetter from '../../components/NewsLetter/NewsLetter';
-
 function HomePage() {
   return (
     <div>
