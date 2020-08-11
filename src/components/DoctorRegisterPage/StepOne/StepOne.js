@@ -12,7 +12,11 @@ function StepOne() {
             <Form.Group>
               <Form.Label for="fullName">
                 Full Name
-                <Form.Control name="fullName" id="fullName" placeholder="Full name" />
+                <Form.Control
+                  name="fullName"
+                  id="fullName"
+                  placeholder="Full name"
+                />
               </Form.Label>
             </Form.Group>
           </Col>
@@ -44,13 +48,23 @@ function StepOne() {
           <Col lg={6}>
             <Form.Label for="E-mail">
               Email
-              <Form.Control name="E-mail" id="E-mail" type="email" placeholder="Enter  your E-mail" />
+              <Form.Control
+                name="E-mail"
+                id="E-mail"
+                type="email"
+                placeholder="Enter  your E-mail"
+              />
             </Form.Label>
           </Col>
           <Col lg={6}>
             <Form.Label for="number">
               Phone Number
-              <Form.Control name="number" id="number" type="tel" placeholder="ex: 0770-145-6788" />
+              <Form.Control
+                name="number"
+                id="number"
+                type="tel"
+                placeholder="ex: 0770-145-6788"
+              />
             </Form.Label>
           </Col>
         </Row>
@@ -59,7 +73,12 @@ function StepOne() {
           <Col lg={6}>
             <Form.Label for="thePassword">
               Password
-              <Form.Control name="thePassword" id="thePassword" type="password" placeholder="Enter your password" />
+              <Form.Control
+                name="thePassword"
+                id="thePassword"
+                type="password"
+                placeholder="Enter your password"
+              />
             </Form.Label>
           </Col>
           <Col lg={6}>

@@ -18,11 +18,13 @@ exports[`Step 1 renders correctly 1`] = `
         >
           <label
             className="form-label"
-            name="Full name"
+            for="fullName"
           >
-            Full name
+            Full Name
             <input
               className="form-control"
+              id="fullName"
+              name="fullName"
               placeholder="Full name"
             />
           </label>
@@ -93,11 +95,13 @@ exports[`Step 1 renders correctly 1`] = `
       >
         <label
           className="form-label"
-          name="E-mail"
+          for="E-mail"
         >
           Email
           <input
             className="form-control"
+            id="E-mail"
+            name="E-mail"
             placeholder="Enter  your E-mail"
             type="email"
           />
@@ -108,11 +112,13 @@ exports[`Step 1 renders correctly 1`] = `
       >
         <label
           className="form-label"
-          name="number"
+          for="number"
         >
-          Phone number
+          Phone Number
           <input
             className="form-control"
+            id="number"
+            name="number"
             placeholder="ex: 0770-145-6788"
             type="tel"
           />
@@ -127,10 +133,13 @@ exports[`Step 1 renders correctly 1`] = `
       >
         <label
           className="form-label"
+          for="thePassword"
         >
           Password
           <input
             className="form-control"
+            id="thePassword"
+            name="thePassword"
             placeholder="Enter your password"
             type="password"
           />
@@ -141,10 +150,13 @@ exports[`Step 1 renders correctly 1`] = `
       >
         <label
           className="form-label"
+          for="confirmPassword"
         >
-          Confirm password
+          Confirm Password
           <input
             className="form-control"
+            id="confirmPassword"
+            name="confirmPassword"
             placeholder="Enter your password again"
             type="password"
           />
@@ -158,14 +170,15 @@ exports[`Step 1 renders correctly 1`] = `
         className="col-lg-12"
       >
         <label
-          name="photoUplod"
+          for="photoUplod"
         >
-          personal photo
+          Personal Photo
         </label>
         <input
           className="btn btn-primary"
           disabled={false}
           id="photoUplod"
+          name="photoUplod"
           type="button"
           value="uplode"
         />
