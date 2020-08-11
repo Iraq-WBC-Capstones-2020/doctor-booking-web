@@ -1,7 +1,6 @@
 import React from 'react';
 import { Row, Nav, Container } from 'react-bootstrap';
-import { ProSidebar, Menu, MenuItem } from 'react-pro-sidebar';
-import 'react-pro-sidebar/dist/css/styles.css';
+import AppointmentCard from '../AppointmentCard/AppointmentCard';
 
 function DashboardSection() {
   return (
@@ -22,7 +21,10 @@ function DashboardSection() {
             <h2 className="mb-5">18 March 2020</h2>
             <div id="line"></div>
           </div>
-          <div className="appointments"></div>
+          <div className="appointments mt-5">
+            <AppointmentCard />
+            <AppointmentCard />
+          </div>
         </Container>
         <div className="calendar"></div>
       </Row>
