@@ -9,6 +9,7 @@ import SignIn from './containers/SignInPage/SignIn';
 import BookingPage from './containers/BookingPage/BookingPage';
 import DoctorRegister from './containers/DoctorRegistration/DoctorRegistration';
 import HomePage from './containers/HomePage/HomePage';
+import SearchPage from './containers/SearchPage/SearchPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/signin" component={SignIn} />
         <Route path="/booking" component={BookingPage} />
         <Route path="/register" component={DoctorRegister} />
+        <Route path="/search" component={SearchPage} />
       </Switch>
       <Footer />
     </div>
