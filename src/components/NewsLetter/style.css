@@ -11,8 +11,8 @@ body {
   background-color: #d8d8d8;
   padding-top: 57px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 48px;
 }
 

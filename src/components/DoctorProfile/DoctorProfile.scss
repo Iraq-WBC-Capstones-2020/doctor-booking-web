@@ -1,0 +1,234 @@
+@import '../../styles/variables.scss';
+@mixin fontStyle ($weight) {
+    font-family: Roboto;
+    font-style:  normal;
+    font-weight: $weight;
+
+}
+*{
+    margin: 0px 0px;;
+}
+.Doctor-profile-header {
+background-color : $darkerBlue;
+height: 327px;
+position: relative;
+bottom: 13.49%;
+}
+.Doctor-profile-Picture{
+position: absolute;
+left: 13.43%;
+right: 63.34%;
+top: 26.72%;
+bottom: 0%;
+
+/* background: url(DoctorProfilePic.svg); */
+
+filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.08));
+border-radius: 10px;
+
+}/* Image */
+
+.Doctor-profile-Name{
+/* Doctor Name */
+
+position: absolute;
+left: 38.6%;
+top: 64.41%;
+bottom: 35.45%;
+
+@include fontStyle(normal);
+
+font-size: 36px;
+line-height: 24px;
+
+/* or 67% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+}
+.Doctor-profile-Btn {
+/* Rectangle 67 */
+
+position: absolute;
+left: 38.6%;
+top: 74.41%;
+bottom: 11.69%;
+min-width: 288px;
+
+//background: $primaryColor;
+box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+border-radius: 5px;
+
+}
+
+.Doctor-profile-Btn-text{
+/* Book an appointment */
+
+@include  fontStyle(500);
+
+font-size: 24px;
+line-height: 45px;
+
+/* identical to box height, or 100% */
+
+text-align: center;
+color: #FFFFFF;
+}
+.Doctor-profile-body {
+/* Frame 17 */
+/* height: 1000px; */
+margin-top: 55px;
+background-color: white;
+
+}
+.Medical-specialty {
+/* height: 600px; */
+margin-top: 55px;
+/* background-color: ; */
+}
+.Card-description{
+/* height: 600px; */
+margin-top: 55px;
+/* background-color: blue; */
+}
+/* Medical specialty */
+.Medical-specialty-title{
+
+@include  fontStyle(300);
+
+
+font-size: 18px;
+line-height: 21px;
+text-align: left;
+margin-left: 90px;
+
+color: #000000;
+}
+.Medical-specialty-Timetable-title{
+/* Timetable */
+
+@include  fontStyle(300);
+
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+text-align: left;
+margin-top:  70px;
+margin-left: 90px;
+color: #000000;
+
+}
+.table td, .table th {
+padding: 0px ;
+}
+
+.table-day {
+ /* Sunday Monday Tusday Wednesday thursday friday saturday */
+color: #676E73 !important;
+font-weight: normal;
+}
+.table-time {
+/* 01:00 - 4:00 11:30 - 2:00 11:30 - 2:00 11:30 - 2:00 11:30 - 2:00 Close Close */
+color: #000000;
+font-weight: 500;
+}
+.Medical-specialty-Timetable{
+
+margin-left: 90px;
+
+@include  fontStyle(normal);
+
+font-size: 16px;
+line-height: 28px;
+}
+.Card-description-card-title{
+/* Expreince */
+
+@include  fontStyle(500);
+
+font-size: 36px;
+line-height: 24px;
+/* identical to box height, or 67% */
+text-align: left;
+padding-bottom: 15px;
+
+color: #000000;
+
+}
+
+.Card-description-card-body{
+/* "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." */
+@include  fontStyle(300);
+
+font-size: 14px;
+line-height: 24px;
+
+color: #000000;
+
+padding-bottom: 20px;
+
+}
+
+.Card-description{
+/* Frame 19 */
+
+background: #FFFFFF;
+box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+
+
+}
+
+.Doctor-profile-address-add{
+/* Adress */
+
+@include  fontStyle(normal);
+
+font-size: 36px;
+line-height: 42px;
+text-align: left;
+padding-bottom: 10px;
+color: #000000;
+
+
+}
+
+.Doctor-profile-address-title{
+/* city ,country */
+
+font-style: normal;
+font-weight: 200;
+font-size: 18px;
+line-height: 24px;
+/* or 133% */
+text-align: left;
+color: #000000;
+padding-bottom: 10px;
+
+}
+
+
+/* map style */
+.map-container{
+margin-top: 25px;
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+
+}
+.Doctor-profile-address-btn{
+margin-top: 15px;
+margin-bottom: 15px;
+}
