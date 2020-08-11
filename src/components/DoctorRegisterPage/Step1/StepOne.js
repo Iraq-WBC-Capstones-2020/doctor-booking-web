@@ -3,16 +3,16 @@ import './style.css';
 
 import { Form, Row, Col, Button, Container } from 'react-bootstrap';
 
-function Step1() {
+function StepOne() {
   return (
     <Container>
       <Form className="personal">
         <Row className="formRow">
           <Col lg={6}>
             <Form.Group>
-              <Form.Label name="Full name">
-                Full name
-                <Form.Control placeholder="Full name" />
+              <Form.Label for="fullName">
+                Full Name
+                <Form.Control name="fullName" id="fullName" placeholder="Full name" />
               </Form.Label>
             </Form.Group>
           </Col>
@@ -42,30 +42,32 @@ function Step1() {
         </Row>
         <Row className="formRow">
           <Col lg={6}>
-            <Form.Label name="E-mail">
+            <Form.Label for="E-mail">
               Email
-              <Form.Control type="email" placeholder="Enter  your E-mail" />
+              <Form.Control name="E-mail" id="E-mail" type="email" placeholder="Enter  your E-mail" />
             </Form.Label>
           </Col>
           <Col lg={6}>
-            <Form.Label name="number">
-              Phone number
-              <Form.Control type="tel" placeholder="ex: 0770-145-6788" />
+            <Form.Label for="number">
+              Phone Number
+              <Form.Control name="number" id="number" type="tel" placeholder="ex: 0770-145-6788" />
             </Form.Label>
           </Col>
         </Row>
 
         <Row className="formRow">
           <Col lg={6}>
-            <Form.Label>
+            <Form.Label for="thePassword">
               Password
-              <Form.Control type="password" placeholder="Enter your password" />
+              <Form.Control name="thePassword" id="thePassword" type="password" placeholder="Enter your password" />
             </Form.Label>
           </Col>
           <Col lg={6}>
-            <Form.Label>
-              Confirm password
+            <Form.Label for="confirmPassword">
+              Confirm Password
               <Form.Control
+                id="confirmPassword"
+                name="confirmPassword"
                 type="password"
                 placeholder="Enter your password again"
               />
@@ -75,9 +77,10 @@ function Step1() {
 
         <Row className="formRow">
           <Col lg={12}>
-            <label name="photoUplod">personal photo</label>
+            <label for="photoUplod">Personal Photo</label>
             <Button
               id="photoUplod"
+              name="photoUplod"
               as="input"
               type="button"
               value="uplode"
@@ -89,4 +92,4 @@ function Step1() {
   );
 }
 
-export default Step1;
+export default StepOne;

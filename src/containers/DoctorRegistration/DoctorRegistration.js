@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Stepper, Step } from 'react-form-stepper';
 import { Container, Button } from 'react-bootstrap';
-import Step1 from '../../components/DoctorRegisterPage/Step1/Step1';
 import StepThree from '../../components/DoctorRegisterPage/StepThree/StepThree';
+import StepOne from '../../components/DoctorRegisterPage/Step1/StepOne';
 
 function DoctorRegistration() {
   const [activeStep, setActiveStep] = useState(0);
@@ -29,7 +29,7 @@ function DoctorRegistration() {
       </Stepper>
       {activeStep === 0 ? (
         <h1>
-          <Step1 />
+          <StepOne />
         </h1>
       ) : (
         ''
