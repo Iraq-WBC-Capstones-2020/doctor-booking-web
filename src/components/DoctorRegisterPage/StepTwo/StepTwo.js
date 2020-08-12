@@ -28,9 +28,9 @@ return(
         <Row>
             <Col lg={12}>
         
-  <Form.Group controlId="exampleForm.SelectCustom">
+  <Form.Group class="stepTwoFilds" controlId="exampleForm.SelectCustom">
     <Form.Label>Speciality</Form.Label>
-    <Form.Control value="Speciality" as="select" custom>
+    <Form.Control as="select" custom>
     {specilty.map(spec =>
       <option>{spec}</option>
      
@@ -42,16 +42,16 @@ return(
         </Row>
         <Row>
         <Col lg={6}>
-            <Form.Group>
+            <Form.Group class="stepTwoFilds">
     <label for="exampleFormControlTextarea1">Education</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea class="textArea form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </Form.Group>
                    
             </Col>
             <Col lg={6}>
-            <Form.Group>
+            <Form.Group class="stepTwoFilds">
     <label for="exampleFormControlTextarea1">Expeience</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea class="textArea form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </Form.Group>
                    
             </Col>
