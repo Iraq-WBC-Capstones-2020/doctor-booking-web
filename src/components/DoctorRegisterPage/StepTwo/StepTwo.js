@@ -33,7 +33,7 @@ function StepTwo() {
               <Form.Label>Speciality</Form.Label>
               <Form.Control className="theSelect" as="select" custom>
                 {specilty.map((spec) => (
-                  <option>{spec}</option>
+                  <option key={spec.id}>{spec}</option>
                 ))}
               </Form.Control>
             </Form.Group>
@@ -54,7 +54,7 @@ function StepTwo() {
             <Form.Group className="stepTwoFilds">
               <label for="exampleFormControlTextarea1">Expeience</label>
               <textarea
-                class="textArea form-control"
+                className="textArea form-control"
                 id="exampleFormControlTextarea1"
                 rows="3"
               ></textarea>
