@@ -196,6 +196,10 @@ footer a:hover {
   height: 100vh;
 }
 
+.side-nav-container a {
+  color: black;
+}
+
 .main-content {
   width: 60%;
   background-color: white;
