@@ -18,11 +18,11 @@ function AppointmentCard() {
         onClick={handleShow}
       >
         <div className="d-flex align-items-center pt-3 pl-3">
-          <img src={clockImg} />
+          <img src={clockImg} alt="clock icon" />
           <p>15 March 2018 - 5:00 - 6:00 pm</p>
         </div>
         <div className="d-flex align-items-center pt-3 pl-3">
-          <img src={personImg} />
+          <img src={personImg} alt="profile icon" />
           <p>John Doe Jabbar</p>
         </div>
       </div>
@@ -33,19 +33,19 @@ function AppointmentCard() {
         </Modal.Header>
         <Modal.Body className="mb-4 d-flex flex-column">
           <div className="d-flex align-items-center mt-3 ml-4">
-            <img src={clockImg} />
+            <img src={clockImg} alt="clock icon" />
             <p>15 March 2018 - 5:00 - 6:00 pm</p>
           </div>
           <div className="d-flex align-items-center mt-4 ml-4">
-            <img src={personImg} />
+            <img src={personImg} alt="profile icon" />
             <p>John Doe Jabbar</p>
           </div>
           <div className="d-flex align-items-center mt-4 ml-4">
-            <img src={phoneImg} />
+            <img src={phoneImg} alt="phone icon" />
             <p>+9647701234567</p>
           </div>
           <div className="d-flex align-items-center mt-4 ml-4">
-            <img src={emailImg} />
+            <img src={emailImg} alt="e-mail icon" />
             <p>someone@somewhere.com</p>
           </div>
         </Modal.Body>
