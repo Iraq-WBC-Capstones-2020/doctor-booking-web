@@ -6,7 +6,7 @@
   color: black;
   width: 15%;
   height: 100vh;
-  a{
+  a {
     color: black;
   }
 }
@@ -47,10 +47,10 @@
       width: 100%;
       margin-bottom: 2rem;
       margin-top: 2rem;
-      .flatpickr-next-month{
+      .flatpickr-next-month {
         cursor: pointer;
       }
-      .flatpickr-prev-month{
+      .flatpickr-prev-month {
         cursor: pointer;
       }
       svg {
@@ -79,7 +79,7 @@
       .nextMonthDay {
         color: #959595;
       }
-      .selected{
+      .selected {
         background-color: white;
         color: $primaryColor;
         border-radius: 50px;
