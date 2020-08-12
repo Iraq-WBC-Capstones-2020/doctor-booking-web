@@ -1,21 +1,21 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import AboutSection from '../components/AboutSection/AboutSection';
+import Navbar from '../containers/Navbar/Navbar';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
-test('About section renders', () => {
+test('navbar is rendering ', () => {
   render(
     <MemoryRouter>
-      <AboutSection />
+      <Navbar />
     </MemoryRouter>
   );
 });
 
-test('About section renders correctly', () => {
+test('navbar renders correctly', () => {
   const tree = renderer
     .create(
       <MemoryRouter>
-        <AboutSection />
+        <Navbar />
       </MemoryRouter>
     )
     .toJSON();

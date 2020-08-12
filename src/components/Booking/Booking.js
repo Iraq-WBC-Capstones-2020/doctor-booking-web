@@ -6,7 +6,7 @@ import booking from './Booking.svg';
 function Booking() {
   return (
     <div className="container booking my-5">
-      <h1 className="text-center">Set up and appoinment </h1>
+      <h1 className="text-center">Set up an appointment</h1>
       <div className="row my-5 align-items-center">
         <div className="col-md-10 col-lg-6 mx-4 mx-sm-0">
           <Form>
@@ -15,7 +15,7 @@ function Booking() {
               <Form.Control
                 type="text"
                 id="name"
-                placeholder="enter your name"
+                placeholder="Enter your name"
               />
             </Form.Group>
 
@@ -49,7 +49,7 @@ function Booking() {
               <Form.Control
                 type="number"
                 id="age"
-                placeholder="enter your age"
+                placeholder="Enter your age"
               />
             </Form.Group>
 
@@ -58,7 +58,7 @@ function Booking() {
               <Form.Control
                 type="number"
                 id="phoneNumber"
-                placeholder="enter your phone number"
+                placeholder="Enter your phone number"
               />
             </Form.Group>
 
@@ -67,7 +67,7 @@ function Booking() {
               <Form.Control
                 type="email"
                 id="email"
-                placeholder="enter your  email address"
+                placeholder="Enter your  email address"
               />
             </Form.Group>
 
