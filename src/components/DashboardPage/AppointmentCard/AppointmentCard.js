@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import personImg from './imgs/person.svg';
 import clockImg from './imgs/clock.svg';
 import phoneImg from './imgs/phone.svg';
 import emailImg from './imgs/email.svg';
+
 function AppointmentCard() {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
