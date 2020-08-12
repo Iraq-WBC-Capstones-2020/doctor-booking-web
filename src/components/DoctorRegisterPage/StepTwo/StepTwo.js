@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import { Col, Form, Container, Row } from 'react-bootstrap'
+import React, { useState } from 'react';
+import { Col, Form, Container, Row } from 'react-bootstrap';
+import './stepTwo.css';
 
 function StepTwo() {
 
@@ -25,12 +26,12 @@ return(
     
     <Container >
         <Form>
-        <Row>
+        <Row className="formRow">
             <Col lg={12}>
         
-  <Form.Group class="stepTwoFilds" controlId="exampleForm.SelectCustom">
+  <Form.Group className="stepTwoFilds" controlId="exampleForm.SelectCustom">
     <Form.Label>Speciality</Form.Label>
-    <Form.Control as="select" custom>
+    <Form.Control className="theSelect" as="select" custom>
     {specilty.map(spec =>
       <option>{spec}</option>
      
@@ -40,16 +41,16 @@ return(
 
 </Col>
         </Row>
-        <Row>
+        <Row className="formRow">
         <Col lg={6}>
-            <Form.Group class="stepTwoFilds">
+            <Form.Group className="stepTwoFilds">
     <label for="exampleFormControlTextarea1">Education</label>
-    <textarea class="textArea form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea className="textArea form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </Form.Group>
                    
             </Col>
             <Col lg={6}>
-            <Form.Group class="stepTwoFilds">
+            <Form.Group className="stepTwoFilds">
     <label for="exampleFormControlTextarea1">Expeience</label>
     <textarea class="textArea form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </Form.Group>
