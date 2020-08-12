@@ -24,17 +24,86 @@
     border-radius: 10px;
   }
 }
-.calendar {
+.calendar-section {
   width: 25%;
   background-color: $primaryColor;
   height: 100vh;
+  input {
+    display: none;
+  }
+  .flatpickr-calendar {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    .flatpickr-months {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      .flatpickr-next-month{
+        cursor: pointer;
+      }
+      .flatpickr-prev-month{
+        cursor: pointer;
+      }
+      svg {
+        width: 20px;
+        fill: white;
+      }
+    }
+    .flatpickr-weekdaycontainer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 1rem;
+      .flatpickr-weekday {
+        flex-basis: 14.28%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .dayContainer {
+      display: flex;
+      flex-wrap: wrap;
+
+      .prevMonthDay {
+        color: #959595;
+      }
+      .nextMonthDay {
+        color: #959595;
+      }
+      .selected{
+        background-color: white;
+        color: $primaryColor;
+        border-radius: 50px;
+      }
+    }
+    .flatpickr-day {
+      flex-basis: 14.28%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+      &:hover {
+        background-color: white;
+        color: $primaryColor;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+    }
+  }
 }
+
 #line {
   height: 1px;
   width: 100%;
   background-color: rgba($color: #000000, $alpha: 0.1);
 }
 .small-appointment-card {
+  cursor: pointer;
   width: inherit;
   height: 100px;
   margin-bottom: 1.5rem;

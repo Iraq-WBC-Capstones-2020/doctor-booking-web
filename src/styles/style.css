@@ -215,10 +215,118 @@ footer a:hover {
   border-radius: 10px;
 }
 
-.calendar {
+.calendar-section {
   width: 25%;
   background-color: #026fc2;
   height: 100vh;
+}
+
+.calendar-section input {
+  display: none;
+}
+
+.calendar-section .flatpickr-calendar {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  height: 100%;
+}
+
+.calendar-section .flatpickr-calendar .flatpickr-months {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.calendar-section .flatpickr-calendar .flatpickr-months .flatpickr-next-month {
+  cursor: pointer;
+}
+
+.calendar-section .flatpickr-calendar .flatpickr-months .flatpickr-prev-month {
+  cursor: pointer;
+}
+
+.calendar-section .flatpickr-calendar .flatpickr-months svg {
+  width: 20px;
+  fill: white;
+}
+
+.calendar-section .flatpickr-calendar .flatpickr-weekdaycontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.calendar-section .flatpickr-calendar .flatpickr-weekdaycontainer .flatpickr-weekday {
+  -ms-flex-preferred-size: 14.28%;
+      flex-basis: 14.28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calendar-section .flatpickr-calendar .dayContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.calendar-section .flatpickr-calendar .dayContainer .prevMonthDay {
+  color: #959595;
+}
+
+.calendar-section .flatpickr-calendar .dayContainer .nextMonthDay {
+  color: #959595;
+}
+
+.calendar-section .flatpickr-calendar .dayContainer .selected {
+  background-color: white;
+  color: #026fc2;
+  border-radius: 50px;
+}
+
+.calendar-section .flatpickr-calendar .flatpickr-day {
+  -ms-flex-preferred-size: 14.28%;
+      flex-basis: 14.28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.calendar-section .flatpickr-calendar .flatpickr-day:hover {
+  background-color: white;
+  color: #026fc2;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 #line {
@@ -228,6 +336,7 @@ footer a:hover {
 }
 
 .small-appointment-card {
+  cursor: pointer;
   width: inherit;
   height: 100px;
   margin-bottom: 1.5rem;
