@@ -2,8 +2,12 @@ import React from 'react';
 import { Form, Col, Row } from 'react-bootstrap';
 import Flatpickr from 'react-flatpickr';
 import 'flatpickr/dist/themes/airbnb.css';
+import propTypes from 'prop-types';
 
 function TimeTableRow({ day }) {
+  TimeTableRow.propTypes = {
+    day: propTypes.string,
+  };
   return (
     <Row className="flex-row align-content-center mt-2 justify-content-center">
       <Col className="day-name" md={4}>
