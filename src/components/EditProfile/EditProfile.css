@@ -1,0 +1,45 @@
+.editContainer {
+  background-color: white;
+}
+
+.sidebar {
+  background: #f7f7f7;
+  z-index: 1;
+}
+
+.sidebar .sidbarList {
+  padding-top: 100px !important;
+  padding-left: 10px !important;
+  color: #758095;
+}
+
+.sidebar .sidbarList li {
+  padding: 0.5rem;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.sidebar .sidbarList li:hover {
+  cursor: pointer;
+  color: #7777d6;
+}
+
+.label {
+  font-size: 18;
+  font-weight: 500;
+}
+
+.dayOfweek {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.timeTable p {
+  color: #000;
+  font-size: 18px;
+  font-size: 500;
+  padding-left: 5px;
+}
+/*# sourceMappingURL=EditProfile.css.map */
