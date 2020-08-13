@@ -1,6 +1,6 @@
 import React from 'react';
-import Avatar from '../../AboutPage/imgs/avatar.svg';
 import { Container, Button } from 'react-bootstrap';
+import Avatar from './images/avatar1.svg'
 import './style.css'
 
 
@@ -21,8 +21,10 @@ function ProfileHeader(){
                         Book an appointment
                     </Button>
                 </div>
-               
+                
             </Container>
+
+            
         </div>
 
     )

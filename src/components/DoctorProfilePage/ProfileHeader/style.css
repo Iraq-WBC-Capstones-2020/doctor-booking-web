@@ -4,13 +4,13 @@
 }
 
 .profileImage {
-  margin-bottom: -1rem;
+  margin-bottom: -3rem;
   -webkit-filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.08));
           filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.08));
 }
 
-.profileImage img {
-  border-radius: 10px;
+.profileName {
+  margin-bottom: -2rem;
 }
 
 .profileName h2 {
