@@ -1,18 +1,17 @@
 import React from 'react';
-import {  Container, Col, Row, Table } from 'react-bootstrap';
+import {  Col, Row, Table } from 'react-bootstrap';
 import './style.css'
 
 function TimeTable(){
 
     return(
 
-        <Container className="timeTable">
+        <div className="timeTable">
             <Col>
             <Row className="ml-2 justify-content-start">
             <h4 className="specitial">Medical specitial</h4>
             </Row>
             <Row className="ml-2 justify-content-start">
-                <Col sm={4}>
                     <Table className="table-borderless">
                         <thead>
                             <tr>
@@ -47,10 +46,9 @@ function TimeTable(){
                             </tr>
                         </tbody>
                     </Table>
-                </Col>
             </Row>
             </Col>
-        </Container>
+        </div>
 
     )
     

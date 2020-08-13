@@ -1,8 +1,12 @@
 @import '../../../styles/variables';
 
 .timeTable{
-    margin-top: 5rem;
+    table{
+        width: 390px;
+    }
+
     h4{
+        margin-left: 1rem;
         margin-bottom: 5rem;
         font-style: normal;
         font-weight: 300;
@@ -12,7 +16,5 @@
 
     }
 
-    .specitial{
-        margin-left: 1rem;
-    }
+    
 }
