@@ -1,7 +1,7 @@
 .qustionCard {
   border-radius: 12px;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 .card-header {
@@ -11,11 +11,11 @@
   display: -ms-flexbox !important;
   display: flex !important;
   -webkit-box-pack: justify !important;
-  -ms-flex-pack: justify !important;
-  justify-content: space-between !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
   -webkit-box-align: center !important;
-  -ms-flex-align: center !important;
-  align-items: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
 }
 
 .card-header p {
