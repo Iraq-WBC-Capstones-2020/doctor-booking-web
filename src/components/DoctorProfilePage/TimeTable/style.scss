@@ -1,5 +1,18 @@
-@import '../../styles/_variables.scss';
+@import '../../../styles/variables';
 
 .timeTable{
-    margin-top: 2rem;
+    margin-top: 5rem;
+    h4{
+        margin-bottom: 5rem;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+
+    }
+
+    .specitial{
+        margin-left: 1rem;
+    }
 }

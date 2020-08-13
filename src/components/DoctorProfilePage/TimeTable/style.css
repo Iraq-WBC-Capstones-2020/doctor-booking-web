@@ -1,0 +1,17 @@
+.timeTable {
+  margin-top: 5rem;
+}
+
+.timeTable h4 {
+  margin-bottom: 5rem;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.timeTable .specitial {
+  margin-left: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
