@@ -7,7 +7,7 @@ exports[`Boooking page run well run well  1`] = `
   <h1
     className="text-center"
   >
-    Set up and appoinment 
+    Set up an appointment
   </h1>
   <div
     className="row my-5 align-items-center"
@@ -30,7 +30,7 @@ exports[`Boooking page run well run well  1`] = `
           <input
             className="form-control"
             id="name"
-            placeholder="enter your name"
+            placeholder="Enter your name"
             type="text"
           />
         </div>
@@ -82,7 +82,7 @@ exports[`Boooking page run well run well  1`] = `
           <input
             className="form-control"
             id="age"
-            placeholder="enter your age"
+            placeholder="Enter your age"
             type="number"
           />
         </div>
@@ -98,7 +98,7 @@ exports[`Boooking page run well run well  1`] = `
           <input
             className="form-control"
             id="phoneNumber"
-            placeholder="enter your phone number"
+            placeholder="Enter your phone number"
             type="number"
           />
         </div>
@@ -114,7 +114,7 @@ exports[`Boooking page run well run well  1`] = `
           <input
             className="form-control"
             id="email"
-            placeholder="enter your  email address"
+            placeholder="Enter your  email address"
             type="email"
           />
         </div>

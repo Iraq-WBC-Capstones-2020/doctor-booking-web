@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepTwo renders correctly 1`] = `
+<div
+  className="container"
+>
+  <form
+    className=""
+  >
+    <div
+      className="formRow row"
+    >
+      <div
+        className="col-lg-12"
+      >
+        <div
+          className="stepTwoFilds form-group"
+        >
+          <label
+            className="form-label"
+            htmlFor="exampleForm.SelectCustom"
+          >
+            Speciality
+          </label>
+          <select
+            className="theSelect custom-select"
+            id="exampleForm.SelectCustom"
+          >
+            <option>
+              Abdominal radiology
+            </option>
+            <option>
+              Breast imaging
+            </option>
+            <option>
+              Cardiothoracic radiology
+            </option>
+            <option>
+              Cardiovascular radiology
+            </option>
+            <option>
+              Chest radiology
+            </option>
+            <option>
+              Emergency radiology
+            </option>
+            <option>
+              Endovascular surgical neuroradiology
+            </option>
+            <option>
+              Gastrointestinal radiology
+            </option>
+            <option>
+              Genitourinary radiology
+            </option>
+            <option>
+              Head and neck radiology
+            </option>
+            <option>
+              Pulmonary disease
+            </option>
+            <option>
+              Pulmonary disease
+            </option>
+            <option>
+              Sleep medicine
+            </option>
+            <option>
+              Sports medicine
+            </option>
+            <option>
+              Transplant hepatology
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      className="formRow row"
+    >
+      <div
+        className="col-lg-6"
+      >
+        <div
+          className="stepTwoFilds form-group"
+        >
+          <label
+            for="exampleFormControlTextarea1"
+          >
+            Education
+          </label>
+          <textarea
+            className="textArea form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          />
+        </div>
+      </div>
+      <div
+        className="col-lg-6"
+      >
+        <div
+          className="stepTwoFilds form-group"
+        >
+          <label
+            for="exampleFormControlTextarea1"
+          >
+            Expeience
+          </label>
+          <textarea
+            className="textArea form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          />
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;

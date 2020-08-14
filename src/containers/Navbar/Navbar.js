@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 function nav() {
   return (
     <Navbar
@@ -14,11 +15,21 @@ function nav() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto justify-content-end">
-            <Nav.Link>Home</Nav.Link>
-            <Nav.Link>Search</Nav.Link>
-            <Nav.Link>About</Nav.Link>
-            <Nav.Link>FAQ</Nav.Link>
-            <Nav.Link>Sign in</Nav.Link>
+            <Link className="nav-link" to="/">
+              Home
+            </Link>
+            <Link className="nav-link" to="/search">
+              Search
+            </Link>
+            <Link className="nav-link" to="/about">
+              About
+            </Link>
+            <Link className="nav-link" to="/faq">
+              FAQ
+            </Link>
+            <Link className="nav-link" to="/signin">
+              Sign in
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
