@@ -1,0 +1,24 @@
+.stepTwoFilds {
+  width: 425px;
+
+  label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  .theSelector {
+    height: 48px;
+  }
+
+  .form-control {
+    margin-top: 5px;
+    width: 425px;
+    border: 2px solid #eaeaea;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+}

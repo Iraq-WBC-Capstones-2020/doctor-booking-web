@@ -3,6 +3,7 @@ import { Stepper, Step } from 'react-form-stepper';
 import { Container, Button } from 'react-bootstrap';
 import StepThree from '../../components/DoctorRegisterPage/StepThree/StepThree';
 import StepOne from '../../components/DoctorRegisterPage/StepOne/StepOne';
+import StepTwo from '../../components/DoctorRegisterPage/StepTwo/StepTwo';
 
 function DoctorRegistration() {
   const [activeStep, setActiveStep] = useState(0);
@@ -34,7 +35,7 @@ function DoctorRegistration() {
       ) : (
         ''
       )}
-      {activeStep === 1 ? <h1>step two</h1> : ''}
+      {activeStep === 1 ? <StepTwo /> : ''}
       {activeStep === 2 ? <StepThree /> : ''}
 
       <Button
