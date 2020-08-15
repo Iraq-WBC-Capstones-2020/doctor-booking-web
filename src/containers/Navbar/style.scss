@@ -1,6 +1,4 @@
 @import '../../styles/variables';
-nav {
-  a {
-    color: $primaryColor !important;
-  }
+.active-link {
+  color: $primaryColor !important;
 }
