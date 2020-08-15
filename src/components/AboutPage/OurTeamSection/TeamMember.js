@@ -1,9 +1,9 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import avatar from './imgs/avatar.svg';
-import facebook from './imgs/facebook.svg';
-import instagram from './imgs/instagram.svg';
-import github from './imgs/github.svg';
+import avatar from '../imgs/avatar.svg';
+import facebook from '../imgs/facebook.svg';
+import instagram from '../imgs/instagram.svg';
+import github from '../imgs/github.svg';
 function TeamMember() {
   return (
     <Row>
