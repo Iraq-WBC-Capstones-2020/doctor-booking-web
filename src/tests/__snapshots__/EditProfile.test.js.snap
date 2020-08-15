@@ -1,26 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EditProfile page run well run well  1`] = `
+exports[`EditProfile page run well  1`] = `
 <div>
   <div
     className="row p-0 m-0 editContainer"
   >
     <div
-      className="col-md-2 sidebar "
+      className="sideBar  col-md-2"
     >
-      <ul
-        className="list-unstyled sidbarList"
+      <div
+        className="side-nav-container"
       >
-        <li>
-          Calendar
-        </li>
-        <li>
-          Profile
-        </li>
-        <li>
-          Edit profile
-        </li>
-      </ul>
+        <div
+          className="d-none d-md-block sidebar  nav"
+          onKeyDown={[Function]}
+        >
+          <div
+            className="d-flex justify-content-evenly nav-item"
+          >
+            <img
+              alt="profile icon"
+              src="person.svg"
+            />
+            <a
+              className="nav-link"
+              data-rb-event-key="#!"
+              href="#!"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              Profile
+            </a>
+          </div>
+          <div
+            className="d-flex justify-content-evenly nav-item"
+          >
+            <img
+              alt="edit icon"
+              src="edit.svg"
+            />
+            <a
+              className="nav-link"
+              data-rb-event-key="#!"
+              href="#!"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              Edit Profile
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <div
       className="col-md-10   px-4 py-4"
@@ -72,7 +102,11 @@ exports[`EditProfile page run well run well  1`] = `
               />
             </div>
             <div
+<<<<<<< HEAD
               class="col-md-5"
+=======
+              className="col-md-5"
+>>>>>>> master
             >
               <label
                 className="label"
@@ -109,7 +143,11 @@ exports[`EditProfile page run well run well  1`] = `
             >
               <label
                 className="label"
+<<<<<<< HEAD
                 for="experince"
+=======
+                htmlFor="experince"
+>>>>>>> master
               >
                 Experince
               </label>
@@ -125,7 +163,11 @@ exports[`EditProfile page run well run well  1`] = `
             >
               <label
                 className="label"
+<<<<<<< HEAD
                 for="education"
+=======
+                htmlFor="education"
+>>>>>>> master
               >
                 Education
               </label>
@@ -142,7 +184,11 @@ exports[`EditProfile page run well run well  1`] = `
             className="form-row my-5 justify-content-between"
           >
             <div
+<<<<<<< HEAD
               clasName="col-md-5"
+=======
+              className="col-md-5"
+>>>>>>> master
             >
               <label
                 className="label"
@@ -164,7 +210,11 @@ exports[`EditProfile page run well run well  1`] = `
             >
               <label
                 className="label"
+<<<<<<< HEAD
                 for="phoneNumebr"
+=======
+                htmlFor="phoneNumebr"
+>>>>>>> master
               >
                 Phone Number
               </label>
@@ -187,13 +237,21 @@ exports[`EditProfile page run well run well  1`] = `
             >
               <label
                 className="label"
+<<<<<<< HEAD
                 for="validationDefault02"
+=======
+                htmlFor="address"
+>>>>>>> master
               >
                 Address
               </label>
               <input
                 className="form-control"
+<<<<<<< HEAD
                 id="validationDefault01"
+=======
+                id="address"
+>>>>>>> master
                 required={true}
                 type="text"
                 value="country"
@@ -204,7 +262,11 @@ exports[`EditProfile page run well run well  1`] = `
             >
               <label
                 className="mt-3 label"
+<<<<<<< HEAD
                 for="validationDefault02"
+=======
+                htmlFor="validationDefault02"
+>>>>>>> master
               />
               <input
                 className="form-control"
@@ -219,7 +281,11 @@ exports[`EditProfile page run well run well  1`] = `
             >
               <label
                 className="mt-3"
+<<<<<<< HEAD
                 for="validationDefault02"
+=======
+                htmlFor="validationDefault02"
+>>>>>>> master
               />
               <input
                 className="form-control"
@@ -234,6 +300,7 @@ exports[`EditProfile page run well run well  1`] = `
         <div
           className="row p-3"
         >
+<<<<<<< HEAD
           <iframe
             aria-hidden="false"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12887.907437953263!2d44.010317449999995!3d36.14277670000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40073b4dd69ea69b%3A0xb271c8adc232c062!2sErbil%20Technology%20Institute!5e0!3m2!1sen!2siq!4v1597238804088!5m2!1sen!2siq"
@@ -247,6 +314,50 @@ exports[`EditProfile page run well run well  1`] = `
             tabindex="0"
             title="location"
           />
+=======
+          <div
+            style={
+              Object {
+                "cursor": "grab",
+                "height": 0,
+                "position": "relative",
+                "width": 0,
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "height": "100%",
+                  "position": "relative",
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                className="map"
+                style={
+                  Object {
+                    "height": "100%",
+                    "overflow": "hidden",
+                    "position": "absolute",
+                    "visibility": "inherit",
+                    "width": "100%",
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "height": 0,
+                    "overflow": "visible",
+                    "width": 0,
+                  }
+                }
+              />
+            </div>
+          </div>
+>>>>>>> master
         </div>
         <div
           className="mt-5 timeTable"
@@ -513,7 +624,11 @@ exports[`EditProfile page run well run well  1`] = `
                   -
                 </span>
                 <input
+<<<<<<< HEAD
                   class="form-control w-25 form-control-sm mr-5"
+=======
+                  className="form-control w-25 form-control-sm mr-5"
+>>>>>>> master
                   placeholder="to"
                   type="text"
                 />
@@ -547,7 +662,11 @@ exports[`EditProfile page run well run well  1`] = `
                   -
                 </span>
                 <input
+<<<<<<< HEAD
                   class="form-control w-25 form-control-sm mr-5"
+=======
+                  className="form-control w-25 form-control-sm mr-5"
+>>>>>>> master
                   placeholder="to"
                   type="text"
                 />

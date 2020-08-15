@@ -31,21 +31,24 @@ exports[`footer renders correctly 1`] = `
         >
           <li>
             <a
-              href="#!"
+              href="/"
+              onClick={[Function]}
             >
               Home
             </a>
           </li>
           <li>
             <a
-              href="#!"
+              href="/about"
+              onClick={[Function]}
             >
               About
             </a>
           </li>
           <li>
             <a
-              href="#!"
+              href="/faq"
+              onClick={[Function]}
             >
               FAQ
             </a>
@@ -63,14 +66,16 @@ exports[`footer renders correctly 1`] = `
         >
           <li>
             <a
-              href="#!"
+              href="/search"
+              onClick={[Function]}
             >
               Book an appointment
             </a>
           </li>
           <li>
             <a
-              href="#!"
+              href="/register"
+              onClick={[Function]}
             >
               Clinic registration
             </a>

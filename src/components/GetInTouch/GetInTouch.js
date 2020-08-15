@@ -1,7 +1,5 @@
 import React from 'react';
 import { Row, Col, Button, Container } from 'react-bootstrap';
-import './GetInTouch.css';
-
 import findeDoctor from './findDoctor.svg';
 import doctorRegister from './doctorRegister.svg';
 

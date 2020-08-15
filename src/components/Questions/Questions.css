@@ -1,17 +1,20 @@
-* {
-  background: #f9f9fa;
-  margin: 0;
-}
-
-.qustion__card {
+.qustionCard {
   border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 }
+
 .card-header {
-  background: rgb(255, 255, 255) !important;
+  background: white !important;
   padding: 1.2rem 2.5rem !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
+  -webkit-box-pack: justify !important;
+  -ms-flex-pack: justify !important;
   justify-content: space-between !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
   align-items: center !important;
 }
 
@@ -22,14 +25,11 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
-  /* identical to box height */
-
   letter-spacing: -0.5px;
-
   color: rgba(0, 0, 0, 0.62);
 }
 
-.open-question {
+.openQuestion {
   color: rgba(242, 1, 82, 0.7) !important;
 }
 
@@ -46,6 +46,6 @@
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 1px;
-
   color: rgba(0, 0, 0, 0.62);
 }
+/*# sourceMappingURL=Questions.css.map */

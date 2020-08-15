@@ -34,51 +34,36 @@ exports[`navbar renders correctly 1`] = `
       >
         <a
           className="nav-link"
-          data-rb-event-key={null}
-          href="#"
+          href="/"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          role="button"
         >
           Home
         </a>
         <a
           className="nav-link"
-          data-rb-event-key={null}
-          href="#"
+          href="/search"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          role="button"
         >
           Search
         </a>
         <a
           className="nav-link"
-          data-rb-event-key={null}
-          href="#"
+          href="/about"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          role="button"
         >
           About
         </a>
         <a
           className="nav-link"
-          data-rb-event-key={null}
-          href="#"
+          href="/faq"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          role="button"
         >
           FAQ
         </a>
         <a
           className="nav-link"
-          data-rb-event-key={null}
-          href="#"
+          href="/signin"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          role="button"
         >
           Sign in
         </a>

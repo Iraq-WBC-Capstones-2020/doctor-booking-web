@@ -1,0 +1,45 @@
+.searchForm {
+  margin-bottom: 148px;
+}
+
+.searchHead {
+  margin-bottom: 79.56px;
+}
+
+.searchHead h1 {
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000000;
+}
+
+.searchHead img {
+  margin-left: 30px;
+}
+
+.form-row input {
+  height: 51px;
+}
+
+.form-row button {
+  color: white;
+  background-color: #026fc2;
+}
+
+.myButton {
+  font-size: 18px;
+  height: 51px;
+  width: 179px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background: #026fc2;
+}
+
+.myButton svg {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=style.css.map */
