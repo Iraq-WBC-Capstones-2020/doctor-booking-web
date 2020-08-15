@@ -97,7 +97,15 @@ function EditProfile() {
               </div>
               <hr />
               <div className="form-row my-5 justify-content-between">
+<<<<<<< HEAD
                 <div className="col-md-5">
+=======
+<<<<<<< HEAD
+                <div className="col-md-5">
+=======
+                <div clasName="col-md-5">
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
+>>>>>>> master
                   <label htmlFor="email" className="label">
                     Email
                   </label>
@@ -164,6 +172,10 @@ function EditProfile() {
               </div>
             </form>
             <div className="row p-3">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
               <Map
                 className="map"
                 {...viewport}
@@ -174,6 +186,18 @@ function EditProfile() {
               >
                 <Marker longitude={marker[0]} latitude={marker[1]}></Marker>
               </Map>
+<<<<<<< HEAD
+=======
+=======
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12887.907437953263!2d44.010317449999995!3d36.14277670000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40073b4dd69ea69b%3A0xb271c8adc232c062!2sErbil%20Technology%20Institute!5e0!3m2!1sen!2siq!4v1597238804088!5m2!1sen!2siq"
+                style={{ width: '100%', border: 0, height: '26rem' }}
+                aria-hidden="false"
+                tabIndex="0"
+                title="location"
+              ></iframe>
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
+>>>>>>> master
             </div>
 
             {/* timetable  */}
