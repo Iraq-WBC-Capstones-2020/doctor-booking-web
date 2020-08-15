@@ -4,8 +4,8 @@ import TimeTable from '../../components/DoctorProfilePage/TimeTable/TimeTable'
 import Informations from '../../components/DoctorProfilePage/informations/Informations'
 import {InfoProvider} from '../../components/DoctorProfilePage/DoctorInfoContext'
 import './style.css';
-import { Container, Row } from 'react-bootstrap'
-
+import { Container, Row, Button } from 'react-bootstrap'
+import ClinicMap from '../../components/DoctorProfilePage/ClinicMap/ClinicMap'
 
 function DoctorProfilePage(){
 
@@ -17,7 +17,10 @@ function DoctorProfilePage(){
             <Row className="bodyRow">
         <TimeTable />
         <Informations />
+        
         </Row>
+        <ClinicMap />
+        <Button className="mt-5">Book an appointment</Button>
         </Container>
         </Fragment>
         </InfoProvider>
