@@ -1,11 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+<<<<<<< HEAD
 exports[`EditProfile page run well  1`] = `
+=======
+exports[`EditProfile page run well run well  1`] = `
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
 <div>
   <div
     className="row p-0 m-0 editContainer"
   >
     <div
+<<<<<<< HEAD
       className="sideBar  col-md-2"
     >
       <div
@@ -51,6 +56,23 @@ exports[`EditProfile page run well  1`] = `
           </div>
         </div>
       </div>
+=======
+      className="col-md-2 sidebar "
+    >
+      <ul
+        className="list-unstyled sidbarList"
+      >
+        <li>
+          Calendar
+        </li>
+        <li>
+          Profile
+        </li>
+        <li>
+          Edit profile
+        </li>
+      </ul>
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
     </div>
     <div
       className="col-md-10   px-4 py-4"
@@ -102,7 +124,11 @@ exports[`EditProfile page run well  1`] = `
               />
             </div>
             <div
+<<<<<<< HEAD
               className="col-md-5"
+=======
+              class="col-md-5"
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
             >
               <label
                 className="label"
@@ -139,7 +165,11 @@ exports[`EditProfile page run well  1`] = `
             >
               <label
                 className="label"
+<<<<<<< HEAD
                 htmlFor="experince"
+=======
+                for="experince"
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
               >
                 Experince
               </label>
@@ -155,7 +185,11 @@ exports[`EditProfile page run well  1`] = `
             >
               <label
                 className="label"
+<<<<<<< HEAD
                 htmlFor="education"
+=======
+                for="education"
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
               >
                 Education
               </label>
@@ -172,7 +206,11 @@ exports[`EditProfile page run well  1`] = `
             className="form-row my-5 justify-content-between"
           >
             <div
+<<<<<<< HEAD
               className="col-md-5"
+=======
+              clasName="col-md-5"
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
             >
               <label
                 className="label"
@@ -194,7 +232,11 @@ exports[`EditProfile page run well  1`] = `
             >
               <label
                 className="label"
+<<<<<<< HEAD
                 htmlFor="phoneNumebr"
+=======
+                for="phoneNumebr"
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
               >
                 Phone Number
               </label>
@@ -217,13 +259,21 @@ exports[`EditProfile page run well  1`] = `
             >
               <label
                 className="label"
+<<<<<<< HEAD
                 htmlFor="address"
+=======
+                for="validationDefault02"
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
               >
                 Address
               </label>
               <input
                 className="form-control"
+<<<<<<< HEAD
                 id="address"
+=======
+                id="validationDefault01"
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
                 required={true}
                 type="text"
                 value="country"
@@ -234,7 +284,11 @@ exports[`EditProfile page run well  1`] = `
             >
               <label
                 className="mt-3 label"
+<<<<<<< HEAD
                 htmlFor="validationDefault02"
+=======
+                for="validationDefault02"
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
               />
               <input
                 className="form-control"
@@ -249,7 +303,11 @@ exports[`EditProfile page run well  1`] = `
             >
               <label
                 className="mt-3"
+<<<<<<< HEAD
                 htmlFor="validationDefault02"
+=======
+                for="validationDefault02"
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
               />
               <input
                 className="form-control"
@@ -264,6 +322,7 @@ exports[`EditProfile page run well  1`] = `
         <div
           className="row p-3"
         >
+<<<<<<< HEAD
           <div
             style={
               Object {
@@ -306,6 +365,21 @@ exports[`EditProfile page run well  1`] = `
               />
             </div>
           </div>
+=======
+          <iframe
+            aria-hidden="false"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12887.907437953263!2d44.010317449999995!3d36.14277670000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40073b4dd69ea69b%3A0xb271c8adc232c062!2sErbil%20Technology%20Institute!5e0!3m2!1sen!2siq!4v1597238804088!5m2!1sen!2siq"
+            style={
+              Object {
+                "border": 0,
+                "height": "26rem",
+                "width": "100%",
+              }
+            }
+            tabindex="0"
+            title="location"
+          />
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
         </div>
         <div
           className="mt-5 timeTable"
@@ -572,7 +646,11 @@ exports[`EditProfile page run well  1`] = `
                   -
                 </span>
                 <input
+<<<<<<< HEAD
                   className="form-control w-25 form-control-sm mr-5"
+=======
+                  class="form-control w-25 form-control-sm mr-5"
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
                   placeholder="to"
                   type="text"
                 />
@@ -606,7 +684,11 @@ exports[`EditProfile page run well  1`] = `
                   -
                 </span>
                 <input
+<<<<<<< HEAD
                   className="form-control w-25 form-control-sm mr-5"
+=======
+                  class="form-control w-25 form-control-sm mr-5"
+>>>>>>> c2ec59f3c94263134671ee9e923e6a75e5a0a383
                   placeholder="to"
                   type="text"
                 />
