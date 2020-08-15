@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Map, { Marker } from 'react-map-gl';
+import Map from 'react-map-gl';
 import './style.css';
 const API =
   'pk.eyJ1IjoiaHVzc2VpbnRhbGFsIiwiYSI6ImNrY3M4dWxwbzFtZDIycnM2OHQ4dXM4cnIifQ.ofCZrIlVF_r4YpQDzSi13g';
