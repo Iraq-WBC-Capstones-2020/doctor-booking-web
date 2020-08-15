@@ -10,14 +10,13 @@ import BookingPage from './containers/BookingPage/BookingPage';
 import DoctorRegister from './containers/DoctorRegistration/DoctorRegistration';
 import HomePage from './containers/HomePage/HomePage';
 import SearchPage from './containers/SearchPage/SearchPage';
-import EditProfile from './components/EditProfile/EditProfile';
 
 function App() {
   return (
     <div>
       <Nav />
       <Switch>
-        <Route exact path="/" component={EditProfile} />
+        <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/faq" component={FaqPage} />
         <Route path="/signin" component={SignIn} />
