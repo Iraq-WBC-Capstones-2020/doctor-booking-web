@@ -1,49 +1,36 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import {  Col, Row, Table } from 'react-bootstrap';
+import {InfoContext} from '../DoctorInfoContext'
 import './style.css'
 
 function TimeTable(){
+    const [TimeDays,setTimeDay] = useContext(InfoContext);
 
     return(
-
         <div className="timeTable">
             <Col>
             <Row className="ml-2 justify-content-start">
-            <h4 className="specitial">Medical specitial</h4>
+    <h4 className="specitial">{TimeDays.speciality}</h4>
             </Row>
             <Row className="ml-2 justify-content-start">
                     <Table className="table-borderless">
                         <thead>
                             <tr>
                                 <h4>Time table</h4>
+                                
                             </tr>
                             
                         </thead>
                         <tbody>
+                       {TimeDays.days.map((myDay)=>
                         <tr>
-                                <th>sunday</th>
-                                <th>11-4</th>
+   <td>{myDay.day}</td>
+        
+    <td>{myDay.date}</td>  
+                               
                             </tr>
-                            <tr>
-                                <td>monday</td>
-                                <td>3-5</td>
-                            </tr>
-                            <tr>
-                                <td>tuseday</td>
-                                <td>11-4</td>
-                            </tr>
-                            <tr>
-                                <td>wedensay</td>
-                                <td>11-4</td>
-                            </tr>
-                            <tr>
-                                <td>thursday</td>
-                                <td>11-4</td>
-                            </tr>
-                            <tr>
-                                <td>friday</td>
-                                <td>11-4</td>
-                            </tr>
+)}
+                           
                         </tbody>
                     </Table>
             </Row>
