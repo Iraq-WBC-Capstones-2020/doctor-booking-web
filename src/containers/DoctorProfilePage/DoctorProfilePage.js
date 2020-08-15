@@ -20,7 +20,7 @@ function DoctorProfilePage(){
         
         </Row>
         <ClinicMap />
-        <Button className="mt-5">Book an appointment</Button>
+        <Button className="bookButton mt-5">Book an appointment</Button>
         </Container>
         </Fragment>
         </InfoProvider>
