@@ -2,10 +2,10 @@
   width: 38rem !important;
   text-align: left;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .cardText {
