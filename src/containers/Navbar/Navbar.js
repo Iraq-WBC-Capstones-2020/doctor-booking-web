@@ -58,20 +58,20 @@ function NavBar() {
               >
                 Sign in
               </NavLink>
+              <NavDropdown title={language}>
+                <NavDropdown.Item onClick={() => changeLanguage('English')}>
+                  English
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick={() => changeLanguage('كوردى')}>
+                  كوردى
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick={() => changeLanguage('عربي')}>
+                  عربي
+                </NavDropdown.Item>
+              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>
-        <NavDropdown title={language}>
-          <NavDropdown.Item onClick={() => changeLanguage('English')}>
-            English
-          </NavDropdown.Item>
-          <NavDropdown.Item onClick={() => changeLanguage('كوردى')}>
-            كوردى
-          </NavDropdown.Item>
-          <NavDropdown.Item onClick={() => changeLanguage('عربي')}>
-            عربي
-          </NavDropdown.Item>
-        </NavDropdown>
       </Navbar>
     </div>
   );
