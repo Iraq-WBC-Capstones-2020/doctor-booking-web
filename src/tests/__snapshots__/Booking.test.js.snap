@@ -21,12 +21,6 @@ exports[`Boooking page run well run well  1`] = `
         <div
           className="form-group"
         >
-          <label
-            className="form-label"
-            htmlFor="name"
-          >
-            Name
-          </label>
           <input
             className="form-control"
             id="name"
@@ -73,12 +67,6 @@ exports[`Boooking page run well run well  1`] = `
         <div
           className="form-group"
         >
-          <label
-            className="form-label"
-            htmlFor="age"
-          >
-            Age
-          </label>
           <input
             className="form-control"
             id="age"
@@ -89,12 +77,6 @@ exports[`Boooking page run well run well  1`] = `
         <div
           className="form-group"
         >
-          <label
-            className="form-label"
-            htmlFor="phoneNumber"
-          >
-            Phone Number
-          </label>
           <input
             className="form-control"
             id="phoneNumber"
@@ -105,12 +87,6 @@ exports[`Boooking page run well run well  1`] = `
         <div
           className="form-group"
         >
-          <label
-            className="form-label"
-            htmlFor="email"
-          >
-            Email address
-          </label>
           <input
             className="form-control"
             id="email"
