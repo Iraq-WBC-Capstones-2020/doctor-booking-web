@@ -17,7 +17,7 @@ function NavBar() {
       >
         <Container>
           <NavLink to="/" exact>
-            <Navbar.Brand>Doctor Booking</Navbar.Brand>
+            <Navbar.Brand>DOCTOR BOOKING</Navbar.Brand>
           </NavLink>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -62,13 +62,13 @@ function NavBar() {
           </Navbar.Collapse>
         </Container>
         <NavDropdown title={language}>
-          <NavDropdown.Item onClick={() => changeLanguage("English")}>
+          <NavDropdown.Item onClick={() => changeLanguage('English')}>
             English
           </NavDropdown.Item>
-          <NavDropdown.Item onClick={() => changeLanguage("كوردى")}>
+          <NavDropdown.Item onClick={() => changeLanguage('كوردى')}>
             كوردى
           </NavDropdown.Item>
-          <NavDropdown.Item onClick={() => changeLanguage("عربي")}>
+          <NavDropdown.Item onClick={() => changeLanguage('عربي')}>
             عربي
           </NavDropdown.Item>
         </NavDropdown>
