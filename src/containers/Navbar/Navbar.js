@@ -1,7 +1,11 @@
-import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-function nav() {
+function NavBar() {
+  const [language, setLanguage] = useState('English');
+  const changeLanguage = (lng) => {
+    setLanguage(lng);
+  };
   return (
     <div>
       <Navbar
@@ -57,9 +61,20 @@ function nav() {
             </Nav>
           </Navbar.Collapse>
         </Container>
+        <NavDropdown title={language}>
+          <NavDropdown.Item onClick={() => changeLanguage("English")}>
+            English
+          </NavDropdown.Item>
+          <NavDropdown.Item onClick={() => changeLanguage("كوردى")}>
+            كوردى
+          </NavDropdown.Item>
+          <NavDropdown.Item onClick={() => changeLanguage("عربي")}>
+            عربي
+          </NavDropdown.Item>
+        </NavDropdown>
       </Navbar>
     </div>
   );
 }
 
-export default nav;
+export default NavBar;
