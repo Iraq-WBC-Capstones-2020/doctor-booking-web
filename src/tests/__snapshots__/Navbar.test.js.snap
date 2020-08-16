@@ -82,24 +82,25 @@ exports[`navbar renders correctly 1`] = `
           >
             Sign in
           </a>
+          <div
+            className="dropdown nav-item"
+            onKeyDown={[Function]}
+          >
+            <a
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle nav-link"
+              data-rb-event-key={null}
+              href="#"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+            >
+              English
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      className="dropdown nav-item"
-      onKeyDown={[Function]}
-    >
-      <a
-        aria-expanded={false}
-        aria-haspopup={true}
-        className="dropdown-toggle nav-link"
-        href="#"
-        onClick={[Function]}
-        onKeyDown={[Function]}
-        role="button"
-      >
-        English
-      </a>
     </div>
   </nav>
 </div>
