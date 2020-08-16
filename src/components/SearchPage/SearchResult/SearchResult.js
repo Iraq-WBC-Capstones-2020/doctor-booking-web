@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import Avatar from './images/avatar.png';
 import './style.css';
 function SearchResult() {
-  const [card, setCard] = useState([
+  const [card] = useState([
     {
       doctorName: 'Salah Mohammed',
       specilty: 'Emergency medicine',
@@ -61,12 +61,8 @@ function SearchResult() {
 
         <Row>
           {card.map((cards) => (
-            <Col md={4}>
-              <Card
-                key={cards.id}
-                className="doctorCards"
-                style={{ width: '18rem' }}
-              >
+            <Col md={4} key={cards.id}>
+              <Card className="doctorCards" style={{ width: '18rem' }}>
                 <Card.Img className="myImgCard" variant="top" src={Avatar} />
                 <Card.Body>
                   <Card.Title>{cards.doctorName}</Card.Title>
