@@ -72,7 +72,7 @@ exports[`EditProfile page run well run well  1`] = `
               />
             </div>
             <div
-              class="col-md-5"
+              className="col-md-5"
             >
               <label
                 className="label"
@@ -109,7 +109,7 @@ exports[`EditProfile page run well run well  1`] = `
             >
               <label
                 className="label"
-                for="experince"
+                htmlFor="experince"
               >
                 Experince
               </label>
@@ -125,7 +125,7 @@ exports[`EditProfile page run well run well  1`] = `
             >
               <label
                 className="label"
-                for="education"
+                htmlFor="education"
               >
                 Education
               </label>
@@ -164,7 +164,7 @@ exports[`EditProfile page run well run well  1`] = `
             >
               <label
                 className="label"
-                for="phoneNumebr"
+                htmlFor="phoneNumebr"
               >
                 Phone Number
               </label>
@@ -187,13 +187,13 @@ exports[`EditProfile page run well run well  1`] = `
             >
               <label
                 className="label"
-                for="validationDefault02"
+                htmlFor="address"
               >
                 Address
               </label>
               <input
                 className="form-control"
-                id="validationDefault01"
+                id="address"
                 required={true}
                 type="text"
                 value="country"
@@ -204,7 +204,7 @@ exports[`EditProfile page run well run well  1`] = `
             >
               <label
                 className="mt-3 label"
-                for="validationDefault02"
+                htmlFor="validationDefault02"
               />
               <input
                 className="form-control"
@@ -219,7 +219,7 @@ exports[`EditProfile page run well run well  1`] = `
             >
               <label
                 className="mt-3"
-                for="validationDefault02"
+                htmlFor="validationDefault02"
               />
               <input
                 className="form-control"
@@ -244,7 +244,7 @@ exports[`EditProfile page run well run well  1`] = `
                 "width": "100%",
               }
             }
-            tabindex="0"
+            tabIndex="0"
             title="location"
           />
         </div>
@@ -513,7 +513,7 @@ exports[`EditProfile page run well run well  1`] = `
                   -
                 </span>
                 <input
-                  class="form-control w-25 form-control-sm mr-5"
+                  className="form-control w-25 form-control-sm mr-5"
                   placeholder="to"
                   type="text"
                 />
@@ -547,7 +547,7 @@ exports[`EditProfile page run well run well  1`] = `
                   -
                 </span>
                 <input
-                  class="form-control w-25 form-control-sm mr-5"
+                  className="form-control w-25 form-control-sm mr-5"
                   placeholder="to"
                   type="text"
                 />
