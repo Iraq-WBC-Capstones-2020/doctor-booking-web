@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 .booking {
   font-family: 'Roboto', sans-serif !important;
+}
+
+.booking input {
+  margin-bottom: 2rem;
 }
 
 .booking h1 {
