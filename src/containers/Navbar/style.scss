@@ -2,3 +2,31 @@
 .active-link {
   color: $primaryColor !important;
 }
+
+.navbar {
+  min-height: 76px;
+  .nav-link{
+    font-size: 18px;
+  }
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 76px;
+  line-height: 76px;
+}
+
+.navbar-toggle {
+  /* (76px - button height 34px) / 2 = 21px */
+  margin-top: 21px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (76px - line-height of 27px) / 2 = 24.5px */
+    padding-top: 24.5px;
+    padding-bottom: 24.5px;
+    line-height: 27px;
+  }
+}
