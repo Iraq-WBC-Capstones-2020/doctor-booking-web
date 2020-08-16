@@ -28,8 +28,8 @@ nav a {
   max-width: -moz-max-content;
   max-width: max-content;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .goal-card {
@@ -37,14 +37,14 @@ nav a {
   border: 0;
   border-radius: 12px;
   -webkit-box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
-  box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
+          box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .goal-card:hover {
   -webkit-box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
-  box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
+          box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
 }
 
 .card-title {
@@ -95,7 +95,7 @@ footer a:hover {
   width: 275px;
   background: #014d87;
   -webkit-box-shadow: 0px 11px 14px rgba(1, 77, 135, 0.3);
-  box-shadow: 0px 11px 14px rgba(1, 77, 135, 0.3);
+          box-shadow: 0px 11px 14px rgba(1, 77, 135, 0.3);
   border-radius: 10px 0 0 10px;
 }
 
@@ -103,35 +103,35 @@ footer a:hover {
   color: white;
 }
 
-.signin-rectangle {
+.signIn-rectangle {
   max-width: 350px;
   min-height: 480px;
   background: #026fc2;
   -webkit-box-shadow: 0px 15px 17px rgba(2, 111, 194, 0.3);
-  box-shadow: 0px 15px 17px rgba(2, 111, 194, 0.3);
+          box-shadow: 0px 15px 17px rgba(2, 111, 194, 0.3);
   border-radius: 10px;
 }
 
-.signin-rectangle input {
+.signIn-rectangle input {
   font-size: 14px;
   width: 250px;
   height: 45px;
 }
 
-.signin-rectangle p {
+.signIn-rectangle p {
   color: white;
   margin: 0 auto;
 }
 
-.signin-rectangle a {
+.signIn-rectangle a {
   color: white;
 }
 
-.signin-rectangle a:hover {
+.signIn-rectangle a:hover {
   color: white;
 }
 
-.signin-rectangle h3 {
+.signIn-rectangle h3 {
   margin-top: 4rem;
 }
 
@@ -214,7 +214,7 @@ footer a:hover {
 
 .modal-container .modal-content {
   -webkit-box-shadow: 0px 6px 42px rgba(63, 61, 86, 0.69);
-  box-shadow: 0px 6px 42px rgba(63, 61, 86, 0.69);
+          box-shadow: 0px 6px 42px rgba(63, 61, 86, 0.69);
   border-radius: 10px;
 }
 
@@ -235,8 +235,8 @@ footer a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 80%;
   height: 100%;
 }
@@ -247,11 +247,11 @@ footer a:hover {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -275,23 +275,20 @@ footer a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   margin-bottom: 1rem;
 }
 
-.calendar-section
-  .flatpickr-calendar
-  .flatpickr-weekdaycontainer
-  .flatpickr-weekday {
+.calendar-section .flatpickr-calendar .flatpickr-weekdaycontainer .flatpickr-weekday {
   -ms-flex-preferred-size: 14.28%;
-  flex-basis: 14.28%;
+      flex-basis: 14.28%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .calendar-section .flatpickr-calendar .dayContainer {
@@ -299,7 +296,7 @@ footer a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .calendar-section .flatpickr-calendar .dayContainer .prevMonthDay {
@@ -318,13 +315,13 @@ footer a:hover {
 
 .calendar-section .flatpickr-calendar .flatpickr-day {
   -ms-flex-preferred-size: 14.28%;
-  flex-basis: 14.28%;
+      flex-basis: 14.28%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 1rem;
 }
 
@@ -347,7 +344,7 @@ footer a:hover {
   height: 100px;
   margin-bottom: 1.5rem;
   -webkit-box-shadow: 0px 4px 25px rgba(63, 61, 86, 0.05);
-  box-shadow: 0px 4px 25px rgba(63, 61, 86, 0.05);
+          box-shadow: 0px 4px 25px rgba(63, 61, 86, 0.05);
   border-radius: 10px;
   border-left: 10px solid #026fc2;
 }
