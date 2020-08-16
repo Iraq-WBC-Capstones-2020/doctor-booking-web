@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import AboutSection from '../components/AboutSection/AboutSection';
+import AboutSection from '../components/AboutPage/AboutSection/AboutSection';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
 test('About section renders', () => {
