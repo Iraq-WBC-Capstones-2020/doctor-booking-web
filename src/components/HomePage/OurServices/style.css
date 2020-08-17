@@ -9,8 +9,8 @@ body {
 
 .row {
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .gray-line {
@@ -46,11 +46,11 @@ body {
 .card {
   text-align: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 20px !important;
   -webkit-box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+          box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
 }
 
 .card img {
