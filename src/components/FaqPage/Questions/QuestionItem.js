@@ -17,7 +17,7 @@ function QuestionItem(props) {
 
   return (
     <Accordion>
-      <Card className="qustionCard my-4">
+      <div className="qustionCard my-4">
         <Card.Header>
           <p className={isOpen && 'openQuestion'}>{props.question.question}</p>
           <Accordion.Toggle
@@ -31,7 +31,7 @@ function QuestionItem(props) {
         <Accordion.Collapse eventKey={props.question.id}>
           <Card.Body>{props.question.answer}</Card.Body>
         </Accordion.Collapse>
-      </Card>
+      </div>
     </Accordion>
   );
 }

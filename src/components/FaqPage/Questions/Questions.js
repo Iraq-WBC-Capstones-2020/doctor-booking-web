@@ -4,7 +4,11 @@ import QuestionItem from './QuestionItem';
 
 function Qustions() {
   const [questions] = useState([
-    { question: 'how are u', answer: 'a im fine', id: 1 },
+    {
+      question: 'who can use this website?',
+      answer: 'the website is for anyone that went to find doctor easily',
+      id: 1,
+    },
     { question: 'how are u', answer: 'a im fine', id: 2 },
     { question: 'how are u', answer: 'a im fine', id: 3 },
   ]);
