@@ -356,4 +356,12 @@ footer a:hover {
   margin: 0 1rem;
   color: black;
 }
+
+.cover {
+  background: #026fc2;
+}
+
+.profileCover {
+  margin-bottom: -1rem;
+}
 /*# sourceMappingURL=style.css.map */
