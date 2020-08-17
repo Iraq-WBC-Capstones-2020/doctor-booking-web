@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Col, Form, Container, Row } from 'react-bootstrap';
 import './stepTwo.css';
 
@@ -42,7 +42,7 @@ function StepTwo() {
         <Row className="formRow">
           <Col lg={6}>
             <Form.Group className="stepTwoFilds">
-              <label for="exampleFormControlTextarea1">Education</label>
+              <label htmlFor="exampleFormControlTextarea1">Education</label>
               <textarea
                 className="textArea form-control"
                 id="exampleFormControlTextarea1"
@@ -52,7 +52,7 @@ function StepTwo() {
           </Col>
           <Col lg={6}>
             <Form.Group className="stepTwoFilds">
-              <label for="exampleFormControlTextarea1">Expeience</label>
+              <label htmlFor="exampleFormControlTextarea1">Expeience</label>
               <textarea
                 className="textArea form-control"
                 id="exampleFormControlTextarea1"

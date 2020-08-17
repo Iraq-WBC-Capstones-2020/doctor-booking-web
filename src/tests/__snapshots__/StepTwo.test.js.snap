@@ -85,7 +85,11 @@ exports[`StepTwo renders correctly 1`] = `
           className="stepTwoFilds form-group"
         >
           <label
+<<<<<<< HEAD
             for="exampleFormControlTextarea1"
+=======
+            htmlFor="exampleFormControlTextarea1"
+>>>>>>> master
           >
             Education
           </label>
@@ -103,7 +107,11 @@ exports[`StepTwo renders correctly 1`] = `
           className="stepTwoFilds form-group"
         >
           <label
+<<<<<<< HEAD
             for="exampleFormControlTextarea1"
+=======
+            htmlFor="exampleFormControlTextarea1"
+>>>>>>> master
           >
             Expeience
           </label>
