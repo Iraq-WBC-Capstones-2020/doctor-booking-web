@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import TeamMember from './TeamMember';
 function OurTeam() {
   return (
-    <Container className="abSection">
+    <Container className="abSection ourTeam">
       <Row>
         <Container className="text-center mt-5 section-title">
           <h1>Our Team</h1>

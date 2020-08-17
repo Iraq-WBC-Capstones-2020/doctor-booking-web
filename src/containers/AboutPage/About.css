@@ -61,4 +61,12 @@
 .abSection {
   margin-top: 120px;
 }
+
+.teamPhoto img {
+  border-radius: 50%;
+}
+
+.ourTeam h2 {
+  font-size: 24px;
+}
 /*# sourceMappingURL=About.css.map */
