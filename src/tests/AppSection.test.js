@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import AppSection from '../components/AppSection/AppSection';
+import AppSection from '../components/HomePage/AppSection/AppSection';
 import renderer from 'react-test-renderer';
 it('render1', () => {
   render(<AppSection />);
