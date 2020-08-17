@@ -2,16 +2,19 @@ body {
   font-family: Roboto;
 }
 
+.newsContainer {
+  background-color: #f5f9fd;
+}
+
 .inputFiled {
   height: 48px !important;
 }
 
 .newsLetter {
   height: 277px;
-  background-color: #d8d8d8;
+
   padding-top: 57px;
   align-items: center;
-  margin-bottom: 48px;
 
   h1 {
     line-height: 48px;

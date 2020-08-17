@@ -7,29 +7,32 @@ import './style.css';
 
 function AppSection() {
   return (
-    <Container className="applicationSection">
-      <Row className="myRow">
-        <div className="col-xs-6">
-          <div className="text">
-            <h2>Download our mobile apps (comming soon)</h2>
-            <p>
-              Our dedicated patient engagement app and web portal allow you to
-              access information instantaneously (no tedeous form, long calls,
-              or administrative hassle) and securely
-            </p>
+    <div className="appContainer ">
+      <Container className="applicationSection">
+        <Row className="myRow">
+          <div className="col-lg-6">
+            <div className="text">
+              <h2>Download our mobile apps (comming soon)</h2>
+              <div className="underline"></div>
+              <p>
+                Our dedicated patient engagement app and web portal allow you to
+                access information instantaneously (no tedeous form, long calls,
+                or administrative hassle) and securely
+              </p>
+            </div>
+            <div className="downloadButtons">
+              <input alt="On App store" type="image" src={appStore} />
+              <input alt="On Google play" type="image" src={googlePlay} />
+            </div>
           </div>
-          <div className="downloadButtons">
-            <input alt="On App store" type="image" src={appStore} />
-            <input alt="On Google play" type="image" src={googlePlay} />
+          <div className="col-lg-6">
+            <div className="applicationImage">
+              <img alt="our app" className="img-fluid" src={appImg} />
+            </div>
           </div>
-        </div>
-        <div className="col-xs-6">
-          <div className="applicationImage">
-            <img alt="our app" src={appImg} />
-          </div>
-        </div>
-      </Row>
-    </Container>
+        </Row>
+      </Container>
+    </div>
   );
 }
 

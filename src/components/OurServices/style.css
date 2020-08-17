@@ -4,15 +4,26 @@ body {
   font-family: 'Roboto';
 }
 
+.services-container {
+  position: relative;
+}
+
+.services-container .backdrob {
+  position: absolute;
+  left: 0;
+  top: -5%;
+}
+
 .services-section {
   text-align: center;
-  height: 1073px;
+  margin-bottom: 240px;
+  z-index: 1000;
 }
 
 .row {
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .gray-line {
@@ -25,6 +36,7 @@ body {
 .head {
   margin-top: 43px;
   width: 738px;
+  z-index: 100;
 }
 
 .head h1 {
@@ -48,11 +60,11 @@ body {
 .card {
   text-align: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 20px !important;
   -webkit-box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+          box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
 }
 
 .card img {

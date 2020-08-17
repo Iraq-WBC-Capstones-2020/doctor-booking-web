@@ -2,6 +2,11 @@ body {
   background-color: #f5f9fd;
 }
 
+.appContainer {
+  background: #f5f9fd;
+  padding: 1px 0;
+}
+
 .applicationSection {
   margin-top: 99px;
   margin-bottom: 99px;
@@ -17,6 +22,14 @@ body {
   margin-top: 48px;
   width: 610px;
   height: 346px;
+  width: 100%;
+}
+
+.underline {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 2px;
+  margin: 10px 0;
 }
 
 .text {

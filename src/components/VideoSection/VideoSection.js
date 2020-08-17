@@ -5,8 +5,8 @@ import './style.css';
 
 function VideoSection() {
   return (
-    <Container className="videoSection">
-      <Row>
+    <Container className="videoSection" id="video">
+      <Row className="align-items-center">
         <div className="col-lg-6">
           <h1>
             To get more familiar <br />
@@ -17,7 +17,7 @@ function VideoSection() {
           </h1>
         </div>
 
-        <div className="col-lg-6">
+        <div className="col-lg-6 mt-5 mt-lg-0">
           <div className="videoFrame">
             <img alt="Watch this video" src={VideoFrame} />
           </div>

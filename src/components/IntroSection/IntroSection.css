@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 * {
   font-family: 'Roboto', sans-serif;
 }
 
 .introSection {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
+  z-index: 1;
 }
 
 .penIntro {
   position: absolute;
   z-index: -1;
-  top: -20%;
+  top: -44%;
   left: 00%;
 }
 
@@ -22,10 +23,24 @@ h1 {
 }
 
 p {
-  color: #9dafbd;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  color: #7d7987;
+  padding-right: 70px;
 }
 
 .IntroSection__image {
   width: 100%;
+}
+
+button {
+  font-size: 14px;
+  font-weight: 500;
+  color: red;
+}
+
+#getInTouch {
+  background-color: #f5f9fd;
 }
 /*# sourceMappingURL=IntroSection.css.map */

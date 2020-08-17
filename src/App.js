@@ -13,7 +13,7 @@ import SearchPage from './containers/SearchPage/SearchPage';
 
 function App() {
   return (
-    <div>
+    <div style={{ background: 'white' }}>
       <Nav />
       <Switch>
         <Route exact path="/" component={HomePage} />

@@ -7,7 +7,7 @@ import './IntroSection.scss';
 function IntroSection() {
   return (
     <div className="introSection">
-      <img src={penIntro} className="penIntro" alt="" />
+      <img src={penIntro} className="penIntro d-none d-lg-block" alt="" />
       <Container>
         <Row className=" my-5">
           <Col lg="6" className=" d-flex align-items-center">
@@ -16,18 +16,18 @@ function IntroSection() {
                 Your health is important{' '}
                 <span className="d-block">for us.</span>
               </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis officiis recusandae voluptatibus! Natus voluptatum
-                esse temporibus saepe quo omnis alias!
-              </p>
+              <p className="textShow"></p>
               <div className="my-4">
-                <Button className="btn-lg" variant="primary">
-                  Get Started
-                </Button>
-                <Button className="btn-lg ml-4" variant="outline-primary">
-                  Intro Video
-                </Button>
+                <a href="#getInTouch">
+                  <Button className="btn" variant="primary">
+                    Get Started
+                  </Button>
+                </a>
+                <a href="#video">
+                  <Button className="btn ml-4" variant="outline-primary">
+                    Intro Video
+                  </Button>
+                </a>
               </div>
             </div>
           </Col>

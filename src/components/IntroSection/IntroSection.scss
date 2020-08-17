@@ -5,26 +5,40 @@
 
 .introSection {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
+  z-index: 1;
 }
 
 .penIntro {
   position: absolute;
   z-index: -1;
-  top: -20%;
+  top: -44%;
   left: 00%;
 }
-
 h1 {
   color: #026fc2;
   font-size: 36px;
   font-weight: 500;
 }
 
-p {
-  color: #9dafbd;
+p.textShow {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  color: #7d7987;
+  padding-right: 70px;
 }
 
 .IntroSection__image {
   width: 100%;
+}
+
+button {
+  font-size: 14px;
+  font-weight: 500;
+  color: red;
+}
+
+#getInTouch {
+  background-color: #f5f9fd;
 }
