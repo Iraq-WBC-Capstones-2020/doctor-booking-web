@@ -2,7 +2,7 @@
 
 exports[`our goals section renders correctly 1`] = `
 <div
-  className="mt-5 container"
+  className="abSection container"
 >
   <div
     className="justify-content-center row"

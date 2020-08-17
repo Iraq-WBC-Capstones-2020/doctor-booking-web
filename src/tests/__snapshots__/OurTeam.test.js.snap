@@ -2,7 +2,7 @@
 
 exports[`our team section renders correctly 1`] = `
 <div
-  className="mb-5 container"
+  className="abSection ourTeam container"
 >
   <div
     className="row"
@@ -16,7 +16,7 @@ exports[`our team section renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="mt-5 row"
+    className="row"
   >
     <div
       className="mt-5 col-lg-6"
@@ -27,7 +27,9 @@ exports[`our team section renders correctly 1`] = `
         <div
           className="d-flex align-items-center flex-column col-6"
         >
-          <div>
+          <div
+            className="teamPhoto"
+          >
             <img
               alt="team member"
               className="img-fluid"
@@ -48,7 +50,7 @@ exports[`our team section renders correctly 1`] = `
                 >
                   <img
                     alt="github icon"
-                    src="github.svg"
+                    src="icons8-github-64.png"
                   />
                 </a>
               </li>
@@ -59,8 +61,8 @@ exports[`our team section renders correctly 1`] = `
                   href="#!"
                 >
                   <img
-                    alt="facebook icon"
-                    src="facebook.svg"
+                    alt="twitter icon"
+                    src="icons8-twitter-circled-64.png"
                   />
                 </a>
               </li>
@@ -71,8 +73,8 @@ exports[`our team section renders correctly 1`] = `
                   href="#!"
                 >
                   <img
-                    alt="instagram icon"
-                    src="instagram.svg"
+                    alt="linkedin icon"
+                    src="icons8-linkedin-circled-64.png"
                   />
                 </a>
               </li>
@@ -109,7 +111,9 @@ exports[`our team section renders correctly 1`] = `
         <div
           className="d-flex align-items-center flex-column col-6"
         >
-          <div>
+          <div
+            className="teamPhoto"
+          >
             <img
               alt="team member"
               className="img-fluid"
@@ -130,7 +134,7 @@ exports[`our team section renders correctly 1`] = `
                 >
                   <img
                     alt="github icon"
-                    src="github.svg"
+                    src="icons8-github-64.png"
                   />
                 </a>
               </li>
@@ -141,8 +145,8 @@ exports[`our team section renders correctly 1`] = `
                   href="#!"
                 >
                   <img
-                    alt="facebook icon"
-                    src="facebook.svg"
+                    alt="twitter icon"
+                    src="icons8-twitter-circled-64.png"
                   />
                 </a>
               </li>
@@ -153,8 +157,8 @@ exports[`our team section renders correctly 1`] = `
                   href="#!"
                 >
                   <img
-                    alt="instagram icon"
-                    src="instagram.svg"
+                    alt="linkedin icon"
+                    src="icons8-linkedin-circled-64.png"
                   />
                 </a>
               </li>
@@ -191,7 +195,9 @@ exports[`our team section renders correctly 1`] = `
         <div
           className="d-flex align-items-center flex-column col-6"
         >
-          <div>
+          <div
+            className="teamPhoto"
+          >
             <img
               alt="team member"
               className="img-fluid"
@@ -212,7 +218,7 @@ exports[`our team section renders correctly 1`] = `
                 >
                   <img
                     alt="github icon"
-                    src="github.svg"
+                    src="icons8-github-64.png"
                   />
                 </a>
               </li>
@@ -223,8 +229,8 @@ exports[`our team section renders correctly 1`] = `
                   href="#!"
                 >
                   <img
-                    alt="facebook icon"
-                    src="facebook.svg"
+                    alt="twitter icon"
+                    src="icons8-twitter-circled-64.png"
                   />
                 </a>
               </li>
@@ -235,8 +241,8 @@ exports[`our team section renders correctly 1`] = `
                   href="#!"
                 >
                   <img
-                    alt="instagram icon"
-                    src="instagram.svg"
+                    alt="linkedin icon"
+                    src="icons8-linkedin-circled-64.png"
                   />
                 </a>
               </li>
@@ -273,7 +279,9 @@ exports[`our team section renders correctly 1`] = `
         <div
           className="d-flex align-items-center flex-column col-6"
         >
-          <div>
+          <div
+            className="teamPhoto"
+          >
             <img
               alt="team member"
               className="img-fluid"
@@ -294,7 +302,7 @@ exports[`our team section renders correctly 1`] = `
                 >
                   <img
                     alt="github icon"
-                    src="github.svg"
+                    src="icons8-github-64.png"
                   />
                 </a>
               </li>
@@ -305,8 +313,8 @@ exports[`our team section renders correctly 1`] = `
                   href="#!"
                 >
                   <img
-                    alt="facebook icon"
-                    src="facebook.svg"
+                    alt="twitter icon"
+                    src="icons8-twitter-circled-64.png"
                   />
                 </a>
               </li>
@@ -317,8 +325,8 @@ exports[`our team section renders correctly 1`] = `
                   href="#!"
                 >
                   <img
-                    alt="instagram icon"
-                    src="instagram.svg"
+                    alt="linkedin icon"
+                    src="icons8-linkedin-circled-64.png"
                   />
                 </a>
               </li>
