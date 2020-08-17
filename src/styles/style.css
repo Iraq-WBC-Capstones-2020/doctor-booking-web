@@ -62,6 +62,7 @@ nav a {
 footer {
   background-color: #014d87;
   min-height: 250px;
+  font-weight: normal;
 }
 
 footer .footer-container {
@@ -79,6 +80,7 @@ footer .footer-container .row-container {
 }
 
 footer a {
+  font-weight: normal;
   color: white;
 }
 
@@ -89,7 +91,11 @@ footer a:hover {
 .linksHeader {
   border-left: 4px solid #F25929;
   padding-left: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: -1rem;
+  font-weight: normal;
 }
 
 .page-container {

@@ -3,6 +3,7 @@
 footer {
   background-color: $darkerBlue;
   min-height: 250px;
+  font-weight: normal;
   .footer-container {
     min-height: 250px;
     .row-container {
@@ -16,16 +17,18 @@ footer {
     }
   }
   a {
+    font-weight: normal;
     color: white;
     &:hover {
       color: white;
     }
   }
 }
+
 .linksHeader{
   border-left: 4px solid #F25929;
   padding-left: 0.4rem;
   display: flex;
   margin-left: -1rem;
-}
+  font-weight: normal;
 }
