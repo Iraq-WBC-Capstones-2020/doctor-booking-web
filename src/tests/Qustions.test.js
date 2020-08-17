@@ -1,5 +1,5 @@
 import React from 'react';
-import Questions from '../components/Questions/Questions';
+import Questions from '../components/FaqPage/Questions/Questions';
 import renderer from 'react-test-renderer';
 
 test('Questions (array component)  of faq page render correctly', () => {

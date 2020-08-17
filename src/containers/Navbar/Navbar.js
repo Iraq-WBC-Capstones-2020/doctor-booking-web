@@ -1,40 +1,80 @@
-import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-function nav() {
+import React, { useState } from 'react';
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+function NavBar() {
+  const [language, setLanguage] = useState('English');
+  const changeLanguage = (lng) => {
+    setLanguage(lng);
+  };
   return (
-    <Navbar
-      className="shadow-sm"
-      collapseOnSelect
-      expand="lg"
-      bg="white"
-      variant="light"
-    >
-      <Container>
-        <Navbar.Brand>Doctor Booking</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto justify-content-end">
-            <Link className="nav-link" to="/">
-              Home
-            </Link>
-            <Link className="nav-link" to="/search">
-              Search
-            </Link>
-            <Link className="nav-link" to="/about">
-              About
-            </Link>
-            <Link className="nav-link" to="/faq">
-              FAQ
-            </Link>
-            <Link className="nav-link" to="/signin">
-              Sign in
-            </Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <div>
+      <Navbar
+        className="shadow-sm"
+        collapseOnSelect
+        expand="lg"
+        bg="white"
+        variant="light"
+      >
+        <Container>
+          <NavLink to="/" exact>
+            <Navbar.Brand>DOCTOR BOOKING</Navbar.Brand>
+          </NavLink>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ml-auto justify-content-end">
+              <NavLink
+                activeClassName="active-link"
+                className="nav-link"
+                exact
+                to="/"
+              >
+                Home
+              </NavLink>
+              <NavLink
+                activeClassName="active-link"
+                className="nav-link"
+                to="/search"
+              >
+                Search
+              </NavLink>
+              <NavLink
+                activeClassName="active-link"
+                className="nav-link"
+                to="/about"
+              >
+                About
+              </NavLink>
+              <NavLink
+                activeClassName="active-link"
+                className="nav-link"
+                to="/faq"
+              >
+                FAQ
+              </NavLink>
+              <NavLink
+                activeClassName="active-link"
+                className="nav-link"
+                to="/signin"
+              >
+                Sign in
+              </NavLink>
+              <NavDropdown title={language}>
+                <NavDropdown.Item onClick={() => changeLanguage('English')}>
+                  English
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick={() => changeLanguage('كوردى')}>
+                  كوردى
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick={() => changeLanguage('عربي')}>
+                  عربي
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </div>
   );
 }
 
-export default nav;
+export default NavBar;

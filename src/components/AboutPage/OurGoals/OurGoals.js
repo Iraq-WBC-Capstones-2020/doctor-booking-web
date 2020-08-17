@@ -15,8 +15,7 @@ function OurGoals() {
           <GoalCard
             img={numberOneImg}
             title="1st"
-            text="one of our goals is to be 
-            best doctor booking website in Erbil"
+            text="one of our goals is to be best doctor booking website in Erbil"
           />
         </Col>
         <Col className="justify-content-center d-flex mt-5" md="4">

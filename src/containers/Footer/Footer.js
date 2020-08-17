@@ -8,11 +8,11 @@ function Footer() {
       <Container className="h-100 footer-container">
         <Row className="h-100 align-content-center row-container">
           <Col className="mb-3 first-col" md="3">
-            <h5>Doctor Booking</h5>
+            <h5 className="linksHeader">Doctor Booking</h5>
             <p>A website to book doctor appointment and save you the time</p>
           </Col>
           <Col md="3" className="mb-3 offset-md-2">
-            <h5>Links</h5>
+            <h5 className="linksHeader">Links</h5>
 
             <ul className="list-unstyled">
               <li>
@@ -28,7 +28,7 @@ function Footer() {
           </Col>
 
           <Col md="3" className="mb-3 offset-md-1">
-            <h5>Services</h5>
+            <h5 className="linksHeader">Services</h5>
 
             <ul className="list-unstyled">
               <li>
