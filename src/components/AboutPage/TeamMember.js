@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Row, Container } from 'react-bootstrap';
 import avatar from './imgs/avatar.svg';
 import facebook from './imgs/facebook.svg';
 import instagram from './imgs/instagram.svg';

@@ -24,8 +24,8 @@
   max-width: -moz-max-content;
   max-width: max-content;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .goal-card {
@@ -33,14 +33,14 @@
   border: 0;
   border-radius: 12px;
   -webkit-box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
-  box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
+          box-shadow: 0px 6px 16px rgba(40, 41, 61, 0.08);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .goal-card:hover {
   -webkit-box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
-  box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
+          box-shadow: 0px 8px 26px rgba(40, 41, 61, 0.1);
 }
 
 .card-title {
@@ -53,5 +53,9 @@
   font-size: 32px;
   color: #026fc2;
   font-weight: 600;
+}
+
+.abSection {
+  margin-top: 120px;
 }
 /*# sourceMappingURL=styles.css.map */
