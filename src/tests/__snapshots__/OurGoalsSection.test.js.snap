@@ -37,8 +37,7 @@ exports[`our goals section renders correctly 1`] = `
           <p
             className="text-center card-text px-3 pt-3 card-text"
           >
-            one of our goals is to be 
- best doctor booking website in Erbil
+            one of our goals is to be best doctor booking website in Erbil
           </p>
         </div>
       </div>
