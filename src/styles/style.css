@@ -1,5 +1,40 @@
-nav a {
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap');
+.active-link {
   color: #026fc2 !important;
+}
+
+.navbar {
+  min-height: 76px;
+}
+
+.navbar .nav-link {
+  font-size: 18px;
+}
+
+.navbar .navbar-brand {
+  font-family: 'Amiri', serif;
+  font-size: 25px;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 76px;
+  line-height: 76px;
+}
+
+.navbar-toggle {
+  /* (76px - button height 34px) / 2 = 21px */
+  margin-top: 21px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (76px - line-height of 27px) / 2 = 24.5px */
+    padding-top: 24.5px;
+    padding-bottom: 24.5px;
+    line-height: 27px;
+  }
 }
 
 .section-container h2 {
@@ -119,7 +154,7 @@ footer a:hover {
   color: white;
 }
 
-.signin-rectangle {
+.signIn-rectangle {
   max-width: 350px;
   min-height: 480px;
   background: #026fc2;
@@ -128,26 +163,26 @@ footer a:hover {
   border-radius: 10px;
 }
 
-.signin-rectangle input {
+.signIn-rectangle input {
   font-size: 14px;
   width: 250px;
   height: 45px;
 }
 
-.signin-rectangle p {
+.signIn-rectangle p {
   color: white;
   margin: 0 auto;
 }
 
-.signin-rectangle a {
+.signIn-rectangle a {
   color: white;
 }
 
-.signin-rectangle a:hover {
+.signIn-rectangle a:hover {
   color: white;
 }
 
-.signin-rectangle h3 {
+.signIn-rectangle h3 {
   margin-top: 4rem;
 }
 

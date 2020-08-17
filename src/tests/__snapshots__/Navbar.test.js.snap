@@ -1,74 +1,107 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`navbar renders correctly 1`] = `
-<nav
-  className="shadow-sm navbar navbar-expand-lg navbar-light bg-white"
->
-  <div
-    className="container"
+<div>
+  <nav
+    className="shadow-sm navbar navbar-expand-lg navbar-light bg-white"
   >
-    <span
-      className="navbar-brand"
-    >
-      Doctor Booking
-    </span>
-    <button
-      aria-controls="responsive-navbar-nav"
-      aria-label="Toggle navigation"
-      className="navbar-toggler collapsed"
-      onClick={[Function]}
-      type="button"
-    >
-      <span
-        className="navbar-toggler-icon"
-      />
-    </button>
     <div
-      aria-expanded={null}
-      className="navbar-collapse collapse"
-      id="responsive-navbar-nav"
+      className="container"
     >
-      <div
-        className="ml-auto justify-content-end navbar-nav"
-        onKeyDown={[Function]}
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
       >
-        <a
-          className="nav-link"
-          href="/"
-          onClick={[Function]}
+        <span
+          className="navbar-brand"
         >
-          Home
-        </a>
-        <a
-          className="nav-link"
-          href="/search"
-          onClick={[Function]}
+          DOCTOR BOOKING
+        </span>
+      </a>
+      <button
+        aria-controls="responsive-navbar-nav"
+        aria-label="Toggle navigation"
+        className="navbar-toggler collapsed"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        aria-expanded={null}
+        className="navbar-collapse collapse"
+        id="responsive-navbar-nav"
+      >
+        <div
+          className="ml-auto justify-content-end navbar-nav"
+          onKeyDown={[Function]}
         >
-          Search
-        </a>
-        <a
-          className="nav-link"
-          href="/about"
-          onClick={[Function]}
-        >
-          About
-        </a>
-        <a
-          className="nav-link"
-          href="/faq"
-          onClick={[Function]}
-        >
-          FAQ
-        </a>
-        <a
-          className="nav-link"
-          href="/signin"
-          onClick={[Function]}
-        >
-          Sign in
-        </a>
+          <a
+            aria-current="page"
+            className="nav-link active-link"
+            href="/"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Home
+          </a>
+          <a
+            aria-current={null}
+            className="nav-link"
+            href="/search"
+            onClick={[Function]}
+          >
+            Search
+          </a>
+          <a
+            aria-current={null}
+            className="nav-link"
+            href="/about"
+            onClick={[Function]}
+          >
+            About
+          </a>
+          <a
+            aria-current={null}
+            className="nav-link"
+            href="/faq"
+            onClick={[Function]}
+          >
+            FAQ
+          </a>
+          <a
+            aria-current={null}
+            className="nav-link"
+            href="/signin"
+            onClick={[Function]}
+          >
+            Sign in
+          </a>
+          <div
+            className="dropdown nav-item"
+            onKeyDown={[Function]}
+          >
+            <a
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle nav-link"
+              data-rb-event-key={null}
+              href="#"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+            >
+              English
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
 `;
