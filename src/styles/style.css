@@ -62,6 +62,7 @@ nav a {
 footer {
   background-color: #014d87;
   min-height: 250px;
+  font-weight: normal;
 }
 
 footer .footer-container {
@@ -72,6 +73,10 @@ footer .footer-container .row-container {
   min-height: 250px;
 }
 
+footer .footer-container p {
+  color: #fff;
+}
+
 @media only screen and (max-width: 767px) {
   footer .first-col {
     margin-top: 1rem;
@@ -79,11 +84,22 @@ footer .footer-container .row-container {
 }
 
 footer a {
+  font-weight: normal;
   color: white;
 }
 
 footer a:hover {
   color: white;
+}
+
+.linksHeader {
+  border-left: 4px solid #F25929;
+  padding-left: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -1rem;
+  font-weight: normal;
 }
 
 .page-container {
@@ -352,5 +368,13 @@ footer a:hover {
 .small-appointment-card p {
   margin: 0 1rem;
   color: black;
+}
+
+.cover {
+  background: #026fc2;
+}
+
+.profileCover {
+  margin-bottom: -1rem;
 }
 /*# sourceMappingURL=style.css.map */

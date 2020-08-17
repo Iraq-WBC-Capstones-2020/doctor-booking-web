@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import OurGoals from '../components/OurGoals/OurGoals';
+import OurGoals from '../components/AboutPage/OurGoals/OurGoals';
 import renderer from 'react-test-renderer';
 test('our goals section is rendering ', () => {
   render(<OurGoals />);
