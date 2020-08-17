@@ -6,7 +6,7 @@ import locationImg from './imgs/location.svg';
 import awarenessImg from './imgs/awareness.svg';
 function OurGoals() {
   return (
-    <Container className="mt-5">
+    <Container className="abSection">
       <Row className="justify-content-center">
         <h2 className="section-title">Our Goals</h2>
       </Row>

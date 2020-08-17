@@ -1,14 +1,14 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
-import avatar from '../imgs/avatar.svg';
-import facebook from '../imgs/facebook.svg';
-import instagram from '../imgs/instagram.svg';
-import github from '../imgs/github.svg';
+import { Col, Row, Container } from 'react-bootstrap';
+import avatar from './imgs/avatar.svg';
+import github from './imgs/icons8-github-64.png';
+import twitter from './imgs/icons8-twitter-circled-64.png';
+import linkedin from './imgs/icons8-linkedin-circled-64.png';
 function TeamMember() {
   return (
     <Row>
       <Col xs="6" className="d-flex align-items-center flex-column">
-        <div>
+        <div className="teamPhoto">
           <img className="img-fluid" src={avatar} alt="team member" />
         </div>
         <div className="social-media mt-2">
@@ -20,12 +20,12 @@ function TeamMember() {
             </li>
             <li className="d-inline-block">
               <a href="#!">
-                <img src={facebook} alt="facebook icon" />
+                <img src={twitter} alt="twitter icon" />
               </a>
             </li>
             <li className="d-inline-block">
               <a href="#!">
-                <img src={instagram} alt="instagram icon" />
+                <img src={linkedin} alt="linkedin icon" />
               </a>
             </li>
           </ul>
