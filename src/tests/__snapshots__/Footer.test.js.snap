@@ -13,7 +13,9 @@ exports[`footer renders correctly 1`] = `
       <div
         className="mb-3 first-col col-md-3"
       >
-        <h5>
+        <h5
+          className="linksHeader"
+        >
           Doctor Booking
         </h5>
         <p>
@@ -23,7 +25,9 @@ exports[`footer renders correctly 1`] = `
       <div
         className="mb-3 offset-md-2 col-md-3"
       >
-        <h5>
+        <h5
+          className="linksHeader"
+        >
           Links
         </h5>
         <ul
@@ -58,7 +62,9 @@ exports[`footer renders correctly 1`] = `
       <div
         className="mb-3 offset-md-1 col-md-3"
       >
-        <h5>
+        <h5
+          className="linksHeader"
+        >
           Services
         </h5>
         <ul
