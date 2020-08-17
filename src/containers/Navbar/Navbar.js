@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function nav() {
   return (
     <Navbar
-      className="shadow-sm"
+      className="shadow-sm mainNav"
       collapseOnSelect
       expand="lg"
       bg="white"

@@ -1,4 +1,9 @@
 @import '../../styles/variables';
+
+.mainNav {
+  z-index: 10000;
+}
+
 nav {
   a {
     color: $primaryColor !important;

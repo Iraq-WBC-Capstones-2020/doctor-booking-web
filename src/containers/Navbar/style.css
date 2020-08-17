@@ -1,3 +1,7 @@
+.mainNav {
+  z-index: 10000;
+}
+
 nav a {
   color: #026fc2 !important;
 }
