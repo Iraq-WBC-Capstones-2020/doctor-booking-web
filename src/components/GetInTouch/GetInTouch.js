@@ -23,7 +23,7 @@ function GetInTouch() {
                 apoinnment online
               </h1>
               <p className="textShow">
-                search for the best doctor for you and book an appointment at
+                Search for the best doctor for you and book an appointment at
                 the time that fits your time
               </p>
               <div className="my-4">

@@ -16,7 +16,10 @@ function IntroSection() {
                 Your health is important{' '}
                 <span className="d-block">for us.</span>
               </h1>
-              <p className="textShow"></p>
+              <p className="textShow">
+                This website help you to find the best and suit doctor for your
+                situation , and save you alot of time for searching doctor
+              </p>
               <div className="my-4">
                 <a href="#getInTouch">
                   <Button className="btn" variant="primary">

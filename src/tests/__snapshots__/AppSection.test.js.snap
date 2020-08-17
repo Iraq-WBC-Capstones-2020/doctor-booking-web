@@ -2,49 +2,57 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="applicationSection container"
+  className="appContainer "
 >
   <div
-    className="myRow row"
+    className="applicationSection container"
   >
     <div
-      className="col-xs-6"
+      className="myRow row"
     >
       <div
-        className="text"
+        className="col-lg-6"
       >
-        <h2>
-          Download our mobile apps (comming soon)
-        </h2>
-        <p>
-          Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely
-        </p>
+        <div
+          className="text"
+        >
+          <h2>
+            Download our mobile apps (comming soon)
+          </h2>
+          <div
+            className="underline"
+          />
+          <p>
+            Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely
+          </p>
+        </div>
+        <div
+          className="downloadButtons"
+        >
+          <input
+            alt="On App store"
+            src="AppStoreEng.png"
+            type="image"
+          />
+          <input
+            alt="On Google play"
+            src="GooglePlayEng.png"
+            type="image"
+          />
+        </div>
       </div>
       <div
-        className="downloadButtons"
+        className="col-lg-6"
       >
-        <input
-          alt="On App store"
-          src="AppStoreEng.png"
-          type="image"
-        />
-        <input
-          alt="On Google play"
-          src="GooglePlayEng.png"
-          type="image"
-        />
-      </div>
-    </div>
-    <div
-      className="col-xs-6"
-    >
-      <div
-        className="applicationImage"
-      >
-        <img
-          alt="our app"
-          src="undraw_posting_photo_v65l.png"
-        />
+        <div
+          className="applicationImage"
+        >
+          <img
+            alt="our app"
+            className="img-fluid"
+            src="undraw_posting_photo_v65l.png"
+          />
+        </div>
       </div>
     </div>
   </div>

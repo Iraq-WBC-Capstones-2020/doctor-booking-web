@@ -14,8 +14,8 @@ body {
   height: 277px;
   padding-top: 57px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .newsLetter h1 {

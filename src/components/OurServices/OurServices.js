@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Card, CardGroup, Row } from 'react-bootstrap';
+import { Container, Card, Row } from 'react-bootstrap';
 import Freame from './images/Frame.png';
 import Freame2 from './images/Frame-1.png';
 import Freame3 from './images/undraw_map_1r69 1.png';

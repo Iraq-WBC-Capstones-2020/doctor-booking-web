@@ -2,7 +2,7 @@
 
 exports[`navbar renders correctly 1`] = `
 <nav
-  className="shadow-sm navbar navbar-expand-lg navbar-light bg-white"
+  className="shadow-sm mainNav navbar navbar-expand-lg navbar-light bg-white"
 >
   <div
     className="container"
