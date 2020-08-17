@@ -1,0 +1,19 @@
+.cover {
+  background: #026fc2;
+  height: 330px;
+}
+
+.profileImage {
+  margin-bottom: -3rem;
+  -webkit-filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.08));
+  filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.08));
+}
+
+.profileName {
+  margin-bottom: -2rem;
+}
+
+.profileName h2 {
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

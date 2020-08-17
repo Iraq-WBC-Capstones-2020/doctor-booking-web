@@ -1,10 +1,10 @@
 import React from 'react';
-import OurServices from '../../components/OurServices/OurServices';
-import IntroSection from '../../components/IntroSection/IntroSection';
-import VideoSection from '../../components/VideoSection/VideoSection';
-import GetInTouch from '../../components/GetInTouch/GetInTouch';
-import AppSection from '../../components/AppSection/AppSection';
-import NewsLetter from '../../components/NewsLetter/NewsLetter';
+import OurServices from '../../components/HomePage/OurServices/OurServices';
+import IntroSection from '../../components/HomePage/IntroSection/IntroSection';
+import VideoSection from '../../components/HomePage/VideoSection/VideoSection';
+import GetInTouch from '../../components/HomePage/GetInTouch/GetInTouch';
+import AppSection from '../../components/HomePage/AppSection/AppSection';
+import NewsLetter from '../../components/HomePage/NewsLetter/NewsLetter';
 function HomePage() {
   return (
     <div>
