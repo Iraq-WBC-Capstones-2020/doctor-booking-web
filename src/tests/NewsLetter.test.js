@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import NewsLetter from '../components/NewsLetter/NewsLetter';
+import NewsLetter from '../components/HomePage/NewsLetter/NewsLetter';
 import renderer from 'react-test-renderer';
 it('render1', () => {
   render(<NewsLetter />);

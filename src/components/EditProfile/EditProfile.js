@@ -1,19 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './EditProfile.css';
+import Map, { Marker } from 'react-map-gl';
 import avatar from './avatar.svg';
 import { Form } from 'react-bootstrap';
+import SideNav from '../DashboardPage/SideNav/SideNav';
+
+const API =
+  'pk.eyJ1IjoiaHVzc2VpbnRhbGFsIiwiYSI6ImNrY3M4dWxwbzFtZDIycnM2OHQ4dXM4cnIifQ.ofCZrIlVF_r4YpQDzSi13g';
 
 function EditProfile() {
+  const [viewport, setViewport] = useState({
+    latitude: 36.1901,
+    longitude: 43.993,
+    height: '26rem',
+    width: '100%',
+    zoom: 10,
+  });
+
+  const [marker, setMarker] = useState([0, 0]);
+  function placeMarker(e) {
+    setMarker(e.lngLat);
+    console.log(marker);
+  }
+
   return (
     <div>
       <div className="row p-0 m-0 editContainer">
-        <div className="col-md-2 sidebar ">
-          <ul className="list-unstyled sidbarList">
-            <li>Calendar</li>
-            <li>Profile</li>
-            <li>Edit profile</li>
-          </ul>
+        <div className="sideBar  col-md-2">
+          <SideNav className=" pt-5 mt-5 " />
         </div>
+
         <div className="col-md-10   px-4 py-4">
           {/* header  */}
           <div className="header d-flex  align-items-center">
@@ -81,7 +97,7 @@ function EditProfile() {
               </div>
               <hr />
               <div className="form-row my-5 justify-content-between">
-                <div clasName="col-md-5">
+                <div className="col-md-5">
                   <label htmlFor="email" className="label">
                     Email
                   </label>
@@ -148,17 +164,19 @@ function EditProfile() {
               </div>
             </form>
             <div className="row p-3">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12887.907437953263!2d44.010317449999995!3d36.14277670000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40073b4dd69ea69b%3A0xb271c8adc232c062!2sErbil%20Technology%20Institute!5e0!3m2!1sen!2siq!4v1597238804088!5m2!1sen!2siq"
-                style={{ width: '100%', border: 0, height: '26rem' }}
-                aria-hidden="false"
-                tabIndex="0"
-                title="location"
-              ></iframe>
+              <Map
+                className="map"
+                {...viewport}
+                mapboxApiAccessToken={API}
+                onViewportChange={(viewport) => setViewport(viewport)}
+                onClick={placeMarker}
+                mapStyle={'mapbox://styles/mapbox/streets-v11'}
+              >
+                <Marker longitude={marker[0]} latitude={marker[1]}></Marker>
+              </Map>
             </div>
 
             {/* timetable  */}
-
             <div className="mt-5 timeTable">
               <p>Time Table</p>
               <div className="row m-2 shadow  rounded-1">

@@ -2,26 +2,11 @@
   background-color: white;
 }
 
-.sidebar {
-  background: #f7f7f7;
+.sideBar {
+  background: #ebebeb;
   z-index: 1;
-
-  .sidbarList {
-    padding-top: 100px !important;
-    padding-left: 10px !important;
-    color: #758095;
-  }
-
-  .sidbarList li {
-    padding: 0.5rem;
-    font-size: 18px;
-    font-weight: 400;
-
-    &:hover {
-      cursor: pointer;
-      color: rgb(119, 119, 214);
-    }
-  }
+  padding-top: 4rem;
+  padding-left: 2rem;
 }
 
 .label {

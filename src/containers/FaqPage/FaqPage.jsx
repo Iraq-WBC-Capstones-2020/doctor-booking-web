@@ -1,6 +1,6 @@
 import React from 'react';
-import FaqIntro from '../../components/FaqIntro/FaqIntro';
-import Questions from '../../components/Questions/Questions';
+import FaqIntro from '../../components/FaqPage/FaqIntro/FaqIntro';
+import Questions from '../../components/FaqPage/Questions/Questions';
 
 function FaqPage() {
   return (

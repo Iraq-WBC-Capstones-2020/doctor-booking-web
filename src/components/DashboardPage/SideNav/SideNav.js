@@ -6,7 +6,7 @@ import profileIcon from '../AppointmentCard/imgs/person.svg';
 function SideNav() {
   return (
     <div className="side-nav-container">
-      <Nav className="col-md-12 d-none d-md-block sidebar ml-5 mt-5">
+      <Nav className="d-none d-md-block sidebar ">
         <Nav.Item className="d-flex justify-content-evenly">
           <img src={profileIcon} alt="profile icon" />
           <Nav.Link href="#!">Profile</Nav.Link>

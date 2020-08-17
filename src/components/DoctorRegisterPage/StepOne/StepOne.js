@@ -96,7 +96,7 @@ function StepOne() {
 
         <Row className="formRow">
           <Col lg={12}>
-            <label for="photoUplod">Personal Photo</label>
+            <label htmlFor="photoUplod">Personal Photo</label>
             <Button
               id="photoUplod"
               name="photoUplod"
