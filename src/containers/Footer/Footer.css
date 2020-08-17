@@ -24,4 +24,9 @@ footer a {
 footer a:hover {
   color: white;
 }
+
+.linksHeader {
+  border-left: 4px solid F25929;
+  padding-left: 5px;
+}
 /*# sourceMappingURL=Footer.css.map */
