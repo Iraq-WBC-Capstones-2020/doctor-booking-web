@@ -154,7 +154,7 @@ footer a:hover {
   color: white;
 }
 
-.signin-rectangle {
+.signIn-rectangle {
   max-width: 350px;
   min-height: 480px;
   background: #026fc2;
@@ -163,26 +163,26 @@ footer a:hover {
   border-radius: 10px;
 }
 
-.signin-rectangle input {
+.signIn-rectangle input {
   font-size: 14px;
   width: 250px;
   height: 45px;
 }
 
-.signin-rectangle p {
+.signIn-rectangle p {
   color: white;
   margin: 0 auto;
 }
 
-.signin-rectangle a {
+.signIn-rectangle a {
   color: white;
 }
 
-.signin-rectangle a:hover {
+.signIn-rectangle a:hover {
   color: white;
 }
 
-.signin-rectangle h3 {
+.signIn-rectangle h3 {
   margin-top: 4rem;
 }
 
@@ -404,7 +404,6 @@ footer a:hover {
   margin: 0 1rem;
   color: black;
 }
-
 
 .cover {
   background: #026fc2;
