@@ -17,7 +17,7 @@ function QuestionItem(props) {
 
   return (
     <Accordion>
-      <div className="qustionCard my-4">
+      <div className="qustionCard my-5">
         <Card.Header>
           <p className={isOpen && 'openQuestion'}>{props.question.question}</p>
           <Accordion.Toggle

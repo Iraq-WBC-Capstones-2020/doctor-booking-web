@@ -21,8 +21,15 @@ exports[`intro section of faq page render correctly 1`] = `
             questions
           </span>
         </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis recusandae voluptatibus! Natus voluptatum esse temporibus saepe quo omnis alias!
+        <p
+          className="faqText"
+        >
+          Here is some frequently asked questions 
+          <br />
+           about the website, it help you to get a better 
+          <br />
+           idea about the app
+           
         </p>
       </div>
     </div>

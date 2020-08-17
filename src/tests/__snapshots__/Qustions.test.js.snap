@@ -9,7 +9,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
       className="accordion"
     >
       <div
-        className="qustionCard my-4 card"
+        className="qustionCard my-5"
       >
         <div
           className="card-header"
@@ -17,7 +17,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <p
             className={false}
           >
-            how are u
+            who can use this website?
           </p>
           <button
             onClick={[Function]}
@@ -37,7 +37,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <div
             className="card-body"
           >
-            a im fine
+            the website is for anyone that went to find doctor easily
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
       className="accordion"
     >
       <div
-        className="qustionCard my-4 card"
+        className="qustionCard my-5"
       >
         <div
           className="card-header"
@@ -54,7 +54,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <p
             className={false}
           >
-            how are u
+            Am I required to create a acount for making an online appointment?
           </p>
           <button
             onClick={[Function]}
@@ -74,7 +74,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <div
             className="card-body"
           >
-            a im fine
+            no need for a user to create an acount
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
       className="accordion"
     >
       <div
-        className="qustionCard my-4 card"
+        className="qustionCard my-5"
       >
         <div
           className="card-header"
@@ -91,7 +91,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <p
             className={false}
           >
-            how are u
+            Can I schedule more than one appointment with a single doctor?
           </p>
           <button
             onClick={[Function]}
@@ -111,7 +111,230 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <div
             className="card-body"
           >
-            a im fine
+            yes, you can do that
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="accordion"
+    >
+      <div
+        className="qustionCard my-5"
+      >
+        <div
+          className="card-header"
+        >
+          <p
+            className={false}
+          >
+            Can I reschedule an online appointment?
+          </p>
+          <button
+            onClick={[Function]}
+            type="button"
+          >
+             
+            <img
+              alt=""
+              src="open.svg"
+            />
+          </button>
+        </div>
+        <div
+          aria-expanded={null}
+          className="collapse"
+        >
+          <div
+            className="card-body"
+          >
+            yes, if you have an argent situation you can reschedule to anthor time
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="accordion"
+    >
+      <div
+        className="qustionCard my-5"
+      >
+        <div
+          className="card-header"
+        >
+          <p
+            className={false}
+          >
+            How will I know if my booking is confirmed?
+          </p>
+          <button
+            onClick={[Function]}
+            type="button"
+          >
+             
+            <img
+              alt=""
+              src="open.svg"
+            />
+          </button>
+        </div>
+        <div
+          aria-expanded={null}
+          className="collapse"
+        >
+          <div
+            className="card-body"
+          >
+            the secretary tall you to confirm the appoinment by calling or sending email
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="accordion"
+    >
+      <div
+        className="qustionCard my-5"
+      >
+        <div
+          className="card-header"
+        >
+          <p
+            className={false}
+          >
+            should i include a name of a doctor when i want to search for a specific specialty ?
+          </p>
+          <button
+            onClick={[Function]}
+            type="button"
+          >
+             
+            <img
+              alt=""
+              src="open.svg"
+            />
+          </button>
+        </div>
+        <div
+          aria-expanded={null}
+          className="collapse"
+        >
+          <div
+            className="card-body"
+          >
+            no, just enter the specialty 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="accordion"
+    >
+      <div
+        className="qustionCard my-5"
+      >
+        <div
+          className="card-header"
+        >
+          <p
+            className={false}
+          >
+            What will the doctor's consultation fee be?
+          </p>
+          <button
+            onClick={[Function]}
+            type="button"
+          >
+             
+            <img
+              alt=""
+              src="open.svg"
+            />
+          </button>
+        </div>
+        <div
+          aria-expanded={null}
+          className="collapse"
+        >
+          <div
+            className="card-body"
+          >
+            it depend on the doctor itself
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="accordion"
+    >
+      <div
+        className="qustionCard my-5"
+      >
+        <div
+          className="card-header"
+        >
+          <p
+            className={false}
+          >
+            I am a Doctor and I have done my registration. What should I do next?
+          </p>
+          <button
+            onClick={[Function]}
+            type="button"
+          >
+             
+            <img
+              alt=""
+              src="open.svg"
+            />
+          </button>
+        </div>
+        <div
+          aria-expanded={null}
+          className="collapse"
+        >
+          <div
+            className="card-body"
+          >
+            we send you an email that you are now in our website and user can search and find you
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="accordion"
+    >
+      <div
+        className="qustionCard my-5"
+      >
+        <div
+          className="card-header"
+        >
+          <p
+            className={false}
+          >
+            Can I use the app for checking availability of Doctor and 
+ his fees without actually booking or scheduling an appointment ?
+          </p>
+          <button
+            onClick={[Function]}
+            type="button"
+          >
+             
+            <img
+              alt=""
+              src="open.svg"
+            />
+          </button>
+        </div>
+        <div
+          aria-expanded={null}
+          className="collapse"
+        >
+          <div
+            className="card-body"
+          >
+            yes, while you searching, click on the doctor card that you went know about him, it open a anther page that contain doctor informaition
           </div>
         </div>
       </div>
