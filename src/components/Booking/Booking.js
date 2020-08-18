@@ -11,7 +11,6 @@ function Booking() {
         <div className="col-md-10 col-lg-6 mx-4 mx-sm-0">
           <Form>
             <Form.Group controlId="name">
-              <Form.Label>Name</Form.Label>
               <Form.Control
                 type="text"
                 id="name"
@@ -45,7 +44,6 @@ function Booking() {
             </div>
 
             <Form.Group controlId="age">
-              <Form.Label>Age</Form.Label>
               <Form.Control
                 type="number"
                 id="age"
@@ -54,7 +52,6 @@ function Booking() {
             </Form.Group>
 
             <Form.Group controlId="phoneNumber">
-              <Form.Label>Phone Number</Form.Label>
               <Form.Control
                 type="number"
                 id="phoneNumber"
@@ -63,7 +60,6 @@ function Booking() {
             </Form.Group>
 
             <Form.Group controlId="email">
-              <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="email"
                 id="email"

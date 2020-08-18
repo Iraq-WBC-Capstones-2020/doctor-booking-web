@@ -7,7 +7,7 @@
   width: 275px;
   background: #014d87;
   -webkit-box-shadow: 0px 11px 14px rgba(1, 77, 135, 0.3);
-          box-shadow: 0px 11px 14px rgba(1, 77, 135, 0.3);
+  box-shadow: 0px 11px 14px rgba(1, 77, 135, 0.3);
   border-radius: 10px 0 0 10px;
 }
 
@@ -20,7 +20,7 @@
   min-height: 480px;
   background: #026fc2;
   -webkit-box-shadow: 0px 15px 17px rgba(2, 111, 194, 0.3);
-          box-shadow: 0px 15px 17px rgba(2, 111, 194, 0.3);
+  box-shadow: 0px 15px 17px rgba(2, 111, 194, 0.3);
   border-radius: 10px;
 }
 

@@ -19,6 +19,7 @@
   line-height: 28px;
   letter-spacing: -0.5px;
   color: rgba(0, 0, 0, 0.62);
+  flex: 1;
 }
 
 .openQuestion {
@@ -28,6 +29,7 @@
 .card-header button {
   border: none;
   outline: none;
+  background: transparent;
 }
 
 .card-body {
@@ -38,6 +40,5 @@
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 1px;
-
   color: rgba(0, 0, 0, 0.62);
 }
