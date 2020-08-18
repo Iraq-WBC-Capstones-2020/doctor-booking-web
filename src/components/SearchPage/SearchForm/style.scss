@@ -6,22 +6,24 @@
 .searchHead {
   margin-bottom: 79.56px;
   h1 {
-    font-weight: normal;
+    font-weight: 300;
     font-size: 64px;
     line-height: 75px;
-    display: flex;
+    display: inline-block;
     color: #000000;
   }
 
   img {
     margin-left: 30px;
+    margin-top: -15px;
   }
 }
 
 .form-row {
-  input, select {
-    margin-bottom:10px ;
-    height: 51px ;
+  input,
+  select {
+    margin-bottom: 10px;
+    height: 51px;
   }
 
   button {

@@ -8,20 +8,20 @@
 }
 
 .searchHead h1 {
-  font-weight: normal;
+  font-weight: 300;
   font-size: 64px;
   line-height: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   color: #000000;
 }
 
 .searchHead img {
   margin-left: 30px;
+  margin-top: -15px;
 }
 
-.form-row input, .form-row select {
+.form-row input,
+.form-row select {
   margin-bottom: 10px;
   height: 51px;
 }

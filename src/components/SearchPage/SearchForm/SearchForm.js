@@ -1,15 +1,6 @@
 import React from 'react';
-import {
-  Container,
-  Row,
-  Form,
-  Col,
-  DropdownButton,
-  InputGroup,
-  FormControl,
-  Dropdown,
-} from 'react-bootstrap';
-import SearchIcon from './images/Search.png';
+import { Container, Row, Form, Col } from 'react-bootstrap';
+import SearchIcon from './images/Search.svg';
 
 import './style.css';
 function SearchForm() {
@@ -33,22 +24,18 @@ function SearchForm() {
   return (
     <div className="searchForm">
       <Container>
-        <Row>
-          <div className="searchHead">
-            <Col lg={12}>
-              <h1>
-                Search for your doctor
-                <img src={SearchIcon} />
-              </h1>
-            </Col>
-          </div>
+        <Row className="searchHead text-center">
+          <Col lg={12}>
+            <h1>Search for your Doctor</h1>
+            <img src={SearchIcon} alt="search icon" />
+          </Col>
         </Row>
         <Form.Row className="justify-content-center">
           <Col className="myCol" sm={4}>
             <Form.Control className="inputForm" placeholder="Doctor name" />
           </Col>
           <Col className="myCol" sm={4}>
-          <Form.Group
+            <Form.Group
               className="inputForm"
               controlId="exampleForm.SelectCustom"
             >

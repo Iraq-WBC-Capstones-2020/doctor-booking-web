@@ -8,21 +8,18 @@ exports[`renders correctly 1`] = `
     className="container"
   >
     <div
-      className="row"
+      className="searchHead text-center row"
     >
       <div
-        className="searchHead"
+        className="col-lg-12"
       >
-        <div
-          className="col-lg-12"
-        >
-          <h1>
-            Search for your doctor
-            <img
-              src="Search.png"
-            />
-          </h1>
-        </div>
+        <h1>
+          Search for your Doctor
+        </h1>
+        <img
+          alt="search icon"
+          src="Search.svg"
+        />
       </div>
     </div>
     <div
