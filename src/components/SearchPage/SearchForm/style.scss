@@ -1,5 +1,6 @@
 @import '../variable';
 .searchForm {
+  margin-top: 100px;
   margin-bottom: 148px;
 }
 .searchHead {
@@ -18,8 +19,9 @@
 }
 
 .form-row {
-  input {
-    height: 51px;
+  input, select {
+    margin-bottom:10px ;
+    height: 51px ;
   }
 
   button {
@@ -31,7 +33,7 @@
 .myButton {
   font-size: $pFont;
   height: 51px;
-  width: 179px;
+  width: 100%;
   color: white;
   border: none;
   border-radius: 5px;

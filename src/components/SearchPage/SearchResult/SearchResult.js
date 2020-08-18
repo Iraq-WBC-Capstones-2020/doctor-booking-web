@@ -59,7 +59,7 @@ function SearchResult() {
           <hr className="solid" />
         </Row>
 
-        <Row>
+        <Row className="cardsRow">
           {card.map((cards) => (
             <Col md={4} key={cards.id}>
               <Card className="doctorCards" style={{ width: '18rem' }}>

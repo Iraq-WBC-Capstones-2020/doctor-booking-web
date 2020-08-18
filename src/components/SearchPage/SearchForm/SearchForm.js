@@ -13,6 +13,23 @@ import SearchIcon from './images/Search.png';
 
 import './style.css';
 function SearchForm() {
+  const speciality = [
+    'Abdominal radiology',
+    'Breast imaging',
+    'Cardiothoracic radiology',
+    'Cardiovascular radiology',
+    'Chest radiology',
+    'Emergency radiology',
+    'Endovascular surgical neuroradiology',
+    'Gastrointestinal radiology',
+    'Genitourinary radiology',
+    'Head and neck radiology',
+    'Pulmonary disease',
+    'Pulmonary disease',
+    'Sleep medicine',
+    'Sports medicine',
+    'Transplant hepatology',
+  ];
   return (
     <div className="searchForm">
       <Container>
@@ -31,25 +48,16 @@ function SearchForm() {
             <Form.Control className="inputForm" placeholder="Doctor name" />
           </Col>
           <Col className="myCol" sm={4}>
-            <InputGroup>
-              <FormControl
-                placeholder="Speciality"
-                aria-label="Speciality"
-                aria-describedby="basic-addon2"
-              />
-              <DropdownButton
-                as={InputGroup.Append}
-                title=""
-                variant="outline-secondary"
-                id="input-group-dropdown-2"
-              >
-                <Dropdown.Item href="#">Action</Dropdown.Item>
-                <Dropdown.Item href="#">Another action</Dropdown.Item>
-                <Dropdown.Item href="#">Something else here</Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item href="#">Separated link</Dropdown.Item>
-              </DropdownButton>
-            </InputGroup>
+          <Form.Group
+              className="inputForm"
+              controlId="exampleForm.SelectCustom"
+            >
+              <Form.Control className="inputForm" as="select" custom>
+                {speciality.map((spec) => (
+                  <option key={spec.id}>{spec}</option>
+                ))}
+              </Form.Control>
+            </Form.Group>
           </Col>
           <Col sm={2}>
             <button className="myButton" as="input" value="Submit">

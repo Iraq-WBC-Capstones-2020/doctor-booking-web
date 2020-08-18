@@ -19,7 +19,7 @@ body {
   width: 252px;
   background: #ffffff;
   -webkit-box-shadow: 0px 8px 24px rgba(40, 41, 61, 0.08);
-  box-shadow: 0px 8px 24px rgba(40, 41, 61, 0.08);
+          box-shadow: 0px 8px 24px rgba(40, 41, 61, 0.08);
   border-radius: 12px;
   border: none;
 }
@@ -36,7 +36,7 @@ body {
   top: -58px;
   border-radius: 50%;
   -webkit-filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
-  filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
 }
 
 .theButtons {
@@ -44,8 +44,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .theButtons button {
@@ -71,5 +71,9 @@ body {
   margin-bottom: 29px;
   margin-top: 18px;
   color: #5d646a;
+}
+
+.cardsRow {
+  text-align: -webkit-center;
 }
 /*# sourceMappingURL=style.css.map */
