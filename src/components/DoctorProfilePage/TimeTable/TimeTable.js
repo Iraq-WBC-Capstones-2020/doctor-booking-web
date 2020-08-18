@@ -1,10 +1,10 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { Col, Row, Table } from 'react-bootstrap';
 import { InfoContext } from '../DoctorInfoContext';
 import './style.css';
 
 function TimeTable() {
-  const [TimeDays, setTimeDay] = useContext(InfoContext);
+  const [TimeDays] = useContext(InfoContext);
 
   return (
     <div className="timeTable">
@@ -20,8 +20,8 @@ function TimeTable() {
               </tr>
             </thead>
             <tbody>
-              {TimeDays.days.map((myDay) => (
-                <tr>
+              {TimeDays.days.map((myDay, index) => (
+                <tr key={index}>
                   <td>{myDay.day}</td>
 
                   <td>{myDay.date}</td>

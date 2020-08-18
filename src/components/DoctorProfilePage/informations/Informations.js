@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Row, Col, Card } from 'react-bootstrap';
 import { InfoContext } from '../DoctorInfoContext';
 
 import './style.css';
 
 function Informations() {
-  const [TheInfo, setInfo] = useContext(InfoContext);
+  const [TheInfo] = useContext(InfoContext);
 
   return (
     <div>
