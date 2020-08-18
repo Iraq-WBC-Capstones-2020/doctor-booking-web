@@ -33,7 +33,7 @@
 .myButton {
   font-size: 18px;
   height: 51px;
-  width: 179px;
+  width: 100%;
   color: white;
   border: none;
   border-radius: 5px;
