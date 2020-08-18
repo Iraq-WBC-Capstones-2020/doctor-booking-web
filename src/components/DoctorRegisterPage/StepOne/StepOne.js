@@ -102,7 +102,7 @@ function StepOne() {
               name="photoUplod"
               as="input"
               type="button"
-              value="uplode"
+              value="Upload"
             />{' '}
           </Col>
         </Row>

@@ -11,6 +11,9 @@ import DoctorRegister from './containers/DoctorRegistration/DoctorRegistration';
 import HomePage from './containers/HomePage/HomePage';
 import SearchPage from './containers/SearchPage/SearchPage';
 import DoctorProfilePage from './containers/DoctorProfilePage/DoctorProfilePage';
+import Dashboard from './containers/DashboardPage/Dashboard'
+import EditProfile from './components/DashboardPage/EditProfile/EditProfile';
+import DashboardSection from './components/DashboardPage/DashboardSection/DashboardSection'
 
 function App() {
   return (
@@ -25,6 +28,8 @@ function App() {
         <Route path="/register" component={DoctorRegister} />
         <Route path="/search" component={SearchPage} />
         <Route path="/profile" component={DoctorProfilePage} />
+        <Route path="/edit" component={EditProfile}/>
+        <Route path="/calender" component={DashboardSection}/>
       </Switch>
       <Footer />
     </div>

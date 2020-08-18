@@ -3,7 +3,7 @@ import './EditProfile.css';
 import Map, { Marker } from 'react-map-gl';
 import avatar from './avatar.svg';
 import { Form } from 'react-bootstrap';
-import SideNav from '../DashboardPage/SideNav/SideNav';
+import SideNav from '../SideNav/SideNav';
 
 const API =
   'pk.eyJ1IjoiaHVzc2VpbnRhbGFsIiwiYSI6ImNrY3M4dWxwbzFtZDIycnM2OHQ4dXM4cnIifQ.ofCZrIlVF_r4YpQDzSi13g';
@@ -26,14 +26,14 @@ function EditProfile() {
   return (
     <div>
       <div className="row p-0 m-0 editContainer">
-        <div className="sideBar  col-md-2">
-          <SideNav className=" pt-5 mt-5 " />
+        <div className="sideBar col-md-2">
+          <SideNav className="pt-5 mt-5" />
         </div>
 
-        <div className="col-md-10   px-4 py-4">
+        <div className="col-md-10 px-4 py-4">
           {/* header  */}
-          <div className="header d-flex  align-items-center">
-            <div className="">
+          <div className="header d-flex align-items-center">
+            <div>
               <img src={avatar} alt="" />
             </div>
             <div className="ml-4">
