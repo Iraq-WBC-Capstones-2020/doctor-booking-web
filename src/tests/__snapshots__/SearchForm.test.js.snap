@@ -40,30 +40,58 @@ exports[`renders correctly 1`] = `
         className="myCol col-sm-4"
       >
         <div
-          className="input-group"
+          className="inputForm form-group"
         >
-          <input
-            aria-describedby="basic-addon2"
-            aria-label="Speciality"
-            className="form-control"
-            placeholder="Speciality"
-          />
-          <div
-            className="dropdown input-group-append"
-            onKeyDown={[Function]}
+          <select
+            className="inputForm custom-select"
+            id="exampleForm.SelectCustom"
           >
-            <button
-              aria-expanded={false}
-              aria-haspopup={true}
-              className="dropdown-toggle btn btn-outline-secondary"
-              disabled={false}
-              id="input-group-dropdown-2"
-              onClick={[Function]}
-              type="button"
-            >
-              
-            </button>
-          </div>
+            <option>
+              Abdominal radiology
+            </option>
+            <option>
+              Breast imaging
+            </option>
+            <option>
+              Cardiothoracic radiology
+            </option>
+            <option>
+              Cardiovascular radiology
+            </option>
+            <option>
+              Chest radiology
+            </option>
+            <option>
+              Emergency radiology
+            </option>
+            <option>
+              Endovascular surgical neuroradiology
+            </option>
+            <option>
+              Gastrointestinal radiology
+            </option>
+            <option>
+              Genitourinary radiology
+            </option>
+            <option>
+              Head and neck radiology
+            </option>
+            <option>
+              Pulmonary disease
+            </option>
+            <option>
+              Pulmonary disease
+            </option>
+            <option>
+              Sleep medicine
+            </option>
+            <option>
+              Sports medicine
+            </option>
+            <option>
+              Transplant hepatology
+            </option>
+          </select>
         </div>
       </div>
       <div
