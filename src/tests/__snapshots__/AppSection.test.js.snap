@@ -14,8 +14,11 @@ exports[`renders correctly 1`] = `
         className="text"
       >
         <h2>
-          Download our mobile apps (comming soon)
+          Download our Mobile Application (Comming soon)
         </h2>
+        <hr
+          className="grayLine w-100"
+        />
         <p>
           Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely
         </p>
@@ -43,6 +46,7 @@ exports[`renders correctly 1`] = `
       >
         <img
           alt="our app"
+          className="img-fluid"
           src="undraw_posting_photo_v65l.png"
         />
       </div>

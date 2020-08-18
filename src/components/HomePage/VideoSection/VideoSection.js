@@ -5,7 +5,7 @@ import './style.css';
 
 function VideoSection() {
   return (
-    <Container className="videoSection">
+    <Container id="videoSection" className="videoSection">
       <Row>
         <div className="col-lg-6">
           <h1>

@@ -3,6 +3,7 @@
 exports[`renders correctly 1`] = `
 <div
   className="videoSection container"
+  id="videoSection"
 >
   <div
     className="row"

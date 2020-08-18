@@ -20,7 +20,7 @@ exports[`Intro  section run well  1`] = `
       >
         <div>
           <h1
-            className="my-3"
+            className="my-3 sectionHeading"
           >
             Your health is important
              
@@ -30,26 +30,36 @@ exports[`Intro  section run well  1`] = `
               for us.
             </span>
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis recusandae voluptatibus! Natus voluptatum esse temporibus saepe quo omnis alias!
+          <p
+            class="sectionCaption"
+          >
+            This website help you to find the best and suit doctor for your situation , and save you alot of time for searching doctor
           </p>
           <div
             className="my-4"
           >
-            <button
-              className="btn-lg btn btn-primary"
-              disabled={false}
-              type="button"
+            <a
+              href="#getInTouch"
             >
-              Get Started
-            </button>
-            <button
-              className="btn-lg ml-4 btn btn-outline-primary"
-              disabled={false}
-              type="button"
+              <button
+                className="btn-lg sectionBtn btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                Get Started
+              </button>
+            </a>
+            <a
+              href="#videoSection"
             >
-              Intro Video
-            </button>
+              <button
+                className="btn-lg ml-4 sectionBtn btn btn-outline-primary"
+                disabled={false}
+                type="button"
+              >
+                Intro Video
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -58,7 +68,7 @@ exports[`Intro  section run well  1`] = `
       >
         <img
           alt=""
-          className="img-fluid IntroSection__image"
+          className="img-fluid introSectionImage"
           src="intro.svg"
         />
       </div>

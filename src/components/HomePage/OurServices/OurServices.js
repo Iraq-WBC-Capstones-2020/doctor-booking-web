@@ -2,7 +2,8 @@ import React from 'react';
 import { Container, Card, CardGroup, Row } from 'react-bootstrap';
 import Freame from './images/Frame.png';
 import Freame2 from './images/Frame-1.png';
-import Freame3 from './images/undraw_map_1r69 1.png';
+import Freame3 from './images/undraw_map_1r691.png';
+import '../HomePageGlobalStyle.scss';
 
 import './style.css';
 
@@ -13,7 +14,7 @@ function OurServices() {
         <div className="head">
           <h1>Our services</h1>
 
-          <hr className="gray-line" />
+          <hr className="grayLine" />
 
           <p>
             We provide to you the best choiches for you. Adjust it to your

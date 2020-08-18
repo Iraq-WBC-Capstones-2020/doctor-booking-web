@@ -9,7 +9,7 @@ function OurTeam() {
           <h1>Our Team</h1>
         </Container>
       </Row>
-      <Row >
+      <Row>
         <Col className="mt-5" lg="6">
           <TeamMember />
         </Col>

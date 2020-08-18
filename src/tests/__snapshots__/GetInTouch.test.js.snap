@@ -3,6 +3,7 @@
 exports[`GetInTouch render correctly 1`] = `
 <div
   className="getIntouch my-5 py-5"
+  id="getInTouch"
 >
   <div
     className="container"
@@ -20,11 +21,11 @@ exports[`GetInTouch render correctly 1`] = `
         />
       </div>
       <div
-        className="  col-lg-6"
+        className="col-lg-6"
       >
         <div>
           <h1
-            className="my-3"
+            className="my-3 sectionHeading"
           >
             Find a doctor and 
             <span
@@ -35,32 +36,39 @@ exports[`GetInTouch render correctly 1`] = `
              
             apoinnment online
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis recusandae voluptatibus! Natus voluptatum esse temporibus saepe quo omnis alias!
+          <p
+            className="sectionCaption"
+          >
+            Search for the best doctor for you and book an appointment at the time that fits your time
           </p>
           <div
             className="my-4"
           >
-            <button
-              className="btn-lg btn btn-primary"
-              disabled={false}
-              type="button"
+            <a
+              href="/search"
+              onClick={[Function]}
             >
-              Find Doctor
-            </button>
+              <button
+                className="btn-lg sectionBtn btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                Find Doctor
+              </button>
+            </a>
           </div>
         </div>
       </div>
     </div>
     <div
-      className=" my-5 row"
+      className="my-5 row"
     >
       <div
         className="col-lg-6"
       >
         <div>
           <h1
-            className="my-3"
+            className="my-3 sectionHeading"
           >
             You are Doctor?
             <span
@@ -69,19 +77,28 @@ exports[`GetInTouch render correctly 1`] = `
               Register here
             </span>
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis recusandae voluptatibus! Natus voluptatum esse temporibus saepe quo omnis alias!
+          <p
+            className="sectionCaption"
+          >
+            With our website you are be more time manageable 
+            <br />
+             and you be comfortable about setting appoinments and dealing with your vistors
           </p>
           <div
             className="my-4"
           >
-            <button
-              className="btn-lg btn btn-primary"
-              disabled={false}
-              type="button"
+            <a
+              href="/register"
+              onClick={[Function]}
             >
-              Register
-            </button>
+              <button
+                className="btn-lg sectionBtn btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                Register
+              </button>
+            </a>
           </div>
         </div>
       </div>

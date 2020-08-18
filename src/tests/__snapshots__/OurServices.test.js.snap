@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
         Our services
       </h1>
       <hr
-        className="gray-line"
+        className="grayLine"
       />
       <p>
         We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health
@@ -76,7 +76,7 @@ exports[`renders correctly 1`] = `
       >
         <img
           className="card-img-top"
-          src="undraw_map_1r69 1.png"
+          src="undraw_map_1r691.png"
         />
         <div
           className="card-body"

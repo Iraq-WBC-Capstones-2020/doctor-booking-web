@@ -3,6 +3,7 @@ import { Row, Container } from 'react-bootstrap';
 import appImg from './images/undraw_posting_photo_v65l.png';
 import appStore from './images/AppStoreEng.png';
 import googlePlay from './images/GooglePlayEng.png';
+import '../HomePageGlobalStyle.scss';
 import './style.css';
 
 function AppSection() {
@@ -11,7 +12,8 @@ function AppSection() {
       <Row className="myRow">
         <div className="col-xs-6">
           <div className="text">
-            <h2>Download our mobile apps (comming soon)</h2>
+            <h2>Download our Mobile Application (Comming soon)</h2>
+            <hr className="grayLine w-100" />
             <p>
               Our dedicated patient engagement app and web portal allow you to
               access information instantaneously (no tedeous form, long calls,
@@ -25,7 +27,7 @@ function AppSection() {
         </div>
         <div className="col-xs-6">
           <div className="applicationImage">
-            <img alt="our app" src={appImg} />
+            <img className="img-fluid" alt="our app" src={appImg} />
           </div>
         </div>
       </Row>
