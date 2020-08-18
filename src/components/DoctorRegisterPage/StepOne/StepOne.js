@@ -97,13 +97,9 @@ function StepOne() {
         <Row className="formRow">
           <Col lg={12}>
             <label htmlFor="photoUplod">Personal Photo</label>
-            <Button
-              id="photoUplod"
-              name="photoUplod"
-              as="input"
-              type="button"
-              value="Upload"
-            />{' '}
+            <label className="btn btn-primary text-white mt-3 ml-5">
+              Upload <input type="file" hidden />
+            </label>
           </Col>
         </Row>
       </Form>
