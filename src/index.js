@@ -6,12 +6,15 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/style.css';
 import { BrowserRouter as Router } from 'react-router-dom';
+import DoctorInfoProvider from './DoctorContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <DoctorInfoProvider>
+      <Router>
+        <App />
+      </Router>
+    </DoctorInfoProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
