@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row, Container } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import avatar from './imgs/avatar.svg';
 import github from './imgs/icons8-github-64.png';
 import twitter from './imgs/icons8-twitter-circled-64.png';
