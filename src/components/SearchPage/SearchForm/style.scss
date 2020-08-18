@@ -19,8 +19,9 @@
 }
 
 .form-row {
-  input {
-    height: 51px;
+  input, select {
+    margin-bottom:10px ;
+    height: 51px ;
   }
 
   button {
