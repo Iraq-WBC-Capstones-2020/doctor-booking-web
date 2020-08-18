@@ -3,6 +3,10 @@
   font-family: 'Roboto', sans-serif !important;
 }
 
+.booking input {
+  margin-bottom: 2rem;
+}
+
 .booking h1 {
   color: #026fc2;
   font-size: 36px;
