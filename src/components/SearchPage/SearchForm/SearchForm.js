@@ -13,7 +13,7 @@ import SearchIcon from './images/Search.png';
 
 import './style.css';
 function SearchForm() {
-  const specilty = [
+  const speciality = [
     'Abdominal radiology',
     'Breast imaging',
     'Cardiothoracic radiology',
@@ -53,7 +53,7 @@ function SearchForm() {
               controlId="exampleForm.SelectCustom"
             >
               <Form.Control className="inputForm" as="select" custom>
-                {specilty.map((spec) => (
+                {speciality.map((spec) => (
                   <option key={spec.id}>{spec}</option>
                 ))}
               </Form.Control>
