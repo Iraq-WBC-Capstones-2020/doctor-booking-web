@@ -15,7 +15,7 @@ export const ACTIONS = {
 
 function reducer(state, action) {
   switch (action.type) {
-    case ACTION.ADD_DOCTOR:
+    case ACTIONS.ADD_DOCTOR:
       return state;
     default:
       return state;
