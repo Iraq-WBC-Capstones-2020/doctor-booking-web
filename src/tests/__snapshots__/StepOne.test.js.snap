@@ -180,7 +180,7 @@ exports[`Step 1 renders correctly 1`] = `
           id="photoUplod"
           name="photoUplod"
           type="button"
-          value="uplode"
+          value="Upload"
         />
          
       </div>

@@ -6,15 +6,29 @@ exports[`EditProfile page run well  1`] = `
     className="row p-0 m-0 editContainer"
   >
     <div
-      className="sideBar  col-md-2"
+      className="sideBar col-md-2"
     >
       <div
         className="side-nav-container"
       >
         <div
-          className="d-none d-md-block sidebar  nav"
+          className="d-none d-md-block sidebar nav"
           onKeyDown={[Function]}
         >
+          <div
+            className="d-flex justify-content-evenly nav-item"
+          >
+            <img
+              alt="profile icon"
+              src="calendar.svg"
+            />
+            <a
+              href="/calender"
+              onClick={[Function]}
+            >
+              Calender
+            </a>
+          </div>
           <div
             className="d-flex justify-content-evenly nav-item"
           >
@@ -23,11 +37,8 @@ exports[`EditProfile page run well  1`] = `
               src="person.svg"
             />
             <a
-              className="nav-link"
-              data-rb-event-key="#!"
-              href="#!"
+              href="/profile"
               onClick={[Function]}
-              onKeyDown={[Function]}
             >
               Profile
             </a>
@@ -40,11 +51,8 @@ exports[`EditProfile page run well  1`] = `
               src="edit.svg"
             />
             <a
-              className="nav-link"
-              data-rb-event-key="#!"
-              href="#!"
+              href="/edit"
               onClick={[Function]}
-              onKeyDown={[Function]}
             >
               Edit Profile
             </a>
@@ -53,14 +61,12 @@ exports[`EditProfile page run well  1`] = `
       </div>
     </div>
     <div
-      className="col-md-10   px-4 py-4"
+      className="col-md-10 px-4 py-4"
     >
       <div
-        className="header d-flex  align-items-center"
+        className="header d-flex align-items-center"
       >
-        <div
-          className=""
-        >
+        <div>
           <img
             alt=""
             src="avatar.svg"
