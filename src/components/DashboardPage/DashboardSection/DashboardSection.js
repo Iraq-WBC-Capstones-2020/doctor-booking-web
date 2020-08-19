@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Container, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import AppointmentCard from '../AppointmentCard/AppointmentCard';
 import Flatpickr from 'react-flatpickr';
 import SideNav from '../SideNav/SideNav';

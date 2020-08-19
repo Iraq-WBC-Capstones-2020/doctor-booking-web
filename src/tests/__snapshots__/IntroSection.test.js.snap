@@ -31,7 +31,7 @@ exports[`Intro  section run well  1`] = `
             </span>
           </h1>
           <p
-            class="sectionCaption"
+            className="sectionCaption"
           >
             This website help you to find the best and suit doctor for your situation , and save you alot of time for searching doctor
           </p>
