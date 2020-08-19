@@ -9,6 +9,7 @@ function TimeTableRow({ day, setTimeTable, timeTable }) {
   TimeTableRow.propTypes = {
     day: propTypes.string,
     setTimeTable: propTypes.func,
+    timeTable: propTypes.object,
   };
 
   const [from, setFrom] = useState('');
