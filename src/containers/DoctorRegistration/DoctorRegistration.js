@@ -46,7 +46,13 @@ function DoctorRegistration() {
       >
         Back
       </Button>
-      <Button onClick={handleNextStep}>Next</Button>
+      {activeStep === 2 ? (
+        <Button type="submit" onClick={() => console.log('submitted')}>
+          Submit
+        </Button>
+      ) : (
+        <Button onClick={handleNextStep}>Next</Button>
+      )}
     </Container>
   );
 }
