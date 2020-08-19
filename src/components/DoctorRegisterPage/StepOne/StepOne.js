@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 
 import { Form, Row, Col, Button, Container } from 'react-bootstrap';
 
 function StepOne() {
+  const [name, setName] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [gender, setGender] = useState('');
+  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
+  useEffect(() => {
+    console.log(gender);
+  }, [gender]);
+  const HandleChange = (setField, e) => setField(e.target.value);
+
   return (
     <Container>
-      <Form className="personal">
+      <div className="personal">
         <Row className="formRow">
           <Col lg={6}>
             <Form.Group>
@@ -16,6 +26,7 @@ function StepOne() {
                   name="fullName"
                   id="fullName"
                   placeholder="Full name"
+                  onChange={(e) => HandleChange(setName, e)}
                 />
               </Form.Label>
             </Form.Group>
@@ -29,14 +40,18 @@ function StepOne() {
                     <Form.Check
                       type="radio"
                       label="female"
-                      name="formHorizontalRadios"
-                      id="formHorizontalRadios1"
+                      name="gender"
+                      id="female"
+                      value="female"
+                      onChange={(e) => HandleChange(setGender, e)}
                     />
                     <Form.Check
                       type="radio"
                       label="male"
-                      name="formHorizontalRadios"
-                      id="formHorizontalRadios2"
+                      name="gender"
+                      id="male"
+                      value="male"
+                      onChange={(e) => HandleChange(setGender, e)}
                     />
                   </div>
                 </Form.Label>
@@ -53,6 +68,7 @@ function StepOne() {
                 id="E-mail"
                 type="email"
                 placeholder="Enter  your E-mail"
+                onChange={(e) => HandleChange(setEmail, e)}
               />
             </Form.Label>
           </Col>
@@ -64,6 +80,7 @@ function StepOne() {
                 id="number"
                 type="tel"
                 placeholder="ex: 0770-145-6788"
+                onChange={(e) => HandleChange(setPhoneNumber, e)}
               />
             </Form.Label>
           </Col>
@@ -78,6 +95,7 @@ function StepOne() {
                 id="thePassword"
                 type="password"
                 placeholder="Enter your password"
+                onChange={(e) => HandleChange(setPassword, e)}
               />
             </Form.Label>
           </Col>
@@ -102,7 +120,7 @@ function StepOne() {
             </label>
           </Col>
         </Row>
-      </Form>
+      </div>
     </Container>
   );
 }
