@@ -26,6 +26,10 @@ const provinces = [
   'Wasit',
 ];
 function StepThree() {
+  const [province, setProvince] = useState('');
+  const [city, setCity] = useState('');
+  const [reference, setReference] = useState('');
+  const [neighborhood, setNeighborhood] = useState('');
   const [viewport, setViewport] = useState({
     latitude: 36.1901,
     longitude: 43.993,
@@ -37,12 +41,19 @@ function StepThree() {
   function placeMarker(e) {
     setMarker(e.lngLat);
   }
+  const handleChange = (setField, e) => {
+    setField(e.target.value);
+    console.log(city);
+  };
   return (
     <Row className="mt-5">
       <Col md="6">
         <Form.Group controlId="exampleForm.ControlSelect1">
           <Form.Label>Province</Form.Label>
-          <Form.Control as="select">
+          <Form.Control
+            as="select"
+            onChange={(e) => handleChange(setProvince, e)}
+          >
             <option defaultValue disabled>
               Select a province
             </option>
@@ -55,19 +66,31 @@ function StepThree() {
       <Col md="6">
         <Form.Group>
           <Form.Label>City</Form.Label>
-          <Form.Control type="text" placeholder="e.g. Erbil" />
+          <Form.Control
+            type="text"
+            placeholder="e.g. Erbil"
+            onChange={(e) => handleChange(setCity, e)}
+          />
         </Form.Group>
       </Col>
       <Col md="6">
         <Form.Group>
           <Form.Label>Neighborhood</Form.Label>
-          <Form.Control type="text" placeholder="e.g. Brayati" />
+          <Form.Control
+            type="text"
+            placeholder="e.g. Brayati"
+            onChange={(e) => handleChange(setNeighborhood, e)}
+          />
         </Form.Group>
       </Col>
       <Col md="6">
         <Form.Group>
           <Form.Label>Reference Point</Form.Label>
-          <Form.Control type="text" placeholder="e.g. next to eye center" />
+          <Form.Control
+            type="text"
+            placeholder="e.g. next to eye center"
+            onChange={(e) => handleChange(setReference, e)}
+          />
         </Form.Group>
       </Col>
       <Col className="mt-5" xs="12">
