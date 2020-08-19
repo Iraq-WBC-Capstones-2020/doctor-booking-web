@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import './style.css';
 import { DoctorContext, ACTIONS } from '../../../DoctorContext';
-import { Form, Row, Col, Button, Container } from 'react-bootstrap';
+import { Form, Row, Col, Container } from 'react-bootstrap';
 
 function StepOne() {
   const [state, dispatch] = useContext(DoctorContext);
@@ -10,7 +10,7 @@ function StepOne() {
   const [gender, setGender] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
-  
+
   useEffect(() => {
     dispatch({
       type: ACTIONS.ADD_DOCTOR,
@@ -23,7 +23,13 @@ function StepOne() {
       },
     });
   }, [gender, name, password, phoneNumber, email]);
-
+  useEffect(() => {
+    setName(state.doctorInfo.name);
+    setGender(state.doctorInfo.gender);
+    setPassword(state.doctorInfo.password);
+    setEmail(state.doctorInfo.email);
+    setPhoneNumber(state.doctorInfo.phoneNumber);
+  }, []);
   const HandleChange = (setField, e) => setField(e.target.value);
 
   return (
@@ -39,6 +45,7 @@ function StepOne() {
                   id="fullName"
                   placeholder="Full name"
                   onChange={(e) => HandleChange(setName, e)}
+                  value={name}
                 />
               </Form.Label>
             </Form.Group>
@@ -56,6 +63,7 @@ function StepOne() {
                       id="female"
                       value="female"
                       onChange={(e) => HandleChange(setGender, e)}
+                      checked={gender === 'female' ? true : false}
                     />
                     <Form.Check
                       type="radio"
@@ -64,6 +72,7 @@ function StepOne() {
                       id="male"
                       value="male"
                       onChange={(e) => HandleChange(setGender, e)}
+                      checked={gender === 'male' ? true : false}
                     />
                   </div>
                 </Form.Label>
@@ -81,6 +90,7 @@ function StepOne() {
                 type="email"
                 placeholder="Enter  your E-mail"
                 onChange={(e) => HandleChange(setEmail, e)}
+                value={email}
               />
             </Form.Label>
           </Col>
@@ -93,6 +103,7 @@ function StepOne() {
                 type="tel"
                 placeholder="ex: 0770-145-6788"
                 onChange={(e) => HandleChange(setPhoneNumber, e)}
+                value={phoneNumber}
               />
             </Form.Label>
           </Col>
@@ -108,6 +119,7 @@ function StepOne() {
                 type="password"
                 placeholder="Enter your password"
                 onChange={(e) => HandleChange(setPassword, e)}
+                value={password}
               />
             </Form.Label>
           </Col>

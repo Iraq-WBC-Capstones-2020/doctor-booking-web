@@ -26,7 +26,7 @@ function StepTwo() {
   const [speciality, setSpeciality] = useState('');
   const [education, setEducation] = useState('');
   const [experience, setExperience] = useState('');
-  
+
   useEffect(() => {
     dispatch({
       type: ACTIONS.ADD_DOCTOR,
@@ -38,9 +38,13 @@ function StepTwo() {
       },
     });
   }, [speciality, education, experience]);
-
+  useEffect(() => {
+    setSpeciality(state.doctorInfo.speciality);
+    setEducation(state.doctorInfo.education);
+    setExperience(state.doctorInfo.experience);
+  }, []);
   const handleChange = (setField, e) => setField(e.target.value);
-  
+
   return (
     <Container>
       <Form>
@@ -56,6 +60,7 @@ function StepTwo() {
                 className="theSelect"
                 as="select"
                 custom
+                value={speciality}
               >
                 {specilty.map((spec) => (
                   <option key={spec.id}>{spec}</option>
@@ -73,6 +78,7 @@ function StepTwo() {
                 id="exampleFormControlTextarea1"
                 rows="3"
                 onChange={(e) => handleChange(setEducation, e)}
+                value={education}
               ></textarea>
             </Form.Group>
           </Col>
@@ -84,6 +90,7 @@ function StepTwo() {
                 id="exampleFormControlTextarea1"
                 rows="3"
                 onChange={(e) => handleChange(setExperience, e)}
+                value={experience}
               ></textarea>
             </Form.Group>
           </Col>

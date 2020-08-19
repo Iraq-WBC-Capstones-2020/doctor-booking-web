@@ -54,7 +54,13 @@ function StepThree() {
       },
     });
   }, [province, city, reference, neighborhood, marker]);
-  
+  useEffect(() => {
+    setCity(state.doctorInfo.city);
+    setProvince(state.doctorInfo.province);
+    setMarker(state.doctorInfo.marker ? state.doctorInfo.marker : [0, 0]);
+    setNeighborhood(state.doctorInfo.neighborhood);
+    setReference(state.doctorInfo.reference);
+  }, []);
   function placeMarker(e) {
     setMarker(e.lngLat);
   }
@@ -70,6 +76,7 @@ function StepThree() {
           <Form.Control
             as="select"
             onChange={(e) => handleChange(setProvince, e)}
+            value={province}
           >
             <option defaultValue disabled>
               Select a province
@@ -87,6 +94,7 @@ function StepThree() {
             type="text"
             placeholder="e.g. Erbil"
             onChange={(e) => handleChange(setCity, e)}
+            value={city}
           />
         </Form.Group>
       </Col>
@@ -97,6 +105,7 @@ function StepThree() {
             type="text"
             placeholder="e.g. Brayati"
             onChange={(e) => handleChange(setNeighborhood, e)}
+            value={neighborhood}
           />
         </Form.Group>
       </Col>
@@ -107,6 +116,7 @@ function StepThree() {
             type="text"
             placeholder="e.g. next to eye center"
             onChange={(e) => handleChange(setReference, e)}
+            value={reference}
           />
         </Form.Group>
       </Col>
