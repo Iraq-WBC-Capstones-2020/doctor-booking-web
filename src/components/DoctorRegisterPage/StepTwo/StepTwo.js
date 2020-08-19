@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Form, Container, Row } from 'react-bootstrap';
 import './stepTwo.css';
 
@@ -21,6 +21,11 @@ function StepTwo() {
     'Transplant hepatology',
   ];
 
+  const [speciality, setSpeciality] = useState('');
+  const [education, setEducation] = useState('');
+  const [experience, setExperience] = useState('');
+
+  const handleChange = (setField, e) => setField(e.target.value);
   return (
     <Container>
       <Form>
@@ -31,7 +36,12 @@ function StepTwo() {
               controlId="exampleForm.SelectCustom"
             >
               <Form.Label>Speciality</Form.Label>
-              <Form.Control className="theSelect" as="select" custom>
+              <Form.Control
+                onChange={(e) => handleChange(setSpeciality, e)}
+                className="theSelect"
+                as="select"
+                custom
+              >
                 {specilty.map((spec) => (
                   <option key={spec.id}>{spec}</option>
                 ))}
@@ -47,16 +57,18 @@ function StepTwo() {
                 className="textArea form-control"
                 id="exampleFormControlTextarea1"
                 rows="3"
+                onChange={(e) => handleChange(setEducation, e)}
               ></textarea>
             </Form.Group>
           </Col>
           <Col lg={6}>
             <Form.Group className="stepTwoFilds">
-              <label htmlFor="exampleFormControlTextarea1">Expeience</label>
+              <label htmlFor="exampleFormControlTextarea1">Experience</label>
               <textarea
                 className="textArea form-control"
                 id="exampleFormControlTextarea1"
                 rows="3"
+                onChange={(e) => handleChange(setExperience, e)}
               ></textarea>
             </Form.Group>
           </Col>
