@@ -11,7 +11,7 @@ function TimeTableRow({ day, setTimeTable, timeTable }) {
     setTimeTable: propTypes.func,
     timeTable: propTypes.object,
   };
-
+  const [state, dispatch] = useContext(DoctorContext);
   const [from, setFrom] = useState('');
   const [to, setTo] = useState('');
   const [isWorkingDay, setIsWorkingDay] = useState(false);
@@ -30,9 +30,7 @@ function TimeTableRow({ day, setTimeTable, timeTable }) {
       },
     });
   }, [isWorkingDay, from, to, timeTable]);
-  const [state, dispatch] = useContext(DoctorContext);
-  
-  console.log(state.doctorInfo);
+
   const formatTime = (date) => date[0].toLocaleString().split(',')[1];
 
   return (
