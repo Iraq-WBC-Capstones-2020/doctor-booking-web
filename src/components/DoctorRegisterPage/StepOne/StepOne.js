@@ -1,17 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import './style.css';
-
+import { DoctorContext, ACTIONS } from '../../../DoctorContext';
 import { Form, Row, Col, Button, Container } from 'react-bootstrap';
 
 function StepOne() {
+  const [state, dispatch] = useContext(DoctorContext);
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [gender, setGender] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
+  
   useEffect(() => {
-    console.log(gender);
-  }, [gender]);
+    dispatch({
+      type: ACTIONS.ADD_DOCTOR,
+      doctorInfo: {
+        name: name,
+        phoneNumber: phoneNumber,
+        gender: gender,
+        password: password,
+        email: email,
+      },
+    });
+  }, [gender, name, password, phoneNumber, email]);
+
   const HandleChange = (setField, e) => setField(e.target.value);
 
   return (

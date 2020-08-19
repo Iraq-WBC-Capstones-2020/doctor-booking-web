@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Map, { Marker } from 'react-map-gl';
 import { Row, Col, Form } from 'react-bootstrap';
 import TimeTable from './TimeTable';
+import { DoctorContext, ACTIONS } from '../../../DoctorContext';
 const API =
   'pk.eyJ1IjoiaHVzc2VpbnRhbGFsIiwiYSI6ImNrY3M4dWxwbzFtZDIycnM2OHQ4dXM4cnIifQ.ofCZrIlVF_r4YpQDzSi13g';
 const provinces = [
@@ -26,6 +27,7 @@ const provinces = [
   'Wasit',
 ];
 function StepThree() {
+  const [state, dispatch] = useContext(DoctorContext);
   const [province, setProvince] = useState('');
   const [city, setCity] = useState('');
   const [reference, setReference] = useState('');
@@ -38,6 +40,21 @@ function StepThree() {
     zoom: 10,
   });
   const [marker, setMarker] = useState([0, 0]);
+
+  useEffect(() => {
+    dispatch({
+      type: ACTIONS.ADD_DOCTOR,
+      doctorInfo: {
+        ...state.doctorInfo,
+        province: province,
+        city: city,
+        reference: reference,
+        neighborhood: neighborhood,
+        marker: marker,
+      },
+    });
+  }, [province, city, reference, neighborhood, marker]);
+  
   function placeMarker(e) {
     setMarker(e.lngLat);
   }

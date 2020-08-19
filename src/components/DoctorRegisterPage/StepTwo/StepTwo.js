@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Col, Form, Container, Row } from 'react-bootstrap';
 import './stepTwo.css';
+import { DoctorContext, ACTIONS } from '../../../DoctorContext';
 
 function StepTwo() {
   const specilty = [
@@ -21,11 +22,25 @@ function StepTwo() {
     'Transplant hepatology',
   ];
 
+  const [state, dispatch] = useContext(DoctorContext);
   const [speciality, setSpeciality] = useState('');
   const [education, setEducation] = useState('');
   const [experience, setExperience] = useState('');
+  
+  useEffect(() => {
+    dispatch({
+      type: ACTIONS.ADD_DOCTOR,
+      doctorInfo: {
+        ...state.doctorInfo,
+        speciality: speciality,
+        education: education,
+        experience: experience,
+      },
+    });
+  }, [speciality, education, experience]);
 
   const handleChange = (setField, e) => setField(e.target.value);
+  
   return (
     <Container>
       <Form>

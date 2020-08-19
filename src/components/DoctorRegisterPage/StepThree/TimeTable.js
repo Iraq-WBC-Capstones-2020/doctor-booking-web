@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Form, Col, Row } from 'react-bootstrap';
 import Flatpickr from 'react-flatpickr';
 import 'flatpickr/dist/themes/airbnb.css';
 import propTypes from 'prop-types';
+import { DoctorContext, ACTIONS } from '../../../DoctorContext';
 
-function TimeTableRow({ day, setTimeTable }) {
+function TimeTableRow({ day, setTimeTable, timeTable }) {
   TimeTableRow.propTypes = {
     day: propTypes.string,
     setTimeTable: propTypes.func,
@@ -20,7 +21,17 @@ function TimeTableRow({ day, setTimeTable }) {
         Object.assign(prevTimeTable, { [day]: `${from}-${to}` })
       );
     }
-  }, [isWorkingDay, from, to]);
+    dispatch({
+      type: ACTIONS.ADD_DOCTOR,
+      doctorInfo: {
+        ...state.doctorInfo,
+        timeTable: timeTable,
+      },
+    });
+  }, [isWorkingDay, from, to, timeTable]);
+  const [state, dispatch] = useContext(DoctorContext);
+  
+  console.log(state.doctorInfo);
   const formatTime = (date) => date[0].toLocaleString().split(',')[1];
 
   return (
@@ -68,13 +79,41 @@ function TimeTable() {
   const [timeTable, setTimeTable] = useState({});
   return (
     <>
-      <TimeTableRow day={'sunday'} setTimeTable={setTimeTable} />
-      <TimeTableRow day={'monday'} setTimeTable={setTimeTable} />
-      <TimeTableRow day={'tuesday'} setTimeTable={setTimeTable} />
-      <TimeTableRow day={'wednesday'} setTimeTable={setTimeTable} />
-      <TimeTableRow day={'thursday'} setTimeTable={setTimeTable} />
-      <TimeTableRow day={'friday'} setTimeTable={setTimeTable} />
-      <TimeTableRow day={'saturday'} setTimeTable={setTimeTable} />
+      <TimeTableRow
+        day={'sunday'}
+        setTimeTable={setTimeTable}
+        timeTable={timeTable}
+      />
+      <TimeTableRow
+        day={'monday'}
+        setTimeTable={setTimeTable}
+        timeTable={timeTable}
+      />
+      <TimeTableRow
+        day={'tuesday'}
+        setTimeTable={setTimeTable}
+        timeTable={timeTable}
+      />
+      <TimeTableRow
+        day={'wednesday'}
+        setTimeTable={setTimeTable}
+        timeTable={timeTable}
+      />
+      <TimeTableRow
+        day={'thursday'}
+        setTimeTable={setTimeTable}
+        timeTable={timeTable}
+      />
+      <TimeTableRow
+        day={'friday'}
+        setTimeTable={setTimeTable}
+        timeTable={timeTable}
+      />
+      <TimeTableRow
+        day={'saturday'}
+        setTimeTable={setTimeTable}
+        timeTable={timeTable}
+      />
     </>
   );
 }
