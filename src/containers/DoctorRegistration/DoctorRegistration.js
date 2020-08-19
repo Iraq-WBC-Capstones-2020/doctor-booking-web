@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Stepper, Step } from 'react-form-stepper';
-import { Container, Button } from 'react-bootstrap';
+import { Container, Button, Form } from 'react-bootstrap';
 import StepThree from '../../components/DoctorRegisterPage/StepThree/StepThree';
 import StepOne from '../../components/DoctorRegisterPage/StepOne/StepOne';
 import StepTwo from '../../components/DoctorRegisterPage/StepTwo/StepTwo';
@@ -23,11 +23,13 @@ function DoctorRegistration() {
   };
   return (
     <Container>
-      <Stepper styleConfig={stepStyleConfig} activeStep={activeStep}>
-        <Step label="Personal info" />
-        <Step label="Career info" />
-        <Step label="Clinic info" />
-      </Stepper>
+      <Form>
+        <Stepper styleConfig={stepStyleConfig} activeStep={activeStep}>
+          <Step label="Personal info" />
+          <Step label="Career info" />
+          <Step label="Clinic info" />
+        </Stepper>
+      </Form>
       {activeStep === 0 ? (
         <h1>
           <StepOne />
