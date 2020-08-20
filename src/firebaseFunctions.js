@@ -1,4 +1,4 @@
-import { db, auth } from './Firebase';
+import { db, auth, storage } from './Firebase';
 import { firestore } from 'firebase';
 
 export const firebaseFunctions = {
@@ -32,9 +32,15 @@ async function signUp(doctorInfo) {
     experience: doctorInfo.experience,
     timeTable: doctorInfo.timeTable,
   };
-
-  db.collection('doctors')
+  const img = doctorInfo.img;
+  await db
+    .collection('doctors')
     .doc(user.uid)
     .set(doctorData, { merge: true })
     .then(() => console.log('document created and written'));
+  const storageRef = storage.ref('doctors/' + user.uid);
+  const upload = storageRef.put(img);
+  upload.on('state_changed', function complete() {
+    console.log('uploaded');
+  });
 }
