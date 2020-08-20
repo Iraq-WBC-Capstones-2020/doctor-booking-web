@@ -46,6 +46,7 @@ function StepOne() {
                   placeholder="Full name"
                   onChange={(e) => HandleChange(setName, e)}
                   value={name}
+                  required
                 />
               </Form.Label>
             </Form.Group>
@@ -91,6 +92,7 @@ function StepOne() {
                 placeholder="Enter  your E-mail"
                 onChange={(e) => HandleChange(setEmail, e)}
                 value={email}
+                required
               />
             </Form.Label>
           </Col>
@@ -104,6 +106,7 @@ function StepOne() {
                 placeholder="ex: 0770-145-6788"
                 onChange={(e) => HandleChange(setPhoneNumber, e)}
                 value={phoneNumber}
+                required
               />
             </Form.Label>
           </Col>
@@ -120,6 +123,7 @@ function StepOne() {
                 placeholder="Enter your password"
                 onChange={(e) => HandleChange(setPassword, e)}
                 value={password}
+                required
               />
             </Form.Label>
           </Col>
@@ -131,6 +135,7 @@ function StepOne() {
                 name="confirmPassword"
                 type="password"
                 placeholder="Enter your password again"
+                required
               />
             </Form.Label>
           </Col>

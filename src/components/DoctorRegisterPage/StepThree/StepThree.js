@@ -77,6 +77,7 @@ function StepThree() {
             as="select"
             onChange={(e) => handleChange(setProvince, e)}
             value={province}
+            required
           >
             <option defaultValue disabled>
               Select a province
@@ -95,6 +96,7 @@ function StepThree() {
             placeholder="e.g. Erbil"
             onChange={(e) => handleChange(setCity, e)}
             value={city}
+            required
           />
         </Form.Group>
       </Col>
@@ -106,6 +108,7 @@ function StepThree() {
             placeholder="e.g. Brayati"
             onChange={(e) => handleChange(setNeighborhood, e)}
             value={neighborhood}
+            required
           />
         </Form.Group>
       </Col>
@@ -117,6 +120,7 @@ function StepThree() {
             placeholder="e.g. next to eye center"
             onChange={(e) => handleChange(setReference, e)}
             value={reference}
+            required
           />
         </Form.Group>
       </Col>

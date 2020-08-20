@@ -61,6 +61,7 @@ function StepTwo() {
                 as="select"
                 custom
                 value={speciality}
+                required
               >
                 {specilty.map((spec) => (
                   <option key={spec.id}>{spec}</option>
@@ -79,6 +80,7 @@ function StepTwo() {
                 rows="3"
                 onChange={(e) => handleChange(setEducation, e)}
                 value={education}
+                required
               ></textarea>
             </Form.Group>
           </Col>
@@ -91,6 +93,7 @@ function StepTwo() {
                 rows="3"
                 onChange={(e) => handleChange(setExperience, e)}
                 value={experience}
+                required
               ></textarea>
             </Form.Group>
           </Col>
