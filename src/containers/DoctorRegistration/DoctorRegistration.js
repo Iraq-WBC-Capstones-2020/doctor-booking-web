@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Stepper, Step } from 'react-form-stepper';
 import { Container, Button, Form } from 'react-bootstrap';
 import StepThree from '../../components/DoctorRegisterPage/StepThree/StepThree';
 import StepOne from '../../components/DoctorRegisterPage/StepOne/StepOne';
 import StepTwo from '../../components/DoctorRegisterPage/StepTwo/StepTwo';
+import { DoctorContext } from '../../DoctorContext';
+import { firebaseFunctions } from '../../firebaseFunctions';
 
 function DoctorRegistration() {
+  const [state, dispatch] = useContext(DoctorContext);
   const [activeStep, setActiveStep] = useState(0);
   const handleNextStep = () => {
     if (activeStep <= 1) {
@@ -47,7 +50,10 @@ function DoctorRegistration() {
         Back
       </Button>
       {activeStep === 2 ? (
-        <Button type="submit" onClick={() => console.log('submitted')}>
+        <Button
+          type="submit"
+          onClick={() => firebaseFunctions.signUp(state.doctorInfo)}
+        >
           Submit
         </Button>
       ) : (
