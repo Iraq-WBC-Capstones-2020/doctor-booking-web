@@ -10,7 +10,8 @@ function StepOne() {
   const [gender, setGender] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
-
+  const [img, setImg] = useState({});
+  
   useEffect(() => {
     dispatch({
       type: ACTIONS.ADD_DOCTOR,
@@ -20,9 +21,10 @@ function StepOne() {
         gender: gender,
         password: password,
         email: email,
+        img: img,
       },
     });
-  }, [gender, name, password, phoneNumber, email]);
+  }, [gender, name, password, phoneNumber, email, img]);
   useEffect(() => {
     setName(state.doctorInfo.name);
     setGender(state.doctorInfo.gender);
@@ -31,7 +33,10 @@ function StepOne() {
     setPhoneNumber(state.doctorInfo.phoneNumber);
   }, []);
   const HandleChange = (setField, e) => setField(e.target.value);
-
+  const handleImg = (e) => {
+    console.log(e.target.files[0])
+    setImg(e.target.files[0]);
+  };
   return (
     <Container>
       <div className="personal">
@@ -145,7 +150,7 @@ function StepOne() {
           <Col lg={12}>
             <label htmlFor="photoUplod">Personal Photo</label>
             <label className="btn btn-primary text-white mt-3 ml-5">
-              Upload <input type="file" hidden />
+              Upload <input onChange={handleImg} type="file" hidden />
             </label>
           </Col>
         </Row>
