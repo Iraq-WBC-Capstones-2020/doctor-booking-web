@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import { Row, Col, Form, Button } from 'react-bootstrap';
 import { firebaseFunctions } from '../../firebaseFunctions';
 import { DoctorContext, ACTIONS } from '../../DoctorContext';
