@@ -1,16 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Row, Col, Form, Button } from 'react-bootstrap';
-
+import { firebaseFunctions } from '../../firebaseFunctions';
+import { DoctorContext, ACTIONS } from '../../DoctorContext';
 function SignInSection() {
+  const [, dispatch] = useContext(DoctorContext);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const handleEmail = (e) => {
     setEmail(e.target.value);
-    console.log(email);
   };
   const handlePassword = (e) => {
     setPassword(e.target.value);
-    console.log(password);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    firebaseFunctions.signIn(email, password).then(() => {
+      dispatch({ type: ACTIONS.IS_SIGNED_IN, isSignedIn: true });
+    });
   };
 
   return (
@@ -29,7 +35,10 @@ function SignInSection() {
             className="justify-content-center d-flex mt-5 text-white"
             sm="12"
           >
-            <Form className="justify-content-center d-flex flex-column">
+            <Form
+              className="justify-content-center d-flex flex-column"
+              onSubmit={handleSubmit}
+            >
               <Form.Group onChange={handleEmail} controlId="email">
                 <Form.Control size="lg" type="email" placeholder="E-mail" />
               </Form.Group>
