@@ -11,7 +11,7 @@ function StepOne() {
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
   const [img, setImg] = useState({});
-  
+
   useEffect(() => {
     dispatch({
       type: ACTIONS.ADD_DOCTOR,
@@ -34,7 +34,6 @@ function StepOne() {
   }, []);
   const HandleChange = (setField, e) => setField(e.target.value);
   const handleImg = (e) => {
-    console.log(e.target.files[0])
     setImg(e.target.files[0]);
   };
   return (
