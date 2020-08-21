@@ -25,6 +25,9 @@ exports[`StepTwo renders correctly 1`] = `
           <select
             className="theSelect custom-select"
             id="exampleForm.SelectCustom"
+            onChange={[Function]}
+            required={true}
+            value=""
           >
             <option>
               Abdominal radiology
@@ -92,7 +95,10 @@ exports[`StepTwo renders correctly 1`] = `
           <textarea
             className="textArea form-control"
             id="exampleFormControlTextarea1"
+            onChange={[Function]}
+            required={true}
             rows="3"
+            value=""
           />
         </div>
       </div>
@@ -105,12 +111,15 @@ exports[`StepTwo renders correctly 1`] = `
           <label
             htmlFor="exampleFormControlTextarea1"
           >
-            Expeience
+            Experience
           </label>
           <textarea
             className="textArea form-control"
             id="exampleFormControlTextarea1"
+            onChange={[Function]}
+            required={true}
             rows="3"
+            value=""
           />
         </div>
       </div>

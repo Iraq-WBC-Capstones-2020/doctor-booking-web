@@ -4,7 +4,7 @@ exports[`Step 1 renders correctly 1`] = `
 <div
   className="container"
 >
-  <form
+  <div
     className="personal"
   >
     <div
@@ -25,7 +25,10 @@ exports[`Step 1 renders correctly 1`] = `
               className="form-control"
               id="fullName"
               name="fullName"
+              onChange={[Function]}
               placeholder="Full name"
+              required={true}
+              value=""
             />
           </label>
         </div>
@@ -49,15 +52,18 @@ exports[`Step 1 renders correctly 1`] = `
                   className="form-check"
                 >
                   <input
+                    checked={false}
                     className="form-check-input"
                     disabled={false}
-                    id="formHorizontalRadios1"
-                    name="formHorizontalRadios"
+                    id="female"
+                    name="gender"
+                    onChange={[Function]}
                     type="radio"
+                    value="female"
                   />
                   <label
                     className="form-check-label"
-                    htmlFor="formHorizontalRadios1"
+                    htmlFor="female"
                     title=""
                   >
                     female
@@ -67,15 +73,18 @@ exports[`Step 1 renders correctly 1`] = `
                   className="form-check"
                 >
                   <input
+                    checked={false}
                     className="form-check-input"
                     disabled={false}
-                    id="formHorizontalRadios2"
-                    name="formHorizontalRadios"
+                    id="male"
+                    name="gender"
+                    onChange={[Function]}
                     type="radio"
+                    value="male"
                   />
                   <label
                     className="form-check-label"
-                    htmlFor="formHorizontalRadios2"
+                    htmlFor="male"
                     title=""
                   >
                     male
@@ -102,8 +111,11 @@ exports[`Step 1 renders correctly 1`] = `
             className="form-control"
             id="E-mail"
             name="E-mail"
+            onChange={[Function]}
             placeholder="Enter  your E-mail"
+            required={true}
             type="email"
+            value=""
           />
         </label>
       </div>
@@ -119,8 +131,11 @@ exports[`Step 1 renders correctly 1`] = `
             className="form-control"
             id="number"
             name="number"
+            onChange={[Function]}
             placeholder="ex: 0770-145-6788"
+            required={true}
             type="tel"
+            value=""
           />
         </label>
       </div>
@@ -140,8 +155,11 @@ exports[`Step 1 renders correctly 1`] = `
             className="form-control"
             id="thePassword"
             name="thePassword"
+            onChange={[Function]}
             placeholder="Enter your password"
+            required={true}
             type="password"
+            value=""
           />
         </label>
       </div>
@@ -158,6 +176,7 @@ exports[`Step 1 renders correctly 1`] = `
             id="confirmPassword"
             name="confirmPassword"
             placeholder="Enter your password again"
+            required={true}
             type="password"
           />
         </label>
@@ -174,17 +193,18 @@ exports[`Step 1 renders correctly 1`] = `
         >
           Personal Photo
         </label>
-        <input
-          className="btn btn-primary"
-          disabled={false}
-          id="photoUplod"
-          name="photoUplod"
-          type="button"
-          value="Upload"
-        />
-         
+        <label
+          className="btn btn-primary text-white mt-3 ml-5"
+        >
+          Upload 
+          <input
+            hidden={true}
+            onChange={[Function]}
+            type="file"
+          />
+        </label>
       </div>
     </div>
-  </form>
+  </div>
 </div>
 `;
