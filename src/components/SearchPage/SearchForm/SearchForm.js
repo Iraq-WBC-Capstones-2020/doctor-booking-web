@@ -11,6 +11,8 @@ function SearchForm({ setFilterDoctors }) {
 
   const { state, dispatch } = useContext(DoctorContext);
 
+  console.log(state.doctors);
+
   const speciality = [
     'Abdominal radiology',
     'Breast imaging',
@@ -41,13 +43,9 @@ function SearchForm({ setFilterDoctors }) {
 
   useEffect(() => {
     setFilterDoctors(
-      state.doctors
-        // .filter((doctor) => {
-        //   return doctor.speciality === spec;
-        // })
-        .filter((doctor) => {
-          return doctor.name.toLowerCase().includes(input.toLowerCase());
-        })
+      state.doctors.filter((doctor) => {
+        return doctor.name.toLowerCase().includes(input.toLowerCase());
+      })
     );
   }, [input]);
 
@@ -55,7 +53,10 @@ function SearchForm({ setFilterDoctors }) {
     e.preventDefault();
     setFilterDoctors(
       state.doctors.filter((doctor) => {
-        return doctor.speciality === spec;
+        return (
+          doctor.speciality === spec &&
+          doctor.name.toLowerCase().includes(input.toLowerCase())
+        );
       })
     );
   }
