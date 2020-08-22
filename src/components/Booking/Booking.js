@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Booking.css';
 import { Form, Button } from 'react-bootstrap';
 import booking from './Booking.svg';
+import Flatpickr from 'react-flatpickr';
 import { firebaseFunctions } from '../../firebaseFunctions';
 
 function Booking() {
@@ -10,6 +11,21 @@ function Booking() {
   const [gender, setGender] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [email, setEmail] = useState('');
+  const [date, setDate] = useState('');
+  const [time, setTime] = useState('');
+
+  const formatDate = (date) => {
+    const dateArray = date.split(' ');
+    return (
+      dateArray[0] +
+      '-' +
+      dateArray[1] +
+      '-' +
+      dateArray[2] +
+      '-' +
+      dateArray[3]
+    );
+  };
 
   const handleChange = (setField, e) => {
     setField(e.target.value);
@@ -23,6 +39,8 @@ function Booking() {
       phoneNumber: phoneNumber,
       age: age,
       email: email,
+      date: date,
+      time: time,
       doctorUid: 'mU4KgBDdzFYjvKUhSxppqiCyFb02', //this should be changed to the uid that is passed by the link from search page
     };
 
@@ -99,6 +117,26 @@ function Booking() {
                 onChange={(e) => handleChange(setEmail, e)}
               />
             </Form.Group>
+
+            <Flatpickr
+              className="time-input"
+              placeholder="Choose a time"
+              onChange={(date) => {
+                setDate(formatDate(date.toString()));
+              }}
+            />
+
+            <Flatpickr
+              className="time-input"
+              placeholder="Choose a time"
+              options={{
+                noCalendar: true,
+                enableTime: true,
+              }}
+              onChange={(time) => {
+                setTime(time.toString().split(' ')[4]);
+              }}
+            />
 
             <Button variant="primary" type="submit">
               Set Appoinment
