@@ -25,7 +25,6 @@ function SearchForm({ setFilterDoctors }) {
     'Genitourinary radiology',
     'Head and neck radiology',
     'Pulmonary disease',
-    'Pulmonary disease',
     'Sleep medicine',
     'Sports medicine',
     'Transplant hepatology',
