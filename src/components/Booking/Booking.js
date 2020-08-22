@@ -1,20 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Booking.css';
 import { Form, Button } from 'react-bootstrap';
 import booking from './Booking.svg';
+import { firebaseFunctions } from '../../firebaseFunctions';
 
 function Booking() {
+  const [name, setName] = useState('');
+  const [age, setAge] = useState('');
+  const [gender, setGender] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [email, setEmail] = useState('');
+
+  const handleChange = (setField, e) => {
+    setField(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const appointmentInfo = {
+      name: name,
+      gender: gender,
+      phoneNumber: phoneNumber,
+      age: age,
+      email: email,
+      doctorUid: 'mU4KgBDdzFYjvKUhSxppqiCyFb02', //this should be changed to the uid that is passed by the link from search page
+    };
+
+    firebaseFunctions.bookAppointment(appointmentInfo);
+  };
+
   return (
     <div className="container booking my-5">
       <h1 className="text-center">Set up an appointment</h1>
       <div className="row my-5 align-items-center">
         <div className="col-md-10 col-lg-6 mx-4 mx-sm-0">
-          <Form>
+          <Form onSubmit={handleSubmit}>
             <Form.Group controlId="name">
               <Form.Control
                 type="text"
                 id="name"
                 placeholder="Enter your name"
+                onChange={(e) => handleChange(setName, e)}
               />
             </Form.Group>
 
@@ -23,8 +49,10 @@ function Booking() {
                 <input
                   type="radio"
                   id="female"
-                  name="customRadio"
+                  name="gender"
                   className="custom-control-input"
+                  value="female"
+                  onChange={(e) => handleChange(setGender, e)}
                 />
                 <label className="custom-control-label" htmlFor="female">
                   Female
@@ -34,8 +62,10 @@ function Booking() {
                 <input
                   type="radio"
                   id="male"
-                  name="customRadio"
+                  name="gender"
                   className="custom-control-input"
+                  value="male"
+                  onChange={(e) => handleChange(setGender, e)}
                 />
                 <label className="custom-control-label" htmlFor="male">
                   Male
@@ -48,6 +78,7 @@ function Booking() {
                 type="number"
                 id="age"
                 placeholder="Enter your age"
+                onChange={(e) => handleChange(setAge, e)}
               />
             </Form.Group>
 
@@ -56,6 +87,7 @@ function Booking() {
                 type="number"
                 id="phoneNumber"
                 placeholder="Enter your phone number"
+                onChange={(e) => handleChange(setPhoneNumber, e)}
               />
             </Form.Group>
 
@@ -64,6 +96,7 @@ function Booking() {
                 type="email"
                 id="email"
                 placeholder="Enter your  email address"
+                onChange={(e) => handleChange(setEmail, e)}
               />
             </Form.Group>
 
