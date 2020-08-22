@@ -72,7 +72,7 @@ function SearchResult({ filterDoctors }) {
                     <div className="specilty">{doctor.speciality}</div>
                     <Card.Text>
                       {' '}
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Lorem, ipsum dolor amet consectetur adipisicing elit.
                       Provident, totam?{' '}
                     </Card.Text>
                     <div className="theButtons">
