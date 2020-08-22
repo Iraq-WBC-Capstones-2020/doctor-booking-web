@@ -17,6 +17,7 @@ exports[`Boooking page run well run well  1`] = `
     >
       <form
         className=""
+        onSubmit={[Function]}
       >
         <div
           className="form-group"
@@ -24,6 +25,7 @@ exports[`Boooking page run well run well  1`] = `
           <input
             className="form-control"
             id="name"
+            onChange={[Function]}
             placeholder="Enter your name"
             type="text"
           />
@@ -37,8 +39,10 @@ exports[`Boooking page run well run well  1`] = `
             <input
               className="custom-control-input"
               id="female"
-              name="customRadio"
+              name="gender"
+              onChange={[Function]}
               type="radio"
+              value="female"
             />
             <label
               className="custom-control-label"
@@ -53,8 +57,10 @@ exports[`Boooking page run well run well  1`] = `
             <input
               className="custom-control-input"
               id="male"
-              name="customRadio"
+              name="gender"
+              onChange={[Function]}
               type="radio"
+              value="male"
             />
             <label
               className="custom-control-label"
@@ -70,6 +76,7 @@ exports[`Boooking page run well run well  1`] = `
           <input
             className="form-control"
             id="age"
+            onChange={[Function]}
             placeholder="Enter your age"
             type="number"
           />
@@ -80,6 +87,7 @@ exports[`Boooking page run well run well  1`] = `
           <input
             className="form-control"
             id="phoneNumber"
+            onChange={[Function]}
             placeholder="Enter your phone number"
             type="number"
           />
@@ -90,6 +98,7 @@ exports[`Boooking page run well run well  1`] = `
           <input
             className="form-control"
             id="email"
+            onChange={[Function]}
             placeholder="Enter your  email address"
             type="email"
           />
