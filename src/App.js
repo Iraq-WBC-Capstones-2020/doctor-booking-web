@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './containers/Navbar/Navbar';
 import Footer from './containers/Footer/Footer';
@@ -20,6 +20,8 @@ function App() {
     <div>
       <Nav />
       <Switch>
+      <Suspense fallback="tranlating...">
+
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/faq" component={FaqPage} />
@@ -30,6 +32,8 @@ function App() {
         <Route path="/profile" component={DoctorProfilePage} />
         <Route path="/edit" component={EditProfile} />
         <Route path="/calender" component={DashboardSection} />
+        </Suspense>
+
       </Switch>
       <Footer />
     </div>

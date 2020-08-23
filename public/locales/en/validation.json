@@ -1,0 +1,58 @@
+{
+    "aboutPage" :{
+        "aboutUs":{
+            "headLine" :"About us",
+            "paragraph" : "We are a team worked on this website to solve multiple problems the people face when they need to go to a doctor"
+        },
+        "saveTime":{
+            "headLine" :"Save your time",
+            "paragraph" :  "Save the time you always waste at clinics waiting rooms you just need to book the time that suits your schedule by one click"
+        },
+        "findDoctor":{
+            "headLine" :"Find your doctor",
+            "paragraph" :  "Search for a doctor by speciality or by name or just explore the doctors and find the one that suites your need"
+        },
+        "ourGoals1":{
+            "headLine" : "Our Goals",
+            "card1" :{
+                "headLine" : "1st",
+                "paragraph" : "one of our goals is to be best doctor booking website in Erbil"
+            },
+            "card2" :{
+                "headLine" : "Register all clinics ",
+                "paragraph" : "Register all the clinics in Erbil so we offer the users the desired flexibility to choose the doctor that the user wants"
+            },
+            "card3" :{
+                "headLine" : "Awareness",
+                "paragraph" : "Reducnig the gatherings in clinics waiting rooms so we ensure the social distancing to be applied"
+            }
+            
+
+        },
+        "ourTeam":{
+            "headLine" : "Our team",
+            "mem1" :{
+                "memName" : "John Doe",
+                "memRole" : "Member Role",
+                "memDis" : "some description here about the person and here is more text just for test"
+            },
+            "mem2" :{
+                "memName" : "John Doe",
+                "memRole" : "Member Role",
+                "memDis" : "some description here about the person and here is more text just for test"
+            },
+            "mem3" :{
+                "memName" : "John Doe",
+                "memRole" : "Member Role",
+                "memDis" : "some description here about the person and here is more text just for test"
+            },
+            "mem4" :{
+                "memName" : "John Doe",
+                "memRole" : "Member Role",
+                "memDis" : "some description here about the person and here is more text just for test"
+            }
+        }
+    } 
+} 
+
+

@@ -1,11 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import i18n from '../../i18n'
 function NavBar() {
+  
   const [language, setLanguage] = useState('English');
   const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+
     setLanguage(lng);
+      
+  
   };
+  if(language == 'ar'){
+    const p = document.getElementsByTagName('p')
+    const myPar = Array.from(p)
+    myPar.map( pp => pp.style.textAlign = 'right')
+  }
   return (
     <div>
       <Navbar
@@ -59,13 +70,13 @@ function NavBar() {
                 Sign in
               </NavLink>
               <NavDropdown title={language}>
-                <NavDropdown.Item onClick={() => changeLanguage('English')}>
+                <NavDropdown.Item onClick={() => changeLanguage('en')}>
                   English
                 </NavDropdown.Item>
                 <NavDropdown.Item onClick={() => changeLanguage('كوردى')}>
                   كوردى
                 </NavDropdown.Item>
-                <NavDropdown.Item onClick={() => changeLanguage('عربي')}>
+                <NavDropdown.Item onClick={() => changeLanguage('ar')}>
                   عربي
                 </NavDropdown.Item>
               </NavDropdown>
