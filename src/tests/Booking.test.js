@@ -1,5 +1,4 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import Booking from '../components/Booking/Booking';
 import { render } from '@testing-library/react';
 
