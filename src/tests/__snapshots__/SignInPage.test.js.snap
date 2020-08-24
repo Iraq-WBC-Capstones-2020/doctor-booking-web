@@ -69,7 +69,8 @@ exports[`sign in page renders correctly 1`] = `
             '
             t have an account? 
             <a
-              href="#!"
+              href="/register"
+              onClick={[Function]}
             >
               Sign Up
             </a>

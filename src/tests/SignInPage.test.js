@@ -3,21 +3,26 @@ import { render, fireEvent } from '@testing-library/react';
 import SignInSection from '../components/SignInPage/SignInSection';
 import renderer from 'react-test-renderer';
 import DoctorInfoProvider from '../DoctorContext';
+import { MemoryRouter } from 'react-router';
 
 test('sign in section is rendering ', () => {
   render(
-    <DoctorInfoProvider>
-      <SignInSection />
-    </DoctorInfoProvider>
+    <MemoryRouter>
+      <DoctorInfoProvider>
+        <SignInSection />
+      </DoctorInfoProvider>
+    </MemoryRouter>
   );
 });
 
 test('sign in page renders correctly', () => {
   const tree = renderer
     .create(
-      <DoctorInfoProvider>
-        <SignInSection />
-      </DoctorInfoProvider>
+      <MemoryRouter>
+        <DoctorInfoProvider>
+          <SignInSection />
+        </DoctorInfoProvider>
+      </MemoryRouter>
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
@@ -25,9 +30,11 @@ test('sign in page renders correctly', () => {
 
 test('e-mail should be string', () => {
   const signIn = render(
-    <DoctorInfoProvider>
-      <SignInSection />
-    </DoctorInfoProvider>
+    <MemoryRouter>
+      <DoctorInfoProvider>
+        <SignInSection />
+      </DoctorInfoProvider>
+    </MemoryRouter>
   );
   const input = signIn.getByPlaceholderText('E-mail');
   fireEvent.change(input, { target: { value: 'anything@anything.com' } });
