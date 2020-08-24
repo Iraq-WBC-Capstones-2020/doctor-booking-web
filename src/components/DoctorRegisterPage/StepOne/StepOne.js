@@ -13,12 +13,13 @@ function StepOne({ handleNextStep }) {
   const [img, setImg] = useState({});
   const { handleSubmit, register } = useForm();
   const onSubmit = (values) => {
-    dispatch({ type: ACTIONS.ADD_DOCTOR, doctorInfo: {img:img, ...values } });
+    dispatch({ type: ACTIONS.ADD_DOCTOR, doctorInfo: { img: img, ...values } });
     handleNextStep();
   };
 
   const handleImg = (e) => {
     setImg(e.target.files[0]);
+    alert('your photo uploaded successfuly');
   };
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
