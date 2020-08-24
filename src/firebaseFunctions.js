@@ -14,6 +14,6 @@ async function signIn(email, password) {
       console.log(res.user);
     })
     .catch((err) => {
-      console.log(err);
+      alert(err.message);
     });
 }
