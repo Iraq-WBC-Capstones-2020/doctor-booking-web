@@ -2,6 +2,9 @@ import React, { useState, useContext } from 'react';
 import { Row, Col, Form, Button } from 'react-bootstrap';
 import { firebaseFunctions } from '../../firebaseFunctions';
 import { DoctorContext, ACTIONS } from '../../DoctorContext';
+import { Link, useHistory } from 'react-router-dom';
+import { auth } from '../../Firebase';
+
 function SignInSection() {
   const [, dispatch] = useContext(DoctorContext);
   const [email, setEmail] = useState('');
@@ -12,13 +15,18 @@ function SignInSection() {
   const handlePassword = (e) => {
     setPassword(e.target.value);
   };
+  const history = useHistory();
   const handleSubmit = (e) => {
     e.preventDefault();
     firebaseFunctions.signIn(email, password).then(() => {
       dispatch({ type: ACTIONS.IS_SIGNED_IN, isSignedIn: true });
+      history.push('/calender');
     });
   };
 
+  if (auth.currentUser) {
+    history.push('/calender');
+  }
   return (
     <div className="d-flex align-items-center">
       <div className="welcome-rectangle d-none d-md-flex align-items-center justify-content-center">
@@ -61,7 +69,7 @@ function SignInSection() {
                 Sign In
               </Button>
               <p className="mt-3">
-                Don{"'"}t have an account? <a href="#!">Sign Up</a>
+                Don{"'"}t have an account? <Link to="/register">Sign Up</Link>
               </p>
             </Form>
           </Col>
