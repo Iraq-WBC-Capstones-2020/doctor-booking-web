@@ -5,7 +5,7 @@ import TimeTable from './TimeTable';
 import { DoctorContext, ACTIONS } from '../../../DoctorContext';
 import { useForm } from 'react-hook-form';
 import propTypes from 'prop-types';
-
+import markerIcon from '../imgs/markerIcon.svg';
 const API =
   'pk.eyJ1IjoiaHVzc2VpbnRhbGFsIiwiYSI6ImNrY3M4dWxwbzFtZDIycnM2OHQ4dXM4cnIifQ.ofCZrIlVF_r4YpQDzSi13g';
 const provinces = [
@@ -144,7 +144,9 @@ function StepThree({ handleBackStep }) {
             onClick={placeMarker}
             mapStyle={'mapbox://styles/mapbox/streets-v11'}
           >
-            <Marker longitude={marker[0]} latitude={marker[1]}></Marker>
+            <Marker longitude={marker[0]} latitude={marker[1]}>
+              <img src={markerIcon} />
+            </Marker>
           </Map>
         </Col>
         <Col xs={12} className="time-table">
