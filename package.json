@@ -16,6 +16,7 @@
     "react-dom": "^16.13.1",
     "react-flatpickr": "^3.10.4",
     "react-form-stepper": "^1.2.10",
+    "react-hook-form": "^6.5.0",
     "react-map-gl": "^5.2.7",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
