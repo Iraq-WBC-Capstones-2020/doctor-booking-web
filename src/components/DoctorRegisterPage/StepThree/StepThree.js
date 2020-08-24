@@ -3,6 +3,7 @@ import Map, { Marker } from 'react-map-gl';
 import { Row, Col, Form, Button } from 'react-bootstrap';
 import TimeTable from './TimeTable';
 import { DoctorContext, ACTIONS } from '../../../DoctorContext';
+import { firebaseFunctions } from '../../../firebaseFunctions';
 import { useForm } from 'react-hook-form';
 import propTypes from 'prop-types';
 import markerIcon from '../imgs/markerIcon.svg';
@@ -36,12 +37,15 @@ function StepThree({ handleBackStep }) {
   const { handleSubmit, register } = useForm();
   const [state, dispatch] = useContext(DoctorContext);
   const onSubmit = (values) => {
+    const newInfo = {
+      ...state.doctorInfo,
+      ...values,
+    };
     dispatch({
       type: ACTIONS.ADD_DOCTOR,
-      doctorInfo: { ...values, ...state.doctorInfo, marker: marker },
+      doctorInfo: newInfo,
     });
-
-    console.log(state.doctorInfo);
+    firebaseFunctions.signUp(newInfo);
   };
 
   const [viewport, setViewport] = useState({
@@ -154,7 +158,7 @@ function StepThree({ handleBackStep }) {
           <TimeTable className="w-100" />
         </Col>
       </Row>
-      <Button type="button" onClick={handleBackStep}>
+      <Button className="mr-3" type="button" onClick={handleBackStep}>
         Back
       </Button>
       <Button type="submit">Submit</Button>
