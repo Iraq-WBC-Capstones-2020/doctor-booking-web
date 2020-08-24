@@ -29,7 +29,7 @@ function App() {
         <Route path="/search" component={SearchPage} />
         <Route path="/profile" component={DoctorProfilePage} />
         <Route path="/edit" component={EditProfile} />
-        <Route path="/calender" component={DashboardSection} />
+        <Route path="/calender" component={Dashboard} />
       </Switch>
       <Footer />
     </div>
