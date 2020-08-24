@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './style.css';
 import { DoctorContext, ACTIONS } from '../../../DoctorContext';
 import { Form, Row, Col, Container, Button } from 'react-bootstrap';
@@ -10,11 +10,15 @@ function StepOne({ handleNextStep }) {
     handleNextStep: propTypes.func,
   };
   const [state, dispatch] = useContext(DoctorContext);
-
+  const [img, setImg] = useState({});
   const { handleSubmit, register } = useForm();
   const onSubmit = (values) => {
-    dispatch({ type: ACTIONS.ADD_DOCTOR, doctorInfo: { ...values } });
+    dispatch({ type: ACTIONS.ADD_DOCTOR, doctorInfo: {img:img, ...values } });
     handleNextStep();
+  };
+
+  const handleImg = (e) => {
+    setImg(e.target.files[0]);
   };
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
@@ -163,10 +167,8 @@ function StepOne({ handleNextStep }) {
                 Upload{' '}
                 <input
                   name="img"
-                  ref={register({
-                    required: true,
-                  })}
                   type="file"
+                  onChange={handleImg}
                   hidden
                   required
                 />
