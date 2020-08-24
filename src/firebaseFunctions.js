@@ -37,7 +37,7 @@ async function signUp(doctorInfo) {
     .collection('doctors')
     .doc(user.uid)
     .set(doctorData, { merge: true })
-    .then(() => console.log('document created and written'));
+    .then(() => alert('your clinic is registered now'));
   const storageRef = storage.ref('doctors/' + user.uid);
   const upload = storageRef.put(img);
   upload.on('state_changed', function complete() {
