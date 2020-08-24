@@ -4,6 +4,7 @@ export const firebaseFunctions = {
   //put your function reference here like:
   //functionName : function reference
   signIn: signIn,
+  signOut: signOut,
 };
 
 //write your function here
@@ -16,4 +17,8 @@ async function signIn(email, password) {
     .catch((err) => {
       alert(err.message);
     });
+}
+
+function signOut() {
+  auth.signOut();
 }
