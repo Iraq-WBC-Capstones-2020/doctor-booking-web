@@ -1,8 +1,11 @@
 import React, { useState, useEffect, useContext } from 'react';
 import Map, { Marker } from 'react-map-gl';
-import { Row, Col, Form } from 'react-bootstrap';
+import { Row, Col, Form, Button } from 'react-bootstrap';
 import TimeTable from './TimeTable';
 import { DoctorContext, ACTIONS } from '../../../DoctorContext';
+import { useForm } from 'react-hook-form';
+import propTypes from 'prop-types';
+
 const API =
   'pk.eyJ1IjoiaHVzc2VpbnRhbGFsIiwiYSI6ImNrY3M4dWxwbzFtZDIycnM2OHQ4dXM4cnIifQ.ofCZrIlVF_r4YpQDzSi13g';
 const provinces = [
@@ -26,12 +29,21 @@ const provinces = [
   'Sulaymaniyah',
   'Wasit',
 ];
-function StepThree() {
+function StepThree({ handleBackStep }) {
+  StepThree.propTypes = {
+    handleBackStep: propTypes.func,
+  };
+  const { handleSubmit, register } = useForm();
   const [state, dispatch] = useContext(DoctorContext);
-  const [province, setProvince] = useState('');
-  const [city, setCity] = useState('');
-  const [reference, setReference] = useState('');
-  const [neighborhood, setNeighborhood] = useState('');
+  const onSubmit = (values) => {
+    dispatch({
+      type: ACTIONS.ADD_DOCTOR,
+      doctorInfo: { ...values, ...state.doctorInfo, marker: marker },
+    });
+
+    console.log(state.doctorInfo);
+  };
+
   const [viewport, setViewport] = useState({
     latitude: 36.1901,
     longitude: 43.993,
@@ -46,101 +58,105 @@ function StepThree() {
       type: ACTIONS.ADD_DOCTOR,
       doctorInfo: {
         ...state.doctorInfo,
-        province: province,
-        city: city,
-        reference: reference,
-        neighborhood: neighborhood,
         marker: marker,
       },
     });
-  }, [province, city, reference, neighborhood, marker]);
-  useEffect(() => {
-    setCity(state.doctorInfo.city);
-    setProvince(state.doctorInfo.province);
-    setMarker(state.doctorInfo.marker ? state.doctorInfo.marker : [0, 0]);
-    setNeighborhood(state.doctorInfo.neighborhood);
-    setReference(state.doctorInfo.reference);
-  }, []);
+  }, [marker]);
+
   function placeMarker(e) {
     setMarker(e.lngLat);
   }
-  const handleChange = (setField, e) => {
-    setField(e.target.value);
-    console.log(city);
-  };
   return (
-    <Row className="mt-5">
-      <Col md="6">
-        <Form.Group controlId="exampleForm.ControlSelect1">
-          <Form.Label>Province</Form.Label>
-          <Form.Control
-            as="select"
-            onChange={(e) => handleChange(setProvince, e)}
-            value={province}
-            required
+    <Form onSubmit={handleSubmit(onSubmit)}>
+      <Row className="mt-5">
+        <Col md="6">
+          <Form.Group controlId="exampleForm.ControlSelect1">
+            <Form.Label>Province</Form.Label>
+            <Form.Control
+              name="province"
+              as="select"
+              value={state.doctorInfo.province}
+              ref={register({
+                required: true,
+              })}
+              required
+            >
+              <option disabled selected>
+                Select a province
+              </option>
+              {provinces.map((province) => {
+                return <option key={province}>{province}</option>;
+              })}
+            </Form.Control>
+          </Form.Group>
+        </Col>
+        <Col md="6">
+          <Form.Group>
+            <Form.Label>City</Form.Label>
+            <Form.Control
+              name="city"
+              type="text"
+              placeholder="e.g. Erbil"
+              value={state.doctorInfo.city}
+              ref={register({
+                required: true,
+              })}
+              required
+            />
+          </Form.Group>
+        </Col>
+        <Col md="6">
+          <Form.Group>
+            <Form.Label>Neighborhood</Form.Label>
+            <Form.Control
+              type="text"
+              name="neighborhood"
+              placeholder="e.g. Brayati"
+              value={state.doctorInfo.neighborhood}
+              ref={register({
+                required: true,
+              })}
+              required
+            />
+          </Form.Group>
+        </Col>
+        <Col md="6">
+          <Form.Group>
+            <Form.Label>Reference Point</Form.Label>
+            <Form.Control
+              type="text"
+              name="reference"
+              placeholder="e.g. next to eye center"
+              value={state.doctorInfo.reference}
+              ref={register({
+                required: true,
+              })}
+              required
+            />
+          </Form.Group>
+        </Col>
+        <Col className="mt-5" xs="12">
+          <p>Zoom in and click on the location of your clinic</p>
+          <Map
+            {...viewport}
+            mapboxApiAccessToken={API}
+            onViewportChange={(viewport) => setViewport(viewport)}
+            onClick={placeMarker}
+            mapStyle={'mapbox://styles/mapbox/streets-v11'}
           >
-            <option defaultValue disabled>
-              Select a province
-            </option>
-            {provinces.map((province) => {
-              return <option key={province}>{province}</option>;
-            })}
-          </Form.Control>
-        </Form.Group>
-      </Col>
-      <Col md="6">
-        <Form.Group>
-          <Form.Label>City</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="e.g. Erbil"
-            onChange={(e) => handleChange(setCity, e)}
-            value={city}
-            required
-          />
-        </Form.Group>
-      </Col>
-      <Col md="6">
-        <Form.Group>
-          <Form.Label>Neighborhood</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="e.g. Brayati"
-            onChange={(e) => handleChange(setNeighborhood, e)}
-            value={neighborhood}
-            required
-          />
-        </Form.Group>
-      </Col>
-      <Col md="6">
-        <Form.Group>
-          <Form.Label>Reference Point</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="e.g. next to eye center"
-            onChange={(e) => handleChange(setReference, e)}
-            value={reference}
-            required
-          />
-        </Form.Group>
-      </Col>
-      <Col className="mt-5" xs="12">
-        <p>Zoom in and click on the location of your clinic</p>
-        <Map
-          {...viewport}
-          mapboxApiAccessToken={API}
-          onViewportChange={(viewport) => setViewport(viewport)}
-          onClick={placeMarker}
-          mapStyle={'mapbox://styles/mapbox/streets-v11'}
-        >
-          <Marker longitude={marker[0]} latitude={marker[1]}></Marker>
-        </Map>
-      </Col>
-      <Col xs={12} className="time-table">
-        <p>Switch on the working days and choose the working times</p>
-        <TimeTable className="w-100" />
-      </Col>
-    </Row>
+            <Marker longitude={marker[0]} latitude={marker[1]}></Marker>
+          </Map>
+        </Col>
+        <Col xs={12} className="time-table">
+          <p>Switch on the working days and choose the working times</p>
+          <TimeTable className="w-100" />
+        </Col>
+      </Row>
+      <Button type="button" onClick={handleBackStep}>
+        Back
+      </Button>
+      <Button type="submit">Submit</Button>
+    </Form>
   );
 }
 

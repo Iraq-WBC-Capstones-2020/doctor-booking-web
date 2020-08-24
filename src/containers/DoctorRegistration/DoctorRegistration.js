@@ -1,14 +1,11 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { Stepper, Step } from 'react-form-stepper';
-import { Container, Button, Form } from 'react-bootstrap';
+import { Container, Form } from 'react-bootstrap';
 import StepThree from '../../components/DoctorRegisterPage/StepThree/StepThree';
 import StepOne from '../../components/DoctorRegisterPage/StepOne/StepOne';
 import StepTwo from '../../components/DoctorRegisterPage/StepTwo/StepTwo';
-import { DoctorContext } from '../../DoctorContext';
-import { firebaseFunctions } from '../../firebaseFunctions';
 
 function DoctorRegistration() {
-  const [state, dispatch] = useContext(DoctorContext);
   const [activeStep, setActiveStep] = useState(0);
   const handleNextStep = () => {
     if (activeStep <= 1) {
@@ -33,32 +30,16 @@ function DoctorRegistration() {
           <Step label="Clinic info" />
         </Stepper>
       </Form>
-      {activeStep === 0 ? (
-        <h1>
-          <StepOne />
-        </h1>
+      {activeStep === 0 ? <StepOne handleNextStep={handleNextStep} /> : ''}
+      {activeStep === 1 ? (
+        <StepTwo
+          handleNextStep={handleNextStep}
+          handleBackStep={handleBackStep}
+        />
       ) : (
         ''
       )}
-      {activeStep === 1 ? <StepTwo /> : ''}
-      {activeStep === 2 ? <StepThree /> : ''}
-
-      <Button
-        className={activeStep === 0 ? 'disabled mr-3' : 'mr-3'}
-        onClick={handleBackStep}
-      >
-        Back
-      </Button>
-      {activeStep === 2 ? (
-        <Button
-          type="submit"
-          onClick={() => firebaseFunctions.signUp(state.doctorInfo)}
-        >
-          Submit
-        </Button>
-      ) : (
-        <Button onClick={handleNextStep}>Next</Button>
-      )}
+      {activeStep === 2 ? <StepThree handleBackStep={handleBackStep} /> : ''}
     </Container>
   );
 }
