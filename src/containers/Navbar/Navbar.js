@@ -2,17 +2,23 @@ import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import i18n from '../../i18n'
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 function NavBar() {
-  
-  const [language, setLanguage] = useState('English');
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
+  const {t, i18n} = useTranslation('validation')
+  const [language, setLanguage] = useState();
 
+  const changeLanguage = (lng) => {
     setLanguage(lng);
+    i18next.fallbackLng = [lng]
+
+    i18n.changeLanguage(lng);
+    console.log(i18next.fallBackLng)
+
       
   
   };
-  if(language == 'ar'){
+  if(i18next.fallBackLng == 'ar'){
     const p = document.getElementsByTagName('p')
     const myPar = Array.from(p)
     myPar.map( pp => pp.style.textAlign = 'right')
@@ -28,7 +34,7 @@ function NavBar() {
       >
         <Container>
           <NavLink to="/" exact>
-            <Navbar.Brand>DOCTOR BOOKING</Navbar.Brand>
+          <Navbar.Brand>{t('navBar.logo')}</Navbar.Brand>
           </NavLink>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -39,35 +45,35 @@ function NavBar() {
                 exact
                 to="/"
               >
-                Home
+                {t('navBar.links.home')}
               </NavLink>
               <NavLink
                 activeClassName="active-link"
                 className="nav-link"
                 to="/search"
               >
-                Search
+                 {t('navBar.links.search')}
               </NavLink>
               <NavLink
                 activeClassName="active-link"
                 className="nav-link"
                 to="/about"
               >
-                About
+                {t('navBar.links.about')}
               </NavLink>
               <NavLink
                 activeClassName="active-link"
                 className="nav-link"
                 to="/faq"
               >
-                FAQ
+                {t('navBar.links.FAQ')}
               </NavLink>
               <NavLink
                 activeClassName="active-link"
                 className="nav-link"
                 to="/signin"
               >
-                Sign in
+                {t('navBar.links.signIn')}
               </NavLink>
               <NavDropdown title={language}>
                 <NavDropdown.Item onClick={() => changeLanguage('en')}>

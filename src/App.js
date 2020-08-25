@@ -18,9 +18,9 @@ import DashboardSection from './components/DashboardPage/DashboardSection/Dashbo
 function App() {
   return (
     <div>
+      <Suspense fallback="tranlating...">
       <Nav />
       <Switch>
-      <Suspense fallback="tranlating...">
 
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
@@ -32,10 +32,12 @@ function App() {
         <Route path="/profile" component={DoctorProfilePage} />
         <Route path="/edit" component={EditProfile} />
         <Route path="/calender" component={DashboardSection} />
-        </Suspense>
 
       </Switch>
+      
       <Footer />
+      </Suspense>
+
     </div>
   );
 }
