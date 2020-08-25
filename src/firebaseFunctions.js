@@ -15,7 +15,13 @@ function bookAppointment(appointmentInfo) {
   return db
     .collection('appointments')
     .doc()
-    .set(appointmentInfo, { merge: true });
+    .set(appointmentInfo, { merge: true })
+    .then(() => {
+      alert('Your appointment is recorded successfuly');
+    })
+    .catch((err) => {
+      alert(err.message);
+    });
 }
 async function signIn(email, password) {
   await auth
