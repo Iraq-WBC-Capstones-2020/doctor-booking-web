@@ -2,19 +2,20 @@ import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import intro from './intro.svg';
 import './FaqIntro.css';
+import { useTranslation } from 'react-i18next';
 
 function FaqIntro() {
+  const { t, i18n } = useTranslation('validation')
   return (
     <Container>
       <Row className="my-5">
         <Col lg="6" className=" d-flex align-items-center">
           <div>
             <h1 className="my-3">
-              Frequently asked<span className="d-block">questions</span>
+              {t('validation:FAQ.headLine')}<span className="d-block">{t('validation:FAQ.headLine2')}</span>
             </h1>
             <p className="faqText">
-              Here is some frequently asked questions <br /> about the website,
-              it help you to get a better <br /> idea about the app{' '}
+  {t('validation:FAQ.paragraph')}{' '}
             </p>
           </div>
         </Col>
