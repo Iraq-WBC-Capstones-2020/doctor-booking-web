@@ -8,7 +8,7 @@ import i18n from '../../i18n'
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 function NavBar() {
-  const {t, i18n} = useTranslation('validation')
+  const {t, i18n} = useTranslation(['validation','common'])
 
   const [state, dispatch] = useContext(DoctorContext);
   const [language, setLanguage] = useState('English');
@@ -85,7 +85,7 @@ function NavBar() {
                   onClick={handleSignOut}
                   href="/"
                 >
-                  Sign Out
+{t('common:signOut')}
                 </a>
               ) : (
                 <NavLink
@@ -93,7 +93,7 @@ function NavBar() {
                   className="nav-link"
                   to="/signin"
                 >
-                  Sign in
+                 {t('common:signIn')}
                 </NavLink>
               )}
               <NavDropdown title={language}>
