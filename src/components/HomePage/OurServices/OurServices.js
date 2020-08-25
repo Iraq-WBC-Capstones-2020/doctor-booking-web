@@ -6,21 +6,20 @@ import Freame3 from './images/undraw_map_1r691.png';
 import '../HomePageGlobalStyle.scss';
 
 import './style.css';
+import { useTranslation } from 'react-i18next';
 
 function OurServices() {
+  const { t,i18n } = useTranslation('validation')
   return (
     <Container className="services-section">
       <Row>
         <div className="head">
-          <h1>Our services</h1>
+          <h1>{t('homePage.OurServices.headLine')}</h1>
 
           <hr className="grayLine" />
 
           <p>
-            We provide to you the best choiches for you. Adjust it to your
-            health needs and make sure your undergo treatment with our highly
-            qualified doctors you can consult with us which type of service is
-            suitable for your health
+          {t('homePage.OurServices.paragraph')}
           </p>
         </div>
       </Row>
@@ -30,30 +29,27 @@ function OurServices() {
           <Card className="border-0 m-4">
             <Card.Img variant="top" src={Freame} />
             <Card.Body>
-              <Card.Title>Search doctor</Card.Title>
+              <Card.Title>{t('homePage.OurServices.card1.headLine')}</Card.Title>
               <Card.Text>
-                Choose your doctor from thousands of specialist, general, and
-                trusted hospitals
+              {t('homePage.OurServices.card1.paragraph')}
               </Card.Text>
             </Card.Body>
           </Card>
           <Card className="border-0 m-4">
             <Card.Img variant="top" src={Freame2} />
             <Card.Body>
-              <Card.Title>Details info</Card.Title>
+              <Card.Title>{t('homePage.OurServices.card2.headLine')}</Card.Title>
               <Card.Text>
-                Free consultation with our trusted doctors and get the best
-                recomendations
+              {t('homePage.OurServices.card2.paragraph')}
               </Card.Text>
             </Card.Body>
           </Card>
           <Card className="border-0 m-4">
             <Card.Img variant="top" src={Freame3} />
             <Card.Body>
-              <Card.Title>Clinic loation</Card.Title>
+              <Card.Title>{t('homePage.OurServices.card3.headLine')}</Card.Title>
               <Card.Text>
-                Ship of the imagination star stuff harvesting star light
-                descended from astronomers finite but
+              {t('homePage.OurServices.card3.paragraph')}
               </Card.Text>
             </Card.Body>
           </Card>

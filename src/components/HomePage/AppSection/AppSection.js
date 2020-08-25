@@ -15,12 +15,10 @@ function AppSection() {
       <Row className="myRow">
         <div className="col-xs-6">
           <div className="text">
-            <h2>{t('validation:aboutPage.ourTeam.mem1.memRole')}</h2>
+            <h2>{t('validation:homePage.appSection.headLine')}</h2>
             <hr className="grayLine w-100" />
             <p>
-              Our dedicated patient engagement app and web portal allow you to
-              access information instantaneously (no tedeous form, long calls,
-              or administrative hassle) and securely
+            {t('validation:homePage.appSection.paragraph')}
             </p>
           </div>
           <div className="downloadButtons">
