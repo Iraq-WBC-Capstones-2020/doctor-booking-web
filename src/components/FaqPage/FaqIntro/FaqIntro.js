@@ -14,7 +14,7 @@ function FaqIntro() {
             </h1>
             <p className="faqText">
               Here is some frequently asked questions <br /> about the website,
-              it will help you to get more <br /> info about the website {' '}
+              it will help you to get more <br /> info about the website{' '}
             </p>
           </div>
         </Col>
