@@ -17,7 +17,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <p
             className={false}
           >
-            who can use this website?
+            Who can use this website?
           </p>
           <button
             onClick={[Function]}
@@ -37,7 +37,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <div
             className="card-body"
           >
-            the website is for anyone that went to find doctor easily
+            The website is for anyone who wants to find a doctor easily
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <p
             className={false}
           >
-            Am I required to create a acount for making an online appointment?
+            Am I required to create an acount for booking an online appointment?
           </p>
           <button
             onClick={[Function]}
@@ -74,7 +74,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <div
             className="card-body"
           >
-            no need for a user to create an acount
+            No need for an account to book an appointment
           </div>
         </div>
       </div>
@@ -111,7 +111,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <div
             className="card-body"
           >
-            yes, you can do that
+            Yes, you can do that
           </div>
         </div>
       </div>
@@ -148,7 +148,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <div
             className="card-body"
           >
-            yes, if you have an argent situation you can reschedule to anthor time
+            Yes, if you have an urgent situation you can reschedule to another time
           </div>
         </div>
       </div>
@@ -185,7 +185,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <div
             className="card-body"
           >
-            the secretary tall you to confirm the appoinment by calling or sending email
+            The secretary will call you to confirm the appoinment
           </div>
         </div>
       </div>
@@ -202,7 +202,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <p
             className={false}
           >
-            should i include a name of a doctor when i want to search for a specific specialty ?
+            Should I include a name of a doctor when I want to search for a specific specialty?
           </p>
           <button
             onClick={[Function]}
@@ -222,7 +222,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <div
             className="card-body"
           >
-            no, just enter the specialty 
+            No, just select the specialty 
           </div>
         </div>
       </div>
@@ -239,7 +239,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <p
             className={false}
           >
-            What will the doctor's consultation fee be?
+            What the doctor's consultation fee will be?
           </p>
           <button
             onClick={[Function]}
@@ -259,7 +259,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <div
             className="card-body"
           >
-            it depend on the doctor itself
+            It depends on the doctor himself
           </div>
         </div>
       </div>
@@ -296,7 +296,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <div
             className="card-body"
           >
-            we send you an email that you are now in our website and user can search and find you
+            We will send you an email to confirm the registration then any user can search and find you
           </div>
         </div>
       </div>
@@ -313,8 +313,8 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <p
             className={false}
           >
-            Can I use the app for checking availability of Doctor and 
- his fees without actually booking or scheduling an appointment ?
+            Can I use the app for checking the availability of a doctor 
+ without actually booking or scheduling an appointment?
           </p>
           <button
             onClick={[Function]}
@@ -334,7 +334,7 @@ exports[`Questions (array component)  of faq page render correctly 1`] = `
           <div
             className="card-body"
           >
-            yes, while you searching, click on the doctor card that you went know about him, it open a anther page that contain doctor informaition
+            Yes, while you are searching, click on the doctor card that you want to know about him, it will open another page that contains doctor informaition
           </div>
         </div>
       </div>

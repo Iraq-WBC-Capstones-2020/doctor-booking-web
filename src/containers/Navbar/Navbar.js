@@ -1,11 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import { auth } from '../../Firebase';
+import { ACTIONS, DoctorContext } from '../../DoctorContext';
+import { firebaseFunctions } from '../../firebaseFunctions';
 import i18n from '../../i18n'
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 function NavBar() {
   const {t, i18n} = useTranslation('validation')
+
+  const [state, dispatch] = useContext(DoctorContext);
   const [language, setLanguage] = useState('English');
 
   const changeLanguage = (lng) => {
@@ -16,7 +21,18 @@ function NavBar() {
       
   
   };
-
+  const handleSignOut = () => {
+    firebaseFunctions.signOut();
+    dispatch({ type: ACTIONS.IS_SIGNED_IN, isSignedIn: false });
+  };
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        console.log(user);
+        dispatch({ type: ACTIONS.IS_SIGNED_IN, isSignedIn: true });
+      }
+    });
+  }, []);
   return (
     <div>
       <Navbar
@@ -62,13 +78,24 @@ function NavBar() {
               >
                 {t('navBar.links.FAQ')}
               </NavLink>
-              <NavLink
-                activeClassName="active-link"
-                className="nav-link"
-                to="/signin"
-              >
-                {t('navBar.links.signIn')}
-              </NavLink>
+              {state.isSignedIn ? (
+                <a
+                  activeClassName="active-link"
+                  className="nav-link"
+                  onClick={handleSignOut}
+                  href="/"
+                >
+                  Sign Out
+                </a>
+              ) : (
+                <NavLink
+                  activeClassName="active-link"
+                  className="nav-link"
+                  to="/signin"
+                >
+                  Sign in
+                </NavLink>
+              )}
               <NavDropdown title={language}>
                 <NavDropdown.Item onClick={() => changeLanguage('en')}>
                   English

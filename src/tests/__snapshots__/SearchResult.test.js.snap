@@ -45,12 +45,12 @@ exports[`renders correctly 1`] = `
             <div
               className="card-title h5"
             >
-              Salah Mohammed
+              Zainab Mohammed
             </div>
             <div
               className="specilty"
             >
-              Emergency medicine
+              Emergency Medicine
             </div>
             <p
               className="card-text"
@@ -99,12 +99,12 @@ exports[`renders correctly 1`] = `
             <div
               className="card-title h5"
             >
-              Salah Mohammed
+              Ali Fareed
             </div>
             <div
               className="specilty"
             >
-              child Doc
+              Child Doc
             </div>
             <p
               className="card-text"
@@ -153,12 +153,12 @@ exports[`renders correctly 1`] = `
             <div
               className="card-title h5"
             >
-              Sabah Mohammed
+              Sabah Omar
             </div>
             <div
               className="specilty"
             >
-              Family medicine
+              Family Medicine
             </div>
             <p
               className="card-text"
@@ -207,12 +207,12 @@ exports[`renders correctly 1`] = `
             <div
               className="card-title h5"
             >
-              Salah Ahmed
+              Sarah Marwan
             </div>
             <div
               className="specilty"
             >
-              child Doc
+              Child Doc
             </div>
             <p
               className="card-text"
@@ -261,12 +261,12 @@ exports[`renders correctly 1`] = `
             <div
               className="card-title h5"
             >
-              Salih Mohammed
+              Salih Murtadha
             </div>
             <div
               className="specilty"
             >
-              Medical genetics
+              Medical Genetics
             </div>
             <p
               className="card-text"
@@ -315,12 +315,12 @@ exports[`renders correctly 1`] = `
             <div
               className="card-title h5"
             >
-              Salah Naji
+              Shadya Naji
             </div>
             <div
               className="specilty"
             >
-              child Doc
+              Child Doc
             </div>
             <p
               className="card-text"

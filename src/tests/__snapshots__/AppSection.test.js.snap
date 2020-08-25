@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
         className="text"
       >
         <h2>
-          Download our Mobile Application (Comming soon)
+          Download our Mobile Application (Coming soon)
         </h2>
         <hr
           className="grayLine w-100"
