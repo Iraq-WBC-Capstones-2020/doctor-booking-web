@@ -1,11 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import { auth } from '../../Firebase';
+import { ACTIONS, DoctorContext } from '../../DoctorContext';
+import { firebaseFunctions } from '../../firebaseFunctions';
 function NavBar() {
+  const [state, dispatch] = useContext(DoctorContext);
   const [language, setLanguage] = useState('English');
   const changeLanguage = (lng) => {
     setLanguage(lng);
   };
+  const handleSignOut = () => {
+    firebaseFunctions.signOut();
+    dispatch({ type: ACTIONS.IS_SIGNED_IN, isSignedIn: false });
+  };
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        console.log(user);
+        dispatch({ type: ACTIONS.IS_SIGNED_IN, isSignedIn: true });
+      }
+    });
+  }, []);
   return (
     <div>
       <Navbar
@@ -51,13 +67,24 @@ function NavBar() {
               >
                 FAQ
               </NavLink>
-              <NavLink
-                activeClassName="active-link"
-                className="nav-link"
-                to="/signin"
-              >
-                Sign in
-              </NavLink>
+              {state.isSignedIn ? (
+                <a
+                  activeClassName="active-link"
+                  className="nav-link"
+                  onClick={handleSignOut}
+                  href="/"
+                >
+                  Sign Out
+                </a>
+              ) : (
+                <NavLink
+                  activeClassName="active-link"
+                  className="nav-link"
+                  to="/signin"
+                >
+                  Sign in
+                </NavLink>
+              )}
               <NavDropdown title={language}>
                 <NavDropdown.Item onClick={() => changeLanguage('English')}>
                   English

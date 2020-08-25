@@ -5,6 +5,8 @@ export const firebaseFunctions = {
   //put your function reference here like:
   //functionName : function reference
   bookAppointment: bookAppointment,
+  signIn: signIn,
+  signOut: signOut,
   signUp: signUp,
 };
 
@@ -14,6 +16,20 @@ function bookAppointment(appointmentInfo) {
     .collection('appointments')
     .doc()
     .set(appointmentInfo, { merge: true });
+}
+async function signIn(email, password) {
+  await auth
+    .signInWithEmailAndPassword(email, password)
+    .then((res) => {
+      console.log(res.user);
+    })
+    .catch((err) => {
+      alert(err.message);
+    });
+}
+
+function signOut() {
+  auth.signOut();
 }
 async function signUp(doctorInfo) {
   let user;
