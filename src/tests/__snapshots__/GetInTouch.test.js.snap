@@ -27,19 +27,21 @@ exports[`GetInTouch render correctly 1`] = `
           <h1
             className="my-3 sectionHeading"
           >
-            Find a doctor and 
+            validation:homePage.findDoc.headLine.title1
+             
             <span
               className="d-block"
             >
-              make an
+               
+              validation:homePage.findDoc.headLine.title2
             </span>
              
-            apoinnment online
+            validation:homePage.findDoc.headLine.titleSpan
           </h1>
           <p
             className="sectionCaption"
           >
-            Search for the best doctor for you and book an appointment at the time that fits your time
+            validation:homePage.findDoc.paragraph
           </p>
           <div
             className="my-4"
@@ -53,7 +55,7 @@ exports[`GetInTouch render correctly 1`] = `
                 disabled={false}
                 type="button"
               >
-                Find Doctor
+                common:findDoctor
               </button>
             </a>
           </div>
@@ -70,19 +72,17 @@ exports[`GetInTouch render correctly 1`] = `
           <h1
             className="my-3 sectionHeading"
           >
-            You are Doctor?
+            validation:homePage.docRig.headLine.title1
             <span
               className="d-block"
             >
-              Register here
+              validation:homePage.docRig.headLine.titleSpan
             </span>
           </h1>
           <p
             className="sectionCaption"
           >
-            With our website you are be more time manageable 
-            <br />
-             and you be comfortable about setting appoinments and dealing with your vistors
+            validation:homePage.docRig.paragraph
           </p>
           <div
             className="my-4"
@@ -96,7 +96,7 @@ exports[`GetInTouch render correctly 1`] = `
                 disabled={false}
                 type="button"
               >
-                Register
+                common:register
               </button>
             </a>
           </div>

@@ -10,7 +10,7 @@ exports[`our goals section renders correctly 1`] = `
     <h2
       className="section-title"
     >
-      Our Goals
+      validation:aboutPage.ourGoals1.headLine
     </h2>
   </div>
   <div
@@ -32,12 +32,12 @@ exports[`our goals section renders correctly 1`] = `
           <div
             className="text-center card-title card-title h5"
           >
-            1st
+            validation:aboutPage.ourGoals1.card1.headLine
           </div>
           <p
             className="text-center card-text px-3 pt-3 card-text"
           >
-            one of our goals is to be best doctor booking website in Erbil
+            validation:aboutPage.ourGoals1.card1.paragraph
           </p>
         </div>
       </div>
@@ -58,12 +58,12 @@ exports[`our goals section renders correctly 1`] = `
           <div
             className="text-center card-title card-title h5"
           >
-            Register all clinics
+            validation:aboutPage.ourGoals1.card2.headLine
           </div>
           <p
             className="text-center card-text px-3 pt-3 card-text"
           >
-            Register all the clinics in Erbil so we offer the users the desired flexibility to choose the doctor that the user wants
+            validation:aboutPage.ourGoals1.card2.paragraph
           </p>
         </div>
       </div>
@@ -84,12 +84,12 @@ exports[`our goals section renders correctly 1`] = `
           <div
             className="text-center card-title card-title h5"
           >
-            Awareness
+            validation:aboutPage.ourGoals1.card3.headLine
           </div>
           <p
             className="text-center card-text px-3 pt-3 card-text"
           >
-            Reducnig the gatherings in clinics waiting rooms so we ensure the social distancing to be applied
+            validation:aboutPage.ourGoals1.card3.paragraph
           </p>
         </div>
       </div>

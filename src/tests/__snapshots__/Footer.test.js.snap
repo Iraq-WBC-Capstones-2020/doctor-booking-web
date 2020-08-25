@@ -16,10 +16,10 @@ exports[`footer renders correctly 1`] = `
         <h5
           className="linksHeader"
         >
-          Doctor Booking
+          validation:footer.title
         </h5>
         <p>
-          A website to book doctor appointment and save you the time
+          validation:footer.paragraph
         </p>
       </div>
       <div
@@ -28,7 +28,7 @@ exports[`footer renders correctly 1`] = `
         <h5
           className="linksHeader"
         >
-          Links
+          validation:footer.links.headLine
         </h5>
         <ul
           className="list-unstyled"
@@ -38,7 +38,7 @@ exports[`footer renders correctly 1`] = `
               href="/"
               onClick={[Function]}
             >
-              Home
+              validation:footer.links.link1
             </a>
           </li>
           <li>
@@ -46,7 +46,7 @@ exports[`footer renders correctly 1`] = `
               href="/about"
               onClick={[Function]}
             >
-              About
+              validation:footer.links.link2
             </a>
           </li>
           <li>
@@ -54,7 +54,7 @@ exports[`footer renders correctly 1`] = `
               href="/faq"
               onClick={[Function]}
             >
-              FAQ
+              validation:footer.links.link3
             </a>
           </li>
         </ul>
@@ -65,7 +65,7 @@ exports[`footer renders correctly 1`] = `
         <h5
           className="linksHeader"
         >
-          Services
+          validation:footer.services.headLine
         </h5>
         <ul
           className="list-unstyled"
@@ -75,7 +75,7 @@ exports[`footer renders correctly 1`] = `
               href="/search"
               onClick={[Function]}
             >
-              Book an appointment
+              validation:footer.services.serv1
             </a>
           </li>
           <li>
@@ -83,7 +83,7 @@ exports[`footer renders correctly 1`] = `
               href="/register"
               onClick={[Function]}
             >
-              Clinic registration
+              validation:footer.services.serv2
             </a>
           </li>
         </ul>
