@@ -1,6 +1,7 @@
 import React from 'react';
 import Booking from '../components/Booking/Booking';
 import { render } from '@testing-library/react';
+import 'mutationobserver-shim';
 
 test('Boooking page renders', () => {
   render(<Booking />);
