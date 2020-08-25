@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
         className="col-lg-12"
       >
         <h1>
-          Search for your Doctor
+          Search for your doctor
         </h1>
         <img
           alt="search icon"
@@ -72,9 +72,6 @@ exports[`renders correctly 1`] = `
             </option>
             <option>
               Head and neck radiology
-            </option>
-            <option>
-              Pulmonary disease
             </option>
             <option>
               Pulmonary disease
