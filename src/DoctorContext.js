@@ -7,10 +7,11 @@ const initialState = {
   appoinment: [],
   timetable: [],
   isSignedIn: false,
+  doctorInfo: {},
 };
 
 export const ACTIONS = {
-  ADD_DOCTOR: 'add_doctor',
+  ADD_DOCTOR: 'ADD_DOCTOR',
   add_appoinment: 'add_appoinment',
   IS_SIGNED_IN: 'IS_SIGNED_IN',
 };
@@ -19,6 +20,8 @@ function reducer(state, action) {
   switch (action.type) {
     case ACTIONS.IS_SIGNED_IN:
       return { ...state, isSignedIn: action.isSignedIn };
+    case ACTIONS.ADD_DOCTOR:
+      return { ...state, doctorInfo: action.doctorInfo };
     default:
       return state;
   }

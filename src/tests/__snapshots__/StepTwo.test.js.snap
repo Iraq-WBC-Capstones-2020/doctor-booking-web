@@ -6,6 +6,7 @@ exports[`StepTwo renders correctly 1`] = `
 >
   <form
     className=""
+    onSubmit={[Function]}
   >
     <div
       className="formRow row"
@@ -20,12 +21,20 @@ exports[`StepTwo renders correctly 1`] = `
             className="form-label"
             htmlFor="exampleForm.SelectCustom"
           >
-            Speciality
+            Speciality*
           </label>
           <select
             className="theSelect custom-select"
             id="exampleForm.SelectCustom"
+            name="speciality"
+            required={true}
           >
+            <option
+              disabled={true}
+              selected={true}
+            >
+              Select a Speciality
+            </option>
             <option>
               Abdominal radiology
             </option>
@@ -87,11 +96,13 @@ exports[`StepTwo renders correctly 1`] = `
           <label
             htmlFor="exampleFormControlTextarea1"
           >
-            Education
+            Education*
           </label>
           <textarea
             className="textArea form-control"
             id="exampleFormControlTextarea1"
+            name="education"
+            required={true}
             rows="3"
           />
         </div>
@@ -105,16 +116,32 @@ exports[`StepTwo renders correctly 1`] = `
           <label
             htmlFor="exampleFormControlTextarea1"
           >
-            Expeience
+            Experience*
           </label>
           <textarea
             className="textArea form-control"
             id="exampleFormControlTextarea1"
+            name="experience"
+            required={true}
             rows="3"
           />
         </div>
       </div>
     </div>
+    <button
+      className="mr-3 btn btn-primary"
+      disabled={false}
+      type="button"
+    >
+      Back
+    </button>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      type="submit"
+    >
+      Next
+    </button>
   </form>
 </div>
 `;
