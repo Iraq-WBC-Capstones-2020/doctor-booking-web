@@ -28,7 +28,7 @@ function IntroSection() {
               <div className="my-4">
                 <a href="#getInTouch">
                   <Button className="btn-lg sectionBtn" variant="primary">
-                    Get Started
+                    {t('common:getStarted')}
                   </Button>
                 </a>
                 <a href="#videoSection">

@@ -7,7 +7,7 @@ import '../HomePageGlobalStyle.scss';
 import { useTranslation } from 'react-i18next';
 
 function GetInTouch() {
-  const { t, i18n} = useTranslation()
+  const { t, i18n} = useTranslation(['common','validation'])
   return (
     <div id="getInTouch" className="getIntouch my-5 py-5">
       <Container>
@@ -31,7 +31,7 @@ function GetInTouch() {
               <div className="my-4">
                 <Link to="/search">
                   <Button className="btn-lg sectionBtn" variant="primary">
-                    Find Doctor
+                  {t('common:findDoctor')}                  
                   </Button>
                 </Link>
               </div>
@@ -50,7 +50,7 @@ function GetInTouch() {
               </p>
               <div className="my-4">
                 <Link to="/register">
-                  <Button className="btn-lg sectionBtn">Register</Button>
+  <Button className="btn-lg sectionBtn">{t('common:register')}</Button>
                 </Link>
               </div>
             </div>

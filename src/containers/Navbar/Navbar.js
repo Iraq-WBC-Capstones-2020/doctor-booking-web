@@ -6,23 +6,17 @@ import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 function NavBar() {
   const {t, i18n} = useTranslation('validation')
-  const [language, setLanguage] = useState();
+  const [language, setLanguage] = useState('English');
 
   const changeLanguage = (lng) => {
     setLanguage(lng);
-    i18next.fallbackLng = [lng]
 
     i18n.changeLanguage(lng);
-    console.log(i18next.fallBackLng)
 
       
   
   };
-  if(i18next.fallBackLng == 'ar'){
-    const p = document.getElementsByTagName('p')
-    const myPar = Array.from(p)
-    myPar.map( pp => pp.style.textAlign = 'right')
-  }
+
   return (
     <div>
       <Navbar
@@ -34,7 +28,7 @@ function NavBar() {
       >
         <Container>
           <NavLink to="/" exact>
-          <Navbar.Brand>{t('navBar.logo')}</Navbar.Brand>
+          <Navbar.Brand>Doctor Booking</Navbar.Brand>
           </NavLink>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

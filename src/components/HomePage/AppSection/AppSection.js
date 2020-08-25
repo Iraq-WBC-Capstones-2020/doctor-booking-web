@@ -8,7 +8,7 @@ import './style.css';
 import { useTranslation } from 'react-i18next';
 
 function AppSection() {
-  const { t, i18n } = useTranslation(['translation','validation']);
+  const { t, i18n } = useTranslation(['common','validation']);
 
   return (
     <Container className="applicationSection">

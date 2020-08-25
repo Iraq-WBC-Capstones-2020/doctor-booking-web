@@ -1,8 +1,10 @@
 {
-    "getStartes": "Get started",
+    "getStarted": "Get started",
     "introVideo": "Intro video",
     "register": "Register",
     "bookNow": "Book now",
     "moreInfo": "More info",
-    "signIn": "sign in"
+    "signIn": "Sign in",
+    "findDoctor" : "Find Doctor",
+    "email" : "Enter your email"
 }

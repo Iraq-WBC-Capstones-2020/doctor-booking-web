@@ -4,7 +4,7 @@ import ButtonImg from './images/Slice1.png';
 import './style.css';
 import { useTranslation } from 'react-i18next';
 function NewsLetter() {
-  const { t, i18n } = useTranslation(['translation','validation']);
+  const { t, i18n } = useTranslation(['common','validation']);
 
   return (
     <Container className="newsLetter">
@@ -22,7 +22,7 @@ function NewsLetter() {
             <InputGroup className="mb-3">
               <FormControl
                 className="inputFiled"
-                placeholder="Recipient's username"
+                placeholder={t('common:email')}
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
               />
