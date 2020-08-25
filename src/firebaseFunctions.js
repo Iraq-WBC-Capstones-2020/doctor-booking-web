@@ -4,10 +4,26 @@ import { firestore } from 'firebase';
 export const firebaseFunctions = {
   //put your function reference here like:
   //functionName : function reference
+  signIn: signIn,
+  signOut: signOut,
   signUp: signUp,
 };
 
 //write your function here
+async function signIn(email, password) {
+  await auth
+    .signInWithEmailAndPassword(email, password)
+    .then((res) => {
+      console.log(res.user);
+    })
+    .catch((err) => {
+      alert(err.message);
+    });
+}
+
+function signOut() {
+  auth.signOut();
+}
 async function signUp(doctorInfo) {
   let user;
   await auth
