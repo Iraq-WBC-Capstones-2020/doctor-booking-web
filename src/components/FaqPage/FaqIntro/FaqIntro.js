@@ -10,11 +10,11 @@ function FaqIntro() {
         <Col lg="6" className=" d-flex align-items-center">
           <div>
             <h1 className="my-3">
-              Frequently asked<span className="d-block">questions</span>
+              Frequently Asked<span className="d-block">Questions</span>
             </h1>
             <p className="faqText">
               Here is some frequently asked questions <br /> about the website,
-              it help you to get a better <br /> idea about the app{' '}
+              it will help you to get more <br /> info about the website {' '}
             </p>
           </div>
         </Col>

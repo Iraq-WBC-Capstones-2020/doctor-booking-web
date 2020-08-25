@@ -16,7 +16,6 @@ function SearchForm() {
     'Genitourinary radiology',
     'Head and neck radiology',
     'Pulmonary disease',
-    'Pulmonary disease',
     'Sleep medicine',
     'Sports medicine',
     'Transplant hepatology',
@@ -26,7 +25,7 @@ function SearchForm() {
       <Container>
         <Row className="searchHead text-center">
           <Col lg={12}>
-            <h1>Search for your Doctor</h1>
+            <h1>Search for your doctor</h1>
             <img src={SearchIcon} alt="search icon" />
           </Col>
         </Row>

@@ -14,11 +14,11 @@ exports[`intro section of faq page render correctly 1`] = `
         <h1
           className="my-3"
         >
-          Frequently asked
+          Frequently Asked
           <span
             className="d-block"
           >
-            questions
+            Questions
           </span>
         </h1>
         <p
@@ -26,9 +26,9 @@ exports[`intro section of faq page render correctly 1`] = `
         >
           Here is some frequently asked questions 
           <br />
-           about the website, it help you to get a better 
+           about the website, it will help you to get more 
           <br />
-           idea about the app
+           info about the website 
            
         </p>
       </div>

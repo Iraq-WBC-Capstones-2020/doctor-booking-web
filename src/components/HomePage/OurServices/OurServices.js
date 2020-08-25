@@ -50,7 +50,7 @@ function OurServices() {
           <Card className="border-0 m-4">
             <Card.Img variant="top" src={Freame3} />
             <Card.Body>
-              <Card.Title>Clinic loation</Card.Title>
+              <Card.Title>Clinic location</Card.Title>
               <Card.Text>
                 Ship of the imagination star stuff harvesting star light
                 descended from astronomers finite but
