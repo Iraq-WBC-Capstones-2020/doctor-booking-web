@@ -12,7 +12,7 @@ function AppSection() {
       <Row className="myRow">
         <div className="col-xs-6">
           <div className="text">
-            <h2>Download our Mobile Application (Comming soon)</h2>
+            <h2>Download our Mobile Application (Coming soon)</h2>
             <hr className="grayLine w-100" />
             <p>
               Our dedicated patient engagement app and web portal allow you to

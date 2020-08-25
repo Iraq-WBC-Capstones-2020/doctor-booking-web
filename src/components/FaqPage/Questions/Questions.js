@@ -5,59 +5,58 @@ import QuestionItem from './QuestionItem';
 function Qustions() {
   const questions = [
     {
-      question: 'who can use this website?',
-      answer: 'the website is for anyone that went to find doctor easily',
+      question: 'Who can use this website?',
+      answer: 'The website is for anyone who wants to find a doctor easily',
       id: 1,
     },
     {
       question:
-        'Am I required to create a acount for making an online appointment?',
-      answer: 'no need for a user to create an acount',
+        'Am I required to create an acount for booking an online appointment?',
+      answer: 'No need for an account to book an appointment',
       id: 2,
     },
     {
       question:
         'Can I schedule more than one appointment with a single doctor?',
-      answer: 'yes, you can do that',
+      answer: 'Yes, you can do that',
       id: 3,
     },
     {
       question: 'Can I reschedule an online appointment?',
       answer:
-        'yes, if you have an argent situation you can reschedule to anthor time',
+        'Yes, if you have an urgent situation you can reschedule to another time',
       id: 4,
     },
     {
       question: 'How will I know if my booking is confirmed?',
-      answer:
-        'the secretary tall you to confirm the appoinment by calling or sending email',
+      answer: 'The secretary will call you to confirm the appoinment',
       id: 5,
     },
     {
       question:
-        'should i include a name of a doctor when i want to search for a specific specialty ?',
-      answer: 'no, just enter the specialty ',
+        'Should I include a name of a doctor when I want to search for a specific specialty?',
+      answer: 'No, just select the specialty ',
       id: 6,
     },
 
     {
-      question: "What will the doctor's consultation fee be?",
-      answer: 'it depend on the doctor itself',
+      question: "What the doctor's consultation fee will be?",
+      answer: 'It depends on the doctor himself',
       id: 17,
     },
     {
       question:
         'I am a Doctor and I have done my registration. What should I do next?',
       answer:
-        'we send you an email that you are now in our website and user can search and find you',
+        'We will send you an email to confirm the registration then any user can search and find you',
       id: 8,
     },
 
     {
       question:
-        'Can I use the app for checking availability of Doctor and \n his fees without actually booking or scheduling an appointment ?',
+        'Can I use the app for checking the availability of a doctor \n without actually booking or scheduling an appointment?',
       answer:
-        'yes, while you searching, click on the doctor card that you went know about him, it open a anther page that contain doctor informaition',
+        'Yes, while you are searching, click on the doctor card that you want to know about him, it will open another page that contains doctor informaition',
       id: 9,
     },
   ];

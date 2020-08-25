@@ -5,43 +5,43 @@ import './style.css';
 function SearchResult() {
   const [card] = useState([
     {
-      doctorName: 'Salah Mohammed',
-      specilty: 'Emergency medicine',
+      doctorName: 'Zainab Mohammed',
+      specilty: 'Emergency Medicine',
       shortAbout:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       id: 1,
     },
     {
-      doctorName: 'Salah Mohammed',
-      specilty: 'child Doc',
+      doctorName: 'Ali Fareed',
+      specilty: 'Child Doc',
       shortAbout:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       id: 2,
     },
     {
-      doctorName: 'Sabah Mohammed',
-      specilty: 'Family medicine',
+      doctorName: 'Sabah Omar',
+      specilty: 'Family Medicine',
       shortAbout:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       id: 3,
     },
     {
-      doctorName: 'Salah Ahmed',
-      specilty: 'child Doc',
+      doctorName: 'Sarah Marwan',
+      specilty: 'Child Doc',
       shortAbout:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       id: 4,
     },
     {
-      doctorName: 'Salih Mohammed',
-      specilty: 'Medical genetics',
+      doctorName: 'Salih Murtadha',
+      specilty: 'Medical Genetics',
       shortAbout:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       id: 5,
     },
     {
-      doctorName: 'Salah Naji',
-      specilty: 'child Doc',
+      doctorName: 'Shadya Naji',
+      specilty: 'Child Doc',
       shortAbout:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       id: 6,

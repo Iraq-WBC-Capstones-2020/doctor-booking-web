@@ -14,12 +14,12 @@ function IntroSection() {
           <Col lg="6" className=" d-flex align-items-center">
             <div>
               <h1 className="my-3 sectionHeading">
-                Your health is important{' '}
-                <span className="d-block">for us.</span>
+                Your health is important <span className="d-block">to us.</span>
               </h1>
               <p className="sectionCaption">
-                This website help you to find the best and suit doctor for your
-                situation , and save you alot of time for searching doctor
+                This website helps you find the best and suitable doctor for
+                your situation, and will save you a lot of time when searching
+                for a doctor
               </p>
               <div className="my-4">
                 <a href="#getInTouch">
