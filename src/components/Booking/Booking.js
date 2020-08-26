@@ -146,6 +146,10 @@ function Booking() {
               onChange={(date) => {
                 setDate(formatDate(date.toString()));
               }}
+              options={{
+                defaultDate: new Date(),
+                minDate: new Date(),
+              }}
             />
 
             <Flatpickr
@@ -154,8 +158,12 @@ function Booking() {
               options={{
                 noCalendar: true,
                 enableTime: true,
+                defaultDate: new Date(),
               }}
               onChange={(time) => {
+                setTime(time.toString().split(' ')[4]);
+              }}
+              onOpen={(time) => {
                 setTime(time.toString().split(' ')[4]);
               }}
             />
