@@ -8,6 +8,7 @@ export const firebaseFunctions = {
   signIn: signIn,
   signOut: signOut,
   signUp: signUp,
+  getAppointments: getAppointments,
 };
 
 //write your function here
@@ -72,4 +73,18 @@ async function signUp(doctorInfo) {
   upload.on('state_changed', function complete() {
     console.log('uploaded');
   });
+}
+
+async function getAppointments(uid) {
+  let appointments = [];
+  await db
+    .collection('appointments')
+    .where('doctorUid', '==', `${uid}`)
+    .get()
+    .then(function (querySnapshot) {
+      querySnapshot.forEach((doc) => {
+        appointments.push(doc.data());
+      });
+    });
+  return appointments;
 }
