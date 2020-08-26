@@ -4,8 +4,12 @@ import personImg from './imgs/person.svg';
 import clockImg from './imgs/clock.svg';
 import phoneImg from './imgs/phone.svg';
 import emailImg from './imgs/email.svg';
+import propTypes from 'prop-types';
 
 function AppointmentCard({ appointment }) {
+  AppointmentCard.propTypes = {
+    appointment: propTypes.object,
+  };
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
