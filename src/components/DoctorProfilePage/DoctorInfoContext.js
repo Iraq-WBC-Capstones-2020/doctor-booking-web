@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react';
 import Avatar from './ProfileHeader/images/avatar1.svg';
 import { useParams } from 'react-router';
-import { db, storage } from '../../Firebase';
+import { db } from '../../Firebase';
 
 export const InfoContext = createContext();
 
@@ -11,10 +11,10 @@ export function InfoProvider(props) {
 
   useEffect(() => {
     db.collection('doctors')
-      .doc(id?.trim())
+      .doc(id.trim())
       .get()
       .then((data) => setDocotr(data.data()));
-  }, [id?.trim()]);
+  }, []);
 
   //image url
   // storage

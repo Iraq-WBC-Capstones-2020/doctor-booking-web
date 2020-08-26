@@ -1,13 +1,10 @@
-import React, { Fragment, useContext } from 'react';
+import React, { Fragment } from 'react';
 import ProfileHeader from '../../components/DoctorProfilePage/ProfileHeader/ProfileHeader';
 import TimeTable from '../../components/DoctorProfilePage/TimeTable/TimeTable';
 import Informations from '../../components/DoctorProfilePage/informations/Informations';
-import {
-  InfoProvider,
-  InfoContext,
-} from '../../components/DoctorProfilePage/DoctorInfoContext';
+import { InfoProvider } from '../../components/DoctorProfilePage/DoctorInfoContext';
 import './style.css';
-import { Container, Row, Button } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import ClinicMap from '../../components/DoctorProfilePage/ClinicMap/ClinicMap';
 
 function DoctorProfilePage() {
