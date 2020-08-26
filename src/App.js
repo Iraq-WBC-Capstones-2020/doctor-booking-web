@@ -14,6 +14,7 @@ import DoctorProfilePage from './containers/DoctorProfilePage/DoctorProfilePage'
 import Dashboard from './containers/DashboardPage/Dashboard';
 import EditProfile from './components/DashboardPage/EditProfile/EditProfile';
 import DashboardSection from './components/DashboardPage/DashboardSection/DashboardSection';
+import React, { Suspense } from 'react';
 
 function App() {
   return (
