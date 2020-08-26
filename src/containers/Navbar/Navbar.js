@@ -89,7 +89,7 @@ function NavBar() {
                 <NavDropdown.Item onClick={() => changeLanguage('English')}>
                   English
                 </NavDropdown.Item>
-                <NavDropdown.Item onClick={() => changeLanguage('كوردى')}>
+                <NavDropdown.Item onClick={() => changeLanguage('kr')}>
                   كوردى
                 </NavDropdown.Item>
                 <NavDropdown.Item onClick={() => changeLanguage('عربي')}>
