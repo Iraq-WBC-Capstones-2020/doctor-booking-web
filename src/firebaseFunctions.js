@@ -4,12 +4,25 @@ import { firestore } from 'firebase';
 export const firebaseFunctions = {
   //put your function reference here like:
   //functionName : function reference
+  bookAppointment: bookAppointment,
   signIn: signIn,
   signOut: signOut,
   signUp: signUp,
 };
 
 //write your function here
+function bookAppointment(appointmentInfo) {
+  return db
+    .collection('appointments')
+    .doc()
+    .set(appointmentInfo, { merge: true })
+    .then(() => {
+      alert('Your appointment is recorded successfully');
+    })
+    .catch((err) => {
+      alert(err.message);
+    });
+}
 async function signIn(email, password) {
   await auth
     .signInWithEmailAndPassword(email, password)
