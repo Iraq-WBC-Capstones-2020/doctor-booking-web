@@ -4,22 +4,18 @@ import { NavLink } from 'react-router-dom';
 import { auth } from '../../Firebase';
 import { ACTIONS, DoctorContext } from '../../DoctorContext';
 import { firebaseFunctions } from '../../firebaseFunctions';
-import i18n from '../../i18n'
+import i18n from '../../i18n';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 function NavBar() {
-  const {t, i18n} = useTranslation(['validation','common'])
+  const { t, i18n } = useTranslation(['validation', 'common']);
 
   const [state, dispatch] = useContext(DoctorContext);
-  const [language, setLanguage] = useState('English');
-
+  const [language, setLanguage] = useState(localStorage.getItem('i18nextLng'));
   const changeLanguage = (lng) => {
     setLanguage(lng);
 
     i18n.changeLanguage(lng);
-
-      
-  
   };
   const handleSignOut = () => {
     firebaseFunctions.signOut();
@@ -44,7 +40,7 @@ function NavBar() {
       >
         <Container>
           <NavLink to="/" exact>
-          <Navbar.Brand>Doctor Booking</Navbar.Brand>
+            <Navbar.Brand>Doctor Booking</Navbar.Brand>
           </NavLink>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -62,7 +58,7 @@ function NavBar() {
                 className="nav-link"
                 to="/search"
               >
-                 {t('navBar.links.search')}
+                {t('navBar.links.search')}
               </NavLink>
               <NavLink
                 activeClassName="active-link"
@@ -85,7 +81,7 @@ function NavBar() {
                   onClick={handleSignOut}
                   href="/"
                 >
-{t('common:signOut')}
+                  {t('common:signOut')}
                 </a>
               ) : (
                 <NavLink
@@ -93,7 +89,7 @@ function NavBar() {
                   className="nav-link"
                   to="/signin"
                 >
-                 {t('common:signIn')}
+                  {t('common:signIn')}
                 </NavLink>
               )}
               <NavDropdown title={language}>

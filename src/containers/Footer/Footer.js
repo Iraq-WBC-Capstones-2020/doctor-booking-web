@@ -4,17 +4,19 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 function Footer() {
-  const { t,i18n } = useTranslation('validation')
+  const { t, i18n } = useTranslation('validation');
   return (
     <footer className="text-white">
       <Container className="h-100 footer-container">
         <Row className="h-100 align-content-center row-container">
           <Col className="mb-3 first-col" md="3">
-  <h5 className="linksHeader">{t('validation:footer.title')}</h5>
+            <h5 className="linksHeader">{t('validation:footer.title')}</h5>
             <p>{t('validation:footer.paragraph')}</p>
           </Col>
           <Col md="3" className="mb-3 offset-md-2">
-            <h5 className="linksHeader">{t('validation:footer.links.headLine')}</h5>
+            <h5 className="linksHeader">
+              {t('validation:footer.links.headLine')}
+            </h5>
 
             <ul className="list-unstyled">
               <li>
@@ -30,14 +32,20 @@ function Footer() {
           </Col>
 
           <Col md="3" className="mb-3 offset-md-1">
-            <h5 className="linksHeader">{t('validation:footer.services.headLine')}</h5>
+            <h5 className="linksHeader">
+              {t('validation:footer.services.headLine')}
+            </h5>
 
             <ul className="list-unstyled">
               <li>
-                <Link to="/search">{t('validation:footer.services.serv1')}</Link>
+                <Link to="/search">
+                  {t('validation:footer.services.serv1')}
+                </Link>
               </li>
               <li>
-                <Link to="/register">{t('validation:footer.services.serv2')}</Link>
+                <Link to="/register">
+                  {t('validation:footer.services.serv2')}
+                </Link>
               </li>
             </ul>
           </Col>

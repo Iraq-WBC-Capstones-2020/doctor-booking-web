@@ -7,7 +7,7 @@ import '../HomePageGlobalStyle.scss';
 import { useTranslation } from 'react-i18next';
 
 function GetInTouch() {
-  const { t, i18n} = useTranslation(['common','validation'])
+  const { t, i18n } = useTranslation(['common', 'validation']);
   return (
     <div id="getInTouch" className="getIntouch my-5 py-5">
       <Container>
@@ -22,16 +22,20 @@ function GetInTouch() {
           <Col lg="6">
             <div>
               <h1 className="my-3 sectionHeading">
-              {t('validation:homePage.findDoc.headLine.title1')} <span className="d-block"> {t('validation:homePage.findDoc.headLine.title2')}</span>{' '}
-              {t('validation:homePage.findDoc.headLine.titleSpan')}
+                {t('validation:homePage.findDoc.headLine.title1')}{' '}
+                <span className="d-block">
+                  {' '}
+                  {t('validation:homePage.findDoc.headLine.title2')}
+                </span>{' '}
+                {t('validation:homePage.findDoc.headLine.titleSpan')}
               </h1>
               <p className="sectionCaption">
-              {t('validation:homePage.findDoc.paragraph')}
+                {t('validation:homePage.findDoc.paragraph')}
               </p>
               <div className="my-4">
                 <Link to="/search">
                   <Button className="btn-lg sectionBtn" variant="primary">
-                  {t('common:findDoctor')}                  
+                    {t('common:findDoctor')}
                   </Button>
                 </Link>
               </div>
@@ -42,15 +46,19 @@ function GetInTouch() {
           <Col lg="6">
             <div>
               <h1 className="my-3 sectionHeading">
-              {t('validation:homePage.docRig.headLine.title1')}
-                <span className="d-block">{t('validation:homePage.docRig.headLine.titleSpan')}</span>
+                {t('validation:homePage.docRig.headLine.title1')}
+                <span className="d-block">
+                  {t('validation:homePage.docRig.headLine.titleSpan')}
+                </span>
               </h1>
               <p className="sectionCaption">
-              {t('validation:homePage.docRig.paragraph')}
+                {t('validation:homePage.docRig.paragraph')}
               </p>
               <div className="my-4">
                 <Link to="/register">
-  <Button className="btn-lg sectionBtn">{t('common:register')}</Button>
+                  <Button className="btn-lg sectionBtn">
+                    {t('common:register')}
+                  </Button>
                 </Link>
               </div>
             </div>

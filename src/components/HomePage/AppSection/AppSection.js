@@ -8,7 +8,7 @@ import './style.css';
 import { useTranslation } from 'react-i18next';
 
 function AppSection() {
-  const { t, i18n } = useTranslation(['common','validation']);
+  const { t, i18n } = useTranslation(['common', 'validation']);
 
   return (
     <Container className="applicationSection">
@@ -17,9 +17,7 @@ function AppSection() {
           <div className="text">
             <h2>{t('validation:homePage.appSection.headLine')}</h2>
             <hr className="grayLine w-100" />
-            <p>
-            {t('validation:homePage.appSection.paragraph')}
-            </p>
+            <p>{t('validation:homePage.appSection.paragraph')}</p>
           </div>
           <div className="downloadButtons">
             <input alt="On App store" type="image" src={appStore} />

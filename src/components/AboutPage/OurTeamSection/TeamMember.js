@@ -6,8 +6,8 @@ import twitter from './imgs/icons8-twitter-circled-64.png';
 import linkedin from './imgs/icons8-linkedin-circled-64.png';
 import { useTranslation } from 'react-i18next';
 function TeamMember() {
-  const { t, i18n } = useTranslation(['translation','validation']);
-  
+  const { t, i18n } = useTranslation(['translation', 'validation']);
+
   return (
     <Row>
       <Col xs="6" className="d-flex align-items-center flex-column">
@@ -35,10 +35,14 @@ function TeamMember() {
         </div>
       </Col>
       <Col xs="6" className="member-info d-flex flex-column">
-        <h2 className="member-name">{t('validation:aboutPage.ourTeam.mem1.memName')}</h2>
-        <p className="member-role">{t('validation:aboutPage.ourTeam.mem1.memRole')}</p>
+        <h2 className="member-name">
+          {t('validation:aboutPage.ourTeam.mem1.memName')}
+        </h2>
+        <p className="member-role">
+          {t('validation:aboutPage.ourTeam.mem1.memRole')}
+        </p>
         <p className="member-description">
-        {t('validation:aboutPage.ourTeam.mem1.memDis')}
+          {t('validation:aboutPage.ourTeam.mem1.memDis')}
         </p>
       </Col>
     </Row>

@@ -14,14 +14,13 @@ import i18n from './i18n';
 
 ReactDOM.render(
   <I18nextProvider i18n={i18n}>
-
-  <React.StrictMode>
-    <DoctorInfoProvider>
-      <Router>
-        <App />
-      </Router>
-    </DoctorInfoProvider>
-  </React.StrictMode>
+    <React.StrictMode>
+      <DoctorInfoProvider>
+        <Router>
+          <App />
+        </Router>
+      </DoctorInfoProvider>
+    </React.StrictMode>
   </I18nextProvider>,
   document.getElementById('root')
 );

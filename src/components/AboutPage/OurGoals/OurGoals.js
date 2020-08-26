@@ -7,12 +7,14 @@ import awarenessImg from './imgs/awareness.svg';
 import { useTranslation } from 'react-i18next';
 
 function OurGoals() {
-  const { t, i18n } = useTranslation(['translation','validation']);
+  const { t, i18n } = useTranslation(['translation', 'validation']);
 
   return (
     <Container className="abSection">
       <Row className="justify-content-center">
-  <h2 className="section-title">{t('validation:aboutPage.ourGoals1.headLine')}</h2>
+        <h2 className="section-title">
+          {t('validation:aboutPage.ourGoals1.headLine')}
+        </h2>
       </Row>
       <Row className="justify-content-between">
         <Col className="justify-content-center d-flex mt-5" md="4">

@@ -5,15 +5,14 @@ import './style.css';
 import { useTranslation } from 'react-i18next';
 
 function VideoSection() {
-  const { t, i18n } = useTranslation(['translation','validation']);
+  const { t, i18n } = useTranslation(['translation', 'validation']);
 
   return (
     <Container id="videoSection" className="videoSection">
       <Row>
         <div className="col-lg-6">
           <h1>
-            {t('validation:homePage.videoSection.headLine')}            <br />
-
+            {t('validation:homePage.videoSection.headLine')} <br />
           </h1>
         </div>
 

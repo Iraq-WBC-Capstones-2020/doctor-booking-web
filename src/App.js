@@ -19,24 +19,22 @@ function App() {
   return (
     <div>
       <Suspense fallback="tranlating...">
-      <Nav />
-      <Switch>
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/faq" component={FaqPage} />
+          <Route path="/signin" component={SignIn} />
+          <Route path="/booking" component={BookingPage} />
+          <Route path="/register" component={DoctorRegister} />
+          <Route path="/search" component={SearchPage} />
+          <Route path="/profile" component={DoctorProfilePage} />
+          <Route path="/edit" component={EditProfile} />
+          <Route path="/calender" component={Dashboard} />
+        </Switch>
 
-        <Route exact path="/" component={HomePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/faq" component={FaqPage} />
-        <Route path="/signin" component={SignIn} />
-        <Route path="/booking" component={BookingPage} />
-        <Route path="/register" component={DoctorRegister} />
-        <Route path="/search" component={SearchPage} />
-        <Route path="/profile" component={DoctorProfilePage} />
-        <Route path="/edit" component={EditProfile} />
-        <Route path="/calender" component={Dashboard} />
-      </Switch>
-      
-      <Footer />
+        <Footer />
       </Suspense>
-
     </div>
   );
 }

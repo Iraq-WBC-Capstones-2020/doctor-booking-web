@@ -4,13 +4,13 @@ import ButtonImg from './images/Slice1.png';
 import './style.css';
 import { useTranslation } from 'react-i18next';
 function NewsLetter() {
-  const { t, i18n } = useTranslation(['common','validation']);
+  const { t, i18n } = useTranslation(['common', 'validation']);
 
   return (
     <Container className="newsLetter">
       <div className="theHead">
         <Row className="align-items-center justify-content-center">
-  <h1>{t('validation:homePage.newsLetter.headLine')}</h1>
+          <h1>{t('validation:homePage.newsLetter.headLine')}</h1>
         </Row>
         <Row className="align-items-center justify-content-center">
           <p>{t('validation:homePage.newsLetter.paragraph')}</p>

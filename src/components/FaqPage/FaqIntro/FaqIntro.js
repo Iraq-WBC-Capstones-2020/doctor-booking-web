@@ -5,18 +5,17 @@ import './FaqIntro.css';
 import { useTranslation } from 'react-i18next';
 
 function FaqIntro() {
-  const { t, i18n } = useTranslation('validation')
+  const { t, i18n } = useTranslation('validation');
   return (
     <Container>
       <Row className="my-5">
         <Col lg="6" className=" d-flex align-items-center">
           <div>
             <h1 className="my-3">
-              {t('validation:FAQ.headLine')}<span className="d-block">{t('validation:FAQ.headLine2')}</span>
+              {t('validation:FAQ.headLine')}
+              <span className="d-block">{t('validation:FAQ.headLine2')}</span>
             </h1>
-            <p className="faqText">
-  {t('validation:FAQ.paragraph')}{' '}
-            </p>
+            <p className="faqText">{t('validation:FAQ.paragraph')} </p>
           </div>
         </Col>
         <Col lg="6" className="">
