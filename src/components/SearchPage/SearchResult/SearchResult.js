@@ -1,86 +1,90 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import Avatar from './images/avatar.png';
 import './style.css';
-function SearchResult() {
-  const [card] = useState([
-    {
-      doctorName: 'Zainab Mohammed',
-      specilty: 'Emergency Medicine',
-      shortAbout:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      id: 1,
-    },
-    {
-      doctorName: 'Ali Fareed',
-      specilty: 'Child Doc',
-      shortAbout:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      id: 2,
-    },
-    {
-      doctorName: 'Sabah Omar',
-      specilty: 'Family Medicine',
-      shortAbout:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      id: 3,
-    },
-    {
-      doctorName: 'Sarah Marwan',
-      specilty: 'Child Doc',
-      shortAbout:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      id: 4,
-    },
-    {
-      doctorName: 'Salih Murtadha',
-      specilty: 'Medical Genetics',
-      shortAbout:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      id: 5,
-    },
-    {
-      doctorName: 'Shadya Naji',
-      specilty: 'Child Doc',
-      shortAbout:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      id: 6,
-    },
-  ]);
+import { DoctorContext } from '../../../DoctorContext';
+import { Link } from 'react-router-dom';
+
+function SearchResult({ filterDoctors }) {
+  const [state] = useContext(DoctorContext);
 
   return (
     <div className="searchResult">
       <Container>
         <Row>
           <Col>
-            <h3>Search result</h3>
+            {filterDoctors?.length === 0 ? (
+              <h2 className="text-primary">Docotr List</h2>
+            ) : (
+              <h2 className="text-success">Search result</h2>
+            )}
           </Col>
-
           <hr className="solid" />
         </Row>
 
-        <Row className="cardsRow">
-          {card.map((cards) => (
-            <Col md={4} key={cards.id}>
-              <Card className="doctorCards" style={{ width: '18rem' }}>
-                <Card.Img className="myImgCard" variant="top" src={Avatar} />
-                <Card.Body>
-                  <Card.Title>{cards.doctorName}</Card.Title>
-                  <div className="specilty">{cards.specilty}</div>
-                  <Card.Text>{cards.shortAbout}</Card.Text>
-                  <div className="theButtons">
-                    <Button className="theWhite" variant="primary">
-                      More Info
-                    </Button>
-                    <Button className="theBlue" variant="primary">
-                      Book now
-                    </Button>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
+        {filterDoctors?.length === 0 ? (
+          <Row className="cardsRow">
+            {state.doctors.map((doctor, index) => (
+              <Col md={4} key={index}>
+                <Card className="doctorCards " style={{ width: '18rem' }}>
+                  <Card.Img className="myImgCard" variant="top" src={Avatar} />
+                  <Card.Body>
+                    <Card.Title>{doctor.name}</Card.Title>
+                    <div className="specilty">{doctor.speciality}</div>
+                    <Card.Text>
+                      {' '}
+                      Lorem, ipsum dolor amet consectetur adipisicing elit.
+                      Provident, totam?{' '}
+                    </Card.Text>
+                    <div className="theButtons">
+                      <Link to={`profile/${doctor.uid}`}>
+                        <Button className="theWhite" variant="primary">
+                          More Info
+                        </Button>
+                      </Link>
+                      <Link to={`booking/${doctor.uid}`}>
+                        <Button className="theBlue" variant="primary">
+                          Book now
+                        </Button>
+                      </Link>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        ) : (
+          <Row className="cardsRow">
+            {filterDoctors?.map((doctor, index) => (
+              <Col md={4} key={index}>
+                <Card className="doctorCards " style={{ width: '18rem' }}>
+                  <Card.Img className="myImgCard" variant="top" src={Avatar} />
+                  <Card.Body>
+                    <Card.Title>{doctor.name}</Card.Title>
+                    <div className="specilty">{doctor.speciality}</div>
+                    <Card.Text>
+                      {' '}
+                      Lorem, ipsum dolor amet consectetur adipisicing elit.
+                      Provident, totam?{' '}
+                    </Card.Text>
+                    <div className="theButtons">
+                      <Link to={`profile/${doctor.uid}`}>
+                        <Button className="theWhite" variant="primary">
+                          More Info
+                        </Button>
+                      </Link>
+                      <Link to={`booking/${doctor.uid}`}>
+                        <Button className="theBlue" variant="primary">
+                          Book now
+                        </Button>
+                      </Link>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        )}
       </Container>
     </div>
   );
