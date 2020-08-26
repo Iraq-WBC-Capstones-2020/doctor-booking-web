@@ -6,7 +6,7 @@ import DoctorInfoProvider from '../DoctorContext';
 it('render1', () => {
   render(
     <DoctorInfoProvider>
-      <SearchForm />
+      <SearchForm setFilterDoctors={() => {}} />
     </DoctorInfoProvider>
   );
 });
@@ -15,7 +15,7 @@ it('renders correctly', () => {
   const tree = renderer
     .create(
       <DoctorInfoProvider>
-        <SearchForm />
+        <SearchForm setFilterDoctors={() => {}} />
       </DoctorInfoProvider>
     )
     .toJSON();

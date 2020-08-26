@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import SearchResult from '../components/SearchPage/SearchResult/SearchResult';
 import renderer from 'react-test-renderer';
+import DoctorInfoProvider from '../DoctorContext';
 it('render1', () => {
   render(
     <DoctorInfoProvider>
