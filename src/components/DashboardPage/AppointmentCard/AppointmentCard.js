@@ -5,7 +5,7 @@ import clockImg from './imgs/clock.svg';
 import phoneImg from './imgs/phone.svg';
 import emailImg from './imgs/email.svg';
 
-function AppointmentCard() {
+function AppointmentCard({ appointment }) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -19,11 +19,13 @@ function AppointmentCard() {
       >
         <div className="d-flex align-items-center pt-3 pl-3">
           <img src={clockImg} alt="clock icon" />
-          <p>15 March 2018 - 5:00 - 6:00 pm</p>
+          <p>
+            {appointment.date} - {appointment.time}
+          </p>
         </div>
         <div className="d-flex align-items-center pt-3 pl-3">
           <img src={personImg} alt="profile icon" />
-          <p>John Doe Jabbar</p>
+          <p>{appointment.name}</p>
         </div>
       </div>
 
@@ -34,19 +36,23 @@ function AppointmentCard() {
         <Modal.Body className="mb-4 d-flex flex-column">
           <div className="d-flex align-items-center mt-3 ml-4">
             <img src={clockImg} alt="clock icon" />
-            <p>15 March 2018 - 5:00 - 6:00 pm</p>
+            <p>
+              {appointment.date} - {appointment.time}
+            </p>
           </div>
           <div className="d-flex align-items-center mt-4 ml-4">
             <img src={personImg} alt="profile icon" />
-            <p>John Doe Jabbar</p>
+            <p>
+              {appointment.name} - {appointment.gender}
+            </p>
           </div>
           <div className="d-flex align-items-center mt-4 ml-4">
             <img src={phoneImg} alt="phone icon" />
-            <p>+9647701234567</p>
+            <p>{appointment.phoneNumber}</p>
           </div>
           <div className="d-flex align-items-center mt-4 ml-4">
             <img src={emailImg} alt="e-mail icon" />
-            <p>someone@somewhere.com</p>
+            <p>{appointment.email}</p>
           </div>
         </Modal.Body>
       </Modal>
