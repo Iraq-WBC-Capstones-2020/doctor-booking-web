@@ -11,7 +11,7 @@ exports[`our team section renders correctly 1`] = `
       className="text-center mt-5 section-title container"
     >
       <h1>
-        Our Team
+        validation:aboutPage.ourTeam.headLine
       </h1>
     </div>
   </div>
@@ -87,17 +87,17 @@ exports[`our team section renders correctly 1`] = `
           <h2
             className="member-name"
           >
-            John Doe
+            validation:aboutPage.ourTeam.mem1.memName
           </h2>
           <p
             className="member-role"
           >
-            Member Role
+            validation:aboutPage.ourTeam.mem1.memRole
           </p>
           <p
             className="member-description"
           >
-            some description here about the person and here is more text just for test
+            validation:aboutPage.ourTeam.mem1.memDis
           </p>
         </div>
       </div>
@@ -171,17 +171,17 @@ exports[`our team section renders correctly 1`] = `
           <h2
             className="member-name"
           >
-            John Doe
+            validation:aboutPage.ourTeam.mem1.memName
           </h2>
           <p
             className="member-role"
           >
-            Member Role
+            validation:aboutPage.ourTeam.mem1.memRole
           </p>
           <p
             className="member-description"
           >
-            some description here about the person and here is more text just for test
+            validation:aboutPage.ourTeam.mem1.memDis
           </p>
         </div>
       </div>
@@ -255,17 +255,17 @@ exports[`our team section renders correctly 1`] = `
           <h2
             className="member-name"
           >
-            John Doe
+            validation:aboutPage.ourTeam.mem1.memName
           </h2>
           <p
             className="member-role"
           >
-            Member Role
+            validation:aboutPage.ourTeam.mem1.memRole
           </p>
           <p
             className="member-description"
           >
-            some description here about the person and here is more text just for test
+            validation:aboutPage.ourTeam.mem1.memDis
           </p>
         </div>
       </div>
@@ -339,17 +339,17 @@ exports[`our team section renders correctly 1`] = `
           <h2
             className="member-name"
           >
-            John Doe
+            validation:aboutPage.ourTeam.mem1.memName
           </h2>
           <p
             className="member-role"
           >
-            Member Role
+            validation:aboutPage.ourTeam.mem1.memRole
           </p>
           <p
             className="member-description"
           >
-            some description here about the person and here is more text just for test
+            validation:aboutPage.ourTeam.mem1.memDis
           </p>
         </div>
       </div>

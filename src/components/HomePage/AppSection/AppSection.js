@@ -5,20 +5,19 @@ import appStore from './images/AppStoreEng.png';
 import googlePlay from './images/GooglePlayEng.png';
 import '../HomePageGlobalStyle.scss';
 import './style.css';
+import { useTranslation } from 'react-i18next';
 
 function AppSection() {
+  const { t, i18n } = useTranslation(['common', 'validation']);
+
   return (
     <Container className="applicationSection">
       <Row className="myRow">
         <div className="col-xs-6">
           <div className="text">
-            <h2>Download our Mobile Application (Coming soon)</h2>
+            <h2>{t('validation:homePage.appSection.headLine')}</h2>
             <hr className="grayLine w-100" />
-            <p>
-              Our dedicated patient engagement app and web portal allow you to
-              access information instantaneously (no tedeous form, long calls,
-              or administrative hassle) and securely
-            </p>
+            <p>{t('validation:homePage.appSection.paragraph')}</p>
           </div>
           <div className="downloadButtons">
             <input alt="On App store" type="image" src={appStore} />

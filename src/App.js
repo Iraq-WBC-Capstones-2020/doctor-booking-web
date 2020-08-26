@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './containers/Navbar/Navbar';
 import Footer from './containers/Footer/Footer';
@@ -18,20 +18,23 @@ import DashboardSection from './components/DashboardPage/DashboardSection/Dashbo
 function App() {
   return (
     <div>
-      <Nav />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/faq" component={FaqPage} />
-        <Route path="/signin" component={SignIn} />
-        <Route path="/booking" component={BookingPage} />
-        <Route path="/register" component={DoctorRegister} />
-        <Route path="/search" component={SearchPage} />
-        <Route path="/profile" component={DoctorProfilePage} />
-        <Route path="/edit" component={EditProfile} />
-        <Route path="/calender" component={Dashboard} />
-      </Switch>
-      <Footer />
+      <Suspense fallback="tranlating...">
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/faq" component={FaqPage} />
+          <Route path="/signin" component={SignIn} />
+          <Route path="/booking" component={BookingPage} />
+          <Route path="/register" component={DoctorRegister} />
+          <Route path="/search" component={SearchPage} />
+          <Route path="/profile" component={DoctorProfilePage} />
+          <Route path="/edit" component={EditProfile} />
+          <Route path="/calender" component={Dashboard} />
+        </Switch>
+
+        <Footer />
+      </Suspense>
     </div>
   );
 }

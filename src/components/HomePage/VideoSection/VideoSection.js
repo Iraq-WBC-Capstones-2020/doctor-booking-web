@@ -2,18 +2,17 @@ import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import VideoFrame from './images/Video.png';
 import './style.css';
+import { useTranslation } from 'react-i18next';
 
 function VideoSection() {
+  const { t, i18n } = useTranslation(['translation', 'validation']);
+
   return (
     <Container id="videoSection" className="videoSection">
       <Row>
         <div className="col-lg-6">
           <h1>
-            To get more familiar <br />
-            with the website
-            <br />
-            watch this video
-            <br />
+            {t('validation:homePage.videoSection.headLine')} <br />
           </h1>
         </div>
 

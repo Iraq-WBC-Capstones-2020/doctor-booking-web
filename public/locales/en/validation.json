@@ -1,0 +1,172 @@
+{
+  "navBar": {
+    "logo": "DOCTOR BOOKING",
+    "links": {
+      "home": "Home",
+      "search": "Search",
+      "about": "About",
+      "FAQ": "FAQ",
+      "signIn": "Sing in"
+    }
+  },
+  "aboutPage": {
+    "aboutUs": {
+      "headLine": "About us",
+      "paragraph": "We are a team worked on this website to solve multiple problems the people face when they need to go to a doctor"
+    },
+    "saveTime": {
+      "headLine": "Save your time",
+      "paragraph": "Save the time you always waste at clinics waiting rooms you just need to book the time that suits your schedule by one click"
+    },
+    "findDoctor": {
+      "headLine": "Find your doctor",
+      "paragraph": "Search for a doctor by speciality or by name or just explore the doctors and find the one that suites your need"
+    },
+    "ourGoals1": {
+      "headLine": "Our Goals",
+      "card1": {
+        "headLine": "1st",
+        "paragraph": "one of our goals is to be best doctor booking website in Erbil"
+      },
+      "card2": {
+        "headLine": "Register all clinics ",
+        "paragraph": "Register all the clinics in Erbil so we offer the users the desired flexibility to choose the doctor that the user wants"
+      },
+      "card3": {
+        "headLine": "Awareness",
+        "paragraph": "Reducnig the gatherings in clinics waiting rooms so we ensure the social distancing to be applied"
+      }
+    },
+    "ourTeam": {
+      "headLine": "Our team",
+      "mem1": {
+        "memName": "John Doe",
+        "memRole": "Member Role",
+        "memDis": "some description here about the person and here is more text just for test"
+      },
+      "mem2": {
+        "memName": "John Doe",
+        "memRole": "Member Role",
+        "memDis": "some description here about the person and here is more text just for test"
+      },
+      "mem3": {
+        "memName": "John Doe",
+        "memRole": "Member Role",
+        "memDis": "some description here about the person and here is more text just for test"
+      },
+      "mem4": {
+        "memName": "John Doe",
+        "memRole": "Member Role",
+        "memDis": "some description here about the person and here is more text just for test"
+      }
+    }
+  },
+
+  "homePage": {
+    "healthImportant": {
+      "headLine": {
+        "title": "Your health is important",
+        "titleSpan": "for us"
+      },
+      "paragraph": "This website help you to find the best and suit doctor for your situation , and save you alot of time for searching doctor"
+    },
+    "findDoc": {
+      "headLine": {
+        "title1": "Find a doctor and make an apoinnment online",
+        "titleSpan": "make",
+        "title2": " apoinnment online"
+      },
+      "paragraph": "Search for the best doctor for you and book an appointment at the time that fits your time"
+    },
+    "docRig": {
+      "headLine": {
+        "title1": "You are Doctor?",
+        "titleSpan": "Register here"
+      },
+      "paragraph": "With our website you are be more time manageable and you be comfortable about setting appoinments and dealing with your vistors"
+    },
+    "OurServices": {
+      "headLine": "Our services",
+      "paragraph": "We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health",
+      "card1": {
+        "headLine": "Search doctor",
+        "paragraph": "Choose your doctor from thousands of specialist, general, and trusted hospitals"
+      },
+      "card2": {
+        "headLine": "Details info",
+        "paragraph": "Free consultation with our trusted doctors and get the best recomendations"
+      },
+      "card3": {
+        "headLine": "Clinic loation",
+        "paragraph": "Ship of the imagination star stuff harvesting star light descended from astronomers finite but"
+      }
+    },
+    "appSection": {
+      "headLine": "Download our app to get update with new featurs",
+      "paragraph": "Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely"
+    },
+    "videoSection": {
+      "headLine": "To get more familiar with the website watch this video"
+    },
+    "newsLetter": {
+      "headLine": "Never miss an update",
+      "paragraph": "Signup to get any update and serves we add"
+    }
+  },
+  "footer": {
+    "title": "Doctor Booking",
+    "paragraph": "A website to book doctor appointment and save you the time",
+    "links": {
+      "headLine": "Links",
+      "link1": "Home",
+      "link2": "About",
+      "link3": "FAQ"
+    },
+    "services": {
+      "headLine": "Services",
+      "serv1": "Book an appointment",
+      "serv2": "Clinic register"
+    }
+  },
+  "FAQ": {
+    "headLine": "Frequently asked ",
+    "headLine2": "questions",
+    "paragraph": "Here is some frequently asked questions about the website, it help you to get a betteridea about the app",
+    "question1": {
+      "Q1": "who can use this website?",
+      "A1": "the website is for anyone that went to find doctor easily"
+    },
+    "question2": {
+      "Q1": "Am I required to create a acount for making an online appointment?",
+      "A1": "no need for a user to create an acount"
+    },
+    "question3": {
+      "Q1": "Can I schedule more than one appointment with a single doctor?",
+      "A1": "yes, you can do that"
+    },
+    "question4": {
+      "Q1": "Can I reschedule an online appointment?",
+      "A1": "yes, if you have an argent situation you can reschedule to anthor time"
+    },
+    "question5": {
+      "Q1": "How will I know if my booking is confirmed?",
+      "A1": "the secretary tall you to confirm the appoinment by calling or sending email"
+    },
+    "question6": {
+      "Q1": "should i include a name of a doctor when i want to search for a specific specialty ?",
+      "A1": "no, just enter the specialty"
+    },
+    "question7": {
+      "Q1": "What will the doctor's consultation fee be?",
+      "A1": "it depend on the doctor itself"
+    },
+    "question8": {
+      "Q1": "I am a Doctor and I have done my registration. What should I do next?",
+      "A1": "we send you an email that you are now in our website and user can search and find you"
+    },
+    "question9": {
+      "Q1": "Can I use the app for checking availability of Doctor and his fees without actually booking or scheduling an appointment ?",
+      "A1": "yes, while you searching, click on the doctor card that you went know about him, it open a anther page that contain doctor informaition"
+    }
+  }
+}

@@ -4,11 +4,18 @@ import { NavLink } from 'react-router-dom';
 import { auth } from '../../Firebase';
 import { ACTIONS, DoctorContext } from '../../DoctorContext';
 import { firebaseFunctions } from '../../firebaseFunctions';
+import i18n from '../../i18n';
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 function NavBar() {
+  const { t, i18n } = useTranslation(['validation', 'common']);
+
   const [state, dispatch] = useContext(DoctorContext);
-  const [language, setLanguage] = useState('English');
+  const [language, setLanguage] = useState(localStorage.getItem('i18nextLng'));
   const changeLanguage = (lng) => {
     setLanguage(lng);
+
+    i18n.changeLanguage(lng);
   };
   const handleSignOut = () => {
     firebaseFunctions.signOut();
@@ -33,7 +40,7 @@ function NavBar() {
       >
         <Container>
           <NavLink to="/" exact>
-            <Navbar.Brand>DOCTOR BOOKING</Navbar.Brand>
+            <Navbar.Brand>Doctor Booking</Navbar.Brand>
           </NavLink>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -44,28 +51,28 @@ function NavBar() {
                 exact
                 to="/"
               >
-                Home
+                {t('navBar.links.home')}
               </NavLink>
               <NavLink
                 activeClassName="active-link"
                 className="nav-link"
                 to="/search"
               >
-                Search
+                {t('navBar.links.search')}
               </NavLink>
               <NavLink
                 activeClassName="active-link"
                 className="nav-link"
                 to="/about"
               >
-                About
+                {t('navBar.links.about')}
               </NavLink>
               <NavLink
                 activeClassName="active-link"
                 className="nav-link"
                 to="/faq"
               >
-                FAQ
+                {t('navBar.links.FAQ')}
               </NavLink>
               {state.isSignedIn ? (
                 <a
@@ -74,7 +81,7 @@ function NavBar() {
                   onClick={handleSignOut}
                   href="/"
                 >
-                  Sign Out
+                  {t('common:signOut')}
                 </a>
               ) : (
                 <NavLink
@@ -82,17 +89,17 @@ function NavBar() {
                   className="nav-link"
                   to="/signin"
                 >
-                  Sign in
+                  {t('common:signIn')}
                 </NavLink>
               )}
               <NavDropdown title={language}>
-                <NavDropdown.Item onClick={() => changeLanguage('English')}>
+                <NavDropdown.Item onClick={() => changeLanguage('en')}>
                   English
                 </NavDropdown.Item>
                 <NavDropdown.Item onClick={() => changeLanguage('كوردى')}>
                   كوردى
                 </NavDropdown.Item>
-                <NavDropdown.Item onClick={() => changeLanguage('عربي')}>
+                <NavDropdown.Item onClick={() => changeLanguage('ar')}>
                   عربي
                 </NavDropdown.Item>
               </NavDropdown>

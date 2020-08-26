@@ -18,7 +18,7 @@ exports[`navbar renders correctly 1`] = `
         <span
           className="navbar-brand"
         >
-          DOCTOR BOOKING
+          Doctor Booking
         </span>
       </a>
       <button
@@ -48,7 +48,7 @@ exports[`navbar renders correctly 1`] = `
             onClick={[Function]}
             style={Object {}}
           >
-            Home
+            navBar.links.home
           </a>
           <a
             aria-current={null}
@@ -56,7 +56,7 @@ exports[`navbar renders correctly 1`] = `
             href="/search"
             onClick={[Function]}
           >
-            Search
+            navBar.links.search
           </a>
           <a
             aria-current={null}
@@ -64,7 +64,7 @@ exports[`navbar renders correctly 1`] = `
             href="/about"
             onClick={[Function]}
           >
-            About
+            navBar.links.about
           </a>
           <a
             aria-current={null}
@@ -72,7 +72,7 @@ exports[`navbar renders correctly 1`] = `
             href="/faq"
             onClick={[Function]}
           >
-            FAQ
+            navBar.links.FAQ
           </a>
           <a
             aria-current={null}
@@ -80,7 +80,7 @@ exports[`navbar renders correctly 1`] = `
             href="/signin"
             onClick={[Function]}
           >
-            Sign in
+            signIn
           </a>
           <div
             className="dropdown nav-item"
@@ -95,9 +95,7 @@ exports[`navbar renders correctly 1`] = `
               onClick={[Function]}
               onKeyDown={[Function]}
               role="button"
-            >
-              English
-            </a>
+            />
           </div>
         </div>
       </div>
