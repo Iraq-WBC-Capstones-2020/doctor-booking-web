@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Navbar from '../containers/Navbar/Navbar';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
@@ -9,7 +9,9 @@ test('navbar renders correctly', () => {
     .create(
       <DoctorInfoProvider>
         <MemoryRouter>
-          <Navbar />
+          <Suspense fallback={<div>loading...</div>}>
+            <Navbar />
+          </Suspense>
         </MemoryRouter>
       </DoctorInfoProvider>
     )
