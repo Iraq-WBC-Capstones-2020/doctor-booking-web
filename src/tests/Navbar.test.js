@@ -1,4 +1,5 @@
 import React from 'react';
+import { render } from '@testing-library/react';
 import Navbar from '../containers/Navbar/Navbar';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
