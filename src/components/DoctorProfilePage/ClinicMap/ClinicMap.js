@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-import Map, { Marker } from 'react-map-gl';
+import Map from 'react-map-gl';
 import './style.css';
-import { useContext } from 'react';
-import { InfoContext } from '../DoctorInfoContext';
-import firebase from 'firebase';
 const API =
   'pk.eyJ1IjoiaHVzc2VpbnRhbGFsIiwiYSI6ImNrY3M4dWxwbzFtZDIycnM2OHQ4dXM4cnIifQ.ofCZrIlVF_r4YpQDzSi13g';
 function ClinicMap() {
@@ -14,8 +11,6 @@ function ClinicMap() {
     width: '100%',
     zoom: 10,
   });
-
-  const [DocInfo] = useContext(InfoContext);
 
   return (
     <div className="mt-5 theAdress">

@@ -5,6 +5,7 @@ import { db } from '../../../Firebase';
 import { DoctorContext, ACTIONS } from '../../../DoctorContext';
 
 import './style.css';
+
 function SearchForm({ setFilterDoctors, input, setInput }) {
   const [spec, setSpec] = useState('');
 

@@ -1,6 +1,4 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import renderer from 'react-test-renderer';
 import DoctorProfilePage from '../containers/DoctorProfilePage/DoctorProfilePage';
 import { renderHook } from '@testing-library/react-hooks';
 

@@ -13,7 +13,6 @@ import SearchPage from './containers/SearchPage/SearchPage';
 import DoctorProfilePage from './containers/DoctorProfilePage/DoctorProfilePage';
 import Dashboard from './containers/DashboardPage/Dashboard';
 import EditProfile from './components/DashboardPage/EditProfile/EditProfile';
-import DashboardSection from './components/DashboardPage/DashboardSection/DashboardSection';
 
 function App() {
   return (

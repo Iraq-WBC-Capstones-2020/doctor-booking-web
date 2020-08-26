@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 function Footer() {
-  const { t, i18n } = useTranslation('validation');
+  const { t } = useTranslation('validation');
   return (
     <footer className="text-white">
       <Container className="h-100 footer-container">

@@ -6,7 +6,7 @@ import twitter from './imgs/icons8-twitter-circled-64.png';
 import linkedin from './imgs/icons8-linkedin-circled-64.png';
 import { useTranslation } from 'react-i18next';
 function TeamMember() {
-  const { t, i18n } = useTranslation(['translation', 'validation']);
+  const { t } = useTranslation(['translation', 'validation']);
 
   return (
     <Row>

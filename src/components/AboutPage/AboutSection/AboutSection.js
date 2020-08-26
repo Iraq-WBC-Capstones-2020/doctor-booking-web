@@ -6,7 +6,7 @@ import searchImg from './imgs/searchImg.svg';
 import { useTranslation } from 'react-i18next';
 
 function AboutSection() {
-  const { t, i18n } = useTranslation(['translation', 'validation']);
+  const { t } = useTranslation(['translation', 'validation']);
   return (
     <Container className="section-container">
       <Row className="align-items-center justify-content-center row-container">

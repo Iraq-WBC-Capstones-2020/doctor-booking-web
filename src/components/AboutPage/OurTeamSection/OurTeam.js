@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import TeamMember from './TeamMember';
 import { useTranslation } from 'react-i18next';
 function OurTeam() {
-  const { t, i18n } = useTranslation(['translation', 'validation']);
+  const { t } = useTranslation(['translation', 'validation']);
 
   return (
     <Container className="abSection ourTeam">
