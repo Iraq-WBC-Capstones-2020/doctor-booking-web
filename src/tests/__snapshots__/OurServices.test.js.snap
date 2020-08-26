@@ -11,13 +11,13 @@ exports[`renders correctly 1`] = `
       className="head"
     >
       <h1>
-        homePage.OurServices.headLine
+        Our services
       </h1>
       <hr
         className="grayLine"
       />
       <p>
-        homePage.OurServices.paragraph
+        We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health
       </p>
     </div>
   </div>
@@ -40,12 +40,12 @@ exports[`renders correctly 1`] = `
           <div
             className="card-title h5"
           >
-            homePage.OurServices.card1.headLine
+            Search doctor
           </div>
           <p
             className="card-text"
           >
-            homePage.OurServices.card1.paragraph
+            Choose your doctor from thousands of specialist, general, and trusted hospitals
           </p>
         </div>
       </div>
@@ -62,12 +62,12 @@ exports[`renders correctly 1`] = `
           <div
             className="card-title h5"
           >
-            homePage.OurServices.card2.headLine
+            Details info
           </div>
           <p
             className="card-text"
           >
-            homePage.OurServices.card2.paragraph
+            Free consultation with our trusted doctors and get the best recomendations
           </p>
         </div>
       </div>
@@ -84,12 +84,12 @@ exports[`renders correctly 1`] = `
           <div
             className="card-title h5"
           >
-            homePage.OurServices.card3.headLine
+            Clinic location
           </div>
           <p
             className="card-text"
           >
-            homePage.OurServices.card3.paragraph
+            Ship of the imagination star stuff harvesting star light descended from astronomers finite but
           </p>
         </div>
       </div>

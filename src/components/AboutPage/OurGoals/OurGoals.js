@@ -4,38 +4,32 @@ import GoalCard from './GoalCard';
 import numberOneImg from './imgs/no1.svg';
 import locationImg from './imgs/location.svg';
 import awarenessImg from './imgs/awareness.svg';
-import { useTranslation } from 'react-i18next';
-
 function OurGoals() {
-  const { t, i18n } = useTranslation(['translation', 'validation']);
-
   return (
     <Container className="abSection">
       <Row className="justify-content-center">
-        <h2 className="section-title">
-          {t('validation:aboutPage.ourGoals1.headLine')}
-        </h2>
+        <h2 className="section-title">Our Goals</h2>
       </Row>
       <Row className="justify-content-between">
         <Col className="justify-content-center d-flex mt-5" md="4">
           <GoalCard
             img={numberOneImg}
-            title={t('validation:aboutPage.ourGoals1.card1.headLine')}
-            text={t('validation:aboutPage.ourGoals1.card1.paragraph')}
+            title="1st"
+            text="one of our goals is to be best doctor booking website in Erbil"
           />
         </Col>
         <Col className="justify-content-center d-flex mt-5" md="4">
           <GoalCard
             img={locationImg}
-            title={t('validation:aboutPage.ourGoals1.card2.headLine')}
-            text={t('validation:aboutPage.ourGoals1.card2.paragraph')}
+            title="Register all clinics"
+            text="Register all the clinics in Erbil so we offer the users the desired flexibility to choose the doctor that the user wants"
           />
         </Col>
         <Col className="justify-content-center d-flex mt-5" md="4">
           <GoalCard
             img={awarenessImg}
-            title={t('validation:aboutPage.ourGoals1.card3.headLine')}
-            text={t('validation:aboutPage.ourGoals1.card3.paragraph')}
+            title="Awareness"
+            text="Reducnig the gatherings in clinics waiting rooms so we ensure the social distancing to be applied"
           />
         </Col>
       </Row>

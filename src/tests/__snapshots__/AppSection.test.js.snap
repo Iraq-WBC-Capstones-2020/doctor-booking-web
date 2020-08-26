@@ -14,13 +14,13 @@ exports[`renders correctly 1`] = `
         className="text"
       >
         <h2>
-          validation:homePage.appSection.headLine
+          Download our Mobile Application (Coming soon)
         </h2>
         <hr
           className="grayLine w-100"
         />
         <p>
-          validation:homePage.appSection.paragraph
+          Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely
         </p>
       </div>
       <div

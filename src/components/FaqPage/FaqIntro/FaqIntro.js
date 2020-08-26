@@ -2,20 +2,20 @@ import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import intro from './intro.svg';
 import './FaqIntro.css';
-import { useTranslation } from 'react-i18next';
 
 function FaqIntro() {
-  const { t, i18n } = useTranslation('validation');
   return (
     <Container>
       <Row className="my-5">
         <Col lg="6" className=" d-flex align-items-center">
           <div>
             <h1 className="my-3">
-              {t('validation:FAQ.headLine')}
-              <span className="d-block">{t('validation:FAQ.headLine2')}</span>
+              Frequently Asked<span className="d-block">Questions</span>
             </h1>
-            <p className="faqText">{t('validation:FAQ.paragraph')} </p>
+            <p className="faqText">
+              Here is some frequently asked questions <br /> about the website,
+              it will help you to get more <br /> info about the website{' '}
+            </p>
           </div>
         </Col>
         <Col lg="6" className="">

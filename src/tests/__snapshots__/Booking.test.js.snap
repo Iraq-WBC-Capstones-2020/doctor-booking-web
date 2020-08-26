@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Boooking page run well run well  1`] = `
+<div
+  className="container booking my-5"
+>
+  <h1
+    className="text-center"
+  >
+    Set up an appointment
+  </h1>
+  <div
+    className="row my-5 align-items-center"
+  >
+    <div
+      className="col-md-10 col-lg-6 mx-4 mx-sm-0"
+    >
+      <form
+        className=""
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            className="form-control"
+            id="name"
+            placeholder="Enter your name"
+            type="text"
+          />
+        </div>
+        <div
+          className="form-group form-inline "
+        >
+          <div
+            className="custom-control custom-radio mr-4"
+          >
+            <input
+              className="custom-control-input"
+              id="female"
+              name="customRadio"
+              type="radio"
+            />
+            <label
+              className="custom-control-label"
+              htmlFor="female"
+            >
+              Female
+            </label>
+          </div>
+          <div
+            className="custom-control custom-radio"
+          >
+            <input
+              className="custom-control-input"
+              id="male"
+              name="customRadio"
+              type="radio"
+            />
+            <label
+              className="custom-control-label"
+              htmlFor="male"
+            >
+              Male
+            </label>
+          </div>
+        </div>
+        <div
+          className="form-group"
+        >
+          <input
+            className="form-control"
+            id="age"
+            placeholder="Enter your age"
+            type="number"
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <input
+            className="form-control"
+            id="phoneNumber"
+            placeholder="Enter your phone number"
+            type="number"
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <input
+            className="form-control"
+            id="email"
+            placeholder="Enter your  email address"
+            type="email"
+          />
+        </div>
+        <button
+          className="btn btn-primary"
+          disabled={false}
+          type="submit"
+        >
+          Set Appoinment
+        </button>
+      </form>
+    </div>
+    <div
+      className=" d-none d-lg-block col-lg-6 "
+    >
+      <img
+        alt=""
+        src="Booking.svg"
+      />
+    </div>
+  </div>
+</div>
+`;

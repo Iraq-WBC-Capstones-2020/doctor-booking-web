@@ -11,14 +11,14 @@ exports[`renders correctly 1`] = `
       className="align-items-center justify-content-center row"
     >
       <h1>
-        validation:homePage.newsLetter.headLine
+        Never miss an update
       </h1>
     </div>
     <div
       className="align-items-center justify-content-center row"
     >
       <p>
-        validation:homePage.newsLetter.paragraph
+        Signup to get any update and serves we add 
       </p>
     </div>
   </div>
@@ -38,7 +38,7 @@ exports[`renders correctly 1`] = `
             aria-describedby="basic-addon2"
             aria-label="Recipient's username"
             className="inputFiled form-control"
-            placeholder="common:email"
+            placeholder="Recipient's username"
           />
           <div
             className="input-group-append"

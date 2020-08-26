@@ -22,18 +22,17 @@ exports[`Intro  section run well  1`] = `
           <h1
             className="my-3 sectionHeading"
           >
-            validation:homePage.healthImportant.headLine.title
-             
+            Your health is important 
             <span
               className="d-block"
             >
-              validation:homePage.healthImportant.headLine.titleSpan
+              to us.
             </span>
           </h1>
           <p
             className="sectionCaption"
           >
-            validation:homePage.healthImportant.paragraph
+            This website helps you find the best and suitable doctor for your situation, and will save you a lot of time when searching for a doctor
           </p>
           <div
             className="my-4"
@@ -46,7 +45,7 @@ exports[`Intro  section run well  1`] = `
                 disabled={false}
                 type="button"
               >
-                common:getStarted
+                Get Started
               </button>
             </a>
             <a
@@ -57,7 +56,7 @@ exports[`Intro  section run well  1`] = `
                 disabled={false}
                 type="button"
               >
-                common:introVideo
+                Intro Video
               </button>
             </a>
           </div>

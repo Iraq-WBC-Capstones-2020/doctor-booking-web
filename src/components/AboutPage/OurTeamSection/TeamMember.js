@@ -4,10 +4,7 @@ import avatar from './imgs/avatar.svg';
 import github from './imgs/icons8-github-64.png';
 import twitter from './imgs/icons8-twitter-circled-64.png';
 import linkedin from './imgs/icons8-linkedin-circled-64.png';
-import { useTranslation } from 'react-i18next';
 function TeamMember() {
-  const { t, i18n } = useTranslation(['translation', 'validation']);
-
   return (
     <Row>
       <Col xs="6" className="d-flex align-items-center flex-column">
@@ -35,14 +32,11 @@ function TeamMember() {
         </div>
       </Col>
       <Col xs="6" className="member-info d-flex flex-column">
-        <h2 className="member-name">
-          {t('validation:aboutPage.ourTeam.mem1.memName')}
-        </h2>
-        <p className="member-role">
-          {t('validation:aboutPage.ourTeam.mem1.memRole')}
-        </p>
+        <h2 className="member-name">John Doe</h2>
+        <p className="member-role">Member Role</p>
         <p className="member-description">
-          {t('validation:aboutPage.ourTeam.mem1.memDis')}
+          some description here about the person and here is more text just for
+          test
         </p>
       </Col>
     </Row>

@@ -19,7 +19,7 @@ function StepOne({ handleNextStep }) {
 
   const handleImg = (e) => {
     setImg(e.target.files[0]);
-    alert('your photo uploaded successfully');
+    alert('your photo uploaded successfuly');
   };
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>

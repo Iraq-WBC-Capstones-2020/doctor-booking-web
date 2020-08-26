@@ -12,8 +12,11 @@ exports[`renders correctly 1`] = `
       className="col-lg-6"
     >
       <h1>
-        validation:homePage.videoSection.headLine
-         
+        To get more familiar 
+        <br />
+        with the website
+        <br />
+        watch this video
         <br />
       </h1>
     </div>

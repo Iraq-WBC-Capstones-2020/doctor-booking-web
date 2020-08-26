@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+
 function GoalCard(props) {
   GoalCard.propTypes = {
     title: PropTypes.string.isRequired,

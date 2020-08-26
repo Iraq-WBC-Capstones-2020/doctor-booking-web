@@ -2,18 +2,15 @@ import React from 'react';
 import { Container, Col, Row, InputGroup, FormControl } from 'react-bootstrap';
 import ButtonImg from './images/Slice1.png';
 import './style.css';
-import { useTranslation } from 'react-i18next';
 function NewsLetter() {
-  const { t, i18n } = useTranslation(['common', 'validation']);
-
   return (
     <Container className="newsLetter">
       <div className="theHead">
         <Row className="align-items-center justify-content-center">
-          <h1>{t('validation:homePage.newsLetter.headLine')}</h1>
+          <h1>Never miss an update</h1>
         </Row>
         <Row className="align-items-center justify-content-center">
-          <p>{t('validation:homePage.newsLetter.paragraph')}</p>
+          <p>Signup to get any update and serves we add </p>
         </Row>
       </div>
       <div className="email">
@@ -22,7 +19,7 @@ function NewsLetter() {
             <InputGroup className="mb-3">
               <FormControl
                 className="inputFiled"
-                placeholder={t('common:email')}
+                placeholder="Recipient's username"
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
               />

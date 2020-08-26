@@ -4,12 +4,8 @@ import penIntro from './img/penIntro.svg';
 import intro from './img/intro.svg';
 import './IntroSection.scss';
 import '../HomePageGlobalStyle.scss';
-import { useTranslation } from 'react-i18next';
-import i18next from 'i18next';
 
 function IntroSection() {
-  const { t, i18n } = useTranslation(['validation', 'common']);
-
   return (
     <div className="introSection">
       <img src={penIntro} className="penIntro" alt="" />
@@ -18,18 +14,17 @@ function IntroSection() {
           <Col lg="6" className=" d-flex align-items-center">
             <div>
               <h1 className="my-3 sectionHeading">
-                {t('validation:homePage.healthImportant.headLine.title')}{' '}
-                <span className="d-block">
-                  {t('validation:homePage.healthImportant.headLine.titleSpan')}
-                </span>
+                Your health is important <span className="d-block">to us.</span>
               </h1>
               <p className="sectionCaption">
-                {t('validation:homePage.healthImportant.paragraph')}
+                This website helps you find the best and suitable doctor for
+                your situation, and will save you a lot of time when searching
+                for a doctor
               </p>
               <div className="my-4">
                 <a href="#getInTouch">
                   <Button className="btn-lg sectionBtn" variant="primary">
-                    {t('common:getStarted')}
+                    Get Started
                   </Button>
                 </a>
                 <a href="#videoSection">
@@ -37,7 +32,7 @@ function IntroSection() {
                     className="btn-lg ml-4 sectionBtn"
                     variant="outline-primary"
                   >
-                    {t('common:introVideo')}
+                    Intro Video
                   </Button>
                 </a>
               </div>

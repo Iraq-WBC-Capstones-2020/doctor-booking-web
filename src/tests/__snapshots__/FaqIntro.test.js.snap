@@ -14,17 +14,21 @@ exports[`intro section of faq page render correctly 1`] = `
         <h1
           className="my-3"
         >
-          validation:FAQ.headLine
+          Frequently Asked
           <span
             className="d-block"
           >
-            validation:FAQ.headLine2
+            Questions
           </span>
         </h1>
         <p
           className="faqText"
         >
-          validation:FAQ.paragraph
+          Here is some frequently asked questions 
+          <br />
+           about the website, it will help you to get more 
+          <br />
+           info about the website
            
         </p>
       </div>

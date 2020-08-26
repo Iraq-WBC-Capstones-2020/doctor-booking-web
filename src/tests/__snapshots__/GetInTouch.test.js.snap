@@ -27,21 +27,19 @@ exports[`GetInTouch render correctly 1`] = `
           <h1
             className="my-3 sectionHeading"
           >
-            validation:homePage.findDoc.headLine.title1
-             
+            Find a doctor and 
             <span
               className="d-block"
             >
-               
-              validation:homePage.findDoc.headLine.title2
+              make an
             </span>
              
-            validation:homePage.findDoc.headLine.titleSpan
+            apoinnment online
           </h1>
           <p
             className="sectionCaption"
           >
-            validation:homePage.findDoc.paragraph
+            Search for the best doctor for you and book an appointment at the time that fits your time
           </p>
           <div
             className="my-4"
@@ -55,7 +53,7 @@ exports[`GetInTouch render correctly 1`] = `
                 disabled={false}
                 type="button"
               >
-                common:findDoctor
+                Find Doctor
               </button>
             </a>
           </div>
@@ -72,17 +70,19 @@ exports[`GetInTouch render correctly 1`] = `
           <h1
             className="my-3 sectionHeading"
           >
-            validation:homePage.docRig.headLine.title1
+            You are Doctor?
             <span
               className="d-block"
             >
-              validation:homePage.docRig.headLine.titleSpan
+              Register here
             </span>
           </h1>
           <p
             className="sectionCaption"
           >
-            validation:homePage.docRig.paragraph
+            With our website you are be more time manageable 
+            <br />
+             and you be comfortable about setting appoinments and dealing with your vistors
           </p>
           <div
             className="my-4"
@@ -96,7 +96,7 @@ exports[`GetInTouch render correctly 1`] = `
                 disabled={false}
                 type="button"
               >
-                common:register
+                Register
               </button>
             </a>
           </div>
