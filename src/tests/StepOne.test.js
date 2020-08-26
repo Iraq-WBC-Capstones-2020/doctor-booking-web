@@ -3,6 +3,7 @@ import StepOne from '../components/DoctorRegisterPage/StepOne/StepOne';
 import renderer from 'react-test-renderer';
 import { renderHook } from '@testing-library/react-hooks';
 import DoctorInfoProvider from '../DoctorContext';
+import 'mutationobserver-shim';
 
 it('Step one renders', () => {
   renderHook(() => <StepOne />);

@@ -1,22 +1,20 @@
 import React, { createContext, useEffect, useState } from 'react';
 import Avatar from './ProfileHeader/images/avatar1.svg';
-import { useLocation } from 'react-router';
+import { useParams } from 'react-router';
 import { db, storage } from '../../Firebase';
 
 export const InfoContext = createContext();
 
 export function InfoProvider(props) {
-  let location = useLocation();
-
-  const [uid, setUid] = useState(location.pathname.split('/')[2].trim());
+  const { id } = useParams();
   const [doctor, setDocotr] = useState({});
 
   useEffect(() => {
     db.collection('doctors')
-      .doc(uid)
+      .doc(id?.trim())
       .get()
       .then((data) => setDocotr(data.data()));
-  }, [uid]);
+  }, [id?.trim()]);
 
   //image url
   // storage
@@ -33,6 +31,7 @@ export function InfoProvider(props) {
       id: doctor?.uid,
       photo: Avatar,
       days: doctor?.timeTable,
+      location: doctor.location,
     },
   ];
 

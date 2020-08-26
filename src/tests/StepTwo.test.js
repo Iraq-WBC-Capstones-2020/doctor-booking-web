@@ -3,6 +3,7 @@ import StepTwo from '../components/DoctorRegisterPage/StepTwo/StepTwo';
 import renderer from 'react-test-renderer';
 import { renderHook } from '@testing-library/react-hooks';
 import DoctorInfoProvider from '../DoctorContext';
+import 'mutationobserver-shim';
 
 it('StepTwo render1', () => {
   renderHook(() => <StepTwo />);

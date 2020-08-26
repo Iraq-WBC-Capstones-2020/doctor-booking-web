@@ -13,10 +13,10 @@ exports[`About section renders correctly 1`] = `
       <h2
         className="section-header"
       >
-        About us
+        validation:aboutPage.aboutUs.headLine
       </h2>
       <p>
-        We are a team worked on this website to solve multiple problems the people face when they need to go to a doctor
+        validation:aboutPage.aboutUs.paragraph
          
       </p>
     </div>
@@ -39,10 +39,10 @@ exports[`About section renders correctly 1`] = `
       <h2
         className="section-header"
       >
-        Save your time
+        validation:aboutPage.saveTime.headLine
       </h2>
       <p>
-        Save the time you always waste at clinics waiting rooms you just need to book the time that suits your schedule by one click
+        validation:aboutPage.saveTime.paragraph
       </p>
     </div>
     <div
@@ -64,10 +64,10 @@ exports[`About section renders correctly 1`] = `
       <h2
         className="section-header "
       >
-        Find your doctor
+        validation:aboutPage.findDoctor.headLine
       </h2>
       <p>
-        Search for a doctor by speciality or by name or just explore the doctors and find the one that suites your need
+        validation:aboutPage.findDoctor.paragraph
       </p>
     </div>
     <div

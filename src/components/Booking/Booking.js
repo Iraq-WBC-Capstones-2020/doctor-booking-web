@@ -2,12 +2,8 @@ import React, { useState } from 'react';
 import './Booking.css';
 import { Form, Button } from 'react-bootstrap';
 import booking from './Booking.svg';
-import { useLocation } from 'react-router';
 
 function Booking() {
-  let location = useLocation();
-  const [uid, setUid] = useState(location.pathname.split('/')[2].trim());
-
   return (
     <div className="container booking my-5">
       <h1 className="text-center">Set up an appointment</h1>

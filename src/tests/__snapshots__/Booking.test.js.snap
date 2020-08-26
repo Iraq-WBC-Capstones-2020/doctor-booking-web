@@ -20,6 +20,7 @@ exports[`Boooking page run well run well  1`] = `
       >
         <div
           className="form-group"
+          id="name"
         >
           <input
             className="form-control"
@@ -66,6 +67,7 @@ exports[`Boooking page run well run well  1`] = `
         </div>
         <div
           className="form-group"
+          id="age"
         >
           <input
             className="form-control"
@@ -76,6 +78,7 @@ exports[`Boooking page run well run well  1`] = `
         </div>
         <div
           className="form-group"
+          id="phoneNumber"
         >
           <input
             className="form-control"
@@ -86,6 +89,7 @@ exports[`Boooking page run well run well  1`] = `
         </div>
         <div
           className="form-group"
+          id="email"
         >
           <input
             className="form-control"

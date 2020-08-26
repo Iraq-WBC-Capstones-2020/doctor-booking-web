@@ -13,7 +13,7 @@ function SearchResult({ filterDoctors }) {
       <Container>
         <Row>
           <Col>
-            {filterDoctors.length === 0 ? (
+            {filterDoctors?.length === 0 ? (
               <h2 className="text-primary">Docotr List</h2>
             ) : (
               <h2 className="text-success">Search result</h2>
@@ -22,7 +22,7 @@ function SearchResult({ filterDoctors }) {
           <hr className="solid" />
         </Row>
 
-        {filterDoctors.length === 0 ? (
+        {filterDoctors?.length === 0 ? (
           <Row className="cardsRow">
             {state.doctors.map((doctor, index) => (
               <Col md={4} key={index}>
@@ -55,7 +55,7 @@ function SearchResult({ filterDoctors }) {
           </Row>
         ) : (
           <Row className="cardsRow">
-            {filterDoctors.map((doctor, index) => (
+            {filterDoctors?.map((doctor, index) => (
               <Col md={4} key={index}>
                 <Card className="doctorCards " style={{ width: '18rem' }}>
                   <Card.Img className="myImgCard" variant="top" src={Avatar} />

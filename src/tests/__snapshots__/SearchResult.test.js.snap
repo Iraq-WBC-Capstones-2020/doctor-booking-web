@@ -13,17 +13,19 @@ exports[`renders correctly 1`] = `
       <div
         className="col"
       >
-        <h3>
+        <h2
+          className="text-success"
+        >
           Search result
-        </h3>
+        </h2>
       </div>
       <hr
         className="solid"
       />
     </div>
-    <h1>
-      No Result found
-    </h1>
+    <div
+      className="cardsRow row"
+    />
   </div>
 </div>
 `;

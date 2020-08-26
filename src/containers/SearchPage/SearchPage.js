@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import SearchForm from '../../components/SearchPage/SearchForm/SearchForm';
 import SearchResult from '../../components/SearchPage/SearchResult/SearchResult';
 function SearchPage() {
-  const [filterDoctors, setFilterDoctors] = useState([]);
+  const [filterDoctors, setFilterDoctors] = useState();
   const [input, setInput] = useState('');
 
   useEffect(() => {

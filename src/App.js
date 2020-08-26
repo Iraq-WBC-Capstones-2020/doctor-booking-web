@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './containers/Navbar/Navbar';
 import Footer from './containers/Footer/Footer';
@@ -14,7 +14,6 @@ import DoctorProfilePage from './containers/DoctorProfilePage/DoctorProfilePage'
 import Dashboard from './containers/DashboardPage/Dashboard';
 import EditProfile from './components/DashboardPage/EditProfile/EditProfile';
 import DashboardSection from './components/DashboardPage/DashboardSection/DashboardSection';
-import React, { Suspense } from 'react';
 
 function App() {
   return (
