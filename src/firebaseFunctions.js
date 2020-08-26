@@ -17,7 +17,7 @@ function bookAppointment(appointmentInfo) {
     .doc()
     .set(appointmentInfo, { merge: true })
     .then(() => {
-      alert('Your appointment is recorded successfuly');
+      alert('Your appointment is recorded successfully');
     })
     .catch((err) => {
       alert(err.message);
