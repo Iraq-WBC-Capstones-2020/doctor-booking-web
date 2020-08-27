@@ -9,7 +9,7 @@ import './style.css';
 import { useTranslation } from 'react-i18next';
 
 function OurServices() {
-  const { t, i18n } = useTranslation('validation');
+  const { t } = useTranslation('validation');
   return (
     <Container className="services-section">
       <Row>

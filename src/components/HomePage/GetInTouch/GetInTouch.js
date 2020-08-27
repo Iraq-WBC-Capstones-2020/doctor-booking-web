@@ -7,7 +7,7 @@ import '../HomePageGlobalStyle.scss';
 import { useTranslation } from 'react-i18next';
 
 function GetInTouch() {
-  const { t, i18n } = useTranslation(['common', 'validation']);
+  const { t } = useTranslation(['common', 'validation']);
   return (
     <div id="getInTouch" className="getIntouch my-5 py-5">
       <Container>

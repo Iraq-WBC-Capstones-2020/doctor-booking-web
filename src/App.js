@@ -13,7 +13,6 @@ import SearchPage from './containers/SearchPage/SearchPage';
 import DoctorProfilePage from './containers/DoctorProfilePage/DoctorProfilePage';
 import Dashboard from './containers/DashboardPage/Dashboard';
 import EditProfile from './components/DashboardPage/EditProfile/EditProfile';
-import DashboardSection from './components/DashboardPage/DashboardSection/DashboardSection';
 
 function App() {
   return (
@@ -25,10 +24,10 @@ function App() {
           <Route path="/about" component={AboutPage} />
           <Route path="/faq" component={FaqPage} />
           <Route path="/signin" component={SignIn} />
-          <Route path="/booking" component={BookingPage} />
+          <Route path="/booking/:id" component={BookingPage} />
           <Route path="/register" component={DoctorRegister} />
           <Route path="/search" component={SearchPage} />
-          <Route path="/profile" component={DoctorProfilePage} />
+          <Route path="/profile/:id" component={DoctorProfilePage} />
           <Route path="/edit" component={EditProfile} />
           <Route path="/calender" component={Dashboard} />
         </Switch>

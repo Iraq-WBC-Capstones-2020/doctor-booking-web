@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
         className="col-lg-12"
       >
         <h1>
-          Search for your doctor
+          Search for your Doctor
         </h1>
         <img
           alt="search icon"
@@ -22,14 +22,16 @@ exports[`renders correctly 1`] = `
         />
       </div>
     </div>
-    <div
+    <form
       className="justify-content-center form-row"
+      onSubmit={[Function]}
     >
       <div
         className="myCol col-sm-4"
       >
         <input
           className="inputForm form-control"
+          onChange={[Function]}
           placeholder="Doctor name"
         />
       </div>
@@ -42,7 +44,12 @@ exports[`renders correctly 1`] = `
           <select
             className="inputForm custom-select"
             id="exampleForm.SelectCustom"
+            onChange={[Function]}
+            value=""
           >
+            <option>
+              All
+            </option>
             <option>
               Abdominal radiology
             </option>
@@ -77,6 +84,9 @@ exports[`renders correctly 1`] = `
               Pulmonary disease
             </option>
             <option>
+              Pulmonary disease
+            </option>
+            <option>
               Sleep medicine
             </option>
             <option>
@@ -92,9 +102,8 @@ exports[`renders correctly 1`] = `
         className="col-sm-2"
       >
         <button
-          as="input"
           className="myButton"
-          value="Submit"
+          type="submit"
         >
           Search
           <svg
@@ -116,7 +125,7 @@ exports[`renders correctly 1`] = `
           </svg>
         </button>
       </div>
-    </div>
+    </form>
   </div>
 </div>
 `;

@@ -4,7 +4,7 @@ import ButtonImg from './images/Slice1.png';
 import './style.css';
 import { useTranslation } from 'react-i18next';
 function NewsLetter() {
-  const { t, i18n } = useTranslation(['common', 'validation']);
+  const { t } = useTranslation(['common', 'validation']);
 
   return (
     <Container className="newsLetter">

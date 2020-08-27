@@ -4,7 +4,7 @@ import QuestionItem from './QuestionItem';
 import { useTranslation } from 'react-i18next';
 
 function Qustions() {
-  const { t, i18n } = useTranslation('validation');
+  const { t } = useTranslation('validation');
   const questions = [
     {
       question: t('validation:FAQ.question1.Q1'),
