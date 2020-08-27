@@ -60,6 +60,7 @@ async function signUp(doctorInfo) {
     education: doctorInfo.education,
     experience: doctorInfo.experience,
     timeTable: doctorInfo.timeTable,
+    uid: user.uid,
   };
   const img = doctorInfo.img;
   await db
