@@ -4,7 +4,9 @@ import { NavLink } from 'react-router-dom';
 import { auth } from '../../Firebase';
 import { ACTIONS, DoctorContext } from '../../DoctorContext';
 import { firebaseFunctions } from '../../firebaseFunctions';
+import i18n from '../../i18n';
 import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 function NavBar() {
   const { t, i18n } = useTranslation(['validation', 'common']);
 

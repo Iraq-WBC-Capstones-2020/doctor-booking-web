@@ -3,11 +3,18 @@ import { Container, Row, Form, Col } from 'react-bootstrap';
 import SearchIcon from './images/Search.svg';
 import { db } from '../../../Firebase';
 import { DoctorContext, ACTIONS } from '../../../DoctorContext';
+import PropTypes from 'prop-types';
 
 import './style.css';
 
 function SearchForm({ setFilterDoctors, input, setInput }) {
   const [spec, setSpec] = useState('');
+
+  SearchForm.propTypes = {
+    setFilterDoctors: PropTypes.func,
+    input: PropTypes.string,
+    setInput: PropTypes.func,
+  };
 
   const [state, dispatch] = useContext(DoctorContext);
 

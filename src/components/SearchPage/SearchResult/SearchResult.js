@@ -4,9 +4,14 @@ import Avatar from './images/avatar.png';
 import './style.css';
 import { DoctorContext } from '../../../DoctorContext';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function SearchResult({ filterDoctors }) {
   const [state] = useContext(DoctorContext);
+
+  SearchResult.propTypes = {
+    filterDoctors: PropTypes.array,
+  };
 
   return (
     <div className="searchResult">

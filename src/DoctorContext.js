@@ -1,4 +1,5 @@
 import React, { createContext, useReducer } from 'react';
+import PropTypes from 'prop-types';
 
 export const DoctorContext = createContext();
 
@@ -31,6 +32,10 @@ function reducer(state, action) {
 
 function DoctorInfoProvider(props) {
   const [state, dispatch] = useReducer(reducer, initialState);
+
+  DoctorInfoProvider.propTypes = {
+    children: PropTypes.object,
+  };
 
   return (
     <DoctorContext.Provider value={[state, dispatch]}>

@@ -2,6 +2,7 @@ import React, { createContext, useEffect, useState } from 'react';
 import Avatar from './ProfileHeader/images/avatar1.svg';
 import { useParams } from 'react-router';
 import { db } from '../../Firebase';
+import PropTypes from 'prop-types';
 
 export const InfoContext = createContext();
 
@@ -15,6 +16,10 @@ export function InfoProvider(props) {
       .get()
       .then((data) => setDocotr(data.data()));
   }, []);
+
+  InfoProvider.propTypes = {
+    children: PropTypes.object,
+  };
 
   const [DocInfo, setDocInfo] = [
     {
