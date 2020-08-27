@@ -1,4 +1,5 @@
 import React, { createContext, useReducer } from 'react';
+import PropTypes from 'prop-types';
 
 export const DoctorContext = createContext();
 
@@ -12,14 +13,16 @@ const initialState = {
 
 export const ACTIONS = {
   ADD_DOCTOR: 'ADD_DOCTOR',
-  add_appoinment: 'add_appoinment',
   IS_SIGNED_IN: 'IS_SIGNED_IN',
+  GET_DOCTORS: 'GET_DOCTORS',
 };
 
 function reducer(state, action) {
   switch (action.type) {
     case ACTIONS.IS_SIGNED_IN:
       return { ...state, isSignedIn: action.isSignedIn };
+    case ACTIONS.GET_DOCTORS:
+      return { ...state, doctors: action.payload.doctors };
     case ACTIONS.ADD_DOCTOR:
       return { ...state, doctorInfo: action.doctorInfo };
     default:
@@ -29,6 +32,10 @@ function reducer(state, action) {
 
 function DoctorInfoProvider(props) {
   const [state, dispatch] = useReducer(reducer, initialState);
+
+  DoctorInfoProvider.propTypes = {
+    children: PropTypes.object,
+  };
 
   return (
     <DoctorContext.Provider value={[state, dispatch]}>

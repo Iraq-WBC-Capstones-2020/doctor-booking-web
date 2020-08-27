@@ -5,20 +5,20 @@ import booking from './Booking.svg';
 import Flatpickr from 'react-flatpickr';
 import { firebaseFunctions } from '../../firebaseFunctions';
 import { useForm } from 'react-hook-form';
+import { useParams } from 'react-router';
 
 function Booking() {
   const { handleSubmit, register } = useForm();
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
-  const doctorUid = 'mU4KgBDdzFYjvKUhSxppqiCyFb02'; //this should be changed to the uid that is passed by the link from search page
-
+  const { id } = useParams();
   const onSubmit = (values) => {
     const appointmentInfo = { ...values };
     if (date !== '' && time !== '') {
       Object.assign(appointmentInfo, {
         date: date,
         time: time,
-        doctorUid: doctorUid,
+        doctorUid: id,
       });
       firebaseFunctions.bookAppointment(appointmentInfo);
     } else {
@@ -146,6 +146,10 @@ function Booking() {
               onChange={(date) => {
                 setDate(formatDate(date.toString()));
               }}
+              options={{
+                defaultDate: new Date(),
+                minDate: new Date(),
+              }}
             />
 
             <Flatpickr
@@ -154,8 +158,12 @@ function Booking() {
               options={{
                 noCalendar: true,
                 enableTime: true,
+                defaultDate: new Date(),
               }}
               onChange={(time) => {
+                setTime(time.toString().split(' ')[4]);
+              }}
+              onOpen={(time) => {
                 setTime(time.toString().split(' ')[4]);
               }}
             />

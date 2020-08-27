@@ -5,10 +5,9 @@ import intro from './img/intro.svg';
 import './IntroSection.scss';
 import '../HomePageGlobalStyle.scss';
 import { useTranslation } from 'react-i18next';
-import i18next from 'i18next';
 
 function IntroSection() {
-  const { t, i18n } = useTranslation(['validation', 'common']);
+  const { t } = useTranslation(['validation', 'common']);
 
   return (
     <div className="introSection">

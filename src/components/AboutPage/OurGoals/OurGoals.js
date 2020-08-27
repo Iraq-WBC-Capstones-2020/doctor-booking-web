@@ -7,7 +7,7 @@ import awarenessImg from './imgs/awareness.svg';
 import { useTranslation } from 'react-i18next';
 
 function OurGoals() {
-  const { t, i18n } = useTranslation(['translation', 'validation']);
+  const { t } = useTranslation(['translation', 'validation']);
 
   return (
     <Container className="abSection">

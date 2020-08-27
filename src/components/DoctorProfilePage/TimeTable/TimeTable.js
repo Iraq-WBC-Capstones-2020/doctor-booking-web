@@ -4,27 +4,35 @@ import { InfoContext } from '../DoctorInfoContext';
 import './style.css';
 
 function TimeTable() {
-  const [TimeDays] = useContext(InfoContext);
+  const [DocInfos] = useContext(InfoContext);
+  //take timetable from DocInfos
+  const days = DocInfos.days;
+
+  //convert timetable object to arrayof array
+  let result;
+  if (days) {
+    result = Object.keys(days).map((key) => [String(key), days[key]]);
+  }
 
   return (
     <div className="timeTable">
       <Col>
         <Row className="ml-2 justify-content-start">
-          <h4 className="specitial">{TimeDays.speciality}</h4>
+          <h4 className="specitial">{DocInfos.speciality}</h4>
         </Row>
         <Row className="ml-2 justify-content-start">
           <Table className="table-borderless">
             <thead>
               <tr>
-                <h4>Time table</h4>
+                <td className="h4">Time table</td>
               </tr>
             </thead>
             <tbody>
-              {TimeDays.days.map((myDay, index) => (
+              {result?.map((myDay, index) => (
                 <tr key={index}>
-                  <td>{myDay.day}</td>
+                  <td>{myDay[0]}</td>
 
-                  <td>{myDay.date}</td>
+                  <td>{myDay[1]}</td>
                 </tr>
               ))}
             </tbody>

@@ -66,8 +66,8 @@ function StepTwo({ handleNextStep, handleBackStep }) {
                 <option selected disabled>
                   Select a Speciality
                 </option>
-                {specilty.map((spec) => (
-                  <option key={spec.id}>{spec}</option>
+                {specilty.map((spec, index) => (
+                  <option key={index}>{spec}</option>
                 ))}
               </Form.Control>
             </Form.Group>

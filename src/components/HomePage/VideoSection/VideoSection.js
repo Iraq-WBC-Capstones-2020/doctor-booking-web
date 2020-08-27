@@ -5,7 +5,7 @@ import './style.css';
 import { useTranslation } from 'react-i18next';
 
 function VideoSection() {
-  const { t, i18n } = useTranslation(['translation', 'validation']);
+  const { t } = useTranslation(['translation', 'validation']);
 
   return (
     <Container id="videoSection" className="videoSection">

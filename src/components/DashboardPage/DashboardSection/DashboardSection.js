@@ -49,17 +49,15 @@ function DashboardSection() {
               </div>
             </Col>
             <Col md={5}>
-              <div className="calendar-section d-flex justify-content-center">
-                <Flatpickr
-                  className="calendar"
-                  options={{
-                    enableTime: false,
-                    inline: true,
-                    monthSelectorType: 'static',
-                  }}
-                  onChange={(date) => setDate(date[0].toDateString())}
-                />
-              </div>
+              <Flatpickr
+                className="calendar"
+                options={{
+                  enableTime: false,
+                  inline: true,
+                  monthSelectorType: 'static',
+                }}
+                onChange={(date) => setDate(new Date(date[0]))}
+              />
             </Col>
           </Row>
         </Col>

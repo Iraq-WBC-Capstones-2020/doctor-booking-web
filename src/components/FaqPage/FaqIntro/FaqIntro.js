@@ -5,7 +5,7 @@ import './FaqIntro.css';
 import { useTranslation } from 'react-i18next';
 
 function FaqIntro() {
-  const { t, i18n } = useTranslation('validation');
+  const { t } = useTranslation('validation');
   return (
     <Container>
       <Row className="my-5">

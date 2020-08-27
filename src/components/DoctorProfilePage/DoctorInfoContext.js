@@ -1,27 +1,36 @@
-import React, { createContext } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import Avatar from './ProfileHeader/images/avatar1.svg';
+import { useParams } from 'react-router';
+import { db } from '../../Firebase';
+import PropTypes from 'prop-types';
 
 export const InfoContext = createContext();
 
 export function InfoProvider(props) {
+  const { id } = useParams();
+  const [doctor, setDocotr] = useState({});
+
+  useEffect(() => {
+    db.collection('doctors')
+      .doc(id.trim())
+      .get()
+      .then((data) => setDocotr(data.data()));
+  }, []);
+
+  InfoProvider.propTypes = {
+    children: PropTypes.object,
+  };
+
   const [DocInfo, setDocInfo] = [
     {
-      fullName: 'Salah Mohammed',
-      speciality: 'Children doctor',
-      experinces:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.",
-      educaton:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.",
+      fullName: doctor?.name,
+      speciality: doctor?.speciality,
+      experinces: doctor?.experience,
+      educaton: doctor?.education,
+      id: doctor?.uid,
       photo: Avatar,
-      days: [
-        { day: 'sunday', date: '11 - 5' },
-        { day: 'monday', date: '11 - 3' },
-        { day: 'tuseday', date: '12 - 4' },
-        { day: 'wedensday', date: '9 - 1' },
-        { day: 'thirsday', date: '11 - 5' },
-        { day: 'friday', date: 'off day' },
-        { day: 'saturday', date: 'off day' },
-      ],
+      days: doctor?.timeTable,
+      location: doctor.location,
     },
   ];
 
