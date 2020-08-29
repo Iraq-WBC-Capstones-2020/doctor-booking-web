@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
-import Avatar from './images/avatar.png';
+import maleAvatar from './images/avatar.png';
+import femaleAvatar from './images/femaleAvatar.svg';
 import './style.css';
 import { DoctorContext } from '../../../DoctorContext';
 import { Link } from 'react-router-dom';
@@ -32,7 +33,11 @@ function SearchResult({ filterDoctors }) {
             {state.doctors.map((doctor, index) => (
               <Col md={4} key={index}>
                 <Card className="doctorCards " style={{ width: '18rem' }}>
-                  <Card.Img className="myImgCard" variant="top" src={Avatar} />
+                  <Card.Img
+                    className="myImgCard"
+                    variant="top"
+                    src={doctor.gender === 'male' ? maleAvatar : femaleAvatar}
+                  />
                   <Card.Body>
                     <Card.Title>{doctor.name}</Card.Title>
                     <div className="specilty">{doctor.speciality}</div>
@@ -63,7 +68,11 @@ function SearchResult({ filterDoctors }) {
             {filterDoctors?.map((doctor, index) => (
               <Col md={4} key={index}>
                 <Card className="doctorCards " style={{ width: '18rem' }}>
-                  <Card.Img className="myImgCard" variant="top" src={Avatar} />
+                  <Card.Img
+                    className="myImgCard"
+                    variant="top"
+                    src={doctor.gender === 'male' ? maleAvatar : femaleAvatar}
+                  />
                   <Card.Body>
                     <Card.Title>{doctor.name}</Card.Title>
                     <div className="specilty">{doctor.speciality}</div>
