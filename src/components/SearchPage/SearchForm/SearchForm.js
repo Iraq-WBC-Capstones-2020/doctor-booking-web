@@ -31,7 +31,6 @@ function SearchForm({ setFilterDoctors, input, setInput }) {
     'Genitourinary radiology',
     'Head and neck radiology',
     'Pulmonary disease',
-    'Pulmonary disease',
     'Sleep medicine',
     'Sports medicine',
     'Transplant hepatology',

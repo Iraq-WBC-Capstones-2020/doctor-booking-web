@@ -19,7 +19,7 @@ function SearchResult({ filterDoctors }) {
         <Row>
           <Col>
             {filterDoctors?.length === 0 ? (
-              <h2 className="text-primary">Docotr List</h2>
+              <h2 className="text-primary">Doctor List</h2>
             ) : (
               <h2 className="text-success">Search result</h2>
             )}
