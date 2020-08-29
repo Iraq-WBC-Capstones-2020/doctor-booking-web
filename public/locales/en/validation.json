@@ -20,7 +20,7 @@
     },
     "findDoctor": {
       "headLine": "Find your doctor",
-      "paragraph": "Search for a doctor by speciality or by name or just explore the doctors and find the one that suites your need"
+      "paragraph": "Search for a doctor by specialty or by name or just explore the doctors and find the one that suites your need"
     },
     "ourGoals1": {
       "headLine": "Our Goals",
@@ -34,7 +34,7 @@
       },
       "card3": {
         "headLine": "Awareness",
-        "paragraph": "Reducnig the gatherings in clinics waiting rooms so we ensure the social distancing to be applied"
+        "paragraph": "Reducing the gatherings in clinics waiting rooms so we ensure the social distancing to be applied"
       }
     },
     "ourTeam": {
@@ -66,51 +66,51 @@
     "healthImportant": {
       "headLine": {
         "title": "Your health is important",
-        "titleSpan": "for us"
+        "titleSpan": "to us"
       },
-      "paragraph": "This website help you to find the best and suit doctor for your situation , and save you alot of time for searching doctor"
+      "paragraph": "This website helps you find the best and suitable doctor for your situation, and will save you a lot of time when searching for a doctor"
     },
     "findDoc": {
       "headLine": {
-        "title1": "Find a doctor and make an apoinnment online",
+        "title1": "Find a doctor and make an appointment online",
         "titleSpan": "make",
-        "title2": " apoinnment online"
+        "title2": " appointment online"
       },
       "paragraph": "Search for the best doctor for you and book an appointment at the time that fits your time"
     },
     "docRig": {
       "headLine": {
-        "title1": "You are Doctor?",
+        "title1": "Are you a doctor?",
         "titleSpan": "Register here"
       },
-      "paragraph": "With our website you are be more time manageable and you be comfortable about setting appoinments and dealing with your vistors"
+      "paragraph": "With our website you will be more time manageable and you will be comfortable about setting appointments and dealing with your visitors"
     },
     "OurServices": {
       "headLine": "Our services",
-      "paragraph": "We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health",
+      "paragraph": "We provide to you the best choices for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health",
       "card1": {
         "headLine": "Search doctor",
-        "paragraph": "Choose your doctor from thousands of specialist, general, and trusted hospitals"
+        "paragraph": "Choose your doctor from thousands of specialists, general, and trusted hospitals"
       },
       "card2": {
         "headLine": "Details info",
-        "paragraph": "Free consultation with our trusted doctors and get the best recomendations"
+        "paragraph": "Free consultation with our trusted doctors and get the best recommendations"
       },
       "card3": {
-        "headLine": "Clinic loation",
-        "paragraph": "Ship of the imagination star stuff harvesting star light descended from astronomers finite but"
+        "headLine": "Clinic location",
+        "paragraph": "You can find the clinic location on the map to make it easier for you to get to the clinic"
       }
     },
     "appSection": {
-      "headLine": "Download our app to get update with new featurs",
-      "paragraph": "Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely"
+      "headLine": "Download our app to get update with new features",
+      "paragraph": "Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedious form, long calls, or administrative hassle) and securely"
     },
     "videoSection": {
       "headLine": "To get more familiar with the website watch this video"
     },
     "newsLetter": {
       "headLine": "Never miss an update",
-      "paragraph": "Signup to get any update and serves we add"
+      "paragraph": "Sign up to get any update and serves we add"
     }
   },
   "footer": {
@@ -129,44 +129,44 @@
     }
   },
   "FAQ": {
-    "headLine": "Frequently asked ",
-    "headLine2": "questions",
-    "paragraph": "Here is some frequently asked questions about the website, it help you to get a betteridea about the app",
+    "headLine": "Frequently Asked ",
+    "headLine2": "Questions",
+    "paragraph": "Here is some frequently asked questions about the website, it will help you to get a better idea about the app",
     "question1": {
-      "Q1": "who can use this website?",
-      "A1": "the website is for anyone that went to find doctor easily"
+      "Q1": "Who can use this website?",
+      "A1": "The website is for anyone who wants to find a doctor easily"
     },
     "question2": {
-      "Q1": "Am I required to create a acount for making an online appointment?",
-      "A1": "no need for a user to create an acount"
+      "Q1": "Am I required to create an account for making an online appointment?",
+      "A1": "No need for a user to create an account"
     },
     "question3": {
       "Q1": "Can I schedule more than one appointment with a single doctor?",
-      "A1": "yes, you can do that"
+      "A1": "Yes, you can do that"
     },
     "question4": {
       "Q1": "Can I reschedule an online appointment?",
-      "A1": "yes, if you have an argent situation you can reschedule to anthor time"
+      "A1": "Yes, if you have an urgent situation you can reschedule to another time"
     },
     "question5": {
-      "Q1": "How will I know if my booking is confirmed?",
-      "A1": "the secretary tall you to confirm the appoinment by calling or sending email"
+      "Q1": "How I will know if my booking is confirmed?",
+      "A1": "The secretary will call you to confirm the appointment by calling or sending an email"
     },
     "question6": {
-      "Q1": "should i include a name of a doctor when i want to search for a specific specialty ?",
-      "A1": "no, just enter the specialty"
+      "Q1": "Should I include a name of a doctor when I want to search for a specific specialty?",
+      "A1": "No, just choose the specialty"
     },
     "question7": {
-      "Q1": "What will the doctor's consultation fee be?",
-      "A1": "it depend on the doctor itself"
+      "Q1": "What will the doctor's consultation fee will be?",
+      "A1": "It depends on the doctor himself"
     },
     "question8": {
       "Q1": "I am a Doctor and I have done my registration. What should I do next?",
-      "A1": "we send you an email that you are now in our website and user can search and find you"
+      "A1": "We will send you an email that you are now in our website and the users can search and find you"
     },
     "question9": {
-      "Q1": "Can I use the app for checking availability of Doctor and his fees without actually booking or scheduling an appointment ?",
-      "A1": "yes, while you searching, click on the doctor card that you went know about him, it open a anther page that contain doctor informaition"
+      "Q1": "Can I use the app for checking availability of Doctor and his fees without actually booking or scheduling an appointment?",
+      "A1": "Yes, while you are searching, click on the doctor card that you want to know about him, it will open a another page that contains doctor information"
     }
   }
 }
