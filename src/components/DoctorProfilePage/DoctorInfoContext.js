@@ -1,5 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
-import Avatar from './ProfileHeader/images/avatar1.svg';
+import maleAvatar from './ProfileHeader/images/avatar1.svg';
+import femaleAvatar from './ProfileHeader/images/avatar.svg';
 import { useParams } from 'react-router';
 import { db } from '../../Firebase';
 import PropTypes from 'prop-types';
@@ -28,7 +29,7 @@ export function InfoProvider(props) {
       experinces: doctor?.experience,
       educaton: doctor?.education,
       id: doctor?.uid,
-      photo: Avatar,
+      photo: doctor.gender === 'male' ? maleAvatar : femaleAvatar,
       days: doctor?.timeTable,
       location: doctor.location,
     },
