@@ -19,7 +19,7 @@ function SearchResult({ filterDoctors }) {
         <Row>
           <Col>
             {filterDoctors?.length === 0 ? (
-              <h2 className="text-primary">Docotr List</h2>
+              <h2 className="text-primary">Doctor List</h2>
             ) : (
               <h2 className="text-success">Search result</h2>
             )}
@@ -36,11 +36,7 @@ function SearchResult({ filterDoctors }) {
                   <Card.Body>
                     <Card.Title>{doctor.name}</Card.Title>
                     <div className="specilty">{doctor.speciality}</div>
-                    <Card.Text>
-                      {' '}
-                      Lorem, ipsum dolor amet consectetur adipisicing elit.
-                      Provident, totam?{' '}
-                    </Card.Text>
+                    <Card.Text>{doctor.education}</Card.Text>
                     <div className="theButtons">
                       <Link to={`profile/${doctor.uid}`}>
                         <Button className="theWhite" variant="primary">
@@ -67,11 +63,7 @@ function SearchResult({ filterDoctors }) {
                   <Card.Body>
                     <Card.Title>{doctor.name}</Card.Title>
                     <div className="specilty">{doctor.speciality}</div>
-                    <Card.Text>
-                      {' '}
-                      Lorem, ipsum dolor amet consectetur adipisicing elit.
-                      Provident, totam?{' '}
-                    </Card.Text>
+                    <Card.Text>{doctor.education}</Card.Text>
                     <div className="theButtons">
                       <Link to={`profile/${doctor.uid}`}>
                         <Button className="theWhite" variant="primary">

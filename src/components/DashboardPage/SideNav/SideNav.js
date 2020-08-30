@@ -11,7 +11,7 @@ function SideNav() {
       <Nav className="d-none d-md-block sidebar">
         <Nav.Item className="d-flex justify-content-evenly">
           <img src={cal} alt="profile icon" />
-          <Link to="/calender">Calender</Link>
+          <Link to="/calender">Calendar</Link>
         </Nav.Item>
 
         <Nav.Item className="d-flex justify-content-evenly">
